@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-08",
+  "updatedAt": "2026-08-08T19:40:00+08:00",
+  "report": {
+    "lead": {
+      "title": "我成功修改 Daily Board 的資料了！",
+      "summary": "從這一版開始，新聞內容不再寫死在 index.html。未來每天只要更新 data/daily.json，就能換掉整個 Daily Board 的生醫摘要。",
+      "why": "這是把『介面』和『每日內容』分開的第一步。等這層穩定後，我們才能安全地接上自動產生摘要的流程。",
+      "tags": ["Prototype", "Data layer"]
+    },
+    "stories": [
+      {
+        "title": "第二則示範內容",
+        "summary": "這裡之後可以放新的研究工具、疾病機制、臨床試驗或神經科學發現。",
+        "tags": ["Research"]
+      },
+      {
+        "title": "第三則示範內容",
+        "summary": "這裡可以保留比較冷門、但對你目前學習方向特別有價值的研究。",
+        "tags": ["Neuroscience", "Selected"]
+      }
+    ],
+    "radar": {
+      "title": "Research & Career Radar 示範",
+      "summary": "只有真的有值得追蹤的研究、升學、實習或職涯訊號時才顯示這一格。"
+    },
+    "fullReportUrl": ""
+  },
+  "importantMail": [
+    {
+      "sender": "NTU / Professor",
+      "status": "Action needed",
+      "title": "這是一封示範的重要郵件",
+      "summary": "之後這裡只保留需要回覆、有截止日期、取消或時間異動的郵件。"
+    }
+  ]
+}
