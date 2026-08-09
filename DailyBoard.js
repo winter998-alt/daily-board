@@ -1,5 +1,5 @@
-// Daily Board Widget v0.2
-// Scriptable widget: a reading prompt, not a mini website.
+// Daily Board Widget v0.3
+// Scriptable medium widget: simple reading reminder.
 
 const DATA_URL = "https://winter998-alt.github.io/daily-board/data/daily.json";
 const BOARD_URL = "https://winter998-alt.github.io/daily-board/";
@@ -15,12 +15,16 @@ async function loadData() {
   }
 }
 
+function dynamic(light, dark) {
+  return Color.dynamic(new Color(light), new Color(dark));
+}
+
 function formatDate(value) {
-  if (!value) return "TODAY";
+  if (!value) return "今天";
   const d = new Date(`${value}T12:00:00+08:00`);
   const f = new DateFormatter();
   f.locale = "zh_TW";
-  f.dateFormat = "M月d日 EEE";
+  f.dateFormat = "M月d日";
   return f.string(d);
 }
 
@@ -33,32 +37,18 @@ function formatTime(value) {
   return f.string(d);
 }
 
-function dynamic(light, dark) {
-  return Color.dynamic(new Color(light), new Color(dark));
-}
-
-function addPill(parent, text) {
-  const pill = parent.addStack();
-  pill.setPadding(5, 9, 5, 9);
-  pill.cornerRadius = 10;
-  pill.backgroundColor = dynamic("#E4EAE3", "#202A23");
-  const t = pill.addText(text);
-  t.font = Font.semiboldSystemFont(10);
-  t.textColor = dynamic("#53675A", "#C3D5C8");
-}
-
 async function buildWidget(data) {
   const w = new ListWidget();
   w.url = BOARD_URL;
   w.backgroundColor = dynamic("#F4F5F0", "#111411");
-  w.setPadding(20, 20, 18, 20);
+  w.setPadding(18, 20, 16, 20);
 
   const header = w.addStack();
   header.centerAlignContent();
 
   const brand = header.addText("DAILY BOARD");
-  brand.font = Font.boldSystemFont(12);
-  brand.textColor = dynamic("#33463A", "#D4E5D9");
+  brand.font = Font.boldSystemFont(11);
+  brand.textColor = dynamic("#34463B", "#D4E5D9");
 
   header.addSpacer();
 
@@ -66,87 +56,40 @@ async function buildWidget(data) {
   date.font = Font.systemFont(10);
   date.textColor = dynamic("#747B74", "#9AA29A");
 
-  w.addSpacer(18);
+  w.addSpacer(15);
 
-  if (!data) {
-    const title = w.addText("今天的 Daily Board 暫時讀不到資料");
-    title.font = Font.boldSystemFont(22);
-    title.textColor = dynamic("#1D211D", "#F2F4F0");
-    title.lineLimit = 3;
-    w.addSpacer(8);
-    const hint = w.addText("點一下開啟閱讀頁，或稍後再試。");
-    hint.font = Font.systemFont(12);
-    hint.textColor = dynamic("#666D66", "#B0B6B0");
-    return w;
-  }
+  const title = w.addText(data
+    ? "來看看生醫界又發生了什麼有趣的事吧"
+    : "今天的 Daily Board 暫時還沒連上");
+  title.font = Font.boldSystemFont(21);
+  title.textColor = dynamic("#1B211C", "#F1F5F2");
+  title.lineLimit = 2;
+  title.minimumScaleFactor = 0.8;
 
-  const stories = data.report?.stories || [];
-  const count = stories.length;
-  const first = stories[0] || {};
-  const radar = data.report?.radar;
-  const mailCount = data.importantMail?.count || 0;
+  w.addSpacer(7);
 
-  const countText = w.addText(String(count));
-  countText.font = Font.heavySystemFont(54);
-  countText.textColor = dynamic("#1D2A22", "#E8F0EA");
-  countText.minimumScaleFactor = 0.8;
-
-  const countLabel = w.addText(count === 1 ? "story worth reading today" : "stories worth reading today");
-  countLabel.font = Font.semiboldSystemFont(15);
-  countLabel.textColor = dynamic("#536158", "#B8C5BC");
-
-  w.addSpacer(16);
-
-  if (first.title) {
-    const kicker = w.addText("TODAY'S LEAD");
-    kicker.font = Font.boldSystemFont(10);
-    kicker.textColor = dynamic("#657A6B", "#B8D0C0");
-
-    w.addSpacer(5);
-
-    const lead = w.addText(first.widgetTitle || first.title);
-    lead.font = Font.boldSystemFont(19);
-    lead.textColor = dynamic("#181C18", "#F4F5F2");
-    lead.lineLimit = 2;
-
-    if (first.widgetSummary || first.dek) {
-      w.addSpacer(5);
-      const summary = w.addText(first.widgetSummary || first.dek);
-      summary.font = Font.systemFont(11);
-      summary.textColor = dynamic("#606760", "#AEB5AE");
-      summary.lineLimit = 2;
-    }
-  }
-
-  w.addSpacer(14);
-
-  const pills = w.addStack();
-  pills.layoutHorizontally();
-
-  if (radar?.title) {
-    addPill(pills, "🔬 Research radar");
-    pills.addSpacer(7);
-  }
-
-  if (mailCount > 0) {
-    addPill(pills, `📩 ${mailCount} important mail`);
-  }
+  const subtitle = w.addText(data
+    ? "今天的生醫・神經科學摘要已更新，點一下就能開始讀。"
+    : "點一下開啟閱讀頁，或稍後再試。");
+  subtitle.font = Font.systemFont(11);
+  subtitle.textColor = dynamic("#606760", "#AEB5AE");
+  subtitle.lineLimit = 2;
 
   w.addSpacer();
 
   const footer = w.addStack();
   footer.centerAlignContent();
 
-  const read = footer.addText("Read today's brief →");
-  read.font = Font.boldSystemFont(12);
-  read.textColor = dynamic("#33463A", "#D4E5D9");
+  const action = footer.addText("打開 Daily Board →");
+  action.font = Font.boldSystemFont(11);
+  action.textColor = dynamic("#3D5546", "#D1E4D6");
 
   footer.addSpacer();
 
-  if (data.updatedAt) {
+  if (data?.updatedAt) {
     const updated = footer.addText(`更新 ${formatTime(data.updatedAt)}`);
     updated.font = Font.systemFont(9);
-    updated.textColor = dynamic("#7B817B", "#8F968F");
+    updated.textColor = dynamic("#7C827C", "#8F968F");
   }
 
   return w;
@@ -158,7 +101,7 @@ const widget = await buildWidget(data);
 if (config.runsInWidget) {
   Script.setWidget(widget);
 } else {
-  await widget.presentLarge();
+  await widget.presentMedium();
 }
 
 Script.complete();
