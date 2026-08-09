@@ -1,4 +1,4 @@
-const CACHE = 'daily-board-v2';
+const CACHE = 'daily-board-v3';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -23,7 +23,6 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // Daily content should always try the network first so a new report appears quickly.
   if (url.pathname.endsWith('/data/daily.json') || url.pathname.endsWith('data/daily.json')) {
     event.respondWith(
       fetch(event.request)
@@ -37,8 +36,13 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // App shell: cache first, then network.
   event.respondWith(
-    caches.match(event.request).then(cached => cached || fetch(event.request))
+    fetch(event.request)
+      .then(response => {
+        const copy = response.clone();
+        caches.open(CACHE).then(cache => cache.put(event.request, copy));
+        return response;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
