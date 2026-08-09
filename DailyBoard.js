@@ -1,5 +1,6 @@
-// Daily Board Widget v0.5
+// Daily Board Widget v0.6
 // Responsive Scriptable widget: iPhone Medium + iPad Extra Large.
+// Green + white botanical-tech reminder with corrected line-art leaves.
 
 const DATA_URL = "https://winter998-alt.github.io/daily-board/data/daily.json";
 const BOARD_URL = "https://winter998-alt.github.io/daily-board/";
@@ -141,44 +142,100 @@ function makeBackground(cfg) {
     ctx.fillEllipse(new Rect(x * scaleX - r/2, y * scaleY - r/2, r, r));
   });
 
-  // Botanical line-art
-  ctx.setStrokeColor(new Color("#2E7D32"));
-  ctx.setLineWidth(cfg.family === "extraLarge" ? 6 : 4);
-
   const sx = scaleX;
   const sy = scaleY;
+  const plantColor = new Color("#2E7D32", 0.92);
+  const veinColor = new Color("#55A95E", 0.60);
 
-  const stem = new Path();
-  stem.move(new Point(535*sx, 240*sy));
-  stem.addCurve(new Point(535*sx,240*sy), new Point(538*sx,170*sy), new Point(540*sx,105*sy));
-  ctx.addPath(stem);
-  ctx.strokePath();
-
-  const leftLeaf = new Path();
-  leftLeaf.move(new Point(540*sx,150*sy));
-  leftLeaf.addCurve(new Point(525*sx,132*sy), new Point(500*sx,126*sy), new Point(480*sx,136*sy));
-  leftLeaf.addCurve(new Point(495*sx,158*sy), new Point(520*sx,165*sy), new Point(540*sx,150*sy));
-  ctx.addPath(leftLeaf);
-  ctx.strokePath();
-
-  const rightLeaf = new Path();
-  rightLeaf.move(new Point(540*sx,126*sy));
-  rightLeaf.addCurve(new Point(558*sx,101*sy), new Point(585*sx,96*sy), new Point(605*sx,108*sy));
-  rightLeaf.addCurve(new Point(590*sx,132*sy), new Point(565*sx,142*sy), new Point(540*sx,126*sy));
-  ctx.addPath(rightLeaf);
-  ctx.strokePath();
-
-  const topLeaf = new Path();
-  topLeaf.move(new Point(540*sx,108*sy));
-  topLeaf.addCurve(new Point(525*sx,82*sy), new Point(526*sx,55*sy), new Point(542*sx,38*sy));
-  topLeaf.addCurve(new Point(560*sx,58*sy), new Point(560*sx,84*sy), new Point(540*sx,108*sy));
-  ctx.addPath(topLeaf);
-  ctx.strokePath();
-
-  ctx.setStrokeColor(new Color("#6EDB8A", 0.38));
+  // Subtle circular tech halo behind the plant
+  ctx.setStrokeColor(new Color("#6EDB8A", 0.34));
   ctx.setLineWidth(cfg.family === "extraLarge" ? 3 : 2);
   ctx.strokeEllipse(new Rect(445*sx,55*sy,170*sx,170*sy));
   ctx.strokeEllipse(new Rect(465*sx,75*sy,130*sx,130*sy));
+
+  // Botanical line-art: smooth stem
+  ctx.setStrokeColor(plantColor);
+  ctx.setLineWidth(cfg.family === "extraLarge" ? 5 : 3.3);
+
+  const stem = new Path();
+  stem.move(new Point(535*sx, 240*sy));
+  stem.addCurve(
+    new Point(540*sx, 103*sy),
+    new Point(534*sx, 200*sy),
+    new Point(540*sx, 145*sy)
+  );
+  ctx.addPath(stem);
+  ctx.strokePath();
+
+  // Left leaf: branch point -> tip -> branch point
+  const leftLeaf = new Path();
+  leftLeaf.move(new Point(539*sx, 154*sy));
+  leftLeaf.addCurve(
+    new Point(479*sx, 134*sy),
+    new Point(522*sx, 132*sy),
+    new Point(497*sx, 124*sy)
+  );
+  leftLeaf.addCurve(
+    new Point(539*sx, 154*sy),
+    new Point(492*sx, 154*sy),
+    new Point(520*sx, 166*sy)
+  );
+  ctx.addPath(leftLeaf);
+  ctx.strokePath();
+
+  // Right leaf
+  const rightLeaf = new Path();
+  rightLeaf.move(new Point(540*sx, 128*sy));
+  rightLeaf.addCurve(
+    new Point(607*sx, 106*sy),
+    new Point(558*sx, 101*sy),
+    new Point(586*sx, 95*sy)
+  );
+  rightLeaf.addCurve(
+    new Point(540*sx, 128*sy),
+    new Point(590*sx, 133*sy),
+    new Point(562*sx, 143*sy)
+  );
+  ctx.addPath(rightLeaf);
+  ctx.strokePath();
+
+  // Top leaf
+  const topLeaf = new Path();
+  topLeaf.move(new Point(540*sx, 106*sy));
+  topLeaf.addCurve(
+    new Point(542*sx, 37*sy),
+    new Point(523*sx, 83*sy),
+    new Point(527*sx, 55*sy)
+  );
+  topLeaf.addCurve(
+    new Point(540*sx, 106*sy),
+    new Point(561*sx, 58*sy),
+    new Point(559*sx, 84*sy)
+  );
+  ctx.addPath(topLeaf);
+  ctx.strokePath();
+
+  // Fine leaf veins
+  ctx.setStrokeColor(veinColor);
+  ctx.setLineWidth(cfg.family === "extraLarge" ? 2.2 : 1.4);
+
+  const veinLeft = new Path();
+  veinLeft.move(new Point(536*sx, 152*sy));
+  veinLeft.addLine(new Point(486*sx, 136*sy));
+  ctx.addPath(veinLeft);
+  ctx.strokePath();
+
+  const veinRight = new Path();
+  veinRight.move(new Point(543*sx, 127*sy));
+  veinRight.addLine(new Point(600*sx, 109*sy));
+  ctx.addPath(veinRight);
+  ctx.strokePath();
+
+  const veinTop = new Path();
+  veinTop.move(new Point(540*sx, 102*sy));
+  veinTop.addLine(new Point(542*sx, 45*sy));
+  ctx.addPath(veinTop);
+  ctx.strokePath();
 
   return ctx.getImage();
 }
