@@ -1,314 +1,159 @@
-// Daily Board Widget v0.1
-// For Scriptable on iPhone / iPad
+// Daily Board Widget v0.2
+// Scriptable widget: a reading prompt, not a mini website.
 
 const DATA_URL = "https://winter998-alt.github.io/daily-board/data/daily.json";
 const BOARD_URL = "https://winter998-alt.github.io/daily-board/";
 
-async function loadDailyData() {
+async function loadData() {
   try {
-    const request = new Request(`${DATA_URL}?t=${Date.now()}`);
-    request.timeoutInterval = 15;
-    return await request.loadJSON();
-  } catch (error) {
-    console.error("Failed to load Daily Board data:", error);
+    const req = new Request(`${DATA_URL}?t=${Date.now()}`);
+    req.timeoutInterval = 15;
+    return await req.loadJSON();
+  } catch (e) {
+    console.error(e);
     return null;
   }
 }
 
-function formatDate(dateString) {
-  if (!dateString) return "";
-  const date = new Date(`${dateString}T00:00:00`);
-  const formatter = new DateFormatter();
-  formatter.locale = "zh_TW";
-  formatter.dateFormat = "M月d日 EEEE";
-  return formatter.string(date);
+function formatDate(value) {
+  if (!value) return "TODAY";
+  const d = new Date(`${value}T12:00:00+08:00`);
+  const f = new DateFormatter();
+  f.locale = "zh_TW";
+  f.dateFormat = "M月d日 EEE";
+  return f.string(d);
 }
 
-function formatUpdatedTime(updatedAt) {
-  if (!updatedAt) return "";
-  const date = new Date(updatedAt);
-  const formatter = new DateFormatter();
-  formatter.locale = "zh_TW";
-  formatter.dateFormat = "HH:mm";
-  return formatter.string(date);
+function formatTime(value) {
+  if (!value) return "";
+  const d = new Date(value);
+  const f = new DateFormatter();
+  f.locale = "zh_TW";
+  f.dateFormat = "HH:mm";
+  return f.string(d);
 }
 
-function addDivider(widget) {
-  const divider = widget.addStack();
-  divider.size = new Size(0, 1);
-  divider.backgroundColor = Color.dynamic(
-    new Color("#D9DDD7"),
-    new Color("#30352F")
-  );
+function dynamic(light, dark) {
+  return Color.dynamic(new Color(light), new Color(dark));
 }
 
-function addHeadline(stack, number, title, summary, maxLines = 2) {
-  const row = stack.addStack();
-  row.layoutHorizontally();
-  row.centerAlignContent();
-
-  const numberText = row.addText(number);
-  numberText.font = Font.semiboldSystemFont(11);
-  numberText.textColor = Color.dynamic(
-    new Color("#61766A"),
-    new Color("#ABC7B5")
-  );
-
-  row.addSpacer(10);
-
-  const content = row.addStack();
-  content.layoutVertically();
-
-  const titleText = content.addText(title || "Untitled");
-  titleText.font = Font.semiboldSystemFont(15);
-  titleText.textColor = Color.dynamic(Color.black(), Color.white());
-  titleText.lineLimit = 2;
-
-  if (summary) {
-    content.addSpacer(3);
-    const summaryText = content.addText(summary);
-    summaryText.font = Font.systemFont(11);
-    summaryText.textColor = Color.dynamic(
-      new Color("#5F655F"),
-      new Color("#B5BBB5")
-    );
-    summaryText.lineLimit = maxLines;
-  }
-
-  return row;
+function addPill(parent, text) {
+  const pill = parent.addStack();
+  pill.setPadding(5, 9, 5, 9);
+  pill.cornerRadius = 10;
+  pill.backgroundColor = dynamic("#E4EAE3", "#202A23");
+  const t = pill.addText(text);
+  t.font = Font.semiboldSystemFont(10);
+  t.textColor = dynamic("#53675A", "#C3D5C8");
 }
 
-async function createWidget(data) {
-  const widget = new ListWidget();
+async function buildWidget(data) {
+  const w = new ListWidget();
+  w.url = BOARD_URL;
+  w.backgroundColor = dynamic("#F4F5F0", "#111411");
+  w.setPadding(20, 20, 18, 20);
 
-  widget.backgroundColor = Color.dynamic(
-    new Color("#F4F5F0"),
-    new Color("#111411")
-  );
-
-  widget.setPadding(18, 18, 16, 18);
-  widget.url = BOARD_URL;
-
-  const header = widget.addStack();
-  header.layoutHorizontally();
+  const header = w.addStack();
   header.centerAlignContent();
 
-  const leftHeader = header.addStack();
-  leftHeader.layoutVertically();
-
-  const brand = leftHeader.addText("DAILY BOARD");
+  const brand = header.addText("DAILY BOARD");
   brand.font = Font.boldSystemFont(12);
-  brand.textColor = Color.dynamic(
-    new Color("#34463B"),
-    new Color("#D5E5D9")
-  );
-
-  const dateText = leftHeader.addText(
-    data ? formatDate(data.date) : "無法取得今日資料"
-  );
-  dateText.font = Font.systemFont(10);
-  dateText.textColor = Color.dynamic(
-    new Color("#727972"),
-    new Color("#989F98")
-  );
+  brand.textColor = dynamic("#33463A", "#D4E5D9");
 
   header.addSpacer();
 
-  if (data?.updatedAt) {
-    const updated = header.addText(`更新 ${formatUpdatedTime(data.updatedAt)}`);
-    updated.font = Font.systemFont(9);
-    updated.textColor = Color.dynamic(
-      new Color("#7C827C"),
-      new Color("#8F968F")
-    );
-  }
+  const date = header.addText(data ? formatDate(data.date) : "OFFLINE");
+  date.font = Font.systemFont(10);
+  date.textColor = dynamic("#747B74", "#9AA29A");
 
-  widget.addSpacer(10);
-  addDivider(widget);
-  widget.addSpacer(12);
+  w.addSpacer(18);
 
   if (!data) {
-    const error = widget.addText("暫時無法讀取 Daily Board。");
-    error.font = Font.semiboldSystemFont(15);
-    error.textColor = Color.dynamic(Color.black(), Color.white());
-
-    widget.addSpacer(6);
-
-    const hint = widget.addText("點一下開啟完整頁面，或稍後再試。");
-    hint.font = Font.systemFont(11);
-    hint.textColor = Color.gray();
-
-    return widget;
-  }
-
-  const section = widget.addText("BIOMED / NEUROSCIENCE");
-  section.font = Font.boldSystemFont(10);
-  section.textColor = Color.dynamic(
-    new Color("#637B6C"),
-    new Color("#B5D0BF")
-  );
-
-  widget.addSpacer(8);
-
-  const lead = data.report?.lead;
-  if (lead) {
-    addHeadline(widget, "01", lead.title, lead.summary, 3);
-
-    if (lead.why) {
-      widget.addSpacer(7);
-
-      const whyBox = widget.addStack();
-      whyBox.layoutVertically();
-      whyBox.setPadding(8, 10, 8, 10);
-      whyBox.cornerRadius = 10;
-      whyBox.backgroundColor = Color.dynamic(
-        new Color("#E3EBE3"),
-        new Color("#233128")
-      );
-
-      const whyLabel = whyBox.addText("WHY IT MATTERS");
-      whyLabel.font = Font.boldSystemFont(9);
-      whyLabel.textColor = Color.dynamic(
-        new Color("#536C5C"),
-        new Color("#B9D3C1")
-      );
-
-      whyBox.addSpacer(2);
-
-      const whyText = whyBox.addText(lead.why);
-      whyText.font = Font.systemFont(10);
-      whyText.textColor = Color.dynamic(
-        new Color("#353B36"),
-        new Color("#E2E8E2")
-      );
-      whyText.lineLimit = 2;
-    }
+    const title = w.addText("今天的 Daily Board 暫時讀不到資料");
+    title.font = Font.boldSystemFont(22);
+    title.textColor = dynamic("#1D211D", "#F2F4F0");
+    title.lineLimit = 3;
+    w.addSpacer(8);
+    const hint = w.addText("點一下開啟閱讀頁，或稍後再試。");
+    hint.font = Font.systemFont(12);
+    hint.textColor = dynamic("#666D66", "#B0B6B0");
+    return w;
   }
 
   const stories = data.report?.stories || [];
-  const storyLimit = config.widgetFamily === "medium" ? 1 : 2;
-
-  for (let i = 0; i < Math.min(stories.length, storyLimit); i++) {
-    widget.addSpacer(10);
-    addDivider(widget);
-    widget.addSpacer(9);
-
-    addHeadline(
-      widget,
-      String(i + 2).padStart(2, "0"),
-      stories[i].title,
-      stories[i].summary,
-      2
-    );
-  }
-
-  const isLarge =
-    config.widgetFamily === "large" ||
-    config.widgetFamily === "extraLarge" ||
-    !config.runsInWidget;
-
+  const count = stories.length;
+  const first = stories[0] || {};
   const radar = data.report?.radar;
+  const mailCount = data.importantMail?.count || 0;
 
-  if (radar && isLarge) {
-    widget.addSpacer(11);
+  const countText = w.addText(String(count));
+  countText.font = Font.heavySystemFont(54);
+  countText.textColor = dynamic("#1D2A22", "#E8F0EA");
+  countText.minimumScaleFactor = 0.8;
 
-    const radarBox = widget.addStack();
-    radarBox.layoutVertically();
-    radarBox.setPadding(9, 10, 9, 10);
-    radarBox.cornerRadius = 10;
-    radarBox.backgroundColor = Color.dynamic(
-      new Color("#ECEDE7"),
-      new Color("#1A1E1A")
-    );
+  const countLabel = w.addText(count === 1 ? "story worth reading today" : "stories worth reading today");
+  countLabel.font = Font.semiboldSystemFont(15);
+  countLabel.textColor = dynamic("#536158", "#B8C5BC");
 
-    const radarLabel = radarBox.addText("RESEARCH & CAREER RADAR");
-    radarLabel.font = Font.boldSystemFont(9);
-    radarLabel.textColor = Color.dynamic(
-      new Color("#61766A"),
-      new Color("#B5D0BF")
-    );
+  w.addSpacer(16);
 
-    radarBox.addSpacer(2);
+  if (first.title) {
+    const kicker = w.addText("TODAY'S LEAD");
+    kicker.font = Font.boldSystemFont(10);
+    kicker.textColor = dynamic("#657A6B", "#B8D0C0");
 
-    const radarTitle = radarBox.addText(radar.title || "");
-    radarTitle.font = Font.semiboldSystemFont(11);
-    radarTitle.textColor = Color.dynamic(Color.black(), Color.white());
-    radarTitle.lineLimit = 1;
+    w.addSpacer(5);
 
-    if (radar.summary) {
-      const radarSummary = radarBox.addText(radar.summary);
-      radarSummary.font = Font.systemFont(9);
-      radarSummary.textColor = Color.dynamic(
-        new Color("#626862"),
-        new Color("#ADB3AD")
-      );
-      radarSummary.lineLimit = 2;
+    const lead = w.addText(first.widgetTitle || first.title);
+    lead.font = Font.boldSystemFont(19);
+    lead.textColor = dynamic("#181C18", "#F4F5F2");
+    lead.lineLimit = 2;
+
+    if (first.widgetSummary || first.dek) {
+      w.addSpacer(5);
+      const summary = w.addText(first.widgetSummary || first.dek);
+      summary.font = Font.systemFont(11);
+      summary.textColor = dynamic("#606760", "#AEB5AE");
+      summary.lineLimit = 2;
     }
   }
 
-  const mail = data.importantMail || [];
+  w.addSpacer(14);
 
-  widget.addSpacer(11);
-  addDivider(widget);
-  widget.addSpacer(9);
+  const pills = w.addStack();
+  pills.layoutHorizontally();
 
-  const mailHeader = widget.addStack();
-  mailHeader.layoutHorizontally();
-
-  const mailTitle = mailHeader.addText("IMPORTANT MAIL");
-  mailTitle.font = Font.boldSystemFont(10);
-  mailTitle.textColor = Color.dynamic(
-    new Color("#6C665A"),
-    new Color("#D3C9B9")
-  );
-
-  mailHeader.addSpacer();
-
-  const mailCount = mailHeader.addText(String(mail.length));
-  mailCount.font = Font.boldSystemFont(10);
-  mailCount.textColor = Color.dynamic(
-    new Color("#6C665A"),
-    new Color("#D3C9B9")
-  );
-
-  widget.addSpacer(5);
-
-  if (mail.length === 0) {
-    const clear = widget.addText("今天沒有需要你注意的郵件。");
-    clear.font = Font.systemFont(10);
-    clear.textColor = Color.dynamic(
-      new Color("#686E68"),
-      new Color("#A8AEA8")
-    );
-  } else {
-    const firstMail = mail[0];
-
-    const sender = widget.addText(firstMail.sender || "Important mail");
-    sender.font = Font.semiboldSystemFont(10);
-    sender.textColor = Color.dynamic(Color.black(), Color.white());
-    sender.lineLimit = 1;
-
-    const mailSubject = widget.addText(firstMail.title || firstMail.summary || "");
-    mailSubject.font = Font.systemFont(10);
-    mailSubject.textColor = Color.dynamic(
-      new Color("#555B55"),
-      new Color("#C1C7C1")
-    );
-    mailSubject.lineLimit = 1;
-
-    if (mail.length > 1) {
-      const more = widget.addText(`另有 ${mail.length - 1} 封需要注意`);
-      more.font = Font.systemFont(9);
-      more.textColor = Color.gray();
-      more.lineLimit = 1;
-    }
+  if (radar?.title) {
+    addPill(pills, "🔬 Research radar");
+    pills.addSpacer(7);
   }
 
-  return widget;
+  if (mailCount > 0) {
+    addPill(pills, `📩 ${mailCount} important mail`);
+  }
+
+  w.addSpacer();
+
+  const footer = w.addStack();
+  footer.centerAlignContent();
+
+  const read = footer.addText("Read today's brief →");
+  read.font = Font.boldSystemFont(12);
+  read.textColor = dynamic("#33463A", "#D4E5D9");
+
+  footer.addSpacer();
+
+  if (data.updatedAt) {
+    const updated = footer.addText(`更新 ${formatTime(data.updatedAt)}`);
+    updated.font = Font.systemFont(9);
+    updated.textColor = dynamic("#7B817B", "#8F968F");
+  }
+
+  return w;
 }
 
-const data = await loadDailyData();
-const widget = await createWidget(data);
+const data = await loadData();
+const widget = await buildWidget(data);
 
 if (config.runsInWidget) {
   Script.setWidget(widget);
