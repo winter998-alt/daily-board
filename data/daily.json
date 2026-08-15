@@ -1,7 +1,85 @@
 {
-  "schemaVersion":"0.4",
-  "date":"2026-08-15",
-  "updatedAt":"2026-08-15T07:32:47+08:00",
-  "report":{"title":"每日生醫・神經科學摘要","intro":"今天三篇都在提醒我們：一個看似簡單的科學結論，背後其實取決於『怎麼測』。從季節性 mRNA 流感疫苗的臨床證據，到兒童與成人學習速度如何對應不同記憶型態，再到 10 個實驗室共同重做一項經典工作記憶 EEG 指標，今天可以特別練習分辨臨床效益、腦活動指標與可重現證據各自能支持到哪一步。","stories":[{"category":"疫苗與臨床研究","title":"mRNA 不只用來對付 COVID-19：季節性 mRNA 流感疫苗的臨床證據告訴我們什麼？","widgetTitle":"mRNA 流感疫苗跨過新門檻","widgetSummary":"mRNA 平台正進入季節性流感疫苗領域。重點不只是『新技術』，而是臨床試驗到底證明它比既有疫苗多帶來多少保護。","dek":"流感疫苗每年都面臨同一個難題：病毒會改變，而疫苗必須提前選定要製造的病毒株。mRNA 平台的吸引力之一，是不需要大量培養病毒或蛋白，就能依照遺傳序列快速製造抗原指令。","background":"mRNA 是細胞暫時使用的遺傳訊息。mRNA 疫苗把製造特定病毒蛋白的指令送進細胞，細胞短暫製造抗原，讓免疫系統學會辨認它。mRNA-1010 主要編碼流感病毒表面的 hemagglutinin，也就是病毒用來進入宿主細胞、同時也是抗體重要辨認目標的蛋白。","whatHappened":"FDA 公開的 mRNA-1010 審查資料顯示，在主要第三期研究中，mRNA-1010 相對於已核准的標準劑量流感疫苗，相對疫苗效力約高 27%。這個數字不是說『27% 的人因此不會得流感』，而是兩個已接種族群相比，mRNA 疫苗組發生符合研究定義之流感的比例更低。","howTheyStudied":"主要第三期研究是隨機、觀察者盲化、主動對照試驗，涵蓋多國、數萬名成人。主動對照不是拿疫苗和生理食鹽水比較，而是和已經使用的流感疫苗比較，因此問題更接近『新疫苗是否比現有選項更好』。FDA 文件列出的 Study 304 約有 4 萬名受試者，另外還整合其他第三期研究評估安全性。","whyItMatters":"mRNA 平台的一個長期期待，是縮短從病毒株選定到大量生產的時間，理論上讓疫苗株更接近實際流行的病毒。不過真正重要的不是製造方式本身，而是每一季實際能不能提供可靠保護。大型臨床資料代表平台跨過重要證據門檻，但不等於 mRNA 天生就比所有傳統流感疫苗好。","limitations":"流感病毒每年流行的病毒株、感染強度與族群都不同，一季的相對效力不能保證未來每季相同。相對疫苗效力也必須和絕對感染率一起理解，不能把 27% 直接當成個人的絕對保護率。不同年齡層也可能需要不同的比較標準與後續資料。","whatNext":"接下來最值得追蹤的是真實世界效果、安全監測，以及 mRNA 平台是否真的能利用較快的製造流程改善病毒株匹配。另一個問題是它和高劑量、佐劑型等專為高齡者設計的疫苗相比，長期表現如何。","sources":[{"label":"FDA：mRNA-1010 審查與第三期試驗資料","url":"https://www.fda.gov/media/193130/download"},{"label":"FDA：Moderna 提交之 mRNA-1010 臨床資料","url":"https://www.fda.gov/media/193131/download"}],"questions":["為什麼『相對疫苗效力高約 27%』不能直接翻成『每個人多 27% 的機率不會得流感』？","如果要公平判斷新流感疫苗是否優於現有疫苗，為什麼使用已核准疫苗作為 active comparator 比只和安慰劑比較更有資訊？","即使某一季第三期試驗顯示較佳效果，哪些因素可能讓下一個流感季的真實世界結果不同？"]},{"category":"學習與記憶發展","title":"孩子學得快，就一定記得更好嗎？腦造影研究發現『學習速度』和記憶內容之間可能存在發展差異","widgetTitle":"學得快，不一定代表記得更多","widgetSummary":"兒童和成人的大腦越早抓到規律，之後留下的記憶型態竟然不同。研究把『學習速度』從行為表現進一步追到腦活動。","dek":"學習不是只有『記住或沒記住』。我們既需要記得某次經驗的細節，也需要從很多經驗中抽出一般規則；這兩種能力有時甚至彼此競爭。","background":"episodic specificity 可以理解成對某一次具體經驗細節的保存；generalization 則是把多次經驗共同的規律抽出來。研究使用 fMRI，利用血氧變化間接估計腦活動，並搭配 multivoxel pattern analysis（MVPA），看許多影像像素組成的活動模式能不能辨認出大腦何時已經抓到規律。","whatHappened":"研究比較 35 名 9–10 歲兒童與 35 名成人。成人若較早在腦活動中顯示對結構的敏感，之後主要形成較一般化的記憶；較晚偵測到結構者則能同時保留具體與一般資訊。兒童卻呈現不同取捨：較早出現結構敏感者偏向保留具體記憶，較晚者偏向形成一般化記憶。","howTheyStudied":"參與者進行 statistical learning task，也就是材料中藏有可以逐漸學到的規律。研究者用預先註冊的探索性分析與 MVPA，估計每個人的大腦是在學習過程較早或較晚開始表現出對結構資訊的敏感，再把這個神經層級的『學習速度』和後續具體記憶、一般化記憶做比較。","whyItMatters":"這提醒我們，學習速度未必是一個單純的『越快越好』指標。快速抓到規律可能改變大腦接下來保存資訊的方式，而且這種關係在兒童和成人並不相同。對教育而言，真正值得問的可能不是學生多久答對，而是他最後保留的是細節、規則，還是兩者兼具。","limitations":"每個年齡組只有 35 人，而且這是特定實驗室任務，不等於真實課堂學習。fMRI 的分類器能指出某種活動模式和學習時間有關，卻不能證明那個模式造成某種記憶結果。研究本身也把分析描述為 preregistered exploratory analysis，因此仍需要獨立樣本重複。","whatNext":"下一步可以用縱向研究追蹤同一批兒童，看這種『細節—概括』取捨如何隨發展改變；也可以改變學習間隔、回饋方式或材料複雜度，測試學習速度是否真的會因介入而改變後續記憶型態。","sources":[{"label":"Developmental Cognitive Neuroscience：Neural correlates of learning speed reveal developmental differences in memory","url":"https://www.sciencedirect.com/science/article/pii/S187892932600109X"}],"questions":["這篇研究中，『學得快』為什麼不能直接等同於『最後記得比較完整』？","研究者用腦活動估計何時開始偵測到規律，再比較後續記憶；這種設計能支持什麼關係，又還不能證明什麼？","如果兒童與成人的差異其實來自策略、注意力或任務熟悉度，而不是記憶系統發展，你會設計什麼額外實驗來區分？"]},{"category":"可重現性與腦電研究","title":"一個經典的工作記憶腦電指標，換 10 個實驗室重做還站得住嗎？304 人的 registered replication 給出更細緻答案","widgetTitle":"10 個實驗室一起重做經典 EEG 結果","widgetSummary":"大型跨實驗室研究成功重現部分經典工作記憶腦電效應，也提醒我們：『平均效應存在』和『能準確預測每個人的能力』不是同一件事。","dek":"神經科學常會找到某個腦訊號和認知能力相關，但第一次發現通常樣本不大。真正困難的問題是：換一群人、換一間實驗室、照事先寫好的方法重做，結果還會不會出現？","background":"visual working memory 是我們短時間保留少量視覺資訊的能力。CDA（contralateral delay activity）是一種 EEG 訊號：當人記住視野某一側的物體時，大腦後方對側與同側電極之間會出現電位差。過去研究發現，記憶項目增加時 CDA 振幅會改變，因此它常被當作工作記憶負荷或容量的神經指標。","whatHappened":"#EEGManyLabs 團隊在 10 個實驗室招募共 304 名參與者，以 registered replication 方式重做經典 CDA 發現。研究成功重現對側與同側活動的不對稱，也重現從記 2 個物體增加到 4 個或 6 個物體時 CDA 振幅增加的主要效應。這支持 CDA 對群體層級工作記憶負荷的敏感性。","howTheyStudied":"registered replication 的重點是研究問題、方法與分析計畫在看到最終資料前就先登記，降低研究者看到結果後再挑分析方式的空間。這次還把同一套邏輯放到 10 個研究地點執行，使研究者能檢查效應是否只依賴單一實驗室的設備、樣本或操作習慣。","whyItMatters":"大型重複研究不是單純替舊研究蓋『對／錯』章。它能分辨哪些效應在群體平均上很穩定，哪些腦—行為關聯可能比早期小樣本研究想像得弱。對 biomarker 研究尤其重要：一個訊號能在平均值上區分條件，不代表它就足以準確判斷某一個人的記憶容量。","limitations":"跨實驗室能提高可重現性的檢驗強度，但設備、前處理與參與者組成仍可能帶來變異；而且 CDA 只是工作記憶的一個電生理表徵，不能把它視為工作記憶本身。重現某些主要效應也不表示所有過去提出的 CDA 解釋都得到確認。","whatNext":"下一步值得把重點放在個體層級的可靠度：同一個人隔天、隔週測量 CDA 是否穩定？不同任務得到的 CDA 是否能一致預測能力？只有當這些條件也成立，才更適合討論臨床或個人化應用。","sources":[{"label":"Cortex：Contralateral delay activity as a marker of visual working memory capacity — a multi-site registered replication","url":"https://www.sciencedirect.com/science/article/pii/S0010945226001139"}],"questions":["為什麼 10 個實驗室都能看到『記憶項目增加時 CDA 增加』，仍不代表 CDA 已經可以準確測量某一個人的工作記憶能力？","registered replication 在看到資料前先固定方法與分析計畫，主要是在降低哪一類研究偏差？","如果下一步要把 CDA 發展成真正有個人層級用途的 biomarker，你認為至少還需要證明哪兩種可靠性？"]}],"radar":{"title":"2027 Mitacs Globalink Research Internship 正在申請期：先用研究問題與方法篩 project","summary":"台灣申請者的 2027 GRI 申請期為 2026 年 8 月 5 日至 9 月 16 日（太平洋時間），實習於 2027 年 5–10 月間在加拿大進行 12 週。台灣資格包括完成至少兩年大學課程、CGPA 3.3 或總平均 77% 以上，以及 TOEFL iBT 79、IELTS Academic 6.0 或 TOEIC 785 等門檻；申請需選 3–10 個 project，且至少分布於 3 個省份。現在最值得做的是先用『研究問題是否想深入、能學到哪些不可自行取得的方法、指導與訓練是否合適』篩出候選計畫，再準備英文成績單、CV 與教授推薦信。","url":"https://www.mitacs.ca/our-programs/globalink-research-internship-students/"}},
-  "importantMail":{"count":0,"status":"目前沒有符合 Daily Board 嚴格條件、需要立即注意的新郵件；詳細郵件內容不存放在公開 Daily Board。"}
+  "schemaVersion": "0.4",
+  "date": "2026-08-16",
+  "updatedAt": "2026-08-16T07:30:24+08:00",
+  "report": {
+    "title": "每日生醫・神經科學摘要",
+    "intro": "今天三篇從三個不同尺度看神經科學如何走向『精準』：先在單一神經元的 DNA 裡尋找跨疾病共同的損傷痕跡，再讓腦深部刺激依照患者正在做的動作即時調整，最後甚至為兩名罕見癲癇患者各自設計不同的 RNA 藥物。它們也共同提醒我們：找到可操作的機制很重要，但機制、早期人體訊號與真正被證實的臨床療效，仍是三個不同的證據層級。",
+    "stories": [
+      {
+        "category": "神經退化與 DNA 損傷",
+        "title": "ALS、額顳葉失智與阿茲海默症，可能留下相似的神經元 DNA 傷痕：研究追到 TOP1 相關突變",
+        "widgetTitle": "三種神經退化疾病共享一種 DNA 傷痕？",
+        "widgetSummary": "研究者逐顆讀取神經元基因組，在 ALS、FTD 與阿茲海默症中找到相似的短片段缺失模式，並把線索追向 TOP1 相關 DNA 損傷。",
+        "dek": "神經元通常陪伴我們很多年，雖然不需要像皮膚或腸道細胞那樣頻繁分裂，它們的 DNA 卻仍持續面對氧化壓力、轉錄與修復過程造成的損傷。問題是：不同神經退化疾病看似由不同蛋白質病理主導，是否也可能在更底層共享某種基因組損傷機制？",
+        "background": "DNA 並不是一份終生完全不變的文字。人體細胞在生命中會累積 somatic mutations，也就是只出現在部分體細胞、沒有從父母遺傳而來的突變。TOP1（topoisomerase 1）則是一種幫助 DNA 解開扭轉張力的酵素：它會暫時切開 DNA，再把切口接回去。如果這個過程被卡住，就可能留下 DNA 斷裂或小型插入、缺失。ALS 與部分額顳葉失智常和 TDP-43 病理有關；阿茲海默症則以 amyloid 與 tau 病理較為人熟知，因此若三者出現相似 DNA 損傷模式，就代表可能存在跨越傳統疾病分類的共同細胞壓力。",
+        "whatHappened": "研究者分析 ALS、額顳葉失智（FTD）、阿茲海默症（AD）與神經正常對照的大腦神經元，發現三種疾病的神經元都累積較多體細胞單核苷酸變異與小型插入／缺失。尤其一種短片段缺失的 mutational signature 很突出：研究中約 22% 的 ALS 神經元、76% 的 FTD 神經元與 61% 的 AD 神經元呈現這種高負荷模式，而對照神經元約為 2%。這種模式和先前與 TOP1 相關的突變特徵相似。研究者進一步測到疾病腦組織中較多 TOP1 與 DNA 共價結合的複合體，以及較多 DNA 斷裂，讓『TOP1 相關損傷』不只是從突變形狀猜出來的線索。",
+        "howTheyStudied": "核心方法是 single-cell whole-genome sequencing：研究者不是把整塊腦組織的 DNA 混在一起，而是對 469 顆神經元分別讀取基因組，再比較每顆細胞累積的突變。之後再用 mutational signature analysis 看不同突變是否形成可辨認的模式，並搭配 RADAR assay 測量 TOP1-DNA covalent complexes、DNA 斷裂分析與 duplex sequencing 交叉驗證。這種多方法驗證很重要，因為只看到一種突變圖樣，還不足以直接證明是哪個酵素造成。",
+        "whyItMatters": "神經退化研究常按照疾病名稱或異常蛋白分類，但這項工作提示，TDP-43 proteinopathy 與 tau-related disease 之下可能共享一層『基因組維護失衡』。如果未來實驗證明 TOP1 被困住或相關修復失衡真的會推動神經元功能惡化，就可能出現跨疾病的新治療切入點。更廣義地說，它也提醒我們：成熟神經元雖然不常分裂，DNA repair 仍然可能是神經系統長期存活的重要條件。",
+        "limitations": "這項研究大量依賴死後人腦，因此最強的證據是『疾病神經元中存在共同損傷模式，而且與 TOP1 相關指標一致』，不是『TOP1 損傷已被證明造成 ALS、FTD 或 AD』。不同疾病樣本數、腦區與病程也有限，而且疾病末期看到的 DNA 損傷可能部分是神經元長期生病後的結果。研究中的百分比描述的是具有特定高負荷突變模式的已分析神經元，不是患者罹病風險。",
+        "whatNext": "下一步需要在可操控的神經元模型中改變 TOP1 trapping 或相關 DNA repair 路徑，觀察是否能增加或減少神經退化表型；也需要更早期病程與更多腦區資料，確認這種突變是在神經元死亡前就出現，還是主要累積於晚期病理。",
+        "sources": [
+          {"label": "Cell / PubMed：Recurrent patterns of TOP1-mediated neuronal genomic damage shared by major neurodegenerative disorders", "url": "https://pubmed.ncbi.nlm.nih.gov/42385702/"},
+          {"label": "DOI：Cell 原始研究", "url": "https://doi.org/10.1016/j.cell.2026.06.013"}
+        ],
+        "questions": [
+          "為什麼神經元很少分裂，仍然可能因為 DNA 損傷與修復失衡而受到長期影響？",
+          "研究者除了比較突變圖樣，還測量 TOP1-DNA 複合體與 DNA 斷裂；這些額外實驗如何讓『TOP1 可能參與其中』的證據更強？",
+          "如果 TOP1 相關 DNA 損傷其實是神經元已經生病之後的結果，而不是疾病原因，你會希望看到什麼時間序列或介入實驗來區分兩種解釋？"
+        ]
+      },
+      {
+        "category": "神經調控與帕金森氏症",
+        "title": "腦深部刺激不再只有一組固定設定：研究讓刺激器辨認患者正在走路、轉身，再即時換參數",
+        "widgetTitle": "DBS 開始學會『看情境』調刺激",
+        "widgetSummary": "帕金森氏症的症狀會隨走路、轉身與藥效狀態改變。研究者嘗試讓 DBS 從腦訊號辨認當下活動，再自動選擇更合適的刺激參數。",
+        "dek": "傳統 deep brain stimulation（DBS）可以改善帕金森氏症的重要運動症狀，但患者一天中並不是一直做同一件事。坐著時最好的刺激設定，未必也是走路、轉彎或出現 freezing of gait 時最好的設定。",
+        "background": "DBS 是把電極植入大腦特定深部區域，以電刺激調整異常神經迴路。帕金森氏症常刺激 subthalamic nucleus（STN，丘腦下核）。傳統 DBS 通常由醫療團隊設定一組或少數幾組參數；adaptive DBS 的概念則是先讀取患者自己的神經訊號，再依照即時狀態改變刺激。這篇研究更進一步問：能不能不只辨認『症狀變嚴重了』，還辨認患者現在正在做哪一類動作？",
+        "whatHappened": "研究團隊發現 STN 的神經動態包含可用來區分日常移動活動與運動狀態的資訊，並據此建立 decoder。接著在一項小型可行性試驗中，系統依照偵測到的活動即時切換 DBS 參數。研究報告指出，這種 activity-dependent DBS 能改善步態相關缺損，同時保留對帕金森氏症核心運動症狀的效果。",
+        "howTheyStudied": "研究分兩階段。第一階段在 35 名帕金森氏症參與者中分析 STN 神經活動，建立辨認 locomotor activities 與不同藥物／刺激狀態的神經 decoder。第二階段 AdapGAIT feasibility trial 只有 4 名患者，使用研究型神經刺激平台測試活動依賴的 DBS；評估包括 Timed Up-and-Go、10 公尺步行、運動學、肌電圖與 freezing-of-gait 任務。研究報告在這個小型試驗中沒有觀察到研究程序相關 adverse events。",
+        "whyItMatters": "這代表神經調控可能從『對某個診斷給固定刺激』走向『依照此刻的腦狀態與行為情境調整治療』。對症狀波動明顯的疾病而言，這種 closed-loop 思維可能比單一固定參數更接近真實生活。它也展示神經工程的一條完整鏈：先找出可解碼的生理訊號，再把訊號變成控制演算法，最後讓演算法反過來調整治療。",
+        "limitations": "真正接受 activity-dependent DBS 可行性測試的只有 4 人，因此現在不能把改善幅度視為已被大型臨床試驗確認的療效。decoder 也可能受到個體差異、電極位置、藥物狀態與不同日常環境影響。這項研究證明的是技術可行性與初步效果，而不是新 DBS 模式已優於標準治療。",
+        "whatNext": "需要更大型、盲化且有適當對照的臨床試驗，測試患者在居家長時間使用時是否仍能穩定辨認活動、降低 freezing 與跌倒等實際問題，同時評估電池消耗、錯誤分類與長期安全性。",
+        "sources": [
+          {"label": "Nature Medicine：Activity-dependent adaptive deep brain stimulation improves gait in Parkinson’s disease", "url": "https://doi.org/10.1038/s41591-026-04432-4"}
+        ],
+        "questions": [
+          "為什麼帕金森氏症患者在不同活動中使用同一組固定 DBS 參數，可能不是最佳策略？",
+          "研究先用 35 人建立神經 decoder，再只在 4 人測試 adaptive DBS；這兩階段各自在回答什麼不同問題？",
+          "如果 decoder 在實驗室走路任務表現很好，卻在真實居家環境常判斷錯誤，這會如何改變你對技術臨床價值的判斷？"
+        ]
+      },
+      {
+        "category": "精準醫療與罕見神經疾病",
+        "title": "一個病人、一個 RNA 藥物：兩名 SCN2A 癲癇患者接受各自量身設計的 allele-selective ASO",
+        "widgetTitle": "藥物能不能真的『一人一款』？",
+        "widgetSummary": "兩名嚴重 SCN2A 癲癇患者接受了不同、量身設計的 antisense oligonucleotide。這是精準醫療很前沿的例子，也是一個必須非常小心解讀的 n=1 證據。",
+        "dek": "同一個基因疾病並不代表每位患者都需要完全相同的分子治療。當致病變異讓某個蛋白功能過強時，理想策略甚至可能是只降低突變那一份基因訊息，同時留下正常拷貝。",
+        "background": "SCN2A 編碼神經元重要的鈉離子通道 NaV1.2。某些 gain-of-function 變異會讓鈉電流過強，使神經網路更容易產生異常同步放電與癲癇。antisense oligonucleotide（ASO）是一小段人工核酸，可以和特定 RNA 配對並改變其穩定性或處理方式。allele-selective 的意思是盡量只攻擊帶有致病變異的那一套染色體訊息，而保留另一套正常 allele。",
+        "whatHappened": "研究報告兩個平行的 n=1 臨床研究：患者分別為 9 歲與 14 歲男孩，都有嚴重 SCN2A-related developmental and epileptic encephalopathy。兩人接受各自設計的 allele-selective ASO 後，研究期間觀察到癲癇發作頻率分別下降約 26% 與 90%，同時報告部分神經發展技能改善與合併用藥減少；研究沒有觀察到與 ASO 相關的嚴重不良事件。這些結果是初步個案訊號，不是兩個百分比就能代表一般患者的平均療效。",
+        "howTheyStudied": "研究者先用全基因組與 long-read sequencing 找到和致病 allele 位在同一條染色體上的異質 SNP，再設計 ASO 辨認這些單一核苷酸差異，招募 RNase H1 去降解突變 allele 的 SCN2A RNA。團隊測試超過 500 個候選 gapmer，最後兩位患者甚至無法共用同一支 ASO，因此各自使用不同藥物，經腰椎 intrathecal injection 送入中樞神經系統。",
+        "whyItMatters": "這把『精準醫療』推到非常具體的程度：不是依疾病分類選藥，甚至不是依基因選藥，而是依患者的 haplotype 設計分子。研究者也檢查另一批以快速全基因組定序診斷的 SCN2A 嬰兒，估計約 16% 具有可利用相容 SNP 的條件，提示這套策略可能從真正的 n=1 慢慢擴展到一小群共享分子設計邏輯的患者。",
+        "limitations": "最重要的限制就是只有兩位接受治療的患者，而且每人的疾病表現、基線癲癇頻率與 ASO 都不同，沒有隨機對照組。癲癇本身會波動，合併藥物也可能改變，因此目前不能把發作下降全部歸因於 ASO，更不能從兩人推算一般 SCN2A 患者的療效或長期安全性。",
+        "whatNext": "需要更長時間追蹤兩位患者，確認效果是否持續、是否出現延遲性副作用，也要建立更可規模化的製造、毒理與監管流程。另一個關鍵問題是：哪些患者的基因型與 haplotype 可以共享同一支 ASO，才能在真正個人化與可負擔的開發模式之間找到平衡。",
+        "sources": [
+          {"label": "Nature Medicine：Individualized antisense oligonucleotides for SCN2A-related developmental epileptic encephalopathy", "url": "https://www.nature.com/articles/s41591-026-04527-y"},
+          {"label": "PubMed：SCN2A individualized ASO study", "url": "https://pubmed.ncbi.nlm.nih.gov/42481851/"}
+        ],
+        "questions": [
+          "為什麼研究者想只降低突變 SCN2A allele，而不是把兩份 SCN2A RNA 都一起壓低？",
+          "兩名患者的癲癇頻率下降很多，但沒有對照組；有哪些因素會讓我們暫時不能把全部改善都判定為 ASO 的效果？",
+          "如果真正的『一人一藥』成本太高，你會如何利用 haplotype 或共同 SNP，把這種策略擴展成能服務更多患者、又仍保有選擇性的治療？"
+        ]
+      }
+    ],
+    "radar": {
+      "title": "2027 Mitacs Globalink Research Internship：申請窗口已開，現在應進入 project shortlist 階段",
+      "summary": "台灣學生的 2027 Mitacs Globalink Research Internship 申請期為 2026 年 8 月 5 日至 9 月 16 日，提供約 12 週加拿大大學研究實習。公開資訊列出的資格包括台灣籍、大學三年級以上、CGPA 3.3 或總平均 77% 以上，以及 TOEFL iBT 79、IELTS Academic 6.0 或 TOEIC 785 等英語門檻。這個階段最值得做的不是只看學校排名，而是把候選 project 依研究問題、實際方法、指導方式與能否獲得平常難以自行取得的研究經驗做 shortlist，再同步準備 CV、成績單與推薦材料。",
+      "url": "https://www.cgu.edu.tw/oia/Subject/Detail/82621?nodeId=10736"
+    }
+  },
+  "importantMail": {
+    "count": 0,
+    "status": "目前沒有符合 Daily Board 嚴格條件、需要立即注意的新郵件；詳細郵件內容不存放在公開 Daily Board。"
+  }
 }
