@@ -1,81 +1,82 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-16",
-  "updatedAt": "2026-08-16T07:30:24+08:00",
+  "date": "2026-08-17",
+  "updatedAt": "2026-08-17T07:30:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇從三個不同尺度看神經科學如何走向『精準』：先在單一神經元的 DNA 裡尋找跨疾病共同的損傷痕跡，再讓腦深部刺激依照患者正在做的動作即時調整，最後甚至為兩名罕見癲癇患者各自設計不同的 RNA 藥物。它們也共同提醒我們：找到可操作的機制很重要，但機制、早期人體訊號與真正被證實的臨床療效，仍是三個不同的證據層級。",
+    "intro": "今天三篇都在談『如何把研究工具真正帶進臨床』。第一篇看 iPSC 衍生神經前驅細胞能否安全移植到受傷脊髓；第二篇看 AI 能否在遺傳性視網膜疾病中真正幫助專科醫師做出更準確的遺傳方向判斷；第三篇則追問，一群在血液中相對穩定的環狀 RNA，能不能比傳統蛋白 biomarker 更早提供阿茲海默症線索。共同的重點不是新技術看起來多厲害，而是它經過了什麼樣的人體驗證、目前能支持到哪一步。",
     "stories": [
       {
-        "category": "神經退化與 DNA 損傷",
-        "title": "ALS、額顳葉失智與阿茲海默症，可能留下相似的神經元 DNA 傷痕：研究追到 TOP1 相關突變",
-        "widgetTitle": "三種神經退化疾病共享一種 DNA 傷痕？",
-        "widgetSummary": "研究者逐顆讀取神經元基因組，在 ALS、FTD 與阿茲海默症中找到相似的短片段缺失模式，並把線索追向 TOP1 相關 DNA 損傷。",
-        "dek": "神經元通常陪伴我們很多年，雖然不需要像皮膚或腸道細胞那樣頻繁分裂，它們的 DNA 卻仍持續面對氧化壓力、轉錄與修復過程造成的損傷。問題是：不同神經退化疾病看似由不同蛋白質病理主導，是否也可能在更底層共享某種基因組損傷機制？",
-        "background": "DNA 並不是一份終生完全不變的文字。人體細胞在生命中會累積 somatic mutations，也就是只出現在部分體細胞、沒有從父母遺傳而來的突變。TOP1（topoisomerase 1）則是一種幫助 DNA 解開扭轉張力的酵素：它會暫時切開 DNA，再把切口接回去。如果這個過程被卡住，就可能留下 DNA 斷裂或小型插入、缺失。ALS 與部分額顳葉失智常和 TDP-43 病理有關；阿茲海默症則以 amyloid 與 tau 病理較為人熟知，因此若三者出現相似 DNA 損傷模式，就代表可能存在跨越傳統疾病分類的共同細胞壓力。",
-        "whatHappened": "研究者分析 ALS、額顳葉失智（FTD）、阿茲海默症（AD）與神經正常對照的大腦神經元，發現三種疾病的神經元都累積較多體細胞單核苷酸變異與小型插入／缺失。尤其一種短片段缺失的 mutational signature 很突出：研究中約 22% 的 ALS 神經元、76% 的 FTD 神經元與 61% 的 AD 神經元呈現這種高負荷模式，而對照神經元約為 2%。這種模式和先前與 TOP1 相關的突變特徵相似。研究者進一步測到疾病腦組織中較多 TOP1 與 DNA 共價結合的複合體，以及較多 DNA 斷裂，讓『TOP1 相關損傷』不只是從突變形狀猜出來的線索。",
-        "howTheyStudied": "核心方法是 single-cell whole-genome sequencing：研究者不是把整塊腦組織的 DNA 混在一起，而是對 469 顆神經元分別讀取基因組，再比較每顆細胞累積的突變。之後再用 mutational signature analysis 看不同突變是否形成可辨認的模式，並搭配 RADAR assay 測量 TOP1-DNA covalent complexes、DNA 斷裂分析與 duplex sequencing 交叉驗證。這種多方法驗證很重要，因為只看到一種突變圖樣，還不足以直接證明是哪個酵素造成。",
-        "whyItMatters": "神經退化研究常按照疾病名稱或異常蛋白分類，但這項工作提示，TDP-43 proteinopathy 與 tau-related disease 之下可能共享一層『基因組維護失衡』。如果未來實驗證明 TOP1 被困住或相關修復失衡真的會推動神經元功能惡化，就可能出現跨疾病的新治療切入點。更廣義地說，它也提醒我們：成熟神經元雖然不常分裂，DNA repair 仍然可能是神經系統長期存活的重要條件。",
-        "limitations": "這項研究大量依賴死後人腦，因此最強的證據是『疾病神經元中存在共同損傷模式，而且與 TOP1 相關指標一致』，不是『TOP1 損傷已被證明造成 ALS、FTD 或 AD』。不同疾病樣本數、腦區與病程也有限，而且疾病末期看到的 DNA 損傷可能部分是神經元長期生病後的結果。研究中的百分比描述的是具有特定高負荷突變模式的已分析神經元，不是患者罹病風險。",
-        "whatNext": "下一步需要在可操控的神經元模型中改變 TOP1 trapping 或相關 DNA repair 路徑，觀察是否能增加或減少神經退化表型；也需要更早期病程與更多腦區資料，確認這種突變是在神經元死亡前就出現，還是主要累積於晚期病理。",
+        "category": "再生醫學與脊髓損傷",
+        "title": "把 iPSC 衍生神經前驅細胞直接移植進受傷脊髓：首批人體試驗追蹤 2–4 年，先回答『安全嗎？』",
+        "widgetTitle": "iPSC 神經細胞首次長期追蹤脊髓移植",
+        "widgetSummary": "4 名頸髓完全損傷患者接受 iPSC 衍生神經前驅細胞移植，研究最重要的結果不是證明能治癱瘓，而是 2–4 年內未觀察到腫瘤形成或移植物相關重大安全問題。",
+        "dek": "脊髓受傷後，真正困難的不只是神經細胞死亡，而是原本跨越受傷區域的神經連線被切斷。再生醫學因此一直有一個直觀但很難實現的想法：能不能補進新的神經前驅細胞，讓它們在受傷處存活、分化，甚至協助重新建立訊號傳遞？",
+        "background": "iPSC（induced pluripotent stem cell，誘導型多能幹細胞）是把已分化的人體細胞重新『倒回』較原始狀態，再引導成特定細胞類型。這篇研究使用 iPSC 衍生的 neural stem/progenitor cells，也就是還沒有完全成熟、仍具有分化能力的神經幹／前驅細胞。這類療法最大的早期安全顧慮之一，是如果細胞中殘留太原始、增殖控制不良的細胞，理論上可能形成腫瘤，因此第一期人體研究通常先問安全性與可行性，而不是先證明療效。",
+        "whatHappened": "研究納入 4 名 26–66 歲、頸髓 C4–C6 完全性脊髓損傷的男性。每位患者在受傷後的亞急性期接受 2×10^6 個 iPSC 衍生神經幹／前驅細胞注入受傷脊髓中心。經過 2–4 年追蹤，研究者沒有觀察到腫瘤形成或移植物相關不良事件，影像中的移植區也維持穩定，因此主要安全終點達成。神經功能則屬探索性結果：到 52 週時，運動分數改善的中位數是 13 分，其中兩名患者的 ASIA impairment scale 從 A 級改善到 C 級或 D 級。",
+        "howTheyStudied": "這是一項 first-in-human、open-label phase 1 study。研究者先在 GMP 條件下製備與冷凍細胞，移植前解凍並短暫培養，再以超音波導引把細胞緩慢注入受傷脊髓。之後用 MRI 與長期臨床追蹤監測是否出現異常增生或其他安全問題，也用標準化脊髓損傷神經學量表追蹤運動功能。研究還把患者的恢復幅度和 registry 中的自然恢復資料做數值比較，但那不是隨機對照。",
+        "whyItMatters": "這項研究真正跨過的是『人類能不能安全接受這種細胞產品』的第一道門檻。脊髓修復不像補一塊缺掉的組織就完成，移入的細胞還要在正確位置存活、分化、和宿主神經迴路建立功能性連結。因此長期沒有腫瘤訊號本身就是重要資訊，也讓後續更大規模、真正以功能恢復為主要終點的試驗有機會進行。",
+        "limitations": "只有 4 名患者，而且沒有隨機對照組，所以目前不能把觀察到的運動功能進步歸因於細胞移植。亞急性脊髓損傷本來就可能出現不同程度的自然恢復；4 名患者也不足以估計較罕見的長期副作用。研究目前最有力的結論是『在這個小型試驗與追蹤時間內，療法具有可行性且未出現主要細胞移植安全警訊』，不是『iPSC 已能恢復脊髓功能』。",
+        "whatNext": "下一步需要更多患者、較一致的損傷條件與對照設計，才能估計真正的功能效益；也需要利用影像、生理訊號或其他方法確認移植細胞在人體中究竟存活多久、分化成什麼，以及功能改善是否真的來自新神經連線或微環境支持。",
         "sources": [
-          {"label": "Cell / PubMed：Recurrent patterns of TOP1-mediated neuronal genomic damage shared by major neurodegenerative disorders", "url": "https://pubmed.ncbi.nlm.nih.gov/42385702/"},
-          {"label": "DOI：Cell 原始研究", "url": "https://doi.org/10.1016/j.cell.2026.06.013"}
+          {"label": "Nature Medicine 原始研究：iPSC-derived neural progenitor cells for subacute spinal cord injury", "url": "https://www.nature.com/articles/s41591-026-04549-6"},
+          {"label": "DOI：10.1038/s41591-026-04549-6", "url": "https://doi.org/10.1038/s41591-026-04549-6"}
         ],
         "questions": [
-          "為什麼神經元很少分裂，仍然可能因為 DNA 損傷與修復失衡而受到長期影響？",
-          "研究者除了比較突變圖樣，還測量 TOP1-DNA 複合體與 DNA 斷裂；這些額外實驗如何讓『TOP1 可能參與其中』的證據更強？",
-          "如果 TOP1 相關 DNA 損傷其實是神經元已經生病之後的結果，而不是疾病原因，你會希望看到什麼時間序列或介入實驗來區分兩種解釋？"
+          "為什麼這篇研究把『沒有腫瘤形成』放在很重要的位置，而不是只看患者能不能走得更好？",
+          "如果 4 名患者中有人運動功能進步，為什麼沒有隨機對照組就很難判斷改善是不是細胞移植造成的？",
+          "你會設計哪一種下一階段研究，來同時區分自然恢復、復健效果與移植細胞真正造成的功能改善？"
         ]
       },
       {
-        "category": "神經調控與帕金森氏症",
-        "title": "腦深部刺激不再只有一組固定設定：研究讓刺激器辨認患者正在走路、轉身，再即時換參數",
-        "widgetTitle": "DBS 開始學會『看情境』調刺激",
-        "widgetSummary": "帕金森氏症的症狀會隨走路、轉身與藥效狀態改變。研究者嘗試讓 DBS 從腦訊號辨認當下活動，再自動選擇更合適的刺激參數。",
-        "dek": "傳統 deep brain stimulation（DBS）可以改善帕金森氏症的重要運動症狀，但患者一天中並不是一直做同一件事。坐著時最好的刺激設定，未必也是走路、轉彎或出現 freezing of gait 時最好的設定。",
-        "background": "DBS 是把電極植入大腦特定深部區域，以電刺激調整異常神經迴路。帕金森氏症常刺激 subthalamic nucleus（STN，丘腦下核）。傳統 DBS 通常由醫療團隊設定一組或少數幾組參數；adaptive DBS 的概念則是先讀取患者自己的神經訊號，再依照即時狀態改變刺激。這篇研究更進一步問：能不能不只辨認『症狀變嚴重了』，還辨認患者現在正在做哪一類動作？",
-        "whatHappened": "研究團隊發現 STN 的神經動態包含可用來區分日常移動活動與運動狀態的資訊，並據此建立 decoder。接著在一項小型可行性試驗中，系統依照偵測到的活動即時切換 DBS 參數。研究報告指出，這種 activity-dependent DBS 能改善步態相關缺損，同時保留對帕金森氏症核心運動症狀的效果。",
-        "howTheyStudied": "研究分兩階段。第一階段在 35 名帕金森氏症參與者中分析 STN 神經活動，建立辨認 locomotor activities 與不同藥物／刺激狀態的神經 decoder。第二階段 AdapGAIT feasibility trial 只有 4 名患者，使用研究型神經刺激平台測試活動依賴的 DBS；評估包括 Timed Up-and-Go、10 公尺步行、運動學、肌電圖與 freezing-of-gait 任務。研究報告在這個小型試驗中沒有觀察到研究程序相關 adverse events。",
-        "whyItMatters": "這代表神經調控可能從『對某個診斷給固定刺激』走向『依照此刻的腦狀態與行為情境調整治療』。對症狀波動明顯的疾病而言，這種 closed-loop 思維可能比單一固定參數更接近真實生活。它也展示神經工程的一條完整鏈：先找出可解碼的生理訊號，再把訊號變成控制演算法，最後讓演算法反過來調整治療。",
-        "limitations": "真正接受 activity-dependent DBS 可行性測試的只有 4 人，因此現在不能把改善幅度視為已被大型臨床試驗確認的療效。decoder 也可能受到個體差異、電極位置、藥物狀態與不同日常環境影響。這項研究證明的是技術可行性與初步效果，而不是新 DBS 模式已優於標準治療。",
-        "whatNext": "需要更大型、盲化且有適當對照的臨床試驗，測試患者在居家長時間使用時是否仍能穩定辨認活動、降低 freezing 與跌倒等實際問題，同時評估電池消耗、錯誤分類與長期安全性。",
+        "category": "醫療 AI 與遺傳性視網膜疾病",
+        "title": "AI 不只是『看圖辨病』：隨機試驗顯示，它能幫眼科醫師更準確縮小遺傳性視網膜疾病的候選基因範圍",
+        "widgetTitle": "AI 幫眼科醫師找遺傳病基因方向",
+        "widgetSummary": "Retina4IRD 把眼底照片、OCT 與臨床資料整合後，協助專科醫師提高前五名候選遺傳類別的命中率。這是少見真正用隨機試驗測『AI 加進臨床流程後有沒有幫助』的研究。",
+        "dek": "遺傳性視網膜疾病不是單一疾病，而是一大群可能由不同基因造成、但影像與症狀彼此重疊的疾病。即使最後能靠基因定序確認，醫師仍需要先根據眼底影像、OCT、發病年齡與臨床表現建立合理的候選方向。AI 的價值因此不一定是取代醫師，而可能是幫醫師更快縮小搜尋範圍。",
+        "background": "OCT（optical coherence tomography，光學同調斷層掃描）可以把視網膜切面成像，讓醫師看到不同細胞層是否變薄、破壞或堆積異常物質。Retina4IRD 是一個 clinician decision support system，也就是臨床決策支援工具；它不是自行宣布最終診斷，而是根據彩色眼底照片、OCT 與臨床 metadata，預測 17 類可能的基因型分類，提供醫師參考。",
+        "whatHappened": "研究者先用來自中國、南韓與波蘭的 1,843 名、已有遺傳確認診斷的患者資料訓練與驗證模型。之後真正做了一項 300 人的隨機試驗，把疑似遺傳性視網膜疾病患者分到『專科醫師 + Retina4IRD』或『專科醫師單獨判斷』。在最後有次世代定序結果可比較的 295 人中，AI 輔助組的 top-5 genetic accuracy 是 88.5%，醫師單獨組是 67.3%；top-1 accuracy 則是 37.8% 對 22.4%。",
+        "howTheyStudied": "這篇研究的設計重點是兩層驗證。第一層先看模型在既有資料中的 internal 與 external validation 表現；第二層才用 randomized controlled trial 問一個更臨床的問題：當醫師真的把 AI 放進工作流程，最終決策會不會變好。研究以之後的基因定序結果當參考標準，避免只拿 AI 和另一個不確定的臨床判斷互相比。",
+        "whyItMatters": "醫療 AI 常見的問題是模型在測試資料集很準，卻不知道真正交給醫師後有沒有改善決策。這篇研究的重要性就在於，它測的是 human + AI，而不是只展示模型 accuracy。對罕見且高度異質的遺傳病而言，若能更準確縮小候選基因類別，可能讓後續基因檢測解讀、轉診與遺傳諮詢更有效率。",
+        "limitations": "88.5% 是『正確基因類別出現在前五名候選中』，不是 88.5% 的患者被 AI 一次就完整診斷正確；top-1 accuracy 仍只有 37.8%。研究資料也主要來自特定國家與專科中心，模型在其他族群、不同設備與基層醫療環境中的表現仍需驗證。此外，這個系統是基因檢測前的輔助工具，不能取代真正的分子診斷。",
+        "whatNext": "下一步應該看不同族群與不同醫療層級能否重現相同效果，也要評估 AI 是否真的縮短診斷時間、減少不必要檢查、改善患者後續管理，而不只是提高一個 prediction accuracy 指標。",
         "sources": [
-          {"label": "Nature Medicine：Activity-dependent adaptive deep brain stimulation improves gait in Parkinson’s disease", "url": "https://doi.org/10.1038/s41591-026-04432-4"}
+          {"label": "Nature Medicine 原始研究：Retina4IRD randomized trial", "url": "https://www.nature.com/articles/s41591-026-04545-w"},
+          {"label": "DOI：10.1038/s41591-026-04545-w", "url": "https://doi.org/10.1038/s41591-026-04545-w"}
         ],
         "questions": [
-          "為什麼帕金森氏症患者在不同活動中使用同一組固定 DBS 參數，可能不是最佳策略？",
-          "研究先用 35 人建立神經 decoder，再只在 4 人測試 adaptive DBS；這兩階段各自在回答什麼不同問題？",
-          "如果 decoder 在實驗室走路任務表現很好，卻在真實居家環境常判斷錯誤，這會如何改變你對技術臨床價值的判斷？"
+          "為什麼遺傳性視網膜疾病即使最後需要基因定序，AI 協助分析影像仍可能有臨床價值？",
+          "這篇研究為什麼比單純報告模型在測試資料集上的 accuracy 更有說服力？",
+          "如果 top-5 accuracy 很高，但 top-1 accuracy 仍不高，你會如何界定這套 AI 在臨床上適合做什麼、不適合做什麼？"
         ]
       },
       {
-        "category": "精準醫療與罕見神經疾病",
-        "title": "一個病人、一個 RNA 藥物：兩名 SCN2A 癲癇患者接受各自量身設計的 allele-selective ASO",
-        "widgetTitle": "藥物能不能真的『一人一款』？",
-        "widgetSummary": "兩名嚴重 SCN2A 癲癇患者接受了不同、量身設計的 antisense oligonucleotide。這是精準醫療很前沿的例子，也是一個必須非常小心解讀的 n=1 證據。",
-        "dek": "同一個基因疾病並不代表每位患者都需要完全相同的分子治療。當致病變異讓某個蛋白功能過強時，理想策略甚至可能是只降低突變那一份基因訊息，同時留下正常拷貝。",
-        "background": "SCN2A 編碼神經元重要的鈉離子通道 NaV1.2。某些 gain-of-function 變異會讓鈉電流過強，使神經網路更容易產生異常同步放電與癲癇。antisense oligonucleotide（ASO）是一小段人工核酸，可以和特定 RNA 配對並改變其穩定性或處理方式。allele-selective 的意思是盡量只攻擊帶有致病變異的那一套染色體訊息，而保留另一套正常 allele。",
-        "whatHappened": "研究報告兩個平行的 n=1 臨床研究：患者分別為 9 歲與 14 歲男孩，都有嚴重 SCN2A-related developmental and epileptic encephalopathy。兩人接受各自設計的 allele-selective ASO 後，研究期間觀察到癲癇發作頻率分別下降約 26% 與 90%，同時報告部分神經發展技能改善與合併用藥減少；研究沒有觀察到與 ASO 相關的嚴重不良事件。這些結果是初步個案訊號，不是兩個百分比就能代表一般患者的平均療效。",
-        "howTheyStudied": "研究者先用全基因組與 long-read sequencing 找到和致病 allele 位在同一條染色體上的異質 SNP，再設計 ASO 辨認這些單一核苷酸差異，招募 RNase H1 去降解突變 allele 的 SCN2A RNA。團隊測試超過 500 個候選 gapmer，最後兩位患者甚至無法共用同一支 ASO，因此各自使用不同藥物，經腰椎 intrathecal injection 送入中樞神經系統。",
-        "whyItMatters": "這把『精準醫療』推到非常具體的程度：不是依疾病分類選藥，甚至不是依基因選藥，而是依患者的 haplotype 設計分子。研究者也檢查另一批以快速全基因組定序診斷的 SCN2A 嬰兒，估計約 16% 具有可利用相容 SNP 的條件，提示這套策略可能從真正的 n=1 慢慢擴展到一小群共享分子設計邏輯的患者。",
-        "limitations": "最重要的限制就是只有兩位接受治療的患者，而且每人的疾病表現、基線癲癇頻率與 ASO 都不同，沒有隨機對照組。癲癇本身會波動，合併藥物也可能改變，因此目前不能把發作下降全部歸因於 ASO，更不能從兩人推算一般 SCN2A 患者的療效或長期安全性。",
-        "whatNext": "需要更長時間追蹤兩位患者，確認效果是否持續、是否出現延遲性副作用，也要建立更可規模化的製造、毒理與監管流程。另一個關鍵問題是：哪些患者的基因型與 haplotype 可以共享同一支 ASO，才能在真正個人化與可負擔的開發模式之間找到平衡。",
+        "category": "阿茲海默症與血液 biomarker",
+        "title": "血液裡的環狀 RNA 能不能提早看見阿茲海默症？34 個 circRNA 組成的訊號在多個 cohort 中展現預測能力",
+        "widgetTitle": "34 個環狀 RNA，可能成為新的失智血液線索",
+        "widgetSummary": "研究者從血液中找到一組與阿茲海默症相關的 circular RNA signature，和 p-tau217 結合後對腦內 amyloid/tau 病理的分類表現更好，但距離臨床篩檢仍需前瞻性驗證。",
+        "dek": "阿茲海默症的腦部病理可能在記憶症狀出現很多年前就開始。現在血液 p-tau217 已經成為很重要的候選 biomarker，但研究者仍在尋找能提供不同生物訊息、甚至補強現有蛋白標記的新分子。這次被研究的是 circular RNA。",
+        "background": "一般 RNA 常被想成一條有頭有尾的分子；circular RNA（circRNA，環狀 RNA）則因特殊剪接而把兩端接起來形成封閉環，因此通常比線性 RNA 更不容易被分解。很多 circRNA 在腦中有豐富表現，也可以在血液中偵測。Biomarker 的用途不是只問『患者現在有沒有症狀』，而是看某個可測量分子能否反映體內正在發生的病理。",
+        "whatHappened": "研究首先分析 1,221 名有阿茲海默症或認知正常參與者的血液 RNA 資料，找出 34 個與 AD 狀態相關的 circRNA。用這 34 個 circRNA 建立的模型，在以 amyloid 與 tau biomarker 確認的 AD 病理分類上，AUC 達 0.945；同一資料中的 plasma p-tau217 AUC 為 0.877，而把 circRNA 和 p-tau217 合併後，AUC 提升到 0.977。研究也在獨立 Knight ADRC 與 A4 cohort 中做驗證，並發現這組訊號和之後由無症狀進展到有症狀 AD 的風險有關。",
+        "howTheyStudied": "研究者用 RNA sequencing 找出血液中的 circRNA，再建立預測模型，並把模型拿到不同 cohort 驗證。AUC 可以把它理解成模型區分『有目標病理』與『沒有目標病理』的整體能力：0.5 接近隨機猜測，越接近 1 越能分開兩群。但 AUC 高不代表每一個個人判斷都正確，也不直接告訴我們在一般人口篩檢時會出現多少假陽性與假陰性。",
+        "whyItMatters": "如果 circRNA 真能穩定補充 p-tau217 沒有捕捉到的資訊，未來血液檢測可能不必只依賴單一蛋白，而是像『多個感測器一起讀』。這尤其可能幫助早期分層、決定誰需要進一步 PET 或腦脊髓液檢查，以及追蹤疾病進展。",
+        "limitations": "這仍是 biomarker development，而不是已可直接拿來篩檢一般人的臨床檢驗。模型需要在更大、更多族群、真正前瞻性的 cohort 中驗證，也要確定不同實驗室的採血、RNA 保存與分析流程能得到一致結果。AUC 也會受到研究族群疾病比例與納入條件影響，因此不能直接把 0.977 解讀成『97.7% 的人都能被正確診斷』。",
+        "whatNext": "下一步需要前瞻性追蹤尚未出現症狀的人，確認 circRNA 在不同年齡、族群與共病狀態下是否仍穩定；也要比較它加入現有 p-tau217、amyloid PET 或臨床評估後，是否真的改變醫療決策，而不只是讓統計模型更漂亮。",
         "sources": [
-          {"label": "Nature Medicine：Individualized antisense oligonucleotides for SCN2A-related developmental epileptic encephalopathy", "url": "https://www.nature.com/articles/s41591-026-04527-y"},
-          {"label": "PubMed：SCN2A individualized ASO study", "url": "https://pubmed.ncbi.nlm.nih.gov/42481851/"}
+          {"label": "Nature Medicine 原始研究：Blood-based circular RNAs for early diagnosis of Alzheimer’s disease", "url": "https://www.nature.com/articles/s41591-026-04485-5"},
+          {"label": "DOI：10.1038/s41591-026-04485-5", "url": "https://doi.org/10.1038/s41591-026-04485-5"}
         ],
         "questions": [
-          "為什麼研究者想只降低突變 SCN2A allele，而不是把兩份 SCN2A RNA 都一起壓低？",
-          "兩名患者的癲癇頻率下降很多，但沒有對照組；有哪些因素會讓我們暫時不能把全部改善都判定為 ASO 的效果？",
-          "如果真正的『一人一藥』成本太高，你會如何利用 haplotype 或共同 SNP，把這種策略擴展成能服務更多患者、又仍保有選擇性的治療？"
+          "為什麼 circRNA 的環狀結構可能讓它比一般線性 RNA 更適合作為血液 biomarker？",
+          "研究者把模型拿到獨立 cohort 驗證，和只在原始資料裡反覆調參相比，證據上多了什麼？",
+          "AUC 0.977 看起來非常高，但為什麼還不能直接說這項血液檢查已經可以拿來對一般人做阿茲海默症篩檢？"
         ]
       }
     ],
     "radar": {
-      "title": "2027 Mitacs Globalink Research Internship：申請窗口已開，現在應進入 project shortlist 階段",
-      "summary": "台灣學生的 2027 Mitacs Globalink Research Internship 申請期為 2026 年 8 月 5 日至 9 月 16 日，提供約 12 週加拿大大學研究實習。公開資訊列出的資格包括台灣籍、大學三年級以上、CGPA 3.3 或總平均 77% 以上，以及 TOEFL iBT 79、IELTS Academic 6.0 或 TOEIC 785 等英語門檻。這個階段最值得做的不是只看學校排名，而是把候選 project 依研究問題、實際方法、指導方式與能否獲得平常難以自行取得的研究經驗做 shortlist，再同步準備 CV、成績單與推薦材料。",
-      "url": "https://www.cgu.edu.tw/oia/Subject/Detail/82621?nodeId=10736"
+      "title": "2027 Mitacs Globalink Research Internship：現在進入真正需要選 project 的申請期",
+      "summary": "2027 GRI 對台灣大學生的申請窗口為 2026 年 8 月 5 日到 9 月 16 日（Pacific Time），提供約 12 週加拿大研究實習。它特別適合想測試自己是否喜歡真正研究生活、又希望建立國際研究經驗的學生；目前最值得做的是從 project database 依研究問題、實驗／分析方法、指導方式與可轉移技能建立 shortlist，而不是只看學校名氣。申請同時需要準備英文 CV、成績資料與教授推薦信，所以八月下旬前先把候選 project 與推薦人整理好，能明顯降低九月壓力。",
+      "url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/"
     }
   },
   "importantMail": {
