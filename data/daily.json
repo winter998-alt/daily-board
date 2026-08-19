@@ -1,104 +1,104 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-19",
-  "updatedAt": "2026-08-19T07:30:13+08:00",
+  "date": "2026-08-20",
+  "updatedAt": "2026-08-20T07:30:36+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在拆一個常被一句話帶過的問題：細胞收到一個訊號後，真正決定結果的往往不是『有沒有這個分子』，而是它在哪裡作用、透過什麼結構傳遞，以及是否真的改變了細胞功能。第一篇看神經活動如何餵養腦瘤生長；第二篇追到帕金森氏症裡 α-synuclein 可能最早卡住的細胞內物流；第三篇則問，大腦為什麼有時只經歷幾秒鐘，就能形成維持數天到數週的記憶。",
+    "intro": "今天三篇都在拆解一個常被一句話帶過的問題：當我們看到大腦發生變化，真正的機制究竟藏在哪一層？第一篇從 tau 蛋白追到神經元樹突裡的局部製造與即時銷毀；第二篇看孕期免疫訊號如何在保留人類胎兒腦組織結構的模型中改變皮質發育；第三篇則把腦刺激的效果一路連到人類神經網路與不同細胞類型的基因調控。它們共同提醒我們，疾病或治療的結果往往不是一個分子單獨造成，而是位置、時間與細胞狀態一起決定。",
     "stories": [
       {
-        "category": "神經腫瘤與細胞力學",
-        "title": "神經元越活躍，腦瘤真的可能越會長：NLGN3 如何把『神經活動』轉成腫瘤細胞的機械訊號",
-        "widgetTitle": "神經活動怎麼被腦瘤『聽見』？",
-        "widgetSummary": "新研究把一條神經—腫瘤訊號鏈補得更完整：神經活動釋放的 NLGN3 會和腫瘤細胞表面的 CSPG4 互動，改變膜張力並啟動 PIEZO1，促進膠質瘤增殖。",
-        "dek": "腦瘤不是一團和周圍組織互不相干的細胞。近年的研究愈來愈清楚地顯示，神經元本身的活動可以改變膠質瘤的生長環境；真正困難的是把『神經活動比較高時腫瘤長得比較快』拆成一條可以逐步驗證的分子機制。",
-        "background": "Neuroligin-3（NLGN3）原本是一種和神經突觸相關的蛋白，但神經活動會讓它的一部分被切下並釋放到細胞外。過去已知道這種 soluble NLGN3 能促進多種膠質瘤生長。CSPG4 則是位在細胞表面的蛋白，在正常的 oligodendrocyte precursor cells（OPC，寡樹突膠細胞前驅細胞）和許多膠質瘤細胞都很常見。PIEZO1 是一種機械感受離子通道，可以感應細胞膜受到的拉力與張力變化。",
-        "whatHappened": "研究者發現，NLGN3 會和 CSPG4 結合，讓腫瘤細胞膜的張力改變並活化 PIEZO1；細胞因此去極化，進一步促進 ADAM10 把 CSPG4 的細胞外區域切下。這條 NLGN3–CSPG4–PIEZO1 路徑不只出現在腫瘤細胞，在正常 OPC 中也會讓細胞比較維持在未分化、前驅細胞樣的狀態。當研究者阻斷 CSPG4、PIEZO1 或相關切割步驟時，NLGN3 原本帶來的膠質瘤生長效果會減弱。",
-        "howTheyStudied": "團隊先以生化實驗確認 NLGN3 與 CSPG4 的互動，再用人類膠質瘤細胞、不同膠質瘤模型與正常 OPC 測試 NLGN3 是否增加 CSPG4 shedding。接著用鈣離子影像與膜張力相關實驗檢查細胞是否真的被去極化並啟動 mechanotransduction，再以基因剔除與抑制劑測試 CSPG4、PIEZO1 與 ADAM10 是否必要。研究也在小鼠腦瘤 xenograft 中檢查 PIEZO1 缺失後的增殖表型，並在少量人類腦脊髓液樣本中偵測到 NLGN3 與 CSPG4。",
-        "whyItMatters": "這篇研究的重要性在於，它把『神經活動促進腦瘤』從一個相關現象，往一條較完整的因果鏈推進：神經元釋放訊號 → 腫瘤細胞表面蛋白接收 → 細胞膜產生力學變化 → 機械感受通道開啟 → 細胞狀態與增殖改變。它也提醒我們，腫瘤細胞常不是發明全新的生物學，而是劫持正常發育中的 OPC 機制。",
-        "limitations": "這仍以細胞與小鼠模型為主；在人類腦脊髓液中偵測到相關蛋白，只能支持這條路徑可能存在，不能證明它在患者腫瘤中有相同強度的因果作用。研究者也指出，PIEZO1 如何在活體中整合 NLGN3 與 CSPG4 訊號仍未完全釐清。即使阻斷其中一個節點能降低腫瘤增殖，也不代表單獨阻斷這條路徑足以控制高度異質的膠質瘤。",
-        "whatNext": "下一步值得追的是：這條力學訊號鏈在不同患者、不同膠質瘤亞型中有多常見；長期阻斷 PIEZO1 或 CSPG4 是否會影響正常 OPC 和髓鞘維持；以及能不能找到更腫瘤選擇性的節點，避免在抑制腫瘤的同時干擾正常神經膠細胞。",
+        "category": "阿茲海默症與蛋白質恆定",
+        "title": "Tau 原來會在樹突現場製造，也立刻被銷毀：神經元如何避免自己製造的蛋白變成聚集物",
+        "widgetTitle": "Tau 在哪裡被製造？答案比想像中局部",
+        "widgetSummary": "新技術 STARFISH 直接看見神經元內源性 tau 的翻譯位置：雖然 Mapt mRNA 分布很廣，tau 蛋白卻主要在樹突被製造，而且約三分之一的新生 tau 很快就被 neuroproteasome 清除。",
+        "dek": "阿茲海默症裡常看到 tau 從正常位置失去控制、進入神經元胞體與樹突並形成聚集。但如果只看疾病末期的 tau 堆積，很容易漏掉更早的一個問題：正常神經元每天本來就會製造 tau，那它如何決定在哪裡製造，又如何把多餘或可能錯誤摺疊的新生 tau 及時清掉？",
+        "background": "Tau 是和神經元微管相關的蛋白，在阿茲海默症等 tauopathy 中會異常聚集。蛋白質不是直接從 DNA 變出來，而是先由基因轉錄成 mRNA，再由 ribosome 讀取 mRNA 進行 translation。神經元特別長，因此不一定把所有蛋白都在胞體做好再運出去；有些 mRNA 會被送到樹突或軸突，在需要的位置局部翻譯。Proteasome 則是細胞分解蛋白的重要機器，而 neuroproteasome 是研究者描述的一種與神經元細胞膜相關、具有特殊功能的蛋白酶體系統。",
+        "whatHappened": "研究者開發 STARFISH 後發現，Mapt mRNA 雖然可分布在神經元不同區域，但可偵測到的內源性 tau 新生蛋白主要在樹突產生。更令人意外的是，神經元似乎會『多做再刪』：大約三分之一剛合成的 tau 在翻譯同時或翻譯後不久，就被樹突中的 neuroproteasome 降解。當這套降解機制失效時，依賴新蛋白合成的 somatodendritic tau 聚集會增加。",
+        "howTheyStudied": "核心技術 STARFISH 用一組針對 mRNA 與新生蛋白的分子探針，在不必替目標蛋白人工加上標籤的情況下，定位內源性 mRNA 正在被翻譯的位置，解析度接近單一 codon 的尺度。團隊先在培養的原代神經元驗證方法，也在活體條件下測試活動依賴的翻譯；之後把它用在 Mapt/tau，並搭配蛋白質合成與 proteasome 操控，測試新生 tau 的產生與清除是否彼此相連。",
+        "whyItMatters": "這把 tau 聚集的問題往前推了一步：異常 tau 不一定只是『舊蛋白清不掉』，也可能牽涉新生 tau 在樹突產生後的品質管制失敗。更廣泛地說，神經元的蛋白質恆定不是全細胞平均運作，而可能高度局部化；同一顆神經元的胞體、樹突與軸突可以有不同的蛋白製造與清除規則。STARFISH 本身也提供一個方法學進展，讓研究者可以直接問某個內源性蛋白到底在哪個細胞區域被做出來。",
+        "limitations": "研究證明的是正常神經元中的 tau 翻譯與 neuroproteasome 清除機制，以及破壞這套系統後 tau 聚集增加；研究者提出這套 proteostasis 失敗可能參與阿茲海默症，但這一段仍屬機制推測。不能因此說阿茲海默症患者的主要病因就是 neuroproteasome 失效，也還不知道人類老化大腦中這套機制何時開始改變。",
+        "whatNext": "下一步需要在人類神經元與阿茲海默症相關模型中追蹤這套局部 tau 品質管制是否真的先於病理聚集失效，並測試恢復 neuroproteasome 功能是否能在不干擾正常蛋白代謝的情況下降低有毒 tau。STARFISH 也可以被用來追蹤其他容易聚集的神經退化疾病蛋白，檢查『在哪裡被製造』是否本身就是疾病機制的一部分。",
         "sources": [
           {
-            "label": "Nature Neuroscience 原始研究：Neuroligin-3–CSPG4 interaction maintains oligodendrocyte precursor cell progenitor state and promotes glioma proliferation through mechanotransduction",
-            "url": "https://www.nature.com/articles/s41593-026-02397-8"
+            "label": "Nature Neuroscience 原始研究：Dendritic translation and neuroproteasome-mediated degradation of endogenous tau revealed by STARFISH",
+            "url": "https://www.nature.com/articles/s41593-026-02398-7"
           },
           {
-            "label": "DOI：10.1038/s41593-026-02397-8",
-            "url": "https://doi.org/10.1038/s41593-026-02397-8"
+            "label": "DOI：10.1038/s41593-026-02398-7",
+            "url": "https://doi.org/10.1038/s41593-026-02398-7"
           }
         ],
         "questions": [
-          "為什麼 NLGN3 和 CSPG4 的互動最後會被稱為『mechanotransduction』，而不只是一般的受器—配體訊號？",
-          "研究者為什麼需要同時做細胞實驗、基因／藥理阻斷和小鼠腫瘤模型，才能比單一增殖實驗更接近因果證據？",
-          "如果未來要把 PIEZO1 或 CSPG4 當治療標的，正常 OPC 也使用同一條路徑會帶來什麼風險與研究上的取捨？"
+          "如果 Mapt mRNA 在神經元裡分布很廣，但 tau 主要在樹突被翻譯，這說明『mRNA 在哪裡』和『蛋白真正在哪裡產生』之間可能有什麼額外調控？",
+          "研究者為什麼要同時操控蛋白質合成與 neuroproteasome，而不能只看到 tau 聚集增加就判定是降解失敗？",
+          "要證明 neuroproteasome 失效是阿茲海默症的早期驅動因素，而不只是疾病後期的伴隨現象，下一步最需要哪一類時間序列或介入證據？"
         ]
       },
       {
-        "category": "帕金森氏症與細胞內蛋白物流",
-        "title": "α-synuclein 可能不是等形成大塊聚集才出問題：它更早就會卡住內質網的蛋白『入口』",
-        "widgetTitle": "帕金森氏症裡，蛋白物流可能很早就開始塞車",
-        "widgetSummary": "在人類 iPSC 衍生多巴胺神經元中，病理型 α-synuclein 會干擾 ER 上的 Sec61A translocon，讓原本需要進入內質網的蛋白無法順利轉運，連帶影響溶酶體功能。",
-        "dek": "帕金森氏症常被描述成 α-synuclein 聚集、Lewy body 形成、最後多巴胺神經元死亡。但真正適合介入治療的時間點可能更早：在神經元死亡以前，細胞內部哪些『物流系統』已經先開始失靈？",
-        "background": "α-synuclein 是神經元內常見的蛋白，在帕金森氏症中容易出現錯誤摺疊與聚集。內質網（ER）則像蛋白質製造與加工流程的重要入口：很多剛由 ribosome 合成的蛋白，必須一邊被製造、一邊穿過名為 Sec61 的 translocon 進入 ER，這叫 co-translational translocation。若這個入口塞住，下游的溶酶體、分泌路徑與其他胞器都可能受到影響。",
-        "whatHappened": "研究在人類 iPSC 衍生的中腦多巴胺神經元中發現，隨著病理型 α-synuclein 增加，會出現奈米尺度的細胞內小斑點，並伴隨 ER translocon 功能下降。α-synuclein 可和 Sec61A 互動，干擾包含 glucocerebrosidase、Cathepsin B 和 V-ATPase V0a1 在內的 ER 依賴蛋白轉位。結果之一是溶酶體酸化能力下降，並增加細胞透過 extracellular vesicles 釋放 α-synuclein。降低 α-synuclein 表現，或促進 proteasomal degradation，都能減輕這種 ER 缺陷。",
-        "howTheyStudied": "團隊建立病理型 α-synuclein 負荷逐步增加的人類 iPSC 衍生多巴胺神經元模型，結合 proteomics、transcriptomics 與細胞內定位分析，追蹤異常最早在哪個胞器與蛋白處理步驟出現。他們再用蛋白互作實驗驗證 α-synuclein 與 Sec61A 的關係，並在人類帕金森氏症死後腦組織中確認這種互作。最後透過 CRISPR interference 降低 α-synuclein，或以藥理方式提高蛋白酶體降解，測試 ER 轉位缺陷能否被救回。",
-        "whyItMatters": "這提供了一條能把很多看似分散的帕金森氏症現象串起來的路徑：α-synuclein 異常 → Sec61 translocon 受干擾 → 多種 ER 依賴蛋白處理失敗 → 溶酶體等胞器功能下降 → α-synuclein 清除又更差。也就是說，細胞可能形成一個自我加劇的循環，而不是等到大型蛋白聚集形成後才突然失靈。",
-        "limitations": "主要機制證據來自 iPSC 衍生神經元模型；這些細胞雖然是人類來源，仍不能完全重現老年大腦數十年的病程、免疫環境和多細胞互動。死後腦組織能支持 α-synuclein–Sec61A 互作存在，但無法告訴我們它在疾病時間軸上何時出現。藥理促進蛋白酶體的結果也還只是機制與治療概念證據，不能直接視為已證實的人體治療策略。",
-        "whatNext": "下一步要確認這個 ER translocation defect 是否能在早期患者樣本、不同遺傳型帕金森氏症與更複雜的腦組織模型中重現；另外也要測試，長期改善 Sec61 相關轉位或蛋白降解，是否真的能保護神經元，而不只是暫時修正細胞內指標。",
+        "category": "神經發育與母體免疫",
+        "title": "孕期發炎訊號怎麼碰到正在長大的皮質？人類胎兒腦 cerebroid 把 IL-17A 的作用鏈拆開來看",
+        "widgetTitle": "免疫訊號如何改變正在發育的人類皮質？",
+        "widgetSummary": "研究者以人類胎兒皮質組織建立 3D cerebroid，發現 IL-17A 可造成提早皮質摺疊、增厚與神經生成加速，並把機制追到神經幹細胞持續的 NF-κB 活化。",
+        "dek": "流行病學研究長期發現，懷孕期間某些強烈免疫活化和後代神經發育疾病風險存在關聯，但『有關聯』離『知道人類胎兒腦裡發生什麼』仍差很遠。動物模型可以做因果實驗，傳統腦類器官又常缺少完整的免疫、血管與細胞外基質環境；這篇研究試圖填補兩者之間的空隙。",
+        "background": "Maternal immune activation（MIA）指懷孕期間母體免疫系統因感染或其他原因被強烈啟動的狀態。IL-17A 是免疫細胞使用的一種 cytokine，也就是細胞間傳遞免疫訊息的小型蛋白。NF-κB 則是一套重要的細胞內轉錄調控系統：當它被啟動後，可以進入細胞核，改變一系列發炎與細胞命運相關基因的表現。研究中的 cerebroid 並不是從 iPSC 從零長出的 organoid，而是由妊娠 11–14 週的人類胎兒背外側前額葉皮質組織建立的 3D ex vivo 培養，因此保留較多原本的細胞種類、空間結構、免疫與血管成分。",
+        "whatHappened": "IL-17A 處理後，cerebroid 在培養第 8 天就出現較早的皮質摺疊，到第 15 天更加明顯；同時皮質厚度增加、神經生成與神經元成熟加快，細胞外基質相關路徑也明顯改變。研究者進一步發現，神經幹細胞中的 NF-κB 活化不是短暫一下就消失，而是較持續地維持。使用 NF-κB pathway inhibitor parthenolide 後，IL-17A 所造成的異常摺疊、神經生成與部分分子變化可以被逆轉。",
+        "howTheyStudied": "團隊建立可較高通量培養的 3D fetal brain cerebroid，先確認它保留 cortical architecture、apical–basal polarity、microglia/brain-associated macrophages、血管與 extracellular matrix 等特徵。接著加入 IL-17A 模擬特定 MIA 訊號，使用影像量測皮質摺疊與厚度，並透過 RNA sequencing、proteomics 與轉錄因子分析尋找被改變的路徑。他們也在人類 iPSC 衍生 neural progenitor cells 中驗證 IL-17A 對 NF-κB p65 的持續活化，再用 parthenolide 做功能性 rescue。",
+        "whyItMatters": "這篇的價值不是證明『母體發炎會造成某一種神經發育疾病』，而是提供一個更接近人類早期皮質的實驗平台，讓研究者可以把流行病學上的風險訊號拆成細胞機制。它也顯示發炎可能不是單純殺死神經細胞，而是改變發育的時間表：神經幹細胞太早增加神經生成、皮質結構太早改變，本身就可能影響後續迴路形成。",
+        "limitations": "cerebroid 雖然保留比許多 organoid 更多的人類組織特徵，仍是離開母體、胎盤、完整血流與全身免疫系統的 ex vivo 模型。研究使用特定濃度與時間的 IL-17A，不能代表所有孕期感染或發炎狀態。更重要的是，研究觀察到的皮質發育變化不能直接等同自閉症或思覺失調症，也不能從這篇研究推導個別孕婦或胎兒的疾病風險。",
+        "whatNext": "下一步可以比較不同免疫訊號、不同暴露時間與劑量是否造成不同的發育軌跡，也需要研究胎盤與其他母體訊號如何改變 IL-17A 到達胎兒腦的實際暴露。若要走向治療概念，則必須先確認哪些發炎反應是病理性的、哪些又是正常免疫防禦不可缺少的，避免把『阻斷發炎』過度簡化成普遍策略。",
         "sources": [
           {
-            "label": "Nature Communications 原始研究：α-Synuclein blocks endoplasmic reticulum co-translational protein translocation early in Parkinson’s disease",
-            "url": "https://www.nature.com/articles/s41467-026-76173-4"
+            "label": "Nature Neuroscience 原始研究：Modeling maternal immune activation in 3D ex vivo human fetal brain cerebroids reveals IL-17A-driven disruption of cortical development",
+            "url": "https://www.nature.com/articles/s41593-026-02400-2"
           },
           {
-            "label": "DOI：10.1038/s41467-026-76173-4",
-            "url": "https://doi.org/10.1038/s41467-026-76173-4"
+            "label": "DOI：10.1038/s41593-026-02400-2",
+            "url": "https://doi.org/10.1038/s41593-026-02400-2"
           }
         ],
         "questions": [
-          "為什麼 Sec61 translocon 出問題，可能同時影響多種看起來彼此無關的溶酶體與蛋白處理功能？",
-          "研究者把 α-synuclein 降低後 ER defect 也減輕，這比只觀察兩者同時出現多提供了什麼因果資訊？",
-          "即使 iPSC 神經元與死後腦組織都看到 α-synuclein–Sec61A 關係，還缺哪些證據才能說這是人類帕金森氏症早期可治療的主要驅動機制？"
+          "為什麼 IL-17A 讓神經生成『加快』不一定代表發育變得更好，而可能反而打亂正常皮質形成？",
+          "parthenolide 能救回部分 IL-17A 表型，為什麼比單純看到 NF-κB 訊號升高更能支持 NF-κB 參與機制？",
+          "即使 cerebroid 來自人類胎兒腦組織，為什麼仍不能用這篇研究直接預測孕期感染後孩子會不會得到某種神經發育疾病？"
         ]
       },
       {
-        "category": "學習記憶與突觸可塑性",
-        "title": "只碰到幾秒就記一個月：小鼠的『一次學會』可能使用和反覆學習不同的突觸規則",
-        "widgetTitle": "幾秒鐘的一次經驗，怎麼留下長期記憶？",
-        "widgetSummary": "小鼠只和黏膠帶短暫接觸一次，隔天甚至一個月後都會避開它。研究指出，這種極短的一次學習依賴紋狀體內由 endocannabinoid 驅動的特殊 LTP。",
-        "dek": "很多課本在講 long-term potentiation（LTP）時，會用『反覆刺激讓突觸越來越強』來解釋學習。但現實生活中有些事只發生一次、甚至只有幾秒，我們之後卻牢牢記得。這代表大腦可能需要一套能被很少量神經活動快速啟動的可塑性規則。",
-        "background": "LTP 是突觸傳遞效率長時間增強的現象，被視為記憶形成的重要細胞機制之一。這篇研究關注的是 dorsolateral striatum（DLS，背外側紋狀體）中的 endocannabinoid-mediated LTP，簡稱 eCB-LTP。Endocannabinoids 是神經細胞自己製造的脂質訊號，可作用在 CB1 receptor；它們和外來大麻成分不是同一件事，這裡研究的是正常神經系統本身的訊號機制。",
-        "whatHappened": "研究者設計 sticky tape avoidance test：小鼠在探索時只和一塊有黏性的膠帶接觸一次，很多接觸甚至不到 5 秒。24 小時後，小鼠會更慢靠近、繞開或用不同方式接觸新的黏膠帶；這個記憶可持續到一個月。短暫接觸會在 DLS 引發 corticostriatal potentiation，而條件式基因剔除或在紋狀體急性阻斷 CB1 receptor，都會破壞這種一次學習。相反地，接觸時間很長時，學習反而不再依賴同一套 eCB-LTP。",
-        "howTheyStudied": "團隊先用行為追蹤把一次接觸後的避開行為量化，再用 optogenetic local field potential 記錄皮質—紋狀體突觸是否增強，並以神經活動記錄和 computational model 檢查接觸當下的活動是否足以誘發 eCB-LTP。接著在腦片做 electrophysiology，看這套可塑性是否因為已在活體中被使用而出現 occlusion。最後用 CB1 receptor 與 D2 receptor 相關的條件式 knockout，加上急性藥理阻斷，測試這條路徑是否真的對短暫一次學習必要。",
-        "whyItMatters": "這篇最有意思的地方是，它顯示『學得快』不一定只是把一般學習機制開得更強。幾秒鐘的經驗與較長時間的經驗，可能招募不同的突觸規則與腦區。研究因此把 one-shot learning 從一個行為描述，往具體的突觸機制推進。",
-        "limitations": "這是一個小鼠新建立的行為範式；避開黏膠帶雖不是典型恐懼制約，也可能包含驚訝、不舒服、觸覺敏感與動作策略等多種成分。研究者測到 corticosterone 沒有整體顯著上升，但個別壓力／saliency 仍可能影響學習。更重要的是，長時間接觸時的學習並不依賴 eCB-LTP，代表同一表面行為可以由不同機制產生。",
-        "whatNext": "接下來要問的是，這套 eCB-LTP 是否也參與其他真正自然的一次學習，例如空間、社會或食物相關經驗；以及短暫記憶形成後，資訊是否會從 DLS 轉移到其他腦區維持。這也能幫助釐清『形成記憶』和『長期保存記憶』是不是由不同階段與不同迴路接手。",
+        "category": "神經調控與人類基因體學",
+        "title": "電刺激不是只讓神經元『放電更多』：人類腦組織顯示不同細胞會啟動不同基因程式",
+        "widgetTitle": "腦刺激之後，細胞裡的基因也會改變",
+        "widgetSummary": "研究把人類手術切除的顳葉皮質接上微電極陣列，一邊刺激、一邊記錄網路，再做單核基因體分析；結果顯示刺激強化 cell assemblies 的同時，也啟動細胞類型特異的基因調控網路。",
+        "dek": "DBS、皮質刺激與其他 neuromodulation 技術常被描述成『用電改變腦迴路』。但電流停止後，為什麼有些效果可能持續？真正的生物學答案可能不只在毫秒尺度的放電，也藏在數分鐘到數小時後細胞改變了哪些基因。",
+        "background": "Cell assembly 可以把它想成一群傾向一起活動、共同表示某種資訊或網路狀態的神經元。Electrical stimulation 可以立刻改變膜電位與放電，但神經活動也會啟動 activity-dependent genes，進一步改變突觸、代謝與細胞狀態。Single-nucleus genomics 則是把組織中的細胞核分開，讀取不同細胞類型的 RNA 或染色質狀態，因此不必把神經元、星狀膠細胞與其他細胞的反應平均在一起。",
+        "whatHappened": "研究者發現，對切除的人類顳葉皮質進行刺激後，神經元之間的協同活動與 cell assembly 結構會增強；當他們再查看細胞核層級的分子資料時，發現不同細胞類型啟動的 gene regulatory networks 並不相同。也就是說，同一個外部電刺激進入組織後，不是所有細胞都收到同一份『指令』，而會依細胞身分轉譯成不同的分子反應。",
+        "howTheyStudied": "團隊使用神經外科手術取得的人類顳葉皮質組織，建立 ex vivo 平台，把組織放在 microelectrode array 上進行電刺激並同步記錄網路活動，觀察 stimulation 前後 cell assemblies 如何改變。之後對同一類組織做 single-nucleus transcriptomic 與 chromatin/regulatory analyses，把網路層級的電生理變化和細胞類型特異的基因調控程式連在一起；研究也使用另一種 human tissue stimulation 條件驗證分子反應。",
+        "whyItMatters": "如果未來要讓 neuromodulation 更精準，可能不能只調整『幾伏、幾赫茲、刺激多久』，還要理解某組參數最後讓哪些細胞進入什麼長期狀態。這篇提供一座橋，把毫秒尺度的神經放電和較慢的基因調控放進同一個研究框架，也讓未來有機會根據疾病涉及的細胞類型，反向設計刺激方式。",
+        "limitations": "這些組織來自接受神經外科手術的患者，而且是在切除後的 ex vivo 環境中研究；它保留真實人類細胞與局部迴路，卻沒有完整的血流、遠距腦區輸入與行為狀態。研究因此證明的是『人類皮質組織能出現這種刺激—網路—基因反應鏈』，而不是已證明某套刺激參數能改善特定疾病或認知功能。",
+        "whatNext": "下一步需要把特定 stimulation parameters、特定 cell-type gene programs 和可量測的功能結果一一對上，並確認這些分子變化哪些只是活動後的標記、哪些真正負責較持久的可塑性。若未來能在臨床刺激與可取得的 biomarker 間建立對應，才有機會發展真正依生物反應調整的 neuromodulation。",
         "sources": [
           {
-            "label": "Nature Neuroscience 原始研究：Striatal endocannabinoids drive one-shot learning",
-            "url": "https://www.nature.com/articles/s41593-026-02392-z"
+            "label": "Nature 原始研究：Stimulation modulates gene-linked cell assemblies in the human brain",
+            "url": "https://www.nature.com/articles/s41586-026-10879-9"
           },
           {
-            "label": "DOI：10.1038/s41593-026-02392-z",
-            "url": "https://doi.org/10.1038/s41593-026-02392-z"
+            "label": "Nature Research Briefing：Human brain stimulation engages different gene programs in different cell types",
+            "url": "https://www.nature.com/articles/d41586-026-02473-w"
           }
         ],
         "questions": [
-          "為什麼『只有一次、而且只有幾秒』的學習，可能需要和反覆練習不同的突觸可塑性規則？",
-          "CB1 receptor 阻斷只破壞短暫接觸後的學習、卻不影響較長接觸後的學習，這個對照幫研究者排除了什麼簡單解釋？",
-          "這個實驗中的避開行為還可能由哪些機制或感受造成？如果要證明 eCB-LTP 是更普遍的 one-shot learning 原理，下一個實驗應該怎麼設計？"
+          "為什麼一次電刺激可能同時造成毫秒尺度的放電變化和更慢、更持久的基因表現變化？",
+          "把 microelectrode array 記錄和 single-nucleus genomics 放在同一研究裡，比只做其中一種方法多回答了什麼問題？",
+          "如果某個基因程式在刺激後上升，要怎麼進一步證明它是造成長期神經可塑性的原因，而不是單純的活動後標記？"
         ]
       }
     ],
     "radar": {
-      "title": "EPFL Life Sciences Summer Research Program：2027 申請將在 10 月開放，現在適合先選實驗室",
-      "summary": "EPFL School of Life Sciences 的 Summer Research Program 對國際 bachelor 與 first-year master’s 的生命科學相關學生開放，提供約 8 週的實驗室沉浸式研究；官方列出的年度截止日是 11 月 15 日，2027 暑期梯次申請將於 2026 年 10 月開放。領域涵蓋 biology、biophysics、chemistry、bioengineering、bioinformatics、quantitative biology 等。現在最值得做的是先瀏覽可能的研究群組，建立 5–8 個候選 lab，再比較研究問題、方法與訓練型態；等申請開放後，再從中挑最適合的三個方向寫 motivation，而不是到 10 月才第一次看實驗室。",
-      "url": "https://www.epfl.ch/schools/sv/education/summer-research-program/"
+      "title": "OIST 2027 Spring Research Internship：現在已開放，10 月 15 日截止",
+      "summary": "沖繩科學技術大學院大學（OIST）的 2027 Spring Research Internship 已進入申請期，截止時間為 2026 年 10 月 15 日 23:59（日本時間），實習會安排在 2027 年 4 月至 9 月間，長度通常為 4–6 個月。計畫涵蓋 neuroscience、molecular/cellular/developmental biology、marine science、computational science 等領域，適合希望用一段較長時間真正進入研究室、學一套技術並測試自己是否適合研究所生活的學生。申請需要英文 CV、成績資料、400 字以內 Statement of Purpose，以及 1–3 封教授級推薦信；英文檢定成績不是必須。現在值得注意，是因為這類長期實習的準備成本主要不在填表，而在挑選 host unit、寫出研究動機並提早和推薦人安排時間。",
+      "url": "https://www.oist.jp/admissions/research-internship/apply-research-internship"
     }
   },
   "importantMail": {
-    "count": 1,
-    "status": "目前有 1 封需要注意的郵件，涉及重要合作／社團的近期會議安排；詳細內容不存放在公開 Daily Board。"
+    "count": 0,
+    "status": "目前沒有新郵件同時符合 Daily Board 的重要事項與明確行動／期限／異常變更條件；私人郵件內容不存放在公開 Daily Board。"
   }
 }
