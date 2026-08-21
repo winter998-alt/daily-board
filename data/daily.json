@@ -1,58 +1,86 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-21",
-  "updatedAt": "2026-08-21T07:30:44+08:00",
+  "date": "2026-08-22",
+  "updatedAt": "2026-08-22T07:27:11+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在處理時間與尺度：腦類器官能不能在培養皿裡真的走過數年的發育時間？阿茲海默症在 PET 看見大量 amyloid 以前，大腦結構是否早已改變？而數千顆神經元看似複雜的活動，又為什麼只探索有限的幾種集體模式？把三篇放在一起，可以看到現代神經科學如何從細胞發育、人體縱向影像一路連到網路動力學。",
+    "intro": "今天三篇都在重新畫大腦的邊界：睡意可能不是抽象的疲倦，而是特定神經元隨清醒時間逐漸累積的狀態；腦部免疫監視也不只發生在腦內，頭骨骨髓本身可能是一個貼近中樞神經系統的免疫站；而合作行為中看似自然形成的領導者與跟隨者，則能在前額葉找到角色依賴的神經表徵。三篇一起讀，可以看到現代神經科學如何把日常概念拆成可定位、可操控、也可被質疑的生物機制。",
     "stories": [
       {
-        "category": "腦類器官與神經發育",
-        "title": "培養皿裡的腦組織會記得自己活了多久嗎？五年腦類器官揭露人類神經發育的內在時鐘",
-        "widgetTitle": "腦類器官真的會長大五年",
-        "widgetSummary": "研究者把人類皮質類器官培養超過五年，發現細胞的基因表現與 DNA 甲基化會隨實際培養時間逐步成熟；較老的神經前驅細胞甚至會記得自己已走過哪些發育階段。",
-        "dek": "人類大腦的成熟需要很多年，這也讓研究者面臨一個困難：幾個月大的腦類器官究竟只能模擬胎兒期，還是只要讓它活得夠久，它就能繼續按照人類特有的慢速節奏成熟？一項新研究真的等了五年。",
-        "background": "Brain organoid 是由人類多能幹細胞在三維培養條件下形成的類腦組織。它不是縮小版完整大腦，沒有正常人體的血管、感覺輸入與完整腦區連線，但可以重現部分神經細胞生成與成熟過程。人類神經發育特別慢，因此一個關鍵問題是：這種慢速時間表究竟需要身體環境持續指揮，還是部分時間資訊本來就寫在細胞自己的調控系統裡。Epigenetic change 是沒有改寫 DNA 字母本身，卻會改變哪些基因比較容易被讀取的調控變化，例如 DNA methylation。",
-        "whatHappened": "研究者成功把人類皮質類器官維持超過五年。隨培養時間增加，類器官中的不同細胞類型會依序出現接近人類胎兒晚期與出生後大腦的轉錄特徵；用全基因組 DNA methylation 推估出的 epigenomic age，也和實際在培養皿裡度過的時間高度一致。更有意思的是，把不同年齡的 neural progenitor 混在一起後，較老的前驅細胞不會重新從最早期神經元開始製造，而會快速產生較晚期的神經元命運，像是保留了自己已經走過哪些發育階段的時間記憶。",
-        "howTheyStudied": "團隊分析從 15 天一路到 5 年的類器官資料，新加入的長期系列包含 34 個 6 個月至 5 年的單一類器官，並整合先前 76 個較早期類器官，總計 110 個類器官、424,720 個細胞。研究結合 single-cell RNA sequencing、全基因組 DNA methylation、細胞結構與功能資料，再把類器官中的成熟程式和不同年齡的人類皮質參考資料比較。最後以不同年齡 neural progenitor 建立 chimeric organoid，直接測試細胞是否會因為過去經歷的時間而改變後續分化順序。",
-        "whyItMatters": "如果人類神經細胞的發育速度有相當大的 cell-intrinsic 成分，研究者就有機會在體外真正研究原本很難直接實驗的人類出生後腦成熟。這也讓研究神經發育疾病的時間點更重要：同一個基因變化在三個月大的細胞和三年大的細胞可能不是同一件事。長期類器官未來也可能讓疾病模型不再永遠停在很早期的胎兒樣狀態。",
-        "limitations": "類器官會成熟，不代表它等同一個五歲兒童的大腦。它缺少完整血流、身體荷爾蒙、感覺經驗、免疫環境與遠距腦區連線；研究中的年齡主要指轉錄與表觀遺傳程式和人體發育時間呈現對應，而不是所有結構與功能都達到相同年齡。長達五年的培養也非常耗時，實驗室間是否能穩定重現仍是實務問題。",
-        "whatNext": "下一步可以利用這套長期模型測試特定基因、代謝或環境因素是否真的改變人類神經發育的速度，並比較神經發育疾病患者來源的細胞是否在時間記憶上出現偏移。另一個關鍵方向是加入更完整的血管、免疫或跨腦區連線，檢查細胞內在時鐘和外界訊號如何共同決定成熟速度。",
-        "sources": [{"label":"Nature 原始研究：Human brain organoids record the passage of time over multiple years","url":"https://www.nature.com/articles/s41586-026-10877-x"},{"label":"DOI：10.1038/s41586-026-10877-x","url":"https://doi.org/10.1038/s41586-026-10877-x"}],
-        "questions": ["為什麼類器官的 DNA methylation 與基因表現會隨培養時間改變，可以支持細胞能記錄時間，但還不能說它就是一顆真正五歲的大腦？","把不同年齡的 neural progenitor 混進同一個 chimeric organoid，為什麼比單純比較年輕和年老類器官更能測試時間記憶是否存在於細胞本身？","如果想區分發育速度是由細胞內在時鐘還是外部環境決定，你會如何設計一個交換環境或移植實驗？"]
+        "category": "睡眠與神經迴路",
+        "title": "我們為什麼越醒越想睡？研究找到會隨清醒時間累積活動的『睡眠壓力神經元』",
+        "widgetTitle": "越醒越睏，大腦真的在累積睡意",
+        "widgetSummary": "小鼠研究找到兩群會隨清醒時間增加活動的神經元；啟動它們會產生類似補眠的睡眠，抑制其中關鍵細胞則能大幅降低睡眠驅力。",
+        "dek": "睡眠不是單純到了晚上才打開的開關。人醒得越久，通常越難抵抗睡意；真正困難的問題是，大腦到底用什麼方式記錄『我已經醒多久了』？一項新的 Nature 研究把這種抽象的睡眠壓力追到特定神經細胞群。",
+        "background": "睡眠受到至少兩種力量共同影響：circadian rhythm 是大約 24 小時的生理時鐘，決定什麼時間比較容易睡；sleep homeostasis 則像睡眠債，清醒越久，睡眠驅力通常越高。睡眠不足後的 recovery sleep 不只時間增加，NREM 睡眠中的 delta 波也會變強，代表睡眠強度提高。過去知道很多腦區可以促進睡眠或清醒，但『睡眠債如何被累積並轉成睡意』仍不清楚。",
+        "whatHappened": "研究者找到 anterior medial preoptic area（aMPO，前內側視前區）與 median raphe（MR，中縫核）中的細胞群，它們的活化會隨清醒時間增加，睡著後則下降。人工啟動睡眠剝奪時活躍的細胞，會讓小鼠增加睡眠時間與強度；反過來抑制它們，則會減少睡眠並降低原本在睡眠剝奪時應該逐漸增加的入睡傾向。MR 中尤其包含 GABAergic 與 serotonergic 神經元。長期同時抑制這兩類細胞後，存活的小鼠每日睡眠量可降低接近 70%，而且沒有出現典型嚴重睡眠剝奪所伴隨的補償性睡眠驅力。",
+        "howTheyStudied": "團隊先比較小鼠在自然睡醒週期、不同時長睡眠剝奪與 recovery sleep 後的全腦 FOS 活化圖譜，資料涵蓋 162 顆腦、26 種條件，找出會隨清醒時間上升的候選區域。接著使用 activity-dependent genetic tagging 標記睡眠剝奪期間活躍的細胞，再以 chemogenetic activation/inhibition 測試這些細胞是否足以或必須參與睡眠驅力。研究也利用投射追蹤與電生理，發現睡眠剝奪會提高 MR GABAergic neuron 的內在興奮性。",
+        "whyItMatters": "這把『睡眠壓力』從一個行為現象推進成可以定位與操控的神經迴路問題。尤其重要的是，這些細胞不是只在睡著時活躍，而是在清醒期間逐漸累積活動，概念上更像真正記錄睡眠債的元件。若未來能知道它們如何感知代謝、突觸或分子層級的清醒時間，就可能把細胞內的睡眠需求和整體睡眠行為接成一條完整因果鏈。",
+        "limitations": "這是小鼠研究，不能直接推論人類可以安全地大幅減少睡眠。長期抑制實驗中有部分小鼠死亡，而且『存活的小鼠沒有明顯典型行為缺損』不等於長期完全健康；代謝、免疫、心血管與更細緻的認知後果仍需檢查。此外，MR 與 aMPO 很可能只是整套睡眠恆定系統的一部分，研究尚未解釋這些神經元最初如何偵測清醒時間。",
+        "whatNext": "下一步需要找出讓 MR 與 aMPO 細胞隨清醒時間改變興奮性的上游分子，例如代謝狀態、突觸輸入或細胞內離子變化；也需要在人類神經影像與臨床睡眠研究中尋找可對應的迴路訊號。另一個重要問題是，長期降低 sleep drive 和真正降低生理上的 sleep need 是否是同一件事。",
+        "sources": [
+          {"label": "Nature 原始研究：Wake-activated neuronal populations that regulate sleep drive", "url": "https://www.nature.com/articles/s41586-026-10928-3"},
+          {"label": "DOI：10.1038/s41586-026-10928-3", "url": "https://doi.org/10.1038/s41586-026-10928-3"}
+        ],
+        "questions": [
+          "為什麼『清醒時逐漸活化、睡眠後下降』比單純『睡著時活躍』更符合 sleep drive 累積器的概念？",
+          "研究者同時做 activation 與 inhibition，分別能回答『足以造成』和『是否必要』哪些不同的因果問題？",
+          "如果小鼠在抑制這些細胞後睡得很少卻沒有典型補眠，還需要測量哪些生理或行為指標，才能判斷牠們是真的需要較少睡眠，而不是只是失去感覺睡意的能力？"
+        ]
       },
       {
-        "category": "阿茲海默症與早期影像",
-        "title": "Amyloid PET 變成陽性以前七年，大腦皮質可能已經不一樣：阿茲海默症的時間線要往前改寫嗎？",
-        "widgetTitle": "Amyloid 被看見前 7 年，大腦已不同？",
-        "widgetSummary": "三個認知正常族群的縱向 MRI 顯示，日後變成 amyloid PET 陽性的人，至少七年前就呈現較厚的皮質與較慢的皮質變薄；這不等於已找到更早的診斷工具，但改變了疾病時間線的問題。",
-        "dek": "阿茲海默症研究常把 amyloid-beta 大量累積視為很早期的事件。但 PET 只能在累積量跨過可偵測門檻後把一個人分類成 amyloid-positive。那麼在跨過門檻以前，大腦是不是其實已經走了一段很長的路？研究者回頭看多年 MRI，試著把時間線往前推。",
-        "background": "Amyloid-beta 是阿茲海默症重要病理蛋白之一。PET 可以利用帶有放射性標記的分子估計腦內 amyloid，但研究通常會設定一個 threshold，把人分成 Aβ-positive 與 Aβ-negative。MRI 則不直接測 amyloid，而能量測皮質厚度等腦結構。正常老化通常伴隨一定程度的 cortical thinning，因此比較厚不能直覺理解成一定比較健康，也可能代表發育、發炎、組織組成或退化時間軸不同。",
-        "whatHappened": "研究整合三個認知健康的縱向 cohort，找出後來從 Aβ-negative 轉為 Aβ-positive 的人，再只使用轉陽以前多年的 MRI。結果顯示，日後轉陽的人在至少七年前就平均具有較厚的皮質，而且隨時間的 cortical thinning 較少。部分差異在統計上控制當時仍未達陽性門檻的連續 amyloid 數值後仍存在，暗示這些結構變化未必只是 PET 還沒跨過門檻的同一個 amyloid 訊號。",
-        "howTheyStudied": "研究者把每個人的 longitudinal MRI 序列依照距離第一次 Aβ-positive PET 的時間截斷，例如只分析至少在轉陽前 1、2，一直到 10 年以前取得的 MRI，再用 nonlinear mixed models 比較 converters 和持續 Aβ-negative 的 nonconverters。團隊也使用連續的 quantitative Aβ 數值做共變項，並在另一組依模型預測 amyloid 上升時間的樣本中做互補分析，以降低單一 PET threshold 帶來的分類問題。",
-        "whyItMatters": "這項結果提醒我們，第一次 PET 陽性不是疾病真正開始的那一天，而只是目前檢測跨過某個門檻的時間點。如果腦結構變化真的更早出現，未來研究早期阿茲海默症時就不能只從 amyloid positivity 往後看，也要追蹤更早的發育、血管、免疫或其他生物因素。它也提醒 biomarker 的門檻是一種測量定義，不等於生物過程突然開關。",
-        "limitations": "這是觀察性縱向影像研究。較厚皮質和未來 amyloid 上升有關，不代表皮質增厚造成 amyloid，也不代表 MRI 已能拿來預測某個人會不會得阿茲海默症。研究對象在觀察期內認知健康，而且 MRI thickness 會受到掃描器、影像處理與組織性質影響；研究雖做了多種敏感度分析，仍需要獨立族群與更長時間追蹤。",
-        "whatNext": "下一步要把 MRI 結構變化和更早期的血液、腦脊髓液、tau、神經發炎與血管指標放在同一批人身上長期追蹤，才能判斷哪個變化先出現。若要成為真正的早期 biomarker，也必須證明它對個人的預測準確度，而不只是兩群人的平均曲線不同。",
-        "sources": [{"label":"Nature Neuroscience 原始研究：Cortical thickness changes precede high levels of amyloid by at least 7 years","url":"https://www.nature.com/articles/s41593-026-02363-4"},{"label":"DOI：10.1038/s41593-026-02363-4","url":"https://doi.org/10.1038/s41593-026-02363-4"}],
-        "questions": ["為什麼 PET 第一次變成 amyloid-positive 不能被當成 amyloid 病理真正開始的時間？","研究者只使用轉陽以前的 MRI，並再控制連續 Aβ 數值，分別是在排除哪兩種替代解釋？","即使 converters 平均在七年前就有不同的 cortical thickness，為什麼仍不能直接把 MRI thickness 當成個人阿茲海默症篩檢工具？"]
+        "category": "神經免疫與腦部邊界",
+        "title": "大腦的免疫哨站可能就在頭骨裡：頭骨骨髓發現能辨認腦內抗原的淋巴結樣結構",
+        "widgetTitle": "頭骨裡藏著大腦的免疫哨站？",
+        "widgetSummary": "小鼠頭骨骨髓中存在由 T 細胞、B 細胞與抗原呈現細胞組成的淋巴樣結構，能接收來自中樞神經系統的抗原，並參與腦瘤免疫反應。",
+        "dek": "大腦過去常被描述成和周邊免疫系統相對隔離的器官，但這幅圖近年快速改變。新的研究顯示，貼著腦膜的頭骨骨髓不只是製造免疫細胞的地方，還可能像一座非常靠近大腦的地方免疫站，直接監看從中樞神經系統流出的分子。",
+        "background": "Adaptive immunity（適應性免疫）的特色，是 T 細胞與 B 細胞能針對特定 antigen（抗原）產生專一反應。這類反應常在 lymph node 等次級淋巴器官中發生：抗原呈現細胞把目標展示給 T 細胞，T 細胞再協助 B 細胞活化、成熟並產生抗體。近年研究發現，頭骨骨髓和 dura mater（硬腦膜）之間有微小骨性通道，腦脊髓液與免疫細胞可以在腦部邊界和頭骨骨髓之間交換。",
+        "whatHappened": "研究者在小鼠頭骨骨髓看到由 antigen-presenting cells、CD4 T cells 與 B cells 組成的群聚，其中包含類似 germinal centre 的結構，以及會表現 IL-21、協助 B 細胞反應的 follicular-helper-like T cells。這些結構能回應來自中樞神經系統的抗原。在小鼠腦瘤模型中，頭骨骨髓的適應性免疫反應也參與抗腫瘤作用；操控這些局部免疫結構後，腦瘤免疫反應與治療效果會跟著改變。",
+        "howTheyStudied": "團隊使用透明化頭骨與 confocal imaging 直接觀察免疫細胞在 calvarial bone marrow 中的空間組織，並以 flow cytometry、單細胞與分子標記分析 T、B 細胞狀態。他們讓 CNS-derived antigens 進入相關路徑，追蹤頭骨骨髓是否產生抗原專一反應；再利用缺乏部分周邊次級淋巴器官的模型與腦腫瘤模型，測試頭骨局部免疫反應是否仍能存在，以及改變這個區域會不會影響抗腫瘤免疫。",
+        "whyItMatters": "這讓『大腦免疫監視』的地理位置變得更具體。與遠處的脾臟或淋巴結相比，頭骨骨髓緊鄰腦膜，又能接觸腦脊髓液中的訊息，因此可能提供快速的地方性免疫反應。長期而言，這可能影響我們理解腦瘤、神經發炎、自體免疫甚至神經退化疾病時，究竟該把哪些 CNS border tissues 視為疾病的一部分。",
+        "limitations": "主要功能性因果證據來自小鼠。雖然過去在人類頭骨與腦瘤患者也看到相關免疫細胞線索，但本研究不能證明人類頭骨骨髓具有完全相同的抗原專一免疫功能。頭骨骨髓也不是唯一的 CNS 免疫入口；腦膜、頸部淋巴結與其他周邊免疫器官仍可能共同參與，而且不同疾病的抗原流動方式可能不同。",
+        "whatNext": "下一步需要在人類手術或影像可取得的樣本中確認這些淋巴樣結構是否存在、如何隨年齡與疾病改變，以及能否在不引起有害神經發炎的前提下選擇性增強抗腦瘤反應。也需要比較不同 CNS 疾病中，頭骨骨髓和頸部淋巴結各自負責哪一段抗原監視。",
+        "sources": [
+          {"label": "Nature 原始研究：Functional role of skull lymphoid structures in CNS immunosurveillance", "url": "https://www.nature.com/articles/s41586-026-10951-4"},
+          {"label": "DOI：10.1038/s41586-026-10951-4", "url": "https://doi.org/10.1038/s41586-026-10951-4"}
+        ],
+        "questions": [
+          "為什麼頭骨骨髓的位置會讓它比遠端免疫器官更適合成為 CNS 的快速免疫監視站？",
+          "只看到 T、B 細胞聚在一起還不足以證明它是功能性免疫站；研究還需要哪些抗原反應或介入證據？",
+          "如果未來想利用頭骨骨髓增強腦瘤免疫，為什麼同時必須擔心自體免疫或神經發炎，應該用什麼實驗先評估這個風險？"
+        ]
       },
       {
-        "category": "神經網路與計算",
-        "title": "八千顆神經元沒有各做各的：局部迴路如何限制大腦活動能探索的維度",
-        "widgetTitle": "很多神經元，為何活動維度卻不高？",
-        "widgetSummary": "研究分析超過 8,000 顆小鼠皮質神經元與大型突觸資料，指出強而局部的 recurrent connectivity 會限制群體活動的自由度，並讓神經網路能隨狀態改變其計算空間。",
-        "dek": "大腦有數十億神經元，但如果每顆神經元真的完全獨立變化，群體活動會複雜到幾乎無法描述。實際記錄卻常發現，很多神經元會共同沿著少數幾種活動模式變化。新的研究試圖回答：這種低維度不是統計巧合的話，究竟是什麼樣的突觸連線把它製造出來？",
-        "background": "在 population neuroscience 裡，dimensionality 不是指三維空間，而是描述一群神經元活動需要多少個彼此獨立的變化方向才能表示。假設 100 顆神經元總是一起升高或降低，雖然有 100 個細胞，真正的自由度可能很低；如果它們各自獨立，維度就會高很多。Recurrent connectivity 指同一個局部神經網路裡的神經元彼此回饋連接，而不是訊息只單向從上一區傳到下一區。",
-        "whatHappened": "研究發現小鼠視覺皮質的活動會在不同 neural states 間切換，而每個狀態內的群體活動維度遠低於記錄的神經元數量。模型與資料共同指出，許多看似很弱、方向又不同的神經元間相關性累積起來，反映出強的 recurrent connectivity，並有效限制群體活動可以探索的自由度。特定兩顆或三顆細胞之間反覆出現的 connectivity motifs 也能調節 dimensionality，而且這類 motif 在小鼠與人類的突觸生理資料中都能找到。",
-        "howTheyStudied": "團隊先分析 Allen Brain Observatory 的高密度 Neuropixels recordings，涵蓋超過 8,000 顆神經元；單次 session 約記錄 125–520 顆視覺皮質神經元，共 26 個 sessions。他們用 hidden Markov model 把活動切成不同狀態，再以 participation ratio 等方法估計每個狀態的 dimensionality。接著建立 recurrent network theory，把維度和神經元間 covariance 的統計特徵連起來，最後再分析超過 32,000 對神經元的突觸生理資料，檢查理論預測的 connectivity motifs 是否真的存在。",
-        "whyItMatters": "Dimensionality 可以理解成大腦當下開放了多少種集體活動方向。高維度可能有利於把不同輸入分開，低維度則可能有利於把不同經驗壓縮成可泛化的共同結構。這篇研究的重要性在於把一個抽象的資料分析量，往下連到具體的局部突觸連線：神經計算的空間大小可能不是憑空出現，而是由 recurrent circuit architecture 調節。",
-        "limitations": "研究主要用小鼠視覺皮質的 in vivo activity 建立動力學證據，再用獨立的小鼠與人類突觸資料支持連線 motif；並不是在同一個活體人腦中同時量到完整 connectivity 與 dimensionality。理論模型刻意簡化真實皮質，而且 dimensionality 的數值也依賴分析方法、記錄細胞數與行為狀態，因此不能把單一維度數字當成某腦區固定不變的屬性。",
-        "whatNext": "真正有力的下一步是直接操控預測會改變 dimensionality 的特定 recurrent connections 或 cell types，再觀察群體活動與行為計算是否按理論改變。更長期則可以問學習、疾病或 neuromodulation 是否透過重塑這些局部 motif，改變大腦可使用的計算空間。",
-        "sources": [{"label":"Nature Neuroscience 原始研究：Strong and localized recurrence controls the dimensionality of neural activity across brain areas","url":"https://www.nature.com/articles/s41593-026-02395-w"},{"label":"DOI：10.1038/s41593-026-02395-w","url":"https://doi.org/10.1038/s41593-026-02395-w"}],
-        "questions": ["如果 100 顆神經元總是高度同步，為什麼它們的 population activity dimensionality 可能遠低於 100？","研究者為什麼需要把 Neuropixels 活動、數學模型與獨立的突觸連線資料放在一起，而不能只靠其中一種資料就宣稱 recurrent connectivity 控制 dimensionality？","如果要從理論與相關證據再往因果前進，你會選擇操控哪一類 recurrent connection，並用什麼活動與行為結果判斷理論是否成立？"]
+        "category": "社會神經科學與計算模型",
+        "title": "誰帶路、誰跟隨，不只是個性：合作中的社會角色會改變前額葉如何表示另一隻動物",
+        "widgetTitle": "領導與跟隨，前額葉真的不同",
+        "widgetSummary": "兩隻小鼠合作覓食時會自然形成穩定的 leader–follower 角色；前額葉對夥伴位置與價值的表示也會依角色不同而呈現不對稱。",
+        "dek": "合作不是兩個個體各自做正確決定後把答案加起來。當一方帶路、另一方跟隨時，兩個人對彼此資訊的依賴程度本來就不同。新的 Nature 研究用小鼠合作任務與多智能體強化學習模型，試著把這種社會角色拆成可以測量的神經計算。",
+        "background": "Medial prefrontal cortex（mPFC，內側前額葉）參與決策、社會資訊與價值評估。研究社會合作的困難之一，是動物的行為同時取決於自己與夥伴，因此只看單一動物的刺激—反應關係不夠。Inverse reinforcement learning 是一種從已經觀察到的行為反推『行動者可能在最大化什麼價值』的方法；multi-agent 版本則試著同時推估互相影響的兩個個體。",
+        "whatHappened": "研究者建立兩隻小鼠需要互相配合的覓食任務，發現配對後會自然形成相對穩定的 leader 與 follower，而且角色和學習速度有關。鈣影像顯示 mPFC 神經元會表示自己目前是帶領或跟隨，也會建立以自己為中心、描述夥伴位置與價值的 social value map；這些表徵在 leader 與 follower 之間並不對稱。干擾 mPFC 尤其會破壞 follower 的合作表現，並改變牠對自己線索和夥伴線索的權重。",
+        "howTheyStudied": "團隊讓成對小鼠反覆執行 cooperative foraging paradigm，量化哪一隻通常先行、另一隻如何調整路徑與兩者共同成功率，再用 calcium imaging 記錄 mPFC 神經元群體活動。研究同時建立 multi-agent inverse reinforcement learning 模型，從行為反推每隻小鼠可能使用的 latent value functions，接著檢查這些模型中的隱藏價值能否從實際 mPFC 活動解碼。最後以神經活動干擾測試 mPFC 是否對合作必要。",
+        "whyItMatters": "這篇研究的重要性不在於找到一群『領袖神經元』，而是顯示同一個社會場景會因角色不同而被不同方式計算。Follower 需要更依賴夥伴位置與行動，leader 則可能更依賴自己的目標；這種不對稱卻互補的計算，可以讓合作成為真正的雙人動態系統。研究也示範了神經科學如何把行為、群體神經活動與 computational model 放在同一個問題裡。",
+        "limitations": "小鼠的合作覓食不能直接等同人類組織中的領導力，leader/follower 也不是固定人格分類，而是特定任務中形成的行為角色。Inverse reinforcement learning 推估的是最能解釋行為的 latent value，不代表研究者直接讀到了動物的主觀意圖；mPFC 干擾也可能同時影響注意、動機或一般決策能力。",
+        "whatNext": "下一步可以改變合作夥伴、任務規則或資源分配，測試角色是否能快速互換，以及同一顆神經元的表示是否跟著角色而非個體改變。更強的因果測試則可以只操控模型預測負責 partner-value 的特定神經群，觀察是否選擇性改變合作而保留一般覓食能力。",
+        "sources": [
+          {"label": "Nature 原始研究：Asymmetric prefrontal representations for leader–follower dynamics", "url": "https://www.nature.com/articles/s41586-026-10900-1"},
+          {"label": "DOI：10.1038/s41586-026-10900-1", "url": "https://doi.org/10.1038/s41586-026-10900-1"}
+        ],
+        "questions": [
+          "為什麼 follower 比 leader 更需要把夥伴的位置與行動納入自己的決策計算？",
+          "把 multi-agent inverse reinforcement learning 推估出的 latent value 和 mPFC 神經活動互相比對，能提供什麼單靠行為或單靠腦影像沒有的證據？",
+          "如果 mPFC 被抑制後 follower 合作變差，還有哪些注意力、動機或運動能力的替代解釋需要排除，才能說它特別負責社會角色計算？"
+        ]
       }
     ],
-    "radar": {"title":"EPFL Life Sciences Summer Research Program 2027：現在適合先做實驗室地圖","summary":"EPFL School of Life Sciences 的 SRP 提供國際生命科學相關 bachelor／first-year master 學生約八週的實驗室沉浸訓練，領域涵蓋 biology、biophysics、chemistry、bioengineering、bioinformatics 與 quantitative biology。官方資訊顯示 2027 暑期申請將在 2026 年秋季開放，年度截止日為 11 月 15 日；申請會要求成績資料、推薦與實驗室選擇。現在距離開放還有時間，最值得先做的是比較 Brain Mind Institute、Neuro X 與其他生命科學實驗室的研究問題、方法和訓練型態，建立候選清單，而不是等表單開放才開始找 lab。","url":"https://www.epfl.ch/schools/sv/education/summer-research-program/"}
+    "radar": {
+      "title": "OIST 2027 Spring Research Internship：現在適合開始選 lab 與準備推薦信",
+      "summary": "OIST 的 2027 春季 Research Internship 申請截止為 2026 年 10 月 15 日 23:59（日本時間），實習需在 2027 年 4–9 月間進行 4–6 個月。它適合想用一段較長時間真正進入研究室、學特定技術並測試自己是否適合未來 PhD 環境的高年級大學生或碩士生；領域包含 neuroscience、molecular/cellular/developmental biology、computational science、marine science 等。申請需要英文 CV、成績資料、250 words 內 Statement of Purpose、1–3 封教授級推薦信與身分文件，IELTS/TOEFL 非必要。現在最值得做的是先用官方 Faculty & Project Availability 篩選 3–5 個研究單位，對照自己真正想取得的 wet/dry-lab 訓練，再提前和推薦人討論；官方也特別要求申請前不要自行聯絡 faculty 爭取同意。",
+      "url": "https://www.oist.jp/admissions/research-internship/apply-research-internship"
+    }
   },
-  "importantMail": {"count":1,"status":"目前有 1 封需要注意的郵件，涉及重要合作／社團的會議安排；詳細內容不存放在公開 Daily Board。"}
+  "importantMail": {
+    "count": 0,
+    "status": "目前沒有符合 Daily Board 嚴格條件的新郵件；詳細郵件內容不存放在公開 Daily Board。"
+  }
 }
