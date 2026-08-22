@@ -1,81 +1,82 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-22",
-  "updatedAt": "2026-08-22T07:27:11+08:00",
+  "date": "2026-08-23",
+  "updatedAt": "2026-08-23T07:29:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在重新畫大腦的邊界：睡意可能不是抽象的疲倦，而是特定神經元隨清醒時間逐漸累積的狀態；腦部免疫監視也不只發生在腦內，頭骨骨髓本身可能是一個貼近中樞神經系統的免疫站；而合作行為中看似自然形成的領導者與跟隨者，則能在前額葉找到角色依賴的神經表徵。三篇一起讀，可以看到現代神經科學如何把日常概念拆成可定位、可操控、也可被質疑的生物機制。",
+    "intro": "今天三篇都在談『複雜系統怎麼把資訊變成行動』：癌症治療把每位患者腫瘤的突變資訊變成一支個人化 mRNA 疫苗；老化的微膠細胞可能因為原本被壓住的古老病毒序列重新被讀取而進入發炎與衰老狀態；而執行複雜認知任務的大腦，似乎會重複使用少數已經擅長特定運算的神經模組。三篇一起讀，可以練習分辨臨床試驗的終點、細胞機制的因果證據，以及計算模型和真實神經活動之間的證據界線。",
     "stories": [
       {
-        "category": "睡眠與神經迴路",
-        "title": "我們為什麼越醒越想睡？研究找到會隨清醒時間累積活動的『睡眠壓力神經元』",
-        "widgetTitle": "越醒越睏，大腦真的在累積睡意",
-        "widgetSummary": "小鼠研究找到兩群會隨清醒時間增加活動的神經元；啟動它們會產生類似補眠的睡眠，抑制其中關鍵細胞則能大幅降低睡眠驅力。",
-        "dek": "睡眠不是單純到了晚上才打開的開關。人醒得越久，通常越難抵抗睡意；真正困難的問題是，大腦到底用什麼方式記錄『我已經醒多久了』？一項新的 Nature 研究把這種抽象的睡眠壓力追到特定神經細胞群。",
-        "background": "睡眠受到至少兩種力量共同影響：circadian rhythm 是大約 24 小時的生理時鐘，決定什麼時間比較容易睡；sleep homeostasis 則像睡眠債，清醒越久，睡眠驅力通常越高。睡眠不足後的 recovery sleep 不只時間增加，NREM 睡眠中的 delta 波也會變強，代表睡眠強度提高。過去知道很多腦區可以促進睡眠或清醒，但『睡眠債如何被累積並轉成睡意』仍不清楚。",
-        "whatHappened": "研究者找到 anterior medial preoptic area（aMPO，前內側視前區）與 median raphe（MR，中縫核）中的細胞群，它們的活化會隨清醒時間增加，睡著後則下降。人工啟動睡眠剝奪時活躍的細胞，會讓小鼠增加睡眠時間與強度；反過來抑制它們，則會減少睡眠並降低原本在睡眠剝奪時應該逐漸增加的入睡傾向。MR 中尤其包含 GABAergic 與 serotonergic 神經元。長期同時抑制這兩類細胞後，存活的小鼠每日睡眠量可降低接近 70%，而且沒有出現典型嚴重睡眠剝奪所伴隨的補償性睡眠驅力。",
-        "howTheyStudied": "團隊先比較小鼠在自然睡醒週期、不同時長睡眠剝奪與 recovery sleep 後的全腦 FOS 活化圖譜，資料涵蓋 162 顆腦、26 種條件，找出會隨清醒時間上升的候選區域。接著使用 activity-dependent genetic tagging 標記睡眠剝奪期間活躍的細胞，再以 chemogenetic activation/inhibition 測試這些細胞是否足以或必須參與睡眠驅力。研究也利用投射追蹤與電生理，發現睡眠剝奪會提高 MR GABAergic neuron 的內在興奮性。",
-        "whyItMatters": "這把『睡眠壓力』從一個行為現象推進成可以定位與操控的神經迴路問題。尤其重要的是，這些細胞不是只在睡著時活躍，而是在清醒期間逐漸累積活動，概念上更像真正記錄睡眠債的元件。若未來能知道它們如何感知代謝、突觸或分子層級的清醒時間，就可能把細胞內的睡眠需求和整體睡眠行為接成一條完整因果鏈。",
-        "limitations": "這是小鼠研究，不能直接推論人類可以安全地大幅減少睡眠。長期抑制實驗中有部分小鼠死亡，而且『存活的小鼠沒有明顯典型行為缺損』不等於長期完全健康；代謝、免疫、心血管與更細緻的認知後果仍需檢查。此外，MR 與 aMPO 很可能只是整套睡眠恆定系統的一部分，研究尚未解釋這些神經元最初如何偵測清醒時間。",
-        "whatNext": "下一步需要找出讓 MR 與 aMPO 細胞隨清醒時間改變興奮性的上游分子，例如代謝狀態、突觸輸入或細胞內離子變化；也需要在人類神經影像與臨床睡眠研究中尋找可對應的迴路訊號。另一個重要問題是，長期降低 sleep drive 和真正降低生理上的 sleep need 是否是同一件事。",
+        "category": "癌症免疫與 mRNA 治療",
+        "title": "第一個個人化 mRNA 癌症疫苗第三期試驗成功：它不是預防癌症，而是教免疫系統辨認每個人的腫瘤",
+        "widgetTitle": "個人化 mRNA 癌症疫苗跨過第三期試驗",
+        "widgetSummary": "高風險黑色素瘤切除後，把依患者腫瘤突變製作的 mRNA 療法加入 pembrolizumab，第三期試驗達到降低復發與遠端轉移的主要目標；完整數字仍待正式公布。",
+        "dek": "一般疫苗是在感染前讓免疫系統認識病原體；癌症疫苗面對的難題不同：癌細胞本來就是自己的細胞。個人化 mRNA 療法試圖抓住腫瘤突變產生的『陌生標記』，替每位患者製作不同的免疫教材。這週公布的第三期結果，是這條路線第一次在大型晚期試驗跨過主要療效門檻。",
+        "background": "黑色素瘤是由製造色素的 melanocyte 形成的癌症。高風險患者即使把肉眼可見的腫瘤完整切除，體內仍可能殘留少量癌細胞，因此常使用 adjuvant therapy（術後輔助治療）降低復發。Pembrolizumab 是 anti-PD-1 checkpoint inhibitor：它解除免疫系統中抑制 T 細胞的一個煞車，讓 T 細胞比較能攻擊癌細胞。Intismeran autogene（V940／mRNA-4157）則先定序患者腫瘤，挑選腫瘤突變形成的 neoantigens，再製作編碼最多 34 個這類抗原的個人化 mRNA，目標是讓免疫系統學會辨認那名患者自己的癌細胞。",
+        "whatHappened": "INTerpath-001 是第三期、隨機、雙盲試驗，納入約 1,100 名已完整切除但仍屬高風險 stage IIB–IV 黑色素瘤患者。公司公布的 topline result 顯示，V940 加 pembrolizumab 相較於 placebo 加 pembrolizumab，達到主要終點 recurrence-free survival，也達到關鍵次要終點 distant metastasis-free survival。換句話說，在追蹤期間，加入個人化 mRNA 療法的組別較少出現癌症復發、死亡或遠端轉移等事件。這是第一個在第三期試驗宣布成功的 mRNA 個人化癌症療法。",
+        "howTheyStudied": "參與者在腫瘤已被手術完整切除、沒有可見疾病的情況下進入試驗，再隨機接受 V940 加 pembrolizumab，或 placebo 加 pembrolizumab。雙盲設計代表患者與評估者不知道分組，可降低期待造成的偏差。主要終點 recurrence-free survival 計算從隨機分組到局部、區域或遠端復發，或死亡的時間；distant metastasis-free survival 則更聚焦於癌症是否跑到遠處器官。前一個較小的第二期研究在五年追蹤時曾報告復發或死亡風險相對下降 49%，但第三期目前只公布是否達到預設統計終點，完整 hazard ratio、絕對事件率與 overall survival 尚未公開。",
+        "whyItMatters": "這個結果的重要性不只是『又多一種 mRNA 藥』。傳統藥物通常大量製造同一個成分給所有患者，而 V940 的資訊內容會隨每個人的腫瘤突變重新設計。如果完整第三期數據確認有具臨床意義的效益，代表『腫瘤定序 → 選 neoantigen → 製造個人化 mRNA → 與 checkpoint inhibitor 合併』這條高度客製化的製造與治療流程，可以在千人規模的隨機試驗中運作。這也會影響其他肺癌、膀胱癌、腎癌等個人化癌症疫苗研究。",
+        "limitations": "目前最重要的限制是完整第三期數據尚未正式發表。『達到統計顯著』沒有告訴我們絕對少了多少人復發，也還不知道 overall survival 是否改善、不同病期的效益是否一致，以及個人化製造需要多少時間與成本。黑色素瘤通常具有較多突變、較容易產生 neoantigen，也不能假設同樣策略在低突變量癌症一定同樣有效。這是治療已切除高風險癌症的療法，不是讓健康人預防得到黑色素瘤的疫苗。",
+        "whatNext": "接下來要看完整第三期 hazard ratio、絕對復發率、安全性、生活品質與 overall survival，再由監管機構評估是否核准。科學上也要回答哪些 neoantigen 最能產生持久 T 細胞反應、哪些患者最受益，以及能否縮短從腫瘤定序到個人化藥物製造完成的時間。",
         "sources": [
-          {"label": "Nature 原始研究：Wake-activated neuronal populations that regulate sleep drive", "url": "https://www.nature.com/articles/s41586-026-10928-3"},
-          {"label": "DOI：10.1038/s41586-026-10928-3", "url": "https://doi.org/10.1038/s41586-026-10928-3"}
+          {"label": "Nature：Moderna cancer vaccine stops melanoma returning", "url": "https://www.nature.com/articles/d41586-026-02612-3"},
+          {"label": "ClinicalTrials.gov：INTerpath-001 / NCT05933577", "url": "https://clinicaltrials.gov/study/NCT05933577"},
+          {"label": "NCI：V940 plus pembrolizumab high-risk melanoma trial", "url": "https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCT05933577"}
         ],
         "questions": [
-          "為什麼『清醒時逐漸活化、睡眠後下降』比單純『睡著時活躍』更符合 sleep drive 累積器的概念？",
-          "研究者同時做 activation 與 inhibition，分別能回答『足以造成』和『是否必要』哪些不同的因果問題？",
-          "如果小鼠在抑制這些細胞後睡得很少卻沒有典型補眠，還需要測量哪些生理或行為指標，才能判斷牠們是真的需要較少睡眠，而不是只是失去感覺睡意的能力？"
+          "為什麼個人化 mRNA 癌症疫苗需要先定序患者的腫瘤，而不是像一般流感疫苗一樣所有人使用完全相同的抗原？",
+          "這項試驗兩組都接受 pembrolizumab，只有一組再加入 V940；這種設計比拿 V940 和完全不治療相比，多排除了哪一種替代解釋？",
+          "在完整第三期數據尚未公布前，為什麼『試驗達到 recurrence-free survival 終點』仍不足以判斷每位患者實際能多得到多少好處？你還想看到哪些數字？"
         ]
       },
       {
-        "category": "神經免疫與腦部邊界",
-        "title": "大腦的免疫哨站可能就在頭骨裡：頭骨骨髓發現能辨認腦內抗原的淋巴結樣結構",
-        "widgetTitle": "頭骨裡藏著大腦的免疫哨站？",
-        "widgetSummary": "小鼠頭骨骨髓中存在由 T 細胞、B 細胞與抗原呈現細胞組成的淋巴樣結構，能接收來自中樞神經系統的抗原，並參與腦瘤免疫反應。",
-        "dek": "大腦過去常被描述成和周邊免疫系統相對隔離的器官，但這幅圖近年快速改變。新的研究顯示，貼著腦膜的頭骨骨髓不只是製造免疫細胞的地方，還可能像一座非常靠近大腦的地方免疫站，直接監看從中樞神經系統流出的分子。",
-        "background": "Adaptive immunity（適應性免疫）的特色，是 T 細胞與 B 細胞能針對特定 antigen（抗原）產生專一反應。這類反應常在 lymph node 等次級淋巴器官中發生：抗原呈現細胞把目標展示給 T 細胞，T 細胞再協助 B 細胞活化、成熟並產生抗體。近年研究發現，頭骨骨髓和 dura mater（硬腦膜）之間有微小骨性通道，腦脊髓液與免疫細胞可以在腦部邊界和頭骨骨髓之間交換。",
-        "whatHappened": "研究者在小鼠頭骨骨髓看到由 antigen-presenting cells、CD4 T cells 與 B cells 組成的群聚，其中包含類似 germinal centre 的結構，以及會表現 IL-21、協助 B 細胞反應的 follicular-helper-like T cells。這些結構能回應來自中樞神經系統的抗原。在小鼠腦瘤模型中，頭骨骨髓的適應性免疫反應也參與抗腫瘤作用；操控這些局部免疫結構後，腦瘤免疫反應與治療效果會跟著改變。",
-        "howTheyStudied": "團隊使用透明化頭骨與 confocal imaging 直接觀察免疫細胞在 calvarial bone marrow 中的空間組織，並以 flow cytometry、單細胞與分子標記分析 T、B 細胞狀態。他們讓 CNS-derived antigens 進入相關路徑，追蹤頭骨骨髓是否產生抗原專一反應；再利用缺乏部分周邊次級淋巴器官的模型與腦腫瘤模型，測試頭骨局部免疫反應是否仍能存在，以及改變這個區域會不會影響抗腫瘤免疫。",
-        "whyItMatters": "這讓『大腦免疫監視』的地理位置變得更具體。與遠處的脾臟或淋巴結相比，頭骨骨髓緊鄰腦膜，又能接觸腦脊髓液中的訊息，因此可能提供快速的地方性免疫反應。長期而言，這可能影響我們理解腦瘤、神經發炎、自體免疫甚至神經退化疾病時，究竟該把哪些 CNS border tissues 視為疾病的一部分。",
-        "limitations": "主要功能性因果證據來自小鼠。雖然過去在人類頭骨與腦瘤患者也看到相關免疫細胞線索，但本研究不能證明人類頭骨骨髓具有完全相同的抗原專一免疫功能。頭骨骨髓也不是唯一的 CNS 免疫入口；腦膜、頸部淋巴結與其他周邊免疫器官仍可能共同參與，而且不同疾病的抗原流動方式可能不同。",
-        "whatNext": "下一步需要在人類手術或影像可取得的樣本中確認這些淋巴樣結構是否存在、如何隨年齡與疾病改變，以及能否在不引起有害神經發炎的前提下選擇性增強抗腦瘤反應。也需要比較不同 CNS 疾病中，頭骨骨髓和頸部淋巴結各自負責哪一段抗原監視。",
+        "category": "神經免疫與老化",
+        "title": "藏在基因組裡的古老病毒重新醒來，可能把微膠細胞推向慢性發炎與細胞衰老",
+        "widgetTitle": "老化微膠細胞裡，古老病毒序列可能重新醒來",
+        "widgetSummary": "小鼠研究發現，負責壓住 retrotransposable elements 的 DAXX 隨老化下降；在年輕微膠細胞移除 Daxx，就能誘發發炎、DNA 損傷與衰老樣狀態。",
+        "dek": "人類與小鼠的 DNA 並不全是今天仍在工作的基因。基因組裡保存了大量遠古病毒與可移動遺傳元件留下的序列，正常成年細胞會把它們緊緊封住。新研究提出，腦部免疫細胞老化的一部分，可能正是這層『封條』逐漸鬆開。",
+        "background": "Microglia（微膠細胞）是中樞神經系統常駐的免疫細胞，平時巡視腦組織、清除碎片並調節神經環境。Retrotransposable elements（RTEs，反轉錄轉位元件）則是能經 RNA 中間體複製或移動的 DNA 序列，其中許多來自演化史上整合進祖先基因組的病毒。成年細胞通常把這些區域包進緊密的 heterochromatin，使它們不容易被轉錄。DAXX 是 histone chaperone，協助維持包括 RTE 在內區域的染色質抑制狀態。",
+        "whatHappened": "研究發現老年小鼠微膠細胞中多種 RTE 表現增加，而 DAXX 隨老化下降。更關鍵的是，研究者在年輕成年小鼠的微膠細胞中選擇性移除 Daxx，不必等動物自然變老，就會出現 RTE 周圍染色質鬆開、homeostatic microglia 標記下降、細胞重新進入 cell cycle、DNA 損傷與行為改變。部分微膠細胞之後耗竭，再被具有 Apoe-high 與 senescence-like 特徵的 DAXX 缺失微膠細胞取代。這表示 DAXX 喪失不只是老化旁觀者，而足以把年輕微膠細胞推向一部分老化樣狀態。",
+        "howTheyStudied": "團隊先分析不同發育與老化階段微膠細胞的 RNA sequencing 資料，尋找 RTE 與其抑制因子的變化；再建立 microglia-specific Daxx loss-of-function 小鼠，利用轉錄體、染色質分析、細胞週期與 DNA damage 指標追蹤後果。研究也檢查 interferon、PML 等和 DAXX 互作的發炎／衰老路徑，並在人類周邊血液資料中看到 DAXX 與 RTE expression 的反向關係，作為跨物種線索。",
+        "whyItMatters": "老化腦常見 microglial activation，但『為什麼老化本身會讓免疫細胞更容易發炎』一直很難拆解。這篇把一條可能的因果鏈接起來：染色質維護變弱 → 原本沉默的 RTE 被轉錄 → 細胞把這些異常核酸訊號視為壓力／危險 → 發炎與 DNA damage 增加 → 微膠細胞逐漸失去穩態身份並進入衰老樣狀態。它也提醒我們，基因組中看似沒有日常功能的重複序列，在表觀遺傳控制失效時可能重新變成生物學訊號。",
+        "limitations": "最強的因果證據來自基因工程小鼠，而且直接刪除 Daxx 可能比自然老化中較緩慢的 DAXX 下降劇烈得多。研究在人類資料看到的是周邊血液中的相關性，並沒有證明人類老化腦微膠細胞也沿著完全相同路徑發展。RTE 增加也可能同時是發炎的原因與結果；不同 RTE 家族可能具有不同作用，不能把所有『古老病毒序列』視為同一種毒性來源。",
+        "whatNext": "下一步需要在人類腦組織與縱向資料中確認 DAXX–RTE 軸是否在健康老化與神經退化疾病早期就改變，並利用較溫和、可逆的方式重新壓制特定 RTE 或恢復染色質狀態，看能否真正降低微膠細胞發炎而不破壞正常免疫反應。",
         "sources": [
-          {"label": "Nature 原始研究：Functional role of skull lymphoid structures in CNS immunosurveillance", "url": "https://www.nature.com/articles/s41586-026-10951-4"},
-          {"label": "DOI：10.1038/s41586-026-10951-4", "url": "https://doi.org/10.1038/s41586-026-10951-4"}
+          {"label": "Nature Neuroscience 原始研究：Microglia activation by derepression of endogenous retroviruses drives inflammation and cellular senescence", "url": "https://www.nature.com/articles/s41593-026-02404-y"},
+          {"label": "DOI：10.1038/s41593-026-02404-y", "url": "https://doi.org/10.1038/s41593-026-02404-y"}
         ],
         "questions": [
-          "為什麼頭骨骨髓的位置會讓它比遠端免疫器官更適合成為 CNS 的快速免疫監視站？",
-          "只看到 T、B 細胞聚在一起還不足以證明它是功能性免疫站；研究還需要哪些抗原反應或介入證據？",
-          "如果未來想利用頭骨骨髓增強腦瘤免疫，為什麼同時必須擔心自體免疫或神經發炎，應該用什麼實驗先評估這個風險？"
+          "如果 RTE 原本就存在 DNA 裡，為什麼正常年輕微膠細胞通常不會因它們而持續發炎？DAXX 與 heterochromatin 在這條因果鏈扮演什麼角色？",
+          "研究者在年輕微膠細胞中移除 Daxx 後就出現老化樣變化，這比只比較年輕與老年小鼠的 DAXX 表現多提供了什麼因果證據？",
+          "Daxx knockout 比自然老化劇烈得多。若要證明這條機制真的參與正常人類腦老化，你會如何設計更接近自然時間尺度的驗證？"
         ]
       },
       {
-        "category": "社會神經科學與計算模型",
-        "title": "誰帶路、誰跟隨，不只是個性：合作中的社會角色會改變前額葉如何表示另一隻動物",
-        "widgetTitle": "領導與跟隨，前額葉真的不同",
-        "widgetSummary": "兩隻小鼠合作覓食時會自然形成穩定的 leader–follower 角色；前額葉對夥伴位置與價值的表示也會依角色不同而呈現不對稱。",
-        "dek": "合作不是兩個個體各自做正確決定後把答案加起來。當一方帶路、另一方跟隨時，兩個人對彼此資訊的依賴程度本來就不同。新的 Nature 研究用小鼠合作任務與多智能體強化學習模型，試著把這種社會角色拆成可以測量的神經計算。",
-        "background": "Medial prefrontal cortex（mPFC，內側前額葉）參與決策、社會資訊與價值評估。研究社會合作的困難之一，是動物的行為同時取決於自己與夥伴，因此只看單一動物的刺激—反應關係不夠。Inverse reinforcement learning 是一種從已經觀察到的行為反推『行動者可能在最大化什麼價值』的方法；multi-agent 版本則試著同時推估互相影響的兩個個體。",
-        "whatHappened": "研究者建立兩隻小鼠需要互相配合的覓食任務，發現配對後會自然形成相對穩定的 leader 與 follower，而且角色和學習速度有關。鈣影像顯示 mPFC 神經元會表示自己目前是帶領或跟隨，也會建立以自己為中心、描述夥伴位置與價值的 social value map；這些表徵在 leader 與 follower 之間並不對稱。干擾 mPFC 尤其會破壞 follower 的合作表現，並改變牠對自己線索和夥伴線索的權重。",
-        "howTheyStudied": "團隊讓成對小鼠反覆執行 cooperative foraging paradigm，量化哪一隻通常先行、另一隻如何調整路徑與兩者共同成功率，再用 calcium imaging 記錄 mPFC 神經元群體活動。研究同時建立 multi-agent inverse reinforcement learning 模型，從行為反推每隻小鼠可能使用的 latent value functions，接著檢查這些模型中的隱藏價值能否從實際 mPFC 活動解碼。最後以神經活動干擾測試 mPFC 是否對合作必要。",
-        "whyItMatters": "這篇研究的重要性不在於找到一群『領袖神經元』，而是顯示同一個社會場景會因角色不同而被不同方式計算。Follower 需要更依賴夥伴位置與行動，leader 則可能更依賴自己的目標；這種不對稱卻互補的計算，可以讓合作成為真正的雙人動態系統。研究也示範了神經科學如何把行為、群體神經活動與 computational model 放在同一個問題裡。",
-        "limitations": "小鼠的合作覓食不能直接等同人類組織中的領導力，leader/follower 也不是固定人格分類，而是特定任務中形成的行為角色。Inverse reinforcement learning 推估的是最能解釋行為的 latent value，不代表研究者直接讀到了動物的主觀意圖；mPFC 干擾也可能同時影響注意、動機或一般決策能力。",
-        "whatNext": "下一步可以改變合作夥伴、任務規則或資源分配，測試角色是否能快速互換，以及同一顆神經元的表示是否跟著角色而非個體改變。更強的因果測試則可以只操控模型預測負責 partner-value 的特定神經群，觀察是否選擇性改變合作而保留一般覓食能力。",
+        "category": "認知神經科學與計算模型",
+        "title": "大腦做複雜任務時可能不必每次重造一套迴路，而是像軟體一樣重複呼叫『刺激處理』與『記憶維持』模組",
+        "widgetTitle": "大腦會重複使用同一套認知模組嗎？",
+        "widgetSummary": "小鼠在需要感覺、記憶與延遲回報的任務中，前額葉與頂葉會重複使用相似的神經活動子空間處理不同內容；資料約束的人工神經網路也出現功能模組化。",
+        "dek": "如果每一個新任務都需要一套全新的神經元，大腦很快就會遇到資源問題。電腦程式的解法是把常用功能寫成可以重複呼叫的模組；新的 Nature Neuroscience 研究問了一個很漂亮的問題：生物大腦會不會也用類似原則，把『讀取刺激』『暫時記住』等運算模組反覆套用到不同內容？",
+        "background": "Population neuroscience 不只看單一神經元，而會把很多神經元在某一瞬間的活動想成高維空間中的一個點。若某一種運算主要沿著特定幾個活動方向變化，就可以描述成 neural subspace（神經活動子空間）。重要的是，subspace 不是一塊解剖腦區，而是一種群體活動模式。若不同時間、不同內容都重複使用相同 subspace，便可能代表大腦重複使用同一種計算。",
+        "whatHappened": "小鼠執行 delayed match-to-sample with delayed report 任務時，需要先處理刺激、暫時保存資訊，之後再根據記憶做出回報。研究者發現 medial prefrontal cortex 與 posterior parietal cortex 中，和 stimulus processing 相關的活動 subspace 會在新刺激出現時被再次使用；和 memory maintenance 相關的 subspace 也會在需要保存不同內容時被再次使用。Clustering 進一步顯示，不同 subspace 主要由不同神經元群支持，而不是所有細胞完全隨機混合參與所有運算。",
+        "howTheyStudied": "團隊在小鼠完成多階段認知任務時記錄前額葉與頂葉神經元群體活動，再用線性代數與降維方法找出最能表示刺激與記憶的 neural subspaces，檢查這些方向是否能跨不同內容與任務階段泛化。接著建立 recurrent neural network（RNN），並用真實神經資料限制模型的動態結構。當模型中支持特定計算的 cluster 被 silencing 時，對應的刺激處理或記憶運算會選擇性受損，和『可重用模組』模型一致。",
+        "whyItMatters": "這提供一種理解 cognitive flexibility 的方法：大腦不一定為『紅色刺激的記憶』『藍色刺激的記憶』各建立完全不同迴路，而可能把內容和運算部分拆開，再重複使用一套維持記憶的群體動態。這種架構能減少必須為所有情境建立獨立神經表示的成本，也和人工 recurrent network 中可重用 computational module 的概念接軌。",
+        "limitations": "真正的神經記錄來自小鼠與特定實驗任務；RNN lesion experiment 是在人工模型中做的，不等於研究者已經在活體小鼠中精準移除某個神經模組並證明相同效果。Subspace 與 cluster 也依賴分析方法與任務設計，不能把它們直接當成固定的解剖器官。更複雜、自然的認知任務是否仍使用同樣模組化原則，仍待驗證。",
+        "whatNext": "下一步可以用細胞類型特異的 optogenetics 或 closed-loop manipulation，在動物真正執行任務時干擾被預測為 stimulus module 或 memory module 的細胞群，測試是否只破壞對應計算；也可以換不同任務，檢驗同一 subspace 是否真的跨情境被重新部署。",
         "sources": [
-          {"label": "Nature 原始研究：Asymmetric prefrontal representations for leader–follower dynamics", "url": "https://www.nature.com/articles/s41586-026-10900-1"},
-          {"label": "DOI：10.1038/s41586-026-10900-1", "url": "https://doi.org/10.1038/s41586-026-10900-1"}
+          {"label": "Nature Neuroscience 原始研究：Reusable modular architecture enables flexible cognitive operations in the mouse brain and artificial recurrent networks", "url": "https://www.nature.com/articles/s41593-026-02410-0"},
+          {"label": "DOI：10.1038/s41593-026-02410-0", "url": "https://doi.org/10.1038/s41593-026-02410-0"}
         ],
         "questions": [
-          "為什麼 follower 比 leader 更需要把夥伴的位置與行動納入自己的決策計算？",
-          "把 multi-agent inverse reinforcement learning 推估出的 latent value 和 mPFC 神經活動互相比對，能提供什麼單靠行為或單靠腦影像沒有的證據？",
-          "如果 mPFC 被抑制後 follower 合作變差，還有哪些注意力、動機或運動能力的替代解釋需要排除，才能說它特別負責社會角色計算？"
+          "為什麼同一個 memory-maintenance subspace 能表示不同內容，會比『每一種記憶都有完全不同神經元』更符合 reusable module 的概念？",
+          "研究者為什麼除了分析真實小鼠神經活動，還要建立 data-constrained RNN 並做 virtual silencing？這一步能增加什麼、又不能證明什麼？",
+          "如果你要把『可重用神經模組』從漂亮的資料分析提升成活體因果機制，下一個實驗最需要直接操控什麼，並觀察什麼選擇性結果？"
         ]
       }
     ],
     "radar": {
-      "title": "OIST 2027 Spring Research Internship：現在適合開始選 lab 與準備推薦信",
-      "summary": "OIST 的 2027 春季 Research Internship 申請截止為 2026 年 10 月 15 日 23:59（日本時間），實習需在 2027 年 4–9 月間進行 4–6 個月。它適合想用一段較長時間真正進入研究室、學特定技術並測試自己是否適合未來 PhD 環境的高年級大學生或碩士生；領域包含 neuroscience、molecular/cellular/developmental biology、computational science、marine science 等。申請需要英文 CV、成績資料、250 words 內 Statement of Purpose、1–3 封教授級推薦信與身分文件，IELTS/TOEFL 非必要。現在最值得做的是先用官方 Faculty & Project Availability 篩選 3–5 個研究單位，對照自己真正想取得的 wet/dry-lab 訓練，再提前和推薦人討論；官方也特別要求申請前不要自行聯絡 faculty 爭取同意。",
+      "title": "OIST 2027 Spring Research Internship：現在已開放，適合用兩個月把『想學什麼方法』轉成實驗室 shortlist",
+      "summary": "Okinawa Institute of Science and Technology 的 2027 Spring Research Internship 截止日是 2026-10-15 23:59 JST，實習於 2027 年 4–9 月間進行 4–6 個月，領域包含 neuroscience、molecular/cellular/developmental biology、computational science 等。它特別適合想用一段連續研究經驗確認自己是否喜歡研究環境、或想補一項特定技術的學生。現在值得做的是直接使用官方 Faculty & Project Availability 比較研究問題、方法與可取得的訓練；OIST 明確要求一般 Graduate School funded 申請者不要在申請前自行聯絡 faculty 爭取支持。申請需英文資料、成績／在學資料等，英文檢定為 optional；官方也提供住宿、一次直接來回機票、簽證行政、交通與每工作日 2,400 日圓 allowance。",
       "url": "https://www.oist.jp/admissions/research-internship/apply-research-internship"
     }
   },
