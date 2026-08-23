@@ -1,87 +1,83 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-23",
-  "updatedAt": "2026-08-23T07:29:00+08:00",
+  "date": "2026-08-24",
+  "updatedAt": "2026-08-24T07:33:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在談『複雜系統怎麼把資訊變成行動』：癌症治療把每位患者腫瘤的突變資訊變成一支個人化 mRNA 疫苗；老化的微膠細胞可能因為原本被壓住的古老病毒序列重新被讀取而進入發炎與衰老狀態；而執行複雜認知任務的大腦，似乎會重複使用少數已經擅長特定運算的神經模組。三篇一起讀，可以練習分辨臨床試驗的終點、細胞機制的因果證據，以及計算模型和真實神經活動之間的證據界線。",
+    "intro": "今天三篇都在追問一件事：當我們看到一個很有吸引力的生物指標或治療結果時，怎麼判斷它真的代表疾病機制、治療效益，還是只是一個伴隨訊號？第一篇用近 50 萬個人類海馬迴細胞核重新檢視成人神經新生與重度憂鬱症；第二篇系統測試 16 種表觀遺傳老化時鐘，提醒我們『時鐘變年輕』不等於人真的活得更久；第三篇則用病人來源 iPSC、影像、單細胞轉錄體與電生理，把兒童失智症的藥物篩選從單一 readout 變成多層次驗證。",
     "stories": [
       {
-        "category": "癌症免疫與 mRNA 治療",
-        "title": "第一個個人化 mRNA 癌症疫苗第三期試驗成功：它不是預防癌症，而是教免疫系統辨認每個人的腫瘤",
-        "widgetTitle": "個人化 mRNA 癌症疫苗跨過第三期試驗",
-        "widgetSummary": "高風險黑色素瘤切除後，把依患者腫瘤突變製作的 mRNA 療法加入 pembrolizumab，第三期試驗達到降低復發與遠端轉移的主要目標；完整數字仍待正式公布。",
-        "dek": "一般疫苗是在感染前讓免疫系統認識病原體；癌症疫苗面對的難題不同：癌細胞本來就是自己的細胞。個人化 mRNA 療法試圖抓住腫瘤突變產生的『陌生標記』，替每位患者製作不同的免疫教材。這週公布的第三期結果，是這條路線第一次在大型晚期試驗跨過主要療效門檻。",
-        "background": "黑色素瘤是由製造色素的 melanocyte 形成的癌症。高風險患者即使把肉眼可見的腫瘤完整切除，體內仍可能殘留少量癌細胞，因此常使用 adjuvant therapy（術後輔助治療）降低復發。Pembrolizumab 是 anti-PD-1 checkpoint inhibitor：它解除免疫系統中抑制 T 細胞的一個煞車，讓 T 細胞比較能攻擊癌細胞。Intismeran autogene（V940／mRNA-4157）則先定序患者腫瘤，挑選腫瘤突變形成的 neoantigens，再製作編碼最多 34 個這類抗原的個人化 mRNA，目標是讓免疫系統學會辨認那名患者自己的癌細胞。",
-        "whatHappened": "INTerpath-001 是第三期、隨機、雙盲試驗，納入約 1,100 名已完整切除但仍屬高風險 stage IIB–IV 黑色素瘤患者。公司公布的 topline result 顯示，V940 加 pembrolizumab 相較於 placebo 加 pembrolizumab，達到主要終點 recurrence-free survival，也達到關鍵次要終點 distant metastasis-free survival。換句話說，在追蹤期間，加入個人化 mRNA 療法的組別較少出現癌症復發、死亡或遠端轉移等事件。這是第一個在第三期試驗宣布成功的 mRNA 個人化癌症療法。",
-        "howTheyStudied": "參與者在腫瘤已被手術完整切除、沒有可見疾病的情況下進入試驗，再隨機接受 V940 加 pembrolizumab，或 placebo 加 pembrolizumab。雙盲設計代表患者與評估者不知道分組，可降低期待造成的偏差。主要終點 recurrence-free survival 計算從隨機分組到局部、區域或遠端復發，或死亡的時間；distant metastasis-free survival 則更聚焦於癌症是否跑到遠處器官。前一個較小的第二期研究在五年追蹤時曾報告復發或死亡風險相對下降 49%，但第三期目前只公布是否達到預設統計終點，完整 hazard ratio、絕對事件率與 overall survival 尚未公開。",
-        "whyItMatters": "這個結果的重要性不只是『又多一種 mRNA 藥』。傳統藥物通常大量製造同一個成分給所有患者，而 V940 的資訊內容會隨每個人的腫瘤突變重新設計。如果完整第三期數據確認有具臨床意義的效益，代表『腫瘤定序 → 選 neoantigen → 製造個人化 mRNA → 與 checkpoint inhibitor 合併』這條高度客製化的製造與治療流程，可以在千人規模的隨機試驗中運作。這也會影響其他肺癌、膀胱癌、腎癌等個人化癌症疫苗研究。",
-        "limitations": "目前最重要的限制是完整第三期數據尚未正式發表。『達到統計顯著』沒有告訴我們絕對少了多少人復發，也還不知道 overall survival 是否改善、不同病期的效益是否一致，以及個人化製造需要多少時間與成本。黑色素瘤通常具有較多突變、較容易產生 neoantigen，也不能假設同樣策略在低突變量癌症一定同樣有效。這是治療已切除高風險癌症的療法，不是讓健康人預防得到黑色素瘤的疫苗。",
-        "whatNext": "接下來要看完整第三期 hazard ratio、絕對復發率、安全性、生活品質與 overall survival，再由監管機構評估是否核准。科學上也要回答哪些 neoantigen 最能產生持久 T 細胞反應、哪些患者最受益，以及能否縮短從腫瘤定序到個人化藥物製造完成的時間。",
+        "category": "憂鬱症・海馬迴與成人神經新生",
+        "title": "成人海馬迴真的還會產生新神經元嗎？大型人腦多體學研究在重度憂鬱症中看到『神經新生停滯』",
+        "widgetTitle": "憂鬱症的人類海馬迴，出現神經新生停滯線索",
+        "widgetSummary": "研究整合近 50 萬個人類海馬迴細胞核與空間、蛋白質資料，找到成人神經新生譜系，並在未用藥的重度憂鬱症樣本中看到成熟流程受阻的證據。",
+        "dek": "『成人大腦還會不會長出新神經元』一直是神經科學中最具爭議的問題之一。新的 Nature Medicine 研究不只尋找少數神經新生標記，而是把單細胞 RNA、染色質可近性、空間轉錄體、蛋白質和組織染色放在一起，試圖重建人類海馬迴細胞從前驅狀態走向神經元的整條軌跡。",
+        "background": "海馬迴位在顳葉深處，與記憶、情境學習及情緒調節有關。哺乳類動物的齒狀回（dentate gyrus）在成年後仍能產生少量新神經元，稱為 adult hippocampal neurogenesis（成人海馬神經新生），但在人類成人腦中的程度與功能長期存在爭議。重度憂鬱症（MDD）則不只是情緒低落，也常伴隨睡眠、動機、壓力反應與記憶偏差，因此研究者一直懷疑海馬迴細胞可塑性可能參與其中。",
+        "whatHappened": "研究者在成人人類海馬迴中辨認出一條符合神經前驅細胞逐步走向未成熟、再走向成熟顆粒細胞的分子譜系；在未服用抗憂鬱藥的 MDD 捐贈者樣本中，這條軌跡呈現『stalled neurogenesis』的特徵，也就是部分細胞似乎卡在中間狀態，而不是正常完成成熟。除此之外，齒狀回與 CA 區構成的海馬迴記憶迴路還出現興奮／抑制平衡、突觸可塑性、神經傳導、細胞壓力、細胞內運輸、血清素與麩胺酸訊號，以及神經發炎相關的多層次變化。",
+        "howTheyStudied": "整體研究納入 123 名捐贈者。最核心的 single-nucleus multiome 分析在品質控制後保留 19 名對照與 11 名 MDD 捐贈者，共 495,037 個細胞核，同時量測 RNA 表現與染色質可近性；另外再以 Visium 空間轉錄體、Xenium、RNAscope、免疫螢光、免疫組織化學與蛋白質體學驗證細胞位置與標記。這種設計的優點是，同一個結論不只依賴一個 marker，而是要求不同技術在細胞狀態與空間位置上互相支持。",
+        "whyItMatters": "如果成人海馬迴神經新生真的存在，而且在 MDD 中出現可重現的成熟障礙，憂鬱症的生物學就不只是『某種神經傳導物質太少』，而可能包含細胞生成、成熟、迴路可塑性與發炎的整體失衡。這也提供未來更精細的研究方向：治療是否能讓卡住的細胞重新完成成熟，而不是單純讓某個分子濃度改變。",
+        "limitations": "這是死後人腦研究，因此研究者看到的是疾病與細胞狀態的關聯，無法知道『神經新生停滯先發生所以導致憂鬱』，還是長期壓力、疾病歷程或其他因素造成這種改變。MDD 核心 multiome 的實際捐贈者數仍只有 11 人，遠小於細胞核數量；近 50 萬個細胞核不能被誤解成 50 萬個獨立的人。此外，神經新生譜系主要依賴分子與組織證據，無法像活體動物研究一樣直接追蹤同一顆新生神經元最後是否整合進功能性迴路。",
+        "whatNext": "下一步需要在更多獨立人腦資料集中重現這些細胞狀態，並使用可追蹤人類神經前驅細胞成熟的 organoid、iPSC 或其他模型做介入實驗。最關鍵的問題是：如果修復研究中找到的轉錄、壓力或神經傳導路徑，神經前驅細胞能否重新完成成熟，而且是否真的改善海馬迴迴路功能。",
         "sources": [
-          {"label": "Nature：Moderna cancer vaccine stops melanoma returning", "url": "https://www.nature.com/articles/d41586-026-02612-3"},
-          {"label": "ClinicalTrials.gov：INTerpath-001 / NCT05933577", "url": "https://clinicaltrials.gov/study/NCT05933577"},
-          {"label": "NCI：V940 plus pembrolizumab high-risk melanoma trial", "url": "https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCT05933577"}
+          {"label": "Nature Medicine 原始研究：Dysregulated adult hippocampal neurogenesis in major depressive disorders", "url": "https://www.nature.com/articles/s41591-026-04571-8"}
         ],
         "questions": [
-          "為什麼個人化 mRNA 癌症疫苗需要先定序患者的腫瘤，而不是像一般流感疫苗一樣所有人使用完全相同的抗原？",
-          "這項試驗兩組都接受 pembrolizumab，只有一組再加入 V940；這種設計比拿 V940 和完全不治療相比，多排除了哪一種替代解釋？",
-          "在完整第三期數據尚未公布前，為什麼『試驗達到 recurrence-free survival 終點』仍不足以判斷每位患者實際能多得到多少好處？你還想看到哪些數字？"
+          "為什麼『找到成人海馬迴神經新生譜系』需要同時看 RNA、染色質與細胞在組織中的位置，而不能只靠一個未成熟神經元 marker？",
+          "研究有近 50 萬個細胞核，但核心 MDD 捐贈者只有 11 人；如果把每個細胞核都當成獨立樣本，會造成什麼統計與研究設計上的錯誤？",
+          "要證明『神經新生停滯會造成憂鬱症狀』而不只是疾病後果，下一步你會設計哪一種介入實驗，並觀察哪些結果？"
         ]
       },
       {
-        "category": "神經免疫與老化",
-        "title": "藏在基因組裡的古老病毒重新醒來，可能把微膠細胞推向慢性發炎與細胞衰老",
-        "widgetTitle": "老化微膠細胞裡，古老病毒序列可能重新醒來",
-        "widgetSummary": "小鼠研究發現，負責壓住 retrotransposable elements 的 DAXX 隨老化下降；在年輕微膠細胞移除 Daxx，就能誘發發炎、DNA 損傷與衰老樣狀態。",
-        "dek": "人類與小鼠的 DNA 並不全是今天仍在工作的基因。基因組裡保存了大量遠古病毒與可移動遺傳元件留下的序列，正常成年細胞會把它們緊緊封住。新研究提出，腦部免疫細胞老化的一部分，可能正是這層『封條』逐漸鬆開。",
-        "background": "Microglia（微膠細胞）是中樞神經系統常駐的免疫細胞，平時巡視腦組織、清除碎片並調節神經環境。Retrotransposable elements（RTEs，反轉錄轉位元件）則是能經 RNA 中間體複製或移動的 DNA 序列，其中許多來自演化史上整合進祖先基因組的病毒。成年細胞通常把這些區域包進緊密的 heterochromatin，使它們不容易被轉錄。DAXX 是 histone chaperone，協助維持包括 RTE 在內區域的染色質抑制狀態。",
-        "whatHappened": "研究發現老年小鼠微膠細胞中多種 RTE 表現增加，而 DAXX 隨老化下降。更關鍵的是，研究者在年輕成年小鼠的微膠細胞中選擇性移除 Daxx，不必等動物自然變老，就會出現 RTE 周圍染色質鬆開、homeostatic microglia 標記下降、細胞重新進入 cell cycle、DNA 損傷與行為改變。部分微膠細胞之後耗竭，再被具有 Apoe-high 與 senescence-like 特徵的 DAXX 缺失微膠細胞取代。這表示 DAXX 喪失不只是老化旁觀者，而足以把年輕微膠細胞推向一部分老化樣狀態。",
-        "howTheyStudied": "團隊先分析不同發育與老化階段微膠細胞的 RNA sequencing 資料，尋找 RTE 與其抑制因子的變化；再建立 microglia-specific Daxx loss-of-function 小鼠，利用轉錄體、染色質分析、細胞週期與 DNA damage 指標追蹤後果。研究也檢查 interferon、PML 等和 DAXX 互作的發炎／衰老路徑，並在人類周邊血液資料中看到 DAXX 與 RTE expression 的反向關係，作為跨物種線索。",
-        "whyItMatters": "老化腦常見 microglial activation，但『為什麼老化本身會讓免疫細胞更容易發炎』一直很難拆解。這篇把一條可能的因果鏈接起來：染色質維護變弱 → 原本沉默的 RTE 被轉錄 → 細胞把這些異常核酸訊號視為壓力／危險 → 發炎與 DNA damage 增加 → 微膠細胞逐漸失去穩態身份並進入衰老樣狀態。它也提醒我們，基因組中看似沒有日常功能的重複序列，在表觀遺傳控制失效時可能重新變成生物學訊號。",
-        "limitations": "最強的因果證據來自基因工程小鼠，而且直接刪除 Daxx 可能比自然老化中較緩慢的 DAXX 下降劇烈得多。研究在人類資料看到的是周邊血液中的相關性，並沒有證明人類老化腦微膠細胞也沿著完全相同路徑發展。RTE 增加也可能同時是發炎的原因與結果；不同 RTE 家族可能具有不同作用，不能把所有『古老病毒序列』視為同一種毒性來源。",
-        "whatNext": "下一步需要在人類腦組織與縱向資料中確認 DAXX–RTE 軸是否在健康老化與神經退化疾病早期就改變，並利用較溫和、可逆的方式重新壓制特定 RTE 或恢復染色質狀態，看能否真正降低微膠細胞發炎而不破壞正常免疫反應。",
+        "category": "老化科學・表觀遺傳時鐘",
+        "title": "『生物年齡變年輕』真的代表抗老成功嗎？51 項人體介入研究測試 16 種表觀遺傳老化時鐘",
+        "widgetTitle": "抗老研究裡，老化時鐘真的可信嗎？",
+        "widgetSummary": "研究統一重算 51 項人體介入研究中的 16 種 DNA 甲基化時鐘，發現不同時鐘對同一介入反應並不一致，提醒我們時鐘下降不能直接等同延壽。",
+        "dek": "如果要證明一種治療能延緩老化，最理想的試驗可能得等幾十年才看得到疾病與死亡差異。表觀遺傳時鐘因此非常吸引人：只要抽血、量 DNA 甲基化，就希望能在短時間內估計『生物年齡』。但真正的問題是，這些時鐘有沒有資格當作臨床試驗的替代終點？",
+        "background": "DNA methylation（DNA 甲基化）是在 DNA 特定位點加上化學標記，能反映細胞類型、環境暴露與老化等狀態。Epigenetic clock 會把許多甲基化位點組合成一個分數，有些設計來預測曆年年齡，有些則偏向預測死亡、疾病風險或老化速度。Surrogate endpoint（替代終點）則是臨床試驗裡用一個較快量到的指標，替代真正但需要很久才能觀察的結果，例如疾病發生或死亡；要成為可靠替代終點，指標不只要和風險相關，還必須在有效介入下朝正確方向改變。",
+        "whatHappened": "研究團隊建立 TranslAGE 資料庫，整合 51 項公開與私人 longitudinal intervention studies，共 3,128 個血液甲基化樣本，並用同一套流程重新計算 16 種常見 epigenetic clocks 與 94 種其他 DNA methylation biomarker。結果顯示，19 種介入在未校正分析中讓跨時鐘的 epigenetic age 顯著下降，其中 13 種在多重比較校正後仍成立；5 種介入則讓時鐘顯著增加，其餘大多沒有一致變化。藥物介入，尤其 anti-TNF 與 metformin，在某些時鐘上的變化比補充品、飲食與生活型態介入更一致。",
+        "howTheyStudied": "團隊最大的做法不是重新招募一個『抗老試驗』，而是把過去分散的 51 項研究放進同一分析框架。每個研究都使用同一套 16-clock panel，避免某篇研究只報告對自己有利的時鐘。研究者也放入控制資料與『pro-aging events』，檢查時鐘是否會在已知不利狀態下往相反方向移動；另外比較同一種介入在不同研究、以及同類時鐘間是否能重現同方向變化。",
+        "whyItMatters": "這項研究的價值不是宣布某一種藥『返老還童』，而是替 aging biomarker 建立更嚴格的驗證方式。如果未來某個時鐘要被當成藥物開發的 surrogate endpoint，它必須證明自己不只會隨年齡變，也會對真正有生理效益的介入產生可靠、可重現且方向正確的反應。這會直接影響抗老藥物試驗如何選 biomarker，以及哪些漂亮的『年齡下降幾歲』結果其實不該被過度解讀。",
+        "limitations": "研究整合的是既有試驗，介入種類、受試者年齡、疾病狀態、時間長度與樣本品質非常不同，因此不能把所有 effect size 當成可直接比較的藥效排名。更根本的問題是：epigenetic clock 變年輕仍不等於人真的比較少生病或活得更久。某些藥物可能直接改變免疫細胞組成或甲基化，而讓時鐘移動，卻不一定改變整體老化速度。",
+        "whatNext": "真正關鍵的下一步，是把候選時鐘放進有明確臨床效益的隨機試驗，檢查『時鐘改善』是否能預測之後疾病、失能或死亡風險的降低。若一個 biomarker 只會跟著介入改變，卻不能預測真正健康結果，它就不適合被當成抗老療法的替代終點。",
         "sources": [
-          {"label": "Nature Neuroscience 原始研究：Microglia activation by derepression of endogenous retroviruses drives inflammation and cellular senescence", "url": "https://www.nature.com/articles/s41593-026-02404-y"},
-          {"label": "DOI：10.1038/s41593-026-02404-y", "url": "https://doi.org/10.1038/s41593-026-02404-y"}
+          {"label": "Nature Medicine 原始分析：Responsiveness of epigenetic aging biomarkers to longevity interventions in humans", "url": "https://www.nature.com/articles/s41591-026-04562-9"}
         ],
         "questions": [
-          "如果 RTE 原本就存在 DNA 裡，為什麼正常年輕微膠細胞通常不會因它們而持續發炎？DAXX 與 heterochromatin 在這條因果鏈扮演什麼角色？",
-          "研究者在年輕微膠細胞中移除 Daxx 後就出現老化樣變化，這比只比較年輕與老年小鼠的 DAXX 表現多提供了什麼因果證據？",
-          "Daxx knockout 比自然老化劇烈得多。若要證明這條機制真的參與正常人類腦老化，你會如何設計更接近自然時間尺度的驗證？"
+          "為什麼一個能準確預測『現在幾歲』的 epigenetic clock，不一定適合拿來判斷抗老治療有沒有效？",
+          "研究者把同一批既有研究全部用相同的 16 種時鐘重新計算，這比每篇論文自行挑幾個時鐘報告有什麼方法學優勢？",
+          "如果某種藥讓 epigenetic age 明顯下降，卻沒有降低疾病或死亡，你會如何解釋這個結果？這對『替代終點』的資格代表什麼？"
         ]
       },
       {
-        "category": "認知神經科學與計算模型",
-        "title": "大腦做複雜任務時可能不必每次重造一套迴路，而是像軟體一樣重複呼叫『刺激處理』與『記憶維持』模組",
-        "widgetTitle": "大腦會重複使用同一套認知模組嗎？",
-        "widgetSummary": "小鼠在需要感覺、記憶與延遲回報的任務中，前額葉與頂葉會重複使用相似的神經活動子空間處理不同內容；資料約束的人工神經網路也出現功能模組化。",
-        "dek": "如果每一個新任務都需要一套全新的神經元，大腦很快就會遇到資源問題。電腦程式的解法是把常用功能寫成可以重複呼叫的模組；新的 Nature Neuroscience 研究問了一個很漂亮的問題：生物大腦會不會也用類似原則，把『讀取刺激』『暫時記住』等運算模組反覆套用到不同內容？",
-        "background": "Population neuroscience 不只看單一神經元，而會把很多神經元在某一瞬間的活動想成高維空間中的一個點。若某一種運算主要沿著特定幾個活動方向變化，就可以描述成 neural subspace（神經活動子空間）。重要的是，subspace 不是一塊解剖腦區，而是一種群體活動模式。若不同時間、不同內容都重複使用相同 subspace，便可能代表大腦重複使用同一種計算。",
-        "whatHappened": "小鼠執行 delayed match-to-sample with delayed report 任務時，需要先處理刺激、暫時保存資訊，之後再根據記憶做出回報。研究者發現 medial prefrontal cortex 與 posterior parietal cortex 中，和 stimulus processing 相關的活動 subspace 會在新刺激出現時被再次使用；和 memory maintenance 相關的 subspace 也會在需要保存不同內容時被再次使用。Clustering 進一步顯示，不同 subspace 主要由不同神經元群支持，而不是所有細胞完全隨機混合參與所有運算。",
-        "howTheyStudied": "團隊在小鼠完成多階段認知任務時記錄前額葉與頂葉神經元群體活動，再用線性代數與降維方法找出最能表示刺激與記憶的 neural subspaces，檢查這些方向是否能跨不同內容與任務階段泛化。接著建立 recurrent neural network（RNN），並用真實神經資料限制模型的動態結構。當模型中支持特定計算的 cluster 被 silencing 時，對應的刺激處理或記憶運算會選擇性受損，和『可重用模組』模型一致。",
-        "whyItMatters": "這提供一種理解 cognitive flexibility 的方法：大腦不一定為『紅色刺激的記憶』『藍色刺激的記憶』各建立完全不同迴路，而可能把內容和運算部分拆開，再重複使用一套維持記憶的群體動態。這種架構能減少必須為所有情境建立獨立神經表示的成本，也和人工 recurrent network 中可重用 computational module 的概念接軌。",
-        "limitations": "真正的神經記錄來自小鼠與特定實驗任務；RNN lesion experiment 是在人工模型中做的，不等於研究者已經在活體小鼠中精準移除某個神經模組並證明相同效果。Subspace 與 cluster 也依賴分析方法與任務設計，不能把它們直接當成固定的解剖器官。更複雜、自然的認知任務是否仍使用同樣模組化原則，仍待驗證。",
-        "whatNext": "下一步可以用細胞類型特異的 optogenetics 或 closed-loop manipulation，在動物真正執行任務時干擾被預測為 stimulus module 或 memory module 的細胞群，測試是否只破壞對應計算；也可以換不同任務，檢驗同一 subspace 是否真的跨情境被重新部署。",
+        "category": "兒童神經退化・iPSC 與藥物再利用",
+        "title": "把兒童失智症患者的細胞變成神經元，再讓 AI 幫忙找藥：多層次篩選找到至少九種可再利用候選藥物",
+        "widgetTitle": "患者 iPSC + AI，替兒童失智症找舊藥新用途",
+        "widgetSummary": "研究以 Sanfilippo syndrome 患者來源 iPSC 建立人類皮質細胞模型，再結合影像、單細胞轉錄體、電生理與機器學習，找到至少九種能改善多項病理表型的既有化合物。",
+        "dek": "罕見兒童神經退化疾病常遇到一個現實問題：患者很少、疾病進展快，但從零開發一款新藥可能需要十年以上。新的 Nature Communications 研究採取另一條路：先用患者自己的細胞重建疾病，再從已知化合物中尋找可以『舊藥新用』的候選者，而且不是只看一個分子指標。",
+        "background": "Mucopolysaccharidosis type IIIA（MPS IIIA，又稱 Sanfilippo syndrome A）是一種遺傳性 lysosomal storage disease。Lysosome（溶酶體）像細胞內的分解與回收系統；MPS IIIA 患者缺乏正常分解 heparan sulfate 所需的酵素，因此這類複雜醣鏈逐漸累積，尤其會造成中樞神經系統退化、認知與行為功能逐步喪失。iPSC（誘導型多能幹細胞）則可以把患者成熟細胞重新轉回可分化狀態，再培養成神經元與星狀膠細胞，建立帶有患者遺傳背景的人類疾病模型。",
+        "whatHappened": "研究者建立的患者來源 cortical cultures 重現了 MPS IIIA 的多項特徵，包括 lysosomal dysfunction、heparan sulfate 堆積、進行性神經退化與 astrocyte reactivity。接著使用多模態藥物篩選平台，在兩週處理內找到至少九種 repurposed compounds，能在多個 readout 上減輕病理表型。重要的是，候選藥不是只因為『細胞看起來比較漂亮』就入選，而是要跨影像、基因表現與神經功能等不同層次得到支持。",
+        "howTheyStudied": "平台結合 high-content confocal imaging、machine learning、single-nuclei transcriptomics 與 electrophysiology。高內容影像可以一次量化大量細胞的形態、存活與胞器特徵；機器學習則從多維表型中辨識藥物是否把疾病細胞推回接近對照的狀態；單細胞核轉錄體檢查哪些細胞類型與基因路徑被修正；電生理則回答神經元是否不只外觀改善，而是真正恢復部分電活動功能。",
+        "whyItMatters": "罕病藥物篩選最容易遇到的陷阱，是找到一個能改善單一 marker 的化合物，最後卻發現神經元功能完全沒有改善。這項研究示範的是一種更接近現代轉譯研究的流程：患者細胞 → 多種疾病表型 → 大規模藥物處理 → 機器學習整合 → 轉錄體與電生理交叉驗證。若候選化合物本來已有人體安全資料，理論上也可能比全新分子更快進入後續臨床測試。",
+        "limitations": "『repurposed』不代表已經證明可以治療病人。培養皿中的皮質細胞缺少完整血腦屏障、免疫系統、器官代謝與數年疾病歷程；兩週內改善細胞表型，也不能保證長期能阻止神經退化。不同患者的突變與疾病嚴重程度也可能影響反應。機器學習在這裡主要協助整合表型，不是自行證明藥物的作用機制。",
+        "whatNext": "接下來需要在更多患者來源細胞、類器官或動物模型中確認候選藥物的重現性、劑量、安全性與能否進入中樞神經系統，再挑選最有希望者做臨床試驗。機制上也要拆解：候選藥到底是改善 lysosome、降低 heparan sulfate、調整 astrocyte 反應，還是透過其他路徑間接保護神經元。",
         "sources": [
-          {"label": "Nature Neuroscience 原始研究：Reusable modular architecture enables flexible cognitive operations in the mouse brain and artificial recurrent networks", "url": "https://www.nature.com/articles/s41593-026-02410-0"},
-          {"label": "DOI：10.1038/s41593-026-02410-0", "url": "https://doi.org/10.1038/s41593-026-02410-0"}
+          {"label": "Nature Communications 原始研究：Drug screen and machine learning predict neuroprotective agents in a preclinical human model of childhood dementia", "url": "https://www.nature.com/articles/s41467-026-76837-1"}
         ],
         "questions": [
-          "為什麼同一個 memory-maintenance subspace 能表示不同內容，會比『每一種記憶都有完全不同神經元』更符合 reusable module 的概念？",
-          "研究者為什麼除了分析真實小鼠神經活動，還要建立 data-constrained RNN 並做 virtual silencing？這一步能增加什麼、又不能證明什麼？",
-          "如果你要把『可重用神經模組』從漂亮的資料分析提升成活體因果機制，下一個實驗最需要直接操控什麼，並觀察什麼選擇性結果？"
+          "為什麼使用患者來源 iPSC，而不是只在一般神經細胞株裡加很多 heparan sulfate，就更有機會重現 MPS IIIA 的疾病生物學？",
+          "同一個候選藥同時通過影像、single-nuclei transcriptomics 與 electrophysiology 的驗證，比只改善一個細胞 marker 多提供了什麼證據？",
+          "如果某個候選藥在 iPSC 神經元裡效果很好，進入人體前你最擔心哪三種替代解釋或轉譯失敗來源？你會如何逐一測試？"
         ]
       }
     ],
     "radar": {
-      "title": "OIST 2027 Spring Research Internship：現在已開放，適合用兩個月把『想學什麼方法』轉成實驗室 shortlist",
-      "summary": "Okinawa Institute of Science and Technology 的 2027 Spring Research Internship 截止日是 2026-10-15 23:59 JST，實習於 2027 年 4–9 月間進行 4–6 個月，領域包含 neuroscience、molecular/cellular/developmental biology、computational science 等。它特別適合想用一段連續研究經驗確認自己是否喜歡研究環境、或想補一項特定技術的學生。現在值得做的是直接使用官方 Faculty & Project Availability 比較研究問題、方法與可取得的訓練；OIST 明確要求一般 Graduate School funded 申請者不要在申請前自行聯絡 faculty 爭取支持。申請需英文資料、成績／在學資料等，英文檢定為 optional；官方也提供住宿、一次直接來回機票、簽證行政、交通與每工作日 2,400 日圓 allowance。",
-      "url": "https://www.oist.jp/admissions/research-internship/apply-research-internship"
+      "title": "Mitacs Globalink Research Internship 2027：現在已進入申請期，9 月 16 日截止",
+      "summary": "Mitacs 官方目前已開放 2027 Globalink Research Internship 學生申請，台灣在合作地區內，截止時間為 2026 年 9 月 16 日 13:00 Pacific Time。計畫提供約 12 週加拿大研究實習，申請時需要確認資格、準備教授推薦信，並從 project database 選研究計畫。這個機會特別值得用『能學到哪些只有進實驗室才取得的技術與研究經驗』來篩選，而不是只看學校名氣；現在距截止約三週，已經適合把候選 project 收斂成 shortlist 並開始處理推薦信與英文 CV。",
+      "url": "https://www.mitacs.ca/our-programs/globalink-research-internship-students/"
     }
   },
   "importantMail": {
-    "count": 0,
-    "status": "目前沒有符合 Daily Board 嚴格條件的新郵件；詳細郵件內容不存放在公開 Daily Board。"
+    "count": 1,
+    "status": "目前有 1 封需要注意的郵件，涉及近期重要合作／社團會議安排；詳細寄件者、主旨與內容不存放在公開 Daily Board。"
   }
 }
