@@ -1,83 +1,83 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-25",
-  "updatedAt": "2026-08-25T07:44:00+08:00",
+  "date": "2026-08-26",
+  "updatedAt": "2026-08-26T07:30:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在重新檢查我們習以為常的神經科學模型。果蠅研究發現 motor neuron 不只是把命令送去肌肉，還會主動安排整段動作的先後順序；Science 的研究提醒 fMRI 看到的血流訊號會受到血管網路本身的結構影響；Nature 的人類研究則發現，psilocybin 下的大腦並非只是變得『更混亂』，而可能以更強的方式跟當下情境對齊。三篇共同提醒：量到一個訊號之前，先問它背後有哪些中介層次。",
+    "intro": "今天三篇都在提醒我們：真正有用的生醫研究，常常不是再找到一個『相關分子』，而是把資訊一路連到功能與決策。老化研究把白質中的寡樹突膠細胞連到長期認知軌跡；急重症基因體學把定序結果連到幾天內的臨床處置；社會孤立研究則把生活情境一路追到杏仁核—前額葉迴路與飲酒行為。讀這三篇時，可以特別注意研究者如何從『看到差異』往『測試因果』再前進一步。",
     "stories": [
       {
-        "category": "運動控制・果蠅神經迴路",
-        "title": "Motor neuron 不只是最後一站：果蠅進食迴路顯示，運動神經元會主動排出動作順序",
-        "widgetTitle": "運動神經元竟然會『指揮下一步』",
-        "widgetSummary": "果蠅進食時，運動神經元不只是接收命令後收縮肌肉；其中一顆還會透過抑制性迴路解除下一顆運動神經元的煞車，把整段進食動作排成毫秒級的順序。",
-        "dek": "經典課本常把 motor neuron 畫成神經迴路的最後一站：上游決定動作，運動神經元只負責把訊號送到肌肉。8 月 24 日發表在 Nature Neuroscience 的果蠅研究卻顯示，在一套高度精準的進食動作中，運動神經元自己就是產生動作序列的迴路元件。",
-        "background": "一個看似簡單的吞嚥或吸食動作，其實需要多塊肌肉依特定順序啟動。傳統模型通常把『順序』歸給 premotor interneuron 或 central pattern generator，運動神經元則被視為最後的輸出線。研究者在果蠅 cibarium（咽吸幫浦的一部分）研究一串運動神經元，想知道肌肉啟動的先後究竟是在上游排好後傳下來，還是運動神經元本身也參與計算。",
-        "whatHappened": "研究發現，食物刺激會先讓一顆領先的運動神經元產生節律性放電。它釋放 glutamate，一方面直接興奮自己的目標肌肉，另一方面作用在一條抑制性中介迴路，使原本被壓住的下一顆運動神經元解除抑制。下一顆一旦被釋放，又會重複同樣機制，把訊號沿著運動神經元鏈往後傳。這形成 feedforward disinhibition cascade：不是直接『叫下一顆開』，而是先把下一顆的煞車拿掉。",
-        "howTheyStudied": "團隊在果蠅實際進食時做 simultaneous quadruple-electrode recording，同時記錄多顆運動神經元的放電，再配合行為影像確認肌肉與 pumping 的時間。研究者也改變食物黏度讓 pumping rate 改變，檢查神經元之間的時間延遲是否只是因整體動作變快或變慢；結果顯示序列中的相對延遲相當穩定。接著他們利用 connectome、受器與神經元操控實驗定位抑制性中介路徑，最後用計算模型測試這種 feedforward disinhibition 是否足以產生穩定、毫秒級的動作順序。",
-        "whyItMatters": "這改寫了一個很基本的運動控制觀念：motor neuron 不一定只是『執行命令』，它也可能回頭塑造下一步命令如何出現。這種架構的好處是，即使整體進食速度因食物黏度或情境改變，局部神經鏈仍能保留精準順序。更廣泛來說，研究提醒我們在脊髓、腦幹或其他節律運動中，不應預設所有計算都發生在運動神經元上游。",
-        "limitations": "這是一套果蠅特定進食迴路，不能直接推論人類吞嚥、呼吸或步態也使用相同的運動神經元級聯。研究雖結合電生理、connectome 與模型，仍需要在其他物種與其他動作系統中測試是否存在相同原理。此外，果蠅神經系統的細胞數與迴路結構比脊椎動物簡單，因此『motor neuron 參與計算』的程度可能因系統而異。",
-        "whatNext": "下一步可以在其他節律或序列動作中尋找類似的 motor-neuron-to-premotor feedback，並直接操控特定運動神經元，測試是否會選擇性改變後續動作的時序而非只影響自己的肌肉。若在脊椎動物也找到同類機制，將重新影響我們對運動疾病與神經復健迴路的理解。",
+        "category": "神經老化・白質生物學",
+        "title": "老化時不是髓鞘越厚越好：寡樹突膠細胞失衡可能參與認知衰退",
+        "widgetTitle": "老化的大腦，髓鞘可能『補過頭』",
+        "widgetSummary": "追蹤數十年認知變化的人腦研究發現，認知下降較快者反而出現較厚髓鞘與較多、但功能異常的寡樹突膠細胞；小鼠實驗再把線索指向 NRF2 壓力反應路徑。",
+        "dek": "我們常把白質想成神經元之間的『電線』，把髓鞘想成包住電線、讓訊號跑得更快的絕緣層，因此直覺上很容易認為髓鞘越厚越好。8 月 25 日發表在 Nature Medicine 的研究卻發現，人類老化中的認知衰退可能伴隨一種更複雜的白質失衡：某些人不是髓鞘單純減少，而是出現較小的有髓軸突、較厚髓鞘，以及數量增加但分子狀態異常的寡樹突膠細胞。",
+        "background": "Oligodendrocyte（寡樹突膠細胞）是中樞神經系統製造 myelin（髓鞘）的細胞。一顆寡樹突膠細胞可以替多段軸突包上富含脂質的膜層，讓動作電位更有效率地傳導，也提供代謝支持。髓鞘並不是出生後就固定不變；學習與神經活動都能促進 adaptive myelination，所以白質本身也是神經可塑性的一部分。問題是，老化時這套可塑性如果失去調控，『增加髓鞘』未必等於功能改善。",
+        "whatHappened": "研究者利用 Lothian Birth Cohort 1936 的長期資料，這群人童年曾接受認知測試，之後從約 70 歲開始每三年重複測量記憶、處理速度與視空間能力。866 名有追蹤資料者幾乎都隨年齡出現某種程度的認知下降，但速度差異很大。研究團隊把死後白質病理與個人的認知下降斜率對回去後發現，下降較嚴重者的有髓軸突平均較小、髓鞘較厚，而且寡樹突膠細胞數量較多。更重要的是，這些細胞的 NRF2 相關基因表現下降。NRF2 是細胞面對氧化壓力與代謝壓力時的重要轉錄調控系統，可啟動一系列防禦與解毒基因。",
+        "howTheyStudied": "人類部分先把多年認知測驗建立成每個人的 longitudinal cognitive trajectory，再分析死後 corpus callosum 等白質組織的超微結構、細胞數量與 transcriptomic changes。接著研究者在老年小鼠中特異性移除寡樹突膠細胞的 NRF2，測試這不只是伴隨現象。這些小鼠出現與人類較嚴重認知衰退相似的白質特徵，而且隨時間在認知測驗中的改善較弱，讓『寡樹突膠細胞壓力調控失常 → 白質異常 → 認知表現受影響』這條因果鏈得到進一步支持。",
+        "whyItMatters": "這篇研究把老化認知問題的焦點從神經元本身擴展到白質細胞。尤其值得注意的是，結果不是簡單的『髓鞘流失』：較厚髓鞘也可能代表 maladaptive remodeling，也就是系統試圖補償卻補得不合適。如果 NRF2 路徑真的能維持寡樹突膠細胞的健康狀態，未來保護認知的策略可能不只鎖定神經元或 amyloid，而是連白質代謝與髓鞘可塑性也一起考慮。",
+        "limitations": "人類資料雖有珍貴的長期認知追蹤，但細胞與髓鞘只能在死後觀察，因此不能直接知道白質變化是何時開始、是否先於認知下降。小鼠的 oligodendrocyte-specific NRF2 knockout 比自然老化中的漸進式變化更劇烈，也不代表人體中 NRF2 下降就是唯一原因。研究主要聚焦特定白質區域，因此不同腦區可能有不同機制。",
+        "whatNext": "下一步需要在活體中建立能追蹤 myelin remodeling 與 oligodendrocyte state 的 longitudinal biomarkers，並測試較溫和、接近自然老化幅度的 NRF2 操控。如果提升寡樹突膠細胞 NRF2 能在不造成過度髓鞘化的前提下保留認知，才會真正支持它成為治療入口。",
         "sources": [
-          {"label": "Nature Neuroscience 原始研究：Motor neurons organize Drosophila feeding sequences via a disinhibitory cascade", "url": "https://www.nature.com/articles/s41593-026-02412-y"}
+          {"label": "Nature Medicine 原始研究：Oligodendrocyte dysfunction in human age-related cognitive decline", "url": "https://www.nature.com/articles/s41591-026-04608-y"}
         ],
         "questions": [
-          "為什麼『運動神經元會讓下一顆解除抑制』代表它不只是肌肉的被動輸出線？",
-          "研究者為什麼要改變 pumping rate，再檢查神經元之間的相對時間延遲是否仍然穩定？這個對照排除了哪一種替代解釋？",
-          "如果要判斷這是否是普遍的運動控制原理，而不只是果蠅進食特例，你會優先在哪一種不同動作或物種中做什麼因果實驗？"
+          "為什麼這篇研究中的『髓鞘比較厚』不能直接解讀成白質功能比較好？",
+          "人類死後組織只能顯示關聯；研究者加入 oligodendrocyte-specific NRF2 knockout 小鼠後，對因果推論多提供了哪一層證據？",
+          "如果要證明 NRF2 下降是人類認知衰退的早期驅動因素，而不是晚期補償或結果，你會希望有什麼 longitudinal 或介入證據？"
         ]
       },
       {
-        "category": "神經血管耦合・腦影像",
-        "title": "fMRI 的血流訊號不是神經活動的簡單鏡子：不同感覺會動員不同深度的微血管網路",
-        "widgetTitle": "同樣是神經活動，血流反應可能不一樣",
-        "widgetSummary": "小鼠研究顯示，觸覺、疼痛與感覺運動回饋會招募不同類型與皮質深度的 arterioles；因此 fMRI 的血流訊號不只由神經元活動強弱決定，也受到血管網路拓樸影響。",
-        "dek": "fMRI 並不是直接量神經元放電，而是利用血氧與血流變化推估局部神經活動。這個推論建立在 neurovascular coupling：神經活動增加後，附近血管擴張、供血上升。但新的 Science 研究顯示，這段『神經活動 → 血流』的轉換本身會依感覺類型與血管所在皮質層而改變。",
-        "background": "大腦耗能很高，活躍的神經元需要快速獲得氧氣與葡萄糖。Neurovascular coupling（神經血管耦合）就是神經活動與局部血流增加之間的連結。BOLD fMRI 主要讀取血氧狀態，因此我們常把比較強的 BOLD 訊號理解為比較強的局部神經活動。但這中間其實隔著 arteriole、capillary、pericyte、astrocyte 等多層調節，所以血管反應未必是神經活動的線性複製。",
-        "whatHappened": "研究者在小鼠皮質比較觸覺、nociception（傷害性刺激／疼痛相關輸入）、motor-sensory feedback 與自發活動，發現不同輸入會產生不同的血管擴張空間圖樣。較淺層 arteriole 的擴張更緊密地跟表層神經活動增加連動；較深層 arteriole 則會在多種輸入條件下較廣泛整合訊號。結果是，即使局部神經活動幅度相近，流到 capillary 的血流增加也可能因為上游 arteriole 類型與連線方式不同而不同。",
-        "howTheyStudied": "團隊使用 multiscale optical imaging，同時跨不同皮質深度量測 neuronal activity 與 vascular response，並比較多種感覺與行為條件。他們不只量單一血管直徑，而是追蹤不同層 arteriole 與 capillary flow 的關係，再建立 in silico vascular network model。模型能重現實驗中不同血管拓樸造成的血流圖樣，支持『血管網路結構本身會塑造 readout』這個解釋。",
-        "whyItMatters": "這對神經影像非常重要。當研究者看到兩個腦區 BOLD amplitude 不同時，差異不一定百分之百來自『哪裡神經元放得比較多』；也可能部分來自該區血管網路如何把神經活動轉換成供血。這不代表 fMRI 不可靠，而是提醒我們：BOLD 是經過生理轉換後的 proxy。越想把 fMRI 解釋到細胞或皮質層級，就越需要理解 neurovascular coupling 的局部規則。",
-        "limitations": "研究主要在小鼠皮質以光學方式完成，而人類 fMRI 的空間尺度、血管解剖與量測方式不同。研究也沒有證明所有腦區都有相同的層級分工；感覺皮質、前額葉或海馬迴可能使用不同的血管調控規則。因此現在應把結果視為對簡化版『神經活動越強，血流就等比例越強』模型的修正，而不是可以直接重新校正所有人類 fMRI。",
-        "whatNext": "下一步需要在人類可量測的高解析 fMRI、vascular-space-occupancy imaging 或其他血管成像方法中檢驗層級差異，並比較不同腦區、年齡與血管疾病狀態。若疾病會改變 neurovascular coupling，還必須區分患者的 BOLD 差異究竟是神經迴路異常，還是血管轉換函數本身改變。",
+        "category": "精準醫療・臨床基因體學",
+        "title": "3.4 天讀完整個基因組：杜拜把 rapid whole-genome sequencing 帶進兒科加護病房",
+        "widgetTitle": "基因診斷從 38 天縮短到 3.4 天",
+        "widgetSummary": "100 名重症兒童接受 rapid whole-genome sequencing，53% 找到分子診斷；和歷史對照相比，診斷時間大幅縮短，而且超過一半患者的照護因此出現實際改變。",
+        "dek": "對加護病房裡的重症新生兒或兒童來說，罕見遺傳疾病最殘酷的地方常不是『沒有基因檢測』，而是答案來得太慢。新的 Nature Medicine 研究報告杜拜 Little Falcon 計畫：把 rapid whole-genome sequencing（rWGS）直接整合進 NICU 與 PICU，嘗試在幾天內把基因答案變成臨床決策。",
+        "background": "Whole-genome sequencing（全基因組定序）不是只讀某幾個候選基因，而是掃描幾乎整套 DNA。對症狀複雜的重症兒童來說，這很重要，因為醫師可能根本不知道要先猜哪個基因。Rapid WGS 則是在採檢、定序、變異判讀與臨床回報的每一環都壓縮時間。研究使用 trio sequencing，也就是同時讀孩子和父母的基因組；這有助於判斷一個變異是新出現的 de novo mutation、父母遺傳而來，還是符合 recessive inheritance。",
+        "whatHappened": "Little Falcon 共納入 100 名來自 18 個中東與亞洲國家的重症兒科患者，rWGS 的中位 turnaround time 是 3.4 天。53% 的孩子得到分子診斷；在父母有血緣關係的家庭中，診斷率達到 80%，反映 recessive disease 在這類族群的比例較高。12% 的患者不只一個重要分子發現，包括 5% 具有 dual diagnosis。更關鍵的是，53% 患者的臨床管理因此產生有意義的改變，其中包含部分沒有得到完整分子診斷、但基因資訊仍影響處置的人。研究者判定 16% 患者的 disease trajectory 因此被改變。",
+        "howTheyStudied": "研究把 citywide rWGS program 嵌入集中式新生兒與兒童加護流程，再和條件匹配的歷史 cohort 比較。歷史對照主要接受標準基因檢測。rWGS 組的中位診斷時間為 3.4 天，歷史組約 38 天；診斷率分別為 53% 與 30%；出現臨床管理改變的比例則為 53% 與 18%。研究也記錄結果是否改變藥物、手術、營養、監測、緩和照護或其他臨床路徑，而不是只把『找到致病變異』當成成功。",
+        "whyItMatters": "這篇最值得注意的是 genomic medicine 的終點被往前推了：不是『我們能不能定序』，而是『答案能不能在治療窗口還存在時回到病房』。38 天和 3.4 天的差別，對病情快速惡化的嬰兒可能就是完全不同的臨床世界。它也顯示高診斷率不只取決於定序技術，還和族群遺傳結構、trio data、變異資料庫及臨床團隊整合有關。",
+        "limitations": "這不是隨機試驗，而是和歷史對照比較，因此醫療流程隨時間改善、轉診標準變化等因素都可能影響結果。研究所在地具有較高 consanguinity，53% 的整體診斷率未必能直接複製到其他人口。『管理改變』也不等於每次都帶來更長存活或更好的生活品質；部分決策可能是停止無效治療或轉向緩和照護。",
+        "whatNext": "下一步需要前瞻性比較不同醫療體系導入 rWGS 後的成本、住院天數、重症照護利用、家庭決策品質與長期健康結果，也要建立更多不同族群的變異資料。真正成熟的 precision medicine 不只是定序速度快，而是從採檢到遺傳諮詢與臨床行動都能穩定運作。",
         "sources": [
-          {"label": "Science 原始研究：Modality-specific neurovascular coupling via layer-segregated arteriole networks", "url": "https://www.science.org/doi/10.1126/science.aeb5077"}
+          {"label": "Nature Medicine 原始研究：Citywide implementation of a rapid whole-genome sequencing program for critically ill pediatric patients", "url": "https://www.nature.com/articles/s41591-026-04598-x"}
         ],
         "questions": [
-          "為什麼 fMRI 的 BOLD 訊號不能被直接等同為神經元放電量，而必須經過 neurovascular coupling 這一層解釋？",
-          "研究者同時比較多種感覺輸入、不同皮質深度與血管類型，對排除『只是神經活動比較強』這個解釋有什麼幫助？",
-          "如果某個神經疾病同時改變神經元與血管功能，你會如何設計研究，把真正的 neural change 和 vascular coupling change 分開？"
+          "為什麼對 NICU／PICU 患者來說，把診斷從 38 天縮短到約 3.4 天可能比單純提高檢測準確率更重要？",
+          "這篇使用歷史對照而不是同期隨機對照，可能有哪些醫療流程或病人組成差異讓 rWGS 的效果看起來被高估或低估？",
+          "如果一項基因檢測找到診斷、也改變了醫師處置，但沒有改善存活，你會如何判斷它是否仍具有臨床價值？還需要哪些 outcome？"
         ]
       },
       {
-        "category": "意識研究・psilocybin 與腦網路",
-        "title": "迷幻狀態不是單純『大腦變亂』：psilocybin 可能讓腦活動更強烈地跟當下情境對齊",
-        "widgetTitle": "Psilocybin 下的大腦，可能不是亂，而是更貼近情境",
-        "widgetSummary": "62 名健康成人在休息、冥想、音樂與電影情境下接受 fMRI 與 EEG。機器學習顯示，psilocybin 會讓腦動態形成更能區分當下情境的軌跡，而且程度和自我邊界消融的主觀感受相關。",
-        "dek": "迷幻藥研究常把 acute psychedelic state 描述成更高 entropy、更去同步化，也就是正常腦網路秩序鬆動。但如果只把長時間訊號平均，可能會把另一種『動態秩序』一起洗掉。新的 Nature 研究把每個人的腦活動視為隨時間移動的 trajectory，發現 psilocybin 下的活動雖然不像平常，卻會更有系統地隨當下情境重新組織。",
-        "background": "Psilocybin 是作用於 serotonin 5-HT2A receptor 的 psychedelic。它會明顯改變知覺、自我感與時間感。過去 fMRI 常發現 default mode network 等網路內部 connectivity 下降、全腦訊號複雜度提高，因此出現『大腦網路變得比較無序』的描述。但平均 connectivity 只告訴我們一段時間內兩區是否一起變動，可能忽略腦活動如何隨秒到分鐘的情境轉換。",
-        "whatHappened": "研究者發現，psilocybin 會讓平常較分離的內在處理與外在感覺網路重新整合。使用機器學習把高維腦訊號壓成低維動態軌跡後，休息、冥想、音樂與看電影這些情境反而形成更清楚的 context-aligned patterns。這種『腦動態與當下情境對齊』越強的人，越常回報自己和環境之間界線變模糊、感到連續或融入環境；研究者把這種主觀狀態稱為 embeddedness。對齊程度也與隔天的 mindset change 有關。",
-        "howTheyStudied": "研究招募 65 名 18–55 歲健康成人，排除重要精神與神經疾病；63 人接受 psilocybin，主要 post-dose fMRI 樣本約 62 人，完整機器學習分析使用 54 人。每位參與者都在 baseline 與服用 19 mg psilocybin 後接受 fMRI 與 EEG，並經歷 rest、meditation、music、movie 等自然情境。研究用傳統 global functional connectivity、EEG 頻譜與訊號複雜度，也用 machine-learning embedding 把每個人的時序腦活動轉成低維 trajectories，再檢查這些軌跡能否區分情境與預測主觀經驗。",
-        "whyItMatters": "這篇研究修正了『psychedelic = brain disorder』的過度簡化說法。時間平均後看起來比較去同步化的系統，在更細的時間尺度上可能同時形成另一種、強烈依賴情境的組織。這也支持 psychedelic treatment 中常被強調的 set and setting 可能有神經生物學基礎：藥物不只改變大腦本身，也可能改變大腦對當下音樂、環境與內在狀態的敏感度。",
-        "limitations": "這不是以治療憂鬱症為目的的臨床療效試驗，而是健康成人的機制研究。每個人都有 baseline 和 psilocybin 條件，但研究沒有使用能完全遮盲主觀效應的 placebo；強烈迷幻體驗本身也很難真正盲化。『embeddedness』與腦動態對齊是相關關係，不能證明某個 network pattern 直接造成後續心理改變。機器學習 embedding 也依賴模型選擇，需要在獨立資料集重現。",
-        "whatNext": "下一步可以在臨床患者與不同 psychedelic compounds 中驗證 context alignment，並操控情境本身，例如不同音樂、治療互動或感覺輸入，檢查腦動態與長期療效是否跟著改變。如果『情境對齊』能預測誰得到持久治療效益，它才可能從有趣的神經表徵進一步成為臨床研究 biomarker。",
+        "category": "社會神經科學・成癮迴路",
+        "title": "孤立之後，酒精為什麼變得更有吸引力？小鼠研究追到杏仁核—前額葉迴路",
+        "widgetTitle": "孤立會改寫大腦對酒精與自然獎賞的權重",
+        "widgetSummary": "社會孤立讓雄性小鼠喝更多酒、雌性反而喝得更少；在雄性中，BLA→mPFC 迴路變得更興奮，放大酒精相關活動、壓低蔗糖等自然獎賞反應。",
+        "dek": "『孤單時比較容易喝酒』在人類研究裡常被當成心理或社會現象，但如果社會經驗真的持續改變大腦的 reward processing，這件事也應該能在神經迴路層級被測試。8 月 25 日的 Nature Neuroscience 研究利用小鼠把線索追到 basolateral amygdala（BLA，基底外側杏仁核）投射到 medial prefrontal cortex（mPFC，內側前額葉）的神經路徑。",
+        "background": "BLA 會整合情緒、威脅、獎賞與價值資訊；mPFC 則參與決策、行為控制與情境評估。兩者之間存在大量 glutamatergic projection，因此 BLA 的輸入可以重新調整前額葉怎麼表示某個刺激。研究者關心的不只是『孤立的動物喝更多』，而是負面社會情境是否會改變 BLA→mPFC 這條路徑，使酒精相對於水或自然獎賞變得更突出。",
+        "whatHappened": "研究先讓雄性與雌性小鼠每天進行 1 小時 two-bottle choice，在 15% alcohol 與水之間選擇，並追蹤 11 天 social isolation。結果雄性飲酒增加，雌性反而下降。兩性 BLA→mPFC 神經元的 excitability 都跟各自飲酒量變化一致：雄性增加、雌性下降。因為只有雄性穩定出現 drinking escalation，後續主要機制實驗聚焦雄性。孤立後，mPFC 對酒精相關刺激的反應增強，對水的反應沒有明顯改變，而對 sucrose 的反應下降，像是整個價值表徵從自然獎賞偏向酒精。",
+        "howTheyStudied": "團隊結合 whole-cell patch clamp、cellular-resolution calcium imaging 與 optogenetics。鈣影像顯示 BLA→mPFC 神經元活動可以編碼並預測飲酒；人工活化這條路徑會增加酒精攝取，而且能讓 mPFC 出現類似 social isolation 的活動模式。反過來，在孤立雄鼠飲酒時用光遺傳抑制 BLA→mPFC，酒精飲用 bouts 下降，但喝水沒有明顯改變。這種『活化足以增加、抑制能夠減少』的雙向操控，比只看到相關性更支持因果角色。",
+        "whyItMatters": "研究提供了一個從 social determinant 到 neural circuit 再到 behavior 的可測試模型：社會孤立並不是抽象地讓動物『心情不好』，而可能重新設定前額葉對不同獎賞的神經表徵。這也說明成癮風險不能只看藥物本身；生活情境會改變同一個藥物在神經系統中的相對價值。更重要的是，雌雄方向相反提醒我們：同一個壓力因子不一定透過同一條生物機制產生同樣行為。",
+        "limitations": "這是小鼠 two-bottle alcohol model，不能直接等同人類 alcohol use disorder。後續細緻的因果實驗主要做在雄性，因此我們知道雌性呈現相反行為與迴路興奮性變化，卻還不知道雌性的完整因果機制。Social isolation 也同時改變活動量、壓力、睡眠與感覺刺激，BLA→mPFC 不一定是唯一途徑。",
+        "whatNext": "下一步需要把雌性機制完整做完，並測試重新建立 social contact 後這些迴路變化能否逆轉。也可以區分 isolation、social defeat、chronic stress 等不同負面社會經驗，判斷它們是否都透過 BLA→mPFC，或各自動員不同網路。若要往人類轉譯，則需要用影像、行為與 longitudinal drinking data 檢驗相似的情境依賴變化，而不是直接把小鼠迴路當成治療靶點。",
         "sources": [
-          {"label": "Nature 原始研究：Psychedelics align brain activity with context", "url": "https://www.nature.com/articles/s41586-026-10910-z"}
+          {"label": "Nature Neuroscience 原始研究：Social isolation recruits amygdala–medial prefrontal cortex projections to escalate alcohol drinking in male mice", "url": "https://www.nature.com/articles/s41593-026-02413-x"}
         ],
         "questions": [
-          "為什麼『時間平均 connectivity 下降』和『腦活動更能隨情境形成結構』可以同時成立，而不是互相矛盾？",
-          "同一批人同時有 baseline 與 psilocybin 的 fMRI／EEG 資料，對研究設計有什麼優勢？仍有哪些 placebo 或 blinding 問題沒有因此消失？",
-          "要證明 context alignment 不只是和主觀體驗一起出現，而是真正影響長期心理改變，下一步應該如何操控情境並建立因果證據？"
+          "孤立後 mPFC 對酒精反應增加、對蔗糖反應下降，為什麼比單純看到『喝酒量增加』更能支持 reward representation 被重新加權？",
+          "研究者同時做 BLA→mPFC 活化與抑制，各自回答了因果推論中的哪一個問題？",
+          "雌性小鼠在孤立後反而減少飲酒。這個結果對把雄性機制推廣到『社會孤立會造成酒精濫用』的普遍結論提出了什麼限制？下一步最關鍵的實驗是什麼？"
         ]
       }
     ],
     "radar": {
-      "title": "OIST Spring 2027 Research Internship：現在適合先用 project list 做研究室篩選",
-      "summary": "OIST 2027 春季 Research Internship 截止為 2026 年 10 月 15 日 23:59（JST），實習在 2027 年 4–9 月間進行 4–6 個月。它特別適合想真正進入研究室、學一項難以靠課堂自行取得的技術，並測試自己是否適合未來 PhD 研究生活的學生。官方接受『實習開始時已進入學士最後兩年』的申請者，英文 IELTS／TOEFL 成績為 optional。現在最值得做的是直接看 Faculty & Project Availability，按研究問題、實際方法、指導情境與技能稀缺性建立 shortlist；OIST 明確要求申請前不要自行聯絡 faculty 要求支持。",
-      "url": "https://www.oist.jp/admissions/research-internship/apply-research-internship"
+      "title": "EPFL Life Sciences Summer Research Program 2027：現在最值得做的是先研究實驗室",
+      "summary": "EPFL School of Life Sciences 的 Summer Research Program 對國際 bachelor 與 first-year master’s 生命科學學生開放，提供約 8 週 lab immersion，領域涵蓋 biology、biophysics、chemistry、bioengineering、bioinformatics、quantitative biology，也有 Brain Mind Institute 與 Neuro X 實驗室。官方表示下一輪申請將在 2026 年 9 月底至 10 月開放，年度截止日為 11 月 15 日 23:59 CET；申請要準備 transcript、短文、referee 資訊並選擇實驗室。現在離截止還有時間，最有價值的是先從 participating labs 建立候選清單，逐一比較研究問題、模式系統、wet/dry methods 與實際可學到的技能，再讓申請短文有明確的 lab fit，而不是開放後才開始看教授。",
+      "url": "https://www.epfl.ch/schools/sv/education/summer-research-program/"
     }
   },
   "importantMail": {
-    "count": 1,
-    "status": "目前有 1 封需要注意的郵件，涉及研究實習申請帳號驗證、需要完成行動；詳細寄件者、主旨與內容不存放在公開 Daily Board。"
+    "count": 0,
+    "status": "目前沒有新的郵件同時符合 Daily Board 的重要事項與待行動條件；私人郵件內容不存放在公開 Daily Board。"
   }
 }
