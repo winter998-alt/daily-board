@@ -1,83 +1,65 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-26",
-  "updatedAt": "2026-08-26T07:30:00+08:00",
+  "date": "2026-08-27",
+  "updatedAt": "2026-08-27T07:28:36+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在提醒我們：真正有用的生醫研究，常常不是再找到一個『相關分子』，而是把資訊一路連到功能與決策。老化研究把白質中的寡樹突膠細胞連到長期認知軌跡；急重症基因體學把定序結果連到幾天內的臨床處置；社會孤立研究則把生活情境一路追到杏仁核—前額葉迴路與飲酒行為。讀這三篇時，可以特別注意研究者如何從『看到差異』往『測試因果』再前進一步。",
+    "intro": "今天三篇都在問一個很實用的問題：當我們看到一個分子或影像訊號和疾病有關，怎麼判斷它只是伴隨現象，還是真的參與了機制？阿茲海默症研究用雙向基因操控把 ERBB4 從相關線索推向因果驅動；獎賞研究直接量到大腦自己釋放的內生性大麻素如何調整迴路增益；視網膜老化研究則提醒我們，AI 很會預測不等於它已經找到了老化原因。",
     "stories": [
       {
-        "category": "神經老化・白質生物學",
-        "title": "老化時不是髓鞘越厚越好：寡樹突膠細胞失衡可能參與認知衰退",
-        "widgetTitle": "老化的大腦，髓鞘可能『補過頭』",
-        "widgetSummary": "追蹤數十年認知變化的人腦研究發現，認知下降較快者反而出現較厚髓鞘與較多、但功能異常的寡樹突膠細胞；小鼠實驗再把線索指向 NRF2 壓力反應路徑。",
-        "dek": "我們常把白質想成神經元之間的『電線』，把髓鞘想成包住電線、讓訊號跑得更快的絕緣層，因此直覺上很容易認為髓鞘越厚越好。8 月 25 日發表在 Nature Medicine 的研究卻發現，人類老化中的認知衰退可能伴隨一種更複雜的白質失衡：某些人不是髓鞘單純減少，而是出現較小的有髓軸突、較厚髓鞘，以及數量增加但分子狀態異常的寡樹突膠細胞。",
-        "background": "Oligodendrocyte（寡樹突膠細胞）是中樞神經系統製造 myelin（髓鞘）的細胞。一顆寡樹突膠細胞可以替多段軸突包上富含脂質的膜層，讓動作電位更有效率地傳導，也提供代謝支持。髓鞘並不是出生後就固定不變；學習與神經活動都能促進 adaptive myelination，所以白質本身也是神經可塑性的一部分。問題是，老化時這套可塑性如果失去調控，『增加髓鞘』未必等於功能改善。",
-        "whatHappened": "研究者利用 Lothian Birth Cohort 1936 的長期資料，這群人童年曾接受認知測試，之後從約 70 歲開始每三年重複測量記憶、處理速度與視空間能力。866 名有追蹤資料者幾乎都隨年齡出現某種程度的認知下降，但速度差異很大。研究團隊把死後白質病理與個人的認知下降斜率對回去後發現，下降較嚴重者的有髓軸突平均較小、髓鞘較厚，而且寡樹突膠細胞數量較多。更重要的是，這些細胞的 NRF2 相關基因表現下降。NRF2 是細胞面對氧化壓力與代謝壓力時的重要轉錄調控系統，可啟動一系列防禦與解毒基因。",
-        "howTheyStudied": "人類部分先把多年認知測驗建立成每個人的 longitudinal cognitive trajectory，再分析死後 corpus callosum 等白質組織的超微結構、細胞數量與 transcriptomic changes。接著研究者在老年小鼠中特異性移除寡樹突膠細胞的 NRF2，測試這不只是伴隨現象。這些小鼠出現與人類較嚴重認知衰退相似的白質特徵，而且隨時間在認知測驗中的改善較弱，讓『寡樹突膠細胞壓力調控失常 → 白質異常 → 認知表現受影響』這條因果鏈得到進一步支持。",
-        "whyItMatters": "這篇研究把老化認知問題的焦點從神經元本身擴展到白質細胞。尤其值得注意的是，結果不是簡單的『髓鞘流失』：較厚髓鞘也可能代表 maladaptive remodeling，也就是系統試圖補償卻補得不合適。如果 NRF2 路徑真的能維持寡樹突膠細胞的健康狀態，未來保護認知的策略可能不只鎖定神經元或 amyloid，而是連白質代謝與髓鞘可塑性也一起考慮。",
-        "limitations": "人類資料雖有珍貴的長期認知追蹤，但細胞與髓鞘只能在死後觀察，因此不能直接知道白質變化是何時開始、是否先於認知下降。小鼠的 oligodendrocyte-specific NRF2 knockout 比自然老化中的漸進式變化更劇烈，也不代表人體中 NRF2 下降就是唯一原因。研究主要聚焦特定白質區域，因此不同腦區可能有不同機制。",
-        "whatNext": "下一步需要在活體中建立能追蹤 myelin remodeling 與 oligodendrocyte state 的 longitudinal biomarkers，並測試較溫和、接近自然老化幅度的 NRF2 操控。如果提升寡樹突膠細胞 NRF2 能在不造成過度髓鞘化的前提下保留認知，才會真正支持它成為治療入口。",
-        "sources": [
-          {"label": "Nature Medicine 原始研究：Oligodendrocyte dysfunction in human age-related cognitive decline", "url": "https://www.nature.com/articles/s41591-026-04608-y"}
-        ],
-        "questions": [
-          "為什麼這篇研究中的『髓鞘比較厚』不能直接解讀成白質功能比較好？",
-          "人類死後組織只能顯示關聯；研究者加入 oligodendrocyte-specific NRF2 knockout 小鼠後，對因果推論多提供了哪一層證據？",
-          "如果要證明 NRF2 下降是人類認知衰退的早期驅動因素，而不是晚期補償或結果，你會希望有什麼 longitudinal 或介入證據？"
-        ]
+        "category": "阿茲海默症・神經迴路",
+        "title": "阿茲海默症的早期失衡，可能先從興奮性神經元『裝錯受器』開始",
+        "widgetTitle": "ERBB4 可能是阿茲海默症的早期放大器",
+        "widgetSummary": "新研究發現，原本主要和抑制性神經元相關的 ERBB4，在阿茲海默症小鼠的興奮性神經元中異常出現；刪除它可同時改善網路活動、突觸流失、膠細胞反應與認知。",
+        "dek": "阿茲海默症常被畫成一條直線：amyloid-β 堆積，啟動發炎，microglia 過度吞噬突觸，最後造成認知下降。但 8 月 26 日發表在 Nature 的研究提出另一個值得注意的起點：某些興奮性神經元可能很早就進入異常狀態，並主動把後續的突觸、膠細胞與 amyloid 病理一起往前推。",
+        "background": "ERBB4 是一種 receptor tyrosine kinase，也就是跨在細胞膜上的受器；外部訊號結合後，它的細胞內端可以磷酸化蛋白並啟動訊號路徑。在成人腦中，ERBB4 通常和特定抑制性 interneuron，尤其 parvalbumin 神經元密切相關。興奮性 pyramidal neuron 大量表現 ERBB4 因此不是典型狀態。研究者把在阿茲海默症模型中出現這種異常表現的細胞稱為 early-responsive excitatory neurons（EREN）。",
+        "whatHappened": "在 5×FAD 阿茲海默症小鼠中，研究者利用 single-nucleus RNA sequencing 找到 EREN，而且 Erbb4 的異常表現是很早出現的主要變化之一。更重要的是，這些神經元的出現伴隨興奮性網路過度活化、抑制性活動下降、興奮性突觸被 astrocyte 和 microglia 過度清除，以及 reactive gliosis。研究者因此懷疑，膠細胞的吞噬行為可能不是整條鏈的最上游，而是在回應已經異常的神經元。",
+        "howTheyStudied": "研究的關鍵是做了雙向因果操控。團隊用 AAV 與 CRISPR 在 5×FAD 小鼠 CA1 的興奮性神經元選擇性刪除 Erbb4，結果異常神經活動、突觸吞噬、reactive gliosis、amyloid plaque 累積與認知缺陷都朝正常方向改善。反過來，在沒有 amyloid plaque 的正常小鼠興奮性神經元強迫表現 Erbb4，也能製造多項 AD-like 神經、突觸與膠細胞表型；失去 kinase 活性的 ERBB4 則做不到，並把下游機制指向 mTOR signalling。研究也在人類 AD transcriptomic data 中看到相容的關聯。",
+        "whyItMatters": "這個結果把『神經發炎造成突觸消失』的單一路徑改寫得更像迴圈：amyloid 可能先推動一群興奮性神經元進入 ERBB4-positive 異常狀態，神經元失衡再驅動膠細胞反應與更多病理，形成自我放大的 vicious cycle。這也能解釋為什麼疾病進展到一定程度後，即使把 amyloid 降下來，認知改善仍可能有限：下游迴路可能已經能自行維持。",
+        "limitations": "最強的因果證據仍來自 5×FAD 小鼠與病毒載體操控。人類資料主要是死後組織與轉錄體統計模型，不能證明在人類患者中 ERBB4 一定位於相同因果位置。強迫 overexpression 也可能比自然疾病中的變化更劇烈。此外 ERBB4 在正常抑制性神經元有重要功能，因此未來若要治療，不能簡單把全腦 ERBB4 全部關掉。",
+        "whatNext": "下一步需要確認人類疾病早期、甚至症狀前階段是否真的出現 EREN，並設計只作用於異常興奮性神經元 ERBB4 的介入。如果在 amyloid 已經存在後才抑制這條路徑仍能恢復突觸與認知，會更直接支持它成為治療標的。",
+        "sources": [{"label":"Nature 原始研究：Aberrant excitatory neuronal ERBB4 promotes Alzheimer’s disease pathology","url":"https://www.nature.com/articles/s41586-026-10964-z"}],
+        "questions": ["為什麼興奮性神經元異常表現 ERBB4，可能讓我們重新思考『膠細胞先造成突觸流失』這個模型？","研究者同時做 Erbb4 deletion 和 overexpression，為什麼比只看到 ERBB4 在疾病中升高更能支持因果關係？","如果 ERBB4 在正常抑制性神經元也有重要功能，未來把它當藥物標的時最大的選擇性問題是什麼？"]
       },
       {
-        "category": "精準醫療・臨床基因體學",
-        "title": "3.4 天讀完整個基因組：杜拜把 rapid whole-genome sequencing 帶進兒科加護病房",
-        "widgetTitle": "基因診斷從 38 天縮短到 3.4 天",
-        "widgetSummary": "100 名重症兒童接受 rapid whole-genome sequencing，53% 找到分子診斷；和歷史對照相比，診斷時間大幅縮短，而且超過一半患者的照護因此出現實際改變。",
-        "dek": "對加護病房裡的重症新生兒或兒童來說，罕見遺傳疾病最殘酷的地方常不是『沒有基因檢測』，而是答案來得太慢。新的 Nature Medicine 研究報告杜拜 Little Falcon 計畫：把 rapid whole-genome sequencing（rWGS）直接整合進 NICU 與 PICU，嘗試在幾天內把基因答案變成臨床決策。",
-        "background": "Whole-genome sequencing（全基因組定序）不是只讀某幾個候選基因，而是掃描幾乎整套 DNA。對症狀複雜的重症兒童來說，這很重要，因為醫師可能根本不知道要先猜哪個基因。Rapid WGS 則是在採檢、定序、變異判讀與臨床回報的每一環都壓縮時間。研究使用 trio sequencing，也就是同時讀孩子和父母的基因組；這有助於判斷一個變異是新出現的 de novo mutation、父母遺傳而來，還是符合 recessive inheritance。",
-        "whatHappened": "Little Falcon 共納入 100 名來自 18 個中東與亞洲國家的重症兒科患者，rWGS 的中位 turnaround time 是 3.4 天。53% 的孩子得到分子診斷；在父母有血緣關係的家庭中，診斷率達到 80%，反映 recessive disease 在這類族群的比例較高。12% 的患者不只一個重要分子發現，包括 5% 具有 dual diagnosis。更關鍵的是，53% 患者的臨床管理因此產生有意義的改變，其中包含部分沒有得到完整分子診斷、但基因資訊仍影響處置的人。研究者判定 16% 患者的 disease trajectory 因此被改變。",
-        "howTheyStudied": "研究把 citywide rWGS program 嵌入集中式新生兒與兒童加護流程，再和條件匹配的歷史 cohort 比較。歷史對照主要接受標準基因檢測。rWGS 組的中位診斷時間為 3.4 天，歷史組約 38 天；診斷率分別為 53% 與 30%；出現臨床管理改變的比例則為 53% 與 18%。研究也記錄結果是否改變藥物、手術、營養、監測、緩和照護或其他臨床路徑，而不是只把『找到致病變異』當成成功。",
-        "whyItMatters": "這篇最值得注意的是 genomic medicine 的終點被往前推了：不是『我們能不能定序』，而是『答案能不能在治療窗口還存在時回到病房』。38 天和 3.4 天的差別，對病情快速惡化的嬰兒可能就是完全不同的臨床世界。它也顯示高診斷率不只取決於定序技術，還和族群遺傳結構、trio data、變異資料庫及臨床團隊整合有關。",
-        "limitations": "這不是隨機試驗，而是和歷史對照比較，因此醫療流程隨時間改善、轉診標準變化等因素都可能影響結果。研究所在地具有較高 consanguinity，53% 的整體診斷率未必能直接複製到其他人口。『管理改變』也不等於每次都帶來更長存活或更好的生活品質；部分決策可能是停止無效治療或轉向緩和照護。",
-        "whatNext": "下一步需要前瞻性比較不同醫療體系導入 rWGS 後的成本、住院天數、重症照護利用、家庭決策品質與長期健康結果，也要建立更多不同族群的變異資料。真正成熟的 precision medicine 不只是定序速度快，而是從採檢到遺傳諮詢與臨床行動都能穩定運作。",
-        "sources": [
-          {"label": "Nature Medicine 原始研究：Citywide implementation of a rapid whole-genome sequencing program for critically ill pediatric patients", "url": "https://www.nature.com/articles/s41591-026-04598-x"}
-        ],
-        "questions": [
-          "為什麼對 NICU／PICU 患者來說，把診斷從 38 天縮短到約 3.4 天可能比單純提高檢測準確率更重要？",
-          "這篇使用歷史對照而不是同期隨機對照，可能有哪些醫療流程或病人組成差異讓 rWGS 的效果看起來被高估或低估？",
-          "如果一項基因檢測找到診斷、也改變了醫師處置，但沒有改善存活，你會如何判斷它是否仍具有臨床價值？還需要哪些 outcome？"
-        ]
+        "category": "獎賞・神經調節",
+        "title": "大腦自己的大麻素不是單純『抑制神經』：它會動態調整你願不願意繼續追獎賞",
+        "widgetTitle": "內生性大麻素如何調整追逐獎賞的動力",
+        "widgetSummary": "研究直接追蹤自由活動小鼠腦中的 endocannabinoid 訊號，發現它能在 thalamus–striatum 迴路中以逆向訊號調整輸入增益，影響動物是否持續投入獎賞尋求。",
+        "dek": "提到 cannabinoid，很多人第一個想到的是外來的 THC。但哺乳類大腦本身就有 endocannabinoid system，而且它不是單純把神經元『關小聲』。8 月 26 日的 Nature 研究把這套系統放回真實行為裡觀察，顯示神經元可以依自己的活動狀態釋放 endocannabinoid，反過來調整上游突觸的輸入強度，像即時旋鈕一樣控制 reward engagement。",
+        "background": "一般突觸傳遞多半是 presynaptic neuron 釋放 neurotransmitter，訊號往 postsynaptic neuron 前進。Endocannabinoid 很特別：它常由 postsynaptic cell 按需求製造，再往回作用於 presynaptic terminal，因此叫 retrograde signalling。它常透過 CB1 receptor 改變 transmitter release。Gain control 則可以想成調音量旋鈕：不是改變輸入代表什麼，而是決定同樣輸入最後能把下游系統推多強。",
+        "whatHappened": "研究者發現，小鼠在 reward-seeking task 中，endocannabinoid release 不是固定背景訊號，而會隨動物投入獎賞行為動態變化。關鍵位置是一條 thalamostriatal circuit，也就是丘腦送往紋狀體的輸入。這套 retrograde signal 會改變上游終端對紋狀體的驅動程度，進而影響動物是否維持對獎賞任務的投入。",
+        "howTheyStudied": "團隊整合自由活動動物的 in vivo physiology、影像、遺傳操控與 machine-learning-based behavioral analysis，不只在切片中證明 CB1 能改變突觸，而是把 endocannabinoid 動態和正在進行的 reward seeking 對齊。再透過特定迴路與基因操控測試這套訊號是否真的改變行為 engagement，建立從分子釋放、presynaptic gain control 到動機行為的鏈條。",
+        "whyItMatters": "這讓 endocannabinoid system 從『廣泛存在的抑制性 neuromodulator』變成更精確的計算元件：下游細胞可以根據自身狀態，反過來決定哪些上游輸入應該被放大或削弱。這種局部、即時的 feedback 很適合讓大腦調整『現在這個獎賞值不值得繼續投入』，也可能幫助理解成癮、動機低落與其他 reward-processing disorder。",
+        "limitations": "研究主要在小鼠特定 reward task 與特定 thalamostriatal circuit 中完成，不能直接等同於人類主觀的渴望、意志力或成癮。Endocannabinoid system 在不同腦區可能產生不同甚至相反效果；外源性 cannabinoid 藥物也不是對這套局部、按需釋放系統的簡單模仿。",
+        "whatNext": "下一步可測試在不同獎賞、壓力與成癮模型中，同一套 retrograde gain control 是否被重新設定，以及能否只調整特定迴路的 CB1 signalling，而不干擾全腦廣泛的 endocannabinoid 功能。",
+        "sources": [{"label":"Nature 原始研究：Endocannabinoids facilitate reward engagement through retrograde gain control","url":"https://www.nature.com/articles/s41586-026-10967-w"}],
+        "questions": ["為什麼 endocannabinoid 被稱為 retrograde signal？這和一般突觸訊號方向有什麼不同？","如果只在腦切片看到 CB1 會抑制 transmitter release，為什麼還不足以證明它真的控制動物的 reward engagement？","外來 THC 也能作用 cannabinoid receptors，為什麼不能因此推論 THC 會精準複製這篇研究中的局部 endocannabinoid gain control？"]
       },
       {
-        "category": "社會神經科學・成癮迴路",
-        "title": "孤立之後，酒精為什麼變得更有吸引力？小鼠研究追到杏仁核—前額葉迴路",
-        "widgetTitle": "孤立會改寫大腦對酒精與自然獎賞的權重",
-        "widgetSummary": "社會孤立讓雄性小鼠喝更多酒、雌性反而喝得更少；在雄性中，BLA→mPFC 迴路變得更興奮，放大酒精相關活動、壓低蔗糖等自然獎賞反應。",
-        "dek": "『孤單時比較容易喝酒』在人類研究裡常被當成心理或社會現象，但如果社會經驗真的持續改變大腦的 reward processing，這件事也應該能在神經迴路層級被測試。8 月 25 日的 Nature Neuroscience 研究利用小鼠把線索追到 basolateral amygdala（BLA，基底外側杏仁核）投射到 medial prefrontal cortex（mPFC，內側前額葉）的神經路徑。",
-        "background": "BLA 會整合情緒、威脅、獎賞與價值資訊；mPFC 則參與決策、行為控制與情境評估。兩者之間存在大量 glutamatergic projection，因此 BLA 的輸入可以重新調整前額葉怎麼表示某個刺激。研究者關心的不只是『孤立的動物喝更多』，而是負面社會情境是否會改變 BLA→mPFC 這條路徑，使酒精相對於水或自然獎賞變得更突出。",
-        "whatHappened": "研究先讓雄性與雌性小鼠每天進行 1 小時 two-bottle choice，在 15% alcohol 與水之間選擇，並追蹤 11 天 social isolation。結果雄性飲酒增加，雌性反而下降。兩性 BLA→mPFC 神經元的 excitability 都跟各自飲酒量變化一致：雄性增加、雌性下降。因為只有雄性穩定出現 drinking escalation，後續主要機制實驗聚焦雄性。孤立後，mPFC 對酒精相關刺激的反應增強，對水的反應沒有明顯改變，而對 sucrose 的反應下降，像是整個價值表徵從自然獎賞偏向酒精。",
-        "howTheyStudied": "團隊結合 whole-cell patch clamp、cellular-resolution calcium imaging 與 optogenetics。鈣影像顯示 BLA→mPFC 神經元活動可以編碼並預測飲酒；人工活化這條路徑會增加酒精攝取，而且能讓 mPFC 出現類似 social isolation 的活動模式。反過來，在孤立雄鼠飲酒時用光遺傳抑制 BLA→mPFC，酒精飲用 bouts 下降，但喝水沒有明顯改變。這種『活化足以增加、抑制能夠減少』的雙向操控，比只看到相關性更支持因果角色。",
-        "whyItMatters": "研究提供了一個從 social determinant 到 neural circuit 再到 behavior 的可測試模型：社會孤立並不是抽象地讓動物『心情不好』，而可能重新設定前額葉對不同獎賞的神經表徵。這也說明成癮風險不能只看藥物本身；生活情境會改變同一個藥物在神經系統中的相對價值。更重要的是，雌雄方向相反提醒我們：同一個壓力因子不一定透過同一條生物機制產生同樣行為。",
-        "limitations": "這是小鼠 two-bottle alcohol model，不能直接等同人類 alcohol use disorder。後續細緻的因果實驗主要做在雄性，因此我們知道雌性呈現相反行為與迴路興奮性變化，卻還不知道雌性的完整因果機制。Social isolation 也同時改變活動量、壓力、睡眠與感覺刺激，BLA→mPFC 不一定是唯一途徑。",
-        "whatNext": "下一步需要把雌性機制完整做完，並測試重新建立 social contact 後這些迴路變化能否逆轉。也可以區分 isolation、social defeat、chronic stress 等不同負面社會經驗，判斷它們是否都透過 BLA→mPFC，或各自動員不同網路。若要往人類轉譯，則需要用影像、行為與 longitudinal drinking data 檢驗相似的情境依賴變化，而不是直接把小鼠迴路當成治療靶點。",
-        "sources": [
-          {"label": "Nature Neuroscience 原始研究：Social isolation recruits amygdala–medial prefrontal cortex projections to escalate alcohol drinking in male mice", "url": "https://www.nature.com/articles/s41593-026-02413-x"}
-        ],
-        "questions": [
-          "孤立後 mPFC 對酒精反應增加、對蔗糖反應下降，為什麼比單純看到『喝酒量增加』更能支持 reward representation 被重新加權？",
-          "研究者同時做 BLA→mPFC 活化與抑制，各自回答了因果推論中的哪一個問題？",
-          "雌性小鼠在孤立後反而減少飲酒。這個結果對把雄性機制推廣到『社會孤立會造成酒精濫用』的普遍結論提出了什麼限制？下一步最關鍵的實驗是什麼？"
-        ]
+        "category": "AI 生醫・老化生物標記",
+        "title": "一張眼底照能估年齡差到約三歲，但『眼睛看起來老』到底代表什麼？",
+        "widgetTitle": "AI 從視網膜讀出老化訊號",
+        "widgetSummary": "研究用 71,343 名 UK Biobank 參與者訓練 AI 從眼底照片預測年齡，平均誤差約 2.85 年；預測年齡比實際年齡高的人，也呈現較多老化相關健康與遺傳訊號。",
+        "dek": "視網膜是人體少數可以不開刀就直接看到神經組織與微血管的地方，因此眼底照片一直被視為全身健康的一扇窗。新的 Nature Communications 研究利用 foundation model 從數萬張眼底照片學習『一雙某個年齡的眼睛通常長什麼樣』，再追問 AI 看出的 retinal age gap 是否真的和全身老化有關。",
+        "background": "Fundus image 是從瞳孔拍攝視網膜、視神經盤與血管的彩色照片。研究中的 retinal age gap 指 AI 預測年齡減去真實 chronological age；例如 60 歲的人被模型預測成 66 歲，age gap 就是 +6。Foundation model 則是先從大量影像學到一般視覺特徵，再針對特定任務 fine-tune；這裡使用的是 RETFound。",
+        "whatHappened": "模型在 71,343 名 UK Biobank 參與者上預測 chronological age，mean absolute error 為 2.85 年。較高 retinal age gap 和 cardiometabolic traits、發炎、認知表現、全因死亡、失智、癌症與新發心血管疾病都有關聯。Genome-wide analysis 也找到和 longevity、metabolism、neurodegeneration 與眼病相關的遺傳訊號。男女模型的預測能力相近，但背後關聯不同：男性較偏向 metabolic syndrome，女性的影像注意區域與遺傳訊號則更指向 retinal vasculature；停經後女性的 retinal age gap 也呈現不同模式。",
+        "howTheyStudied": "團隊先用大型 UK Biobank 影像 fine-tune RETFound，再把模型產生的 retinal age gap 和臨床表型、疾病事件、死亡、認知與 genome-wide variants 對照，並進行 sex-stratified analysis。這種設計的強項是同一個影像 phenotype 可以跨 epidemiology、genetics 與影像解釋互相驗證，而不是只報告一個 AI accuracy 數字。",
+        "whyItMatters": "如果未來在不同族群中重現，眼底照可能成為成本低、非侵入式的 systemic aging readout。更重要的是，男女雖然都能被模型準確估齡，模型依賴的生物訊號卻可能不同，提醒我們同一個 biomarker 數字背後不一定代表同一套機制。",
+        "limitations": "這仍主要是一個 predictive biomarker。模型能預測年齡、age gap 能預測疾病，不代表視網膜老化本身造成癌症、失智或心血管疾病；共同的血管、代謝或發炎因素可能同時影響眼睛與全身。UK Biobank 也不是全球人口的完整代表，AI 在不同族群、相機與醫療場景的校準仍需外部驗證。",
+        "whatNext": "下一步應在更多族群與 longitudinal cohorts 中測試 retinal age gap 是否會隨真正能改善健康結果的介入而改變，並確認它是否在傳統風險因子之外增加足夠的預測價值。只有這樣，它才可能從有趣的 AI phenotype 走向臨床可用 biomarker。",
+        "sources": [{"label":"Nature Communications 原始研究：Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures","url":"https://www.nature.com/articles/s41467-026-77102-1"}],
+        "questions": ["retinal age gap 為正值代表什麼？它和單純的 chronological age 有什麼不同？","研究者為什麼除了看 AI 的年齡預測誤差，還要把 age gap 和疾病、死亡、基因與性別分層資料連在一起？","如果某種藥讓 retinal age gap 下降五年，你還需要什麼證據才能說它真的延緩人體老化？"]
       }
     ],
     "radar": {
-      "title": "EPFL Life Sciences Summer Research Program 2027：現在最值得做的是先研究實驗室",
-      "summary": "EPFL School of Life Sciences 的 Summer Research Program 對國際 bachelor 與 first-year master’s 生命科學學生開放，提供約 8 週 lab immersion，領域涵蓋 biology、biophysics、chemistry、bioengineering、bioinformatics、quantitative biology，也有 Brain Mind Institute 與 Neuro X 實驗室。官方表示下一輪申請將在 2026 年 9 月底至 10 月開放，年度截止日為 11 月 15 日 23:59 CET；申請要準備 transcript、短文、referee 資訊並選擇實驗室。現在離截止還有時間，最有價值的是先從 participating labs 建立候選清單，逐一比較研究問題、模式系統、wet/dry methods 與實際可學到的技能，再讓申請短文有明確的 lab fit，而不是開放後才開始看教授。",
-      "url": "https://www.epfl.ch/schools/sv/education/summer-research-program/"
+      "title": "EPFL Life Sciences Summer Research Program 2027：十月開放前先檢查 GPA 與 lab fit",
+      "summary": "EPFL 官方表示 2027 暑期 Life Sciences SRP 將於 2026 年 10 月開放申請，年度截止日為 11 月 15 日。這是約 8 週的 lab immersion，涵蓋 biology、bioengineering、bioinformatics、quantitative biology 與 Brain Mind Institute／Neuro X 等方向。資格門檻值得先看：開始計畫前需至少完成兩年大學課程，且官方目前列出 GPA 約 3.75/4.0 或班級前 5% 的標準；過往 lab experience 是加分而非硬性必要。申請還需要 transcript、短文、推薦與三個 lab choices，而且線上表單開始後不能儲存再回來，所以現在最值得做的是先核對成績資格、閱讀 participating labs，並把候選 lab 的研究問題與方法整理好，而不是等 portal 開才開始看。",
+      "url": "https://www.epfl.ch/schools/sv/education/summer-research-program/how-to-apply/"
     }
   },
   "importantMail": {
     "count": 0,
-    "status": "目前沒有新的郵件同時符合 Daily Board 的重要事項與待行動條件；私人郵件內容不存放在公開 Daily Board。"
+    "status": "目前沒有符合 Daily Board 嚴格條件、需要立即注意的新郵件；詳細郵件內容不存放在公開 Daily Board。"
   }
 }
