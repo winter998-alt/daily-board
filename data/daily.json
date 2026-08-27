@@ -1,65 +1,92 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-27",
-  "updatedAt": "2026-08-27T07:28:36+08:00",
+  "date": "2026-08-28",
+  "updatedAt": "2026-08-28T07:41:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在問一個很實用的問題：當我們看到一個分子或影像訊號和疾病有關，怎麼判斷它只是伴隨現象，還是真的參與了機制？阿茲海默症研究用雙向基因操控把 ERBB4 從相關線索推向因果驅動；獎賞研究直接量到大腦自己釋放的內生性大麻素如何調整迴路增益；視網膜老化研究則提醒我們，AI 很會預測不等於它已經找到了老化原因。",
+    "intro": "今天三篇把『環境如何進入大腦』拆成三種尺度：發炎訊號會依遺傳變異改寫神經元的基因調控；腸道與血液中的營養訊號會在全腦多個區域被整合；而 psilocybin 的長期社交效應，在小鼠模型中甚至不需要清醒時的主觀經驗。三篇都提醒我們，看到行為或疾病結果之前，中間還隔著基因調控、全腦迴路與腦狀態等不同層級。",
     "stories": [
       {
-        "category": "阿茲海默症・神經迴路",
-        "title": "阿茲海默症的早期失衡，可能先從興奮性神經元『裝錯受器』開始",
-        "widgetTitle": "ERBB4 可能是阿茲海默症的早期放大器",
-        "widgetSummary": "新研究發現，原本主要和抑制性神經元相關的 ERBB4，在阿茲海默症小鼠的興奮性神經元中異常出現；刪除它可同時改善網路活動、突觸流失、膠細胞反應與認知。",
-        "dek": "阿茲海默症常被畫成一條直線：amyloid-β 堆積，啟動發炎，microglia 過度吞噬突觸，最後造成認知下降。但 8 月 26 日發表在 Nature 的研究提出另一個值得注意的起點：某些興奮性神經元可能很早就進入異常狀態，並主動把後續的突觸、膠細胞與 amyloid 病理一起往前推。",
-        "background": "ERBB4 是一種 receptor tyrosine kinase，也就是跨在細胞膜上的受器；外部訊號結合後，它的細胞內端可以磷酸化蛋白並啟動訊號路徑。在成人腦中，ERBB4 通常和特定抑制性 interneuron，尤其 parvalbumin 神經元密切相關。興奮性 pyramidal neuron 大量表現 ERBB4 因此不是典型狀態。研究者把在阿茲海默症模型中出現這種異常表現的細胞稱為 early-responsive excitatory neurons（EREN）。",
-        "whatHappened": "在 5×FAD 阿茲海默症小鼠中，研究者利用 single-nucleus RNA sequencing 找到 EREN，而且 Erbb4 的異常表現是很早出現的主要變化之一。更重要的是，這些神經元的出現伴隨興奮性網路過度活化、抑制性活動下降、興奮性突觸被 astrocyte 和 microglia 過度清除，以及 reactive gliosis。研究者因此懷疑，膠細胞的吞噬行為可能不是整條鏈的最上游，而是在回應已經異常的神經元。",
-        "howTheyStudied": "研究的關鍵是做了雙向因果操控。團隊用 AAV 與 CRISPR 在 5×FAD 小鼠 CA1 的興奮性神經元選擇性刪除 Erbb4，結果異常神經活動、突觸吞噬、reactive gliosis、amyloid plaque 累積與認知缺陷都朝正常方向改善。反過來，在沒有 amyloid plaque 的正常小鼠興奮性神經元強迫表現 Erbb4，也能製造多項 AD-like 神經、突觸與膠細胞表型；失去 kinase 活性的 ERBB4 則做不到，並把下游機制指向 mTOR signalling。研究也在人類 AD transcriptomic data 中看到相容的關聯。",
-        "whyItMatters": "這個結果把『神經發炎造成突觸消失』的單一路徑改寫得更像迴圈：amyloid 可能先推動一群興奮性神經元進入 ERBB4-positive 異常狀態，神經元失衡再驅動膠細胞反應與更多病理，形成自我放大的 vicious cycle。這也能解釋為什麼疾病進展到一定程度後，即使把 amyloid 降下來，認知改善仍可能有限：下游迴路可能已經能自行維持。",
-        "limitations": "最強的因果證據仍來自 5×FAD 小鼠與病毒載體操控。人類資料主要是死後組織與轉錄體統計模型，不能證明在人類患者中 ERBB4 一定位於相同因果位置。強迫 overexpression 也可能比自然疾病中的變化更劇烈。此外 ERBB4 在正常抑制性神經元有重要功能，因此未來若要治療，不能簡單把全腦 ERBB4 全部關掉。",
-        "whatNext": "下一步需要確認人類疾病早期、甚至症狀前階段是否真的出現 EREN，並設計只作用於異常興奮性神經元 ERBB4 的介入。如果在 amyloid 已經存在後才抑制這條路徑仍能恢復突觸與認知，會更直接支持它成為治療標的。",
-        "sources": [{"label":"Nature 原始研究：Aberrant excitatory neuronal ERBB4 promotes Alzheimer’s disease pathology","url":"https://www.nature.com/articles/s41586-026-10964-z"}],
-        "questions": ["為什麼興奮性神經元異常表現 ERBB4，可能讓我們重新思考『膠細胞先造成突觸流失』這個模型？","研究者同時做 Erbb4 deletion 和 overexpression，為什麼比只看到 ERBB4 在疾病中升高更能支持因果關係？","如果 ERBB4 在正常抑制性神經元也有重要功能，未來把它當藥物標的時最大的選擇性問題是什麼？"]
+        "category": "精神醫學・神經免疫",
+        "title": "同一場發炎，為什麼不同人的神經元可能收到不同的『基因指令』？",
+        "widgetTitle": "發炎訊號會和精神疾病風險基因互相作用",
+        "widgetSummary": "研究把精神疾病 GWAS 找到的風險區域放進人類 iPSC 神經元，發現 IL-6 與 IFNα 會讓部分遺傳變異的調控效果改變。基因風險可能不是固定值，而會依免疫環境被放大、削弱或重新導向。",
+        "dek": "我們常把精神疾病風險拆成『基因』和『環境』兩欄，但真正的生物學往往不是兩者相加，而是彼此相乘。8 月 27 日發表在 Nature Communications 的研究，用人類神經元直接測試：同一個精神疾病相關 DNA 變異，在沒有發炎與有發炎訊號時，是否真的會產生不同的基因調控效果。",
+        "background": "GWAS，也就是全基因組關聯研究，會在很多人的 DNA 中尋找『某個變異在患者裡比較常見嗎？』。問題是，多數 GWAS 變異並不位在蛋白質編碼區，而落在 enhancer、promoter 等調控 DNA 裡，因此我們知道它和疾病風險有關，卻不一定知道它到底改了哪個基因。這篇研究另外加入 cytokine（細胞激素）這個維度。IL-6 和 interferon-alpha（IFNα）都是免疫細胞常用的訊號分子，在感染或發炎時會改變細胞的轉錄狀態。",
+        "whatHappened": "研究者發現，部分精神與神經相關風險變異的調控效果不是固定的。某些 DNA 序列在平常就有不同活性；另一些則要等到神經元受到 IL-6 或 IFNα 刺激後，兩個 allele 之間的差異才變明顯。也就是說，『這個遺傳變異有沒有影響』可能取決於細胞當下處在什麼免疫環境。",
+        "howTheyStudied": "團隊先從 10 種腦部性狀／疾病的 GWAS 中挑出 152 個 loci，再利用 massively parallel reporter assay（MPRA）一次測試大量候選調控序列。MPRA 的想法是：把不同 DNA 序列各自接上一個可追蹤的 reporter，再放進同一批細胞，看哪段序列會把 reporter 打開得比較強。研究在人類 iPSC 衍生的 glutamatergic neurons 中解析出 1,156 個有活性的候選調控序列，其中 267 個具有 variant-specific effect，另有 61 個出現明確的『遺傳變異 × cytokine』交互作用。研究也把這些結果和 transcription factor binding、chromatin accessibility 與候選靶基因連起來。",
+        "whyItMatters": "這讓『基因風險』變得更像條件式規則，而不是出生時就固定好的分數。某個 variant 也許平常影響很小，但在發炎、感染或其他免疫狀態下，才會真正改變神經元的基因表現。這提供一個比較具體的 gene–environment interaction 模型，也能解釋為什麼相同的遺傳風險不一定在每個人、每個時間點都轉成相同臨床結果。",
+        "limitations": "MPRA 是人工 reporter system，它能測『這段 DNA 有沒有調控潛力』，但沒有完整保留原本染色體三維結構與遠距 enhancer–gene 關係。iPSC 衍生的 glutamatergic neurons 也不是完整發育中的人腦，缺少 microglia、astrocyte、血管與複雜的細胞間訊號。因此研究證明的是特定 DNA 序列在特定免疫刺激下會改變調控活性，還不能說某次感染會透過這 61 個位點直接造成精神疾病。",
+        "whatNext": "下一步需要把候選 variant 放回原生基因組位置，用 CRISPR editing 改變單一 allele，再觀察 cytokine 刺激後真正的 endogenous gene、突觸與神經元功能是否跟著改變。更進一步還要在包含神經元與膠細胞的共培養或 organoid 中確認，這些 gene–environment interaction 是否仍然存在。",
+        "sources": [
+          {
+            "label": "Nature Communications 原始研究：Dynamic neuro-immune regulation of psychiatric risk loci in human neurons",
+            "url": "https://www.nature.com/articles/s41467-026-77114-x"
+          }
+        ],
+        "questions": [
+          "為什麼同一個 DNA 變異在沒有發炎與有 IL-6／IFNα 時，可能產生不同的基因調控效果？",
+          "MPRA 一次可以測很多候選序列，但為什麼研究者仍需要用 CRISPR 或原生基因組實驗再驗證？",
+          "如果某個風險 variant 只有在特定免疫狀態下才產生效果，這會如何改變我們對『遺傳風險』與疾病預測的理解？"
+        ]
       },
       {
-        "category": "獎賞・神經調節",
-        "title": "大腦自己的大麻素不是單純『抑制神經』：它會動態調整你願不願意繼續追獎賞",
-        "widgetTitle": "內生性大麻素如何調整追逐獎賞的動力",
-        "widgetSummary": "研究直接追蹤自由活動小鼠腦中的 endocannabinoid 訊號，發現它能在 thalamus–striatum 迴路中以逆向訊號調整輸入增益，影響動物是否持續投入獎賞尋求。",
-        "dek": "提到 cannabinoid，很多人第一個想到的是外來的 THC。但哺乳類大腦本身就有 endocannabinoid system，而且它不是單純把神經元『關小聲』。8 月 26 日的 Nature 研究把這套系統放回真實行為裡觀察，顯示神經元可以依自己的活動狀態釋放 endocannabinoid，反過來調整上游突觸的輸入強度，像即時旋鈕一樣控制 reward engagement。",
-        "background": "一般突觸傳遞多半是 presynaptic neuron 釋放 neurotransmitter，訊號往 postsynaptic neuron 前進。Endocannabinoid 很特別：它常由 postsynaptic cell 按需求製造，再往回作用於 presynaptic terminal，因此叫 retrograde signalling。它常透過 CB1 receptor 改變 transmitter release。Gain control 則可以想成調音量旋鈕：不是改變輸入代表什麼，而是決定同樣輸入最後能把下游系統推多強。",
-        "whatHappened": "研究者發現，小鼠在 reward-seeking task 中，endocannabinoid release 不是固定背景訊號，而會隨動物投入獎賞行為動態變化。關鍵位置是一條 thalamostriatal circuit，也就是丘腦送往紋狀體的輸入。這套 retrograde signal 會改變上游終端對紋狀體的驅動程度，進而影響動物是否維持對獎賞任務的投入。",
-        "howTheyStudied": "團隊整合自由活動動物的 in vivo physiology、影像、遺傳操控與 machine-learning-based behavioral analysis，不只在切片中證明 CB1 能改變突觸，而是把 endocannabinoid 動態和正在進行的 reward seeking 對齊。再透過特定迴路與基因操控測試這套訊號是否真的改變行為 engagement，建立從分子釋放、presynaptic gain control 到動機行為的鏈條。",
-        "whyItMatters": "這讓 endocannabinoid system 從『廣泛存在的抑制性 neuromodulator』變成更精確的計算元件：下游細胞可以根據自身狀態，反過來決定哪些上游輸入應該被放大或削弱。這種局部、即時的 feedback 很適合讓大腦調整『現在這個獎賞值不值得繼續投入』，也可能幫助理解成癮、動機低落與其他 reward-processing disorder。",
-        "limitations": "研究主要在小鼠特定 reward task 與特定 thalamostriatal circuit 中完成，不能直接等同於人類主觀的渴望、意志力或成癮。Endocannabinoid system 在不同腦區可能產生不同甚至相反效果；外源性 cannabinoid 藥物也不是對這套局部、按需釋放系統的簡單模仿。",
-        "whatNext": "下一步可測試在不同獎賞、壓力與成癮模型中，同一套 retrograde gain control 是否被重新設定，以及能否只調整特定迴路的 CB1 signalling，而不干擾全腦廣泛的 endocannabinoid 功能。",
-        "sources": [{"label":"Nature 原始研究：Endocannabinoids facilitate reward engagement through retrograde gain control","url":"https://www.nature.com/articles/s41586-026-10967-w"}],
-        "questions": ["為什麼 endocannabinoid 被稱為 retrograde signal？這和一般突觸訊號方向有什麼不同？","如果只在腦切片看到 CB1 會抑制 transmitter release，為什麼還不足以證明它真的控制動物的 reward engagement？","外來 THC 也能作用 cannabinoid receptors，為什麼不能因此推論 THC 會精準複製這篇研究中的局部 endocannabinoid gain control？"]
+        "category": "內感覺・全腦神經迴路",
+        "title": "吃進去的葡萄糖，腦怎麼知道？研究者第一次把『腸道訊號』和全腦活動一起看",
+        "widgetTitle": "腸道營養訊號如何被全腦讀取",
+        "widgetSummary": "研究在清醒斑馬魚幼魚中，一邊於腸道或血液釋放營養物、一邊做全腦神經影像。結果顯示營養訊號會在多個時間尺度傳遍腦，而且會和游泳、視覺等外界資訊在不同腦區整合。",
+        "dek": "飢餓、飽足、噁心、心跳或腸胃鼓脹都屬於 interoception，也就是大腦對身體內部狀態的感知。但我們過去常一次只研究迷走神經、腦幹或某個下視丘核團，很難同時回答：一個來自腸道的訊號，最後究竟在整顆腦裡走到哪裡、又在哪裡和視覺與動作資訊相遇？",
+        "background": "Interoception 可以理解成『大腦讀取身體內部』。外感覺是看到光、聽到聲音；內感覺則包括血糖、腸道營養、血壓與內臟狀態。技術上的困難是，如果你真的餵動物吃東西，會同時產生味覺、吞嚥、腸道伸展、移動與血液化學改變，很難知道哪個神經訊號來自哪一步。",
+        "whatHappened": "研究者發現，當營養物被釋放到腸道或血液後，神經活動不是只在一個『飽足中心』變化，而是廣泛出現在多個周邊與中樞區域，而且不同區域在不同時間尺度上反應。反應也具有化學選擇性：D-glucose 和 amino acids 可以觸發明顯活動，無法被正常代謝利用的 L-glucose 則沒有相同效果。很多對腸道訊號敏感的神經元，同時也會對游泳或視覺刺激反應。",
+        "howTheyStudied": "團隊利用透明的斑馬魚幼魚，建立 all-optical system：用光學方法在指定位置『uncage』原本被化學保護的營養分子，讓它在腸道或血液中於精確時間突然變成可用，同時以 whole-brain calcium imaging 追蹤大量神經元活動，並讓魚仍能執行 visuo-motor 行為。這種設計把『營養真正出現的時間』和神經反應對得很準，也避免真正進食帶來的一大串混雜變項。",
+        "whyItMatters": "結果顯示，body–brain communication 不是把一個內臟訊號送到單一腦區後才開始計算；相反地，內部訊號會在全腦多層級被處理。腦幹區域較常把 gut signal 和 motor signal 整合，中腦則更常同時整合 gut、visual 與 motor information。這提示『我現在應不應該繼續找食物、游走或停下』可能是身體內部狀態與外界感覺被共同計算後的結果。",
+        "limitations": "斑馬魚幼魚雖然是脊椎動物，而且透明身體讓全腦影像成為可能，但它的腸腦系統、行為與哺乳類仍有差異。Calcium imaging 也是神經活動的間接 readout；而 optical uncaging 雖能精準控制時間，仍不完全等同自然消化、吸收與荷爾蒙分泌。研究主要建立的是腦區與群體活動地圖，還沒有逐一路徑證明哪些神經元對特定行為是必要的。",
+        "whatNext": "下一步可以對被找出的特定神經群做因果操控：例如只抑制『同時整合 gut 與 motor signal』的細胞，看營養狀態是否還能改變游泳或覓食。也可以加入腸道荷爾蒙、迷走樣感覺路徑與不同營養物，逐步拆解『身體訊號是靠哪條線進腦』。",
+        "sources": [
+          {
+            "label": "Nature Communications 原始研究：Whole-brain, all-optical interrogation of neuronal dynamics underlying gut and vascular interoception in zebrafish",
+            "url": "https://www.nature.com/articles/s41467-026-76242-8"
+          }
+        ],
+        "questions": [
+          "為什麼 D-glucose 能引發反應、L-glucose 卻沒有相同效果，能幫助研究者判斷大腦讀到的不只是『有一個糖分子出現』？",
+          "光學 uncaging 營養物，比直接餵斑馬魚吃東西多控制了哪些混雜變項？",
+          "研究看到某些腦幹神經元同時對 gut 與 motor signal 反應，還需要什麼實驗才能證明它們真的負責把兩種資訊整合成行為？"
+        ]
       },
       {
-        "category": "AI 生醫・老化生物標記",
-        "title": "一張眼底照能估年齡差到約三歲，但『眼睛看起來老』到底代表什麼？",
-        "widgetTitle": "AI 從視網膜讀出老化訊號",
-        "widgetSummary": "研究用 71,343 名 UK Biobank 參與者訓練 AI 從眼底照片預測年齡，平均誤差約 2.85 年；預測年齡比實際年齡高的人，也呈現較多老化相關健康與遺傳訊號。",
-        "dek": "視網膜是人體少數可以不開刀就直接看到神經組織與微血管的地方，因此眼底照片一直被視為全身健康的一扇窗。新的 Nature Communications 研究利用 foundation model 從數萬張眼底照片學習『一雙某個年齡的眼睛通常長什麼樣』，再追問 AI 看出的 retinal age gap 是否真的和全身老化有關。",
-        "background": "Fundus image 是從瞳孔拍攝視網膜、視神經盤與血管的彩色照片。研究中的 retinal age gap 指 AI 預測年齡減去真實 chronological age；例如 60 歲的人被模型預測成 66 歲，age gap 就是 +6。Foundation model 則是先從大量影像學到一般視覺特徵，再針對特定任務 fine-tune；這裡使用的是 RETFound。",
-        "whatHappened": "模型在 71,343 名 UK Biobank 參與者上預測 chronological age，mean absolute error 為 2.85 年。較高 retinal age gap 和 cardiometabolic traits、發炎、認知表現、全因死亡、失智、癌症與新發心血管疾病都有關聯。Genome-wide analysis 也找到和 longevity、metabolism、neurodegeneration 與眼病相關的遺傳訊號。男女模型的預測能力相近，但背後關聯不同：男性較偏向 metabolic syndrome，女性的影像注意區域與遺傳訊號則更指向 retinal vasculature；停經後女性的 retinal age gap 也呈現不同模式。",
-        "howTheyStudied": "團隊先用大型 UK Biobank 影像 fine-tune RETFound，再把模型產生的 retinal age gap 和臨床表型、疾病事件、死亡、認知與 genome-wide variants 對照，並進行 sex-stratified analysis。這種設計的強項是同一個影像 phenotype 可以跨 epidemiology、genetics 與影像解釋互相驗證，而不是只報告一個 AI accuracy 數字。",
-        "whyItMatters": "如果未來在不同族群中重現，眼底照可能成為成本低、非侵入式的 systemic aging readout。更重要的是，男女雖然都能被模型準確估齡，模型依賴的生物訊號卻可能不同，提醒我們同一個 biomarker 數字背後不一定代表同一套機制。",
-        "limitations": "這仍主要是一個 predictive biomarker。模型能預測年齡、age gap 能預測疾病，不代表視網膜老化本身造成癌症、失智或心血管疾病；共同的血管、代謝或發炎因素可能同時影響眼睛與全身。UK Biobank 也不是全球人口的完整代表，AI 在不同族群、相機與醫療場景的校準仍需外部驗證。",
-        "whatNext": "下一步應在更多族群與 longitudinal cohorts 中測試 retinal age gap 是否會隨真正能改善健康結果的介入而改變，並確認它是否在傳統風險因子之外增加足夠的預測價值。只有這樣，它才可能從有趣的 AI phenotype 走向臨床可用 biomarker。",
-        "sources": [{"label":"Nature Communications 原始研究：Deep learning aging marker from retinal images unveils sex-specific clinical and genetic signatures","url":"https://www.nature.com/articles/s41467-026-77102-1"}],
-        "questions": ["retinal age gap 為正值代表什麼？它和單純的 chronological age 有什麼不同？","研究者為什麼除了看 AI 的年齡預測誤差，還要把 age gap 和疾病、死亡、基因與性別分層資料連在一起？","如果某種藥讓 retinal age gap 下降五年，你還需要什麼證據才能說它真的延緩人體老化？"]
+        "category": "迷幻藥・社交行為",
+        "title": "Psilocybin 的長期社交效應，一定需要清醒時的迷幻體驗嗎？小鼠研究給出一個反直覺答案",
+        "widgetTitle": "迷幻體驗可能不是所有 psilocybin 效應的必要條件",
+        "widgetSummary": "在 Cntnap2 缺失小鼠中，單次 psilocybin 能持續改善社交行為；即使給藥當下的小鼠處於麻醉狀態，之後仍看到類似效果。這挑戰了『主觀迷幻體驗一定是治療效果必要條件』的強版本假說。",
+        "dek": "Psilocybin 研究有一個很核心的爭論：它的長期效果究竟來自藥物造成的細胞與突觸可塑性，還是必須經過清醒時非常強烈的主觀迷幻體驗，才能形成後續改變？8 月 27 日的 Nature Communications 小鼠研究，用一個很直接的實驗把這兩件事暫時拆開。",
+        "background": "Psilocybin 進入體內後會轉成 psilocin，主要作用於 serotonin 2A receptor（5-HT2A）等血清素受器。人類臨床研究中，它可造成強烈知覺、情緒與自我感改變，因此治療過程往往也重視 set and setting。不過受器訊號同時會改變神經元可塑性，所以一直存在另一種可能：部分較長期的行為效果，可能不必完全依賴清醒時的主觀經驗。",
+        "whatHappened": "研究者在 Cntnap2-knockout 小鼠中觀察到較低的社交行為；單次系統性 psilocybin 給藥後，這些小鼠的 sociability 可以持續提高。相同處理在 isogenic control mice 中沒有把本來正常的社交行為再往上推。更關鍵的是，研究者讓 Cntnap2-knockout 小鼠在給藥急性期處於麻醉狀態，之後仍觀察到社交行為改善。",
+        "howTheyStudied": "這是一個疾病模型與狀態操控結合的設計。研究先比較 Cntnap2-knockout 與遺傳背景相同的 control mice，再測單次 psilocybin 對後續 social behavior 的影響；接著把『給藥時是否清醒』當成獨立變項，在麻醉狀態給藥，詢問如果急性期沒有清醒的迷幻樣腦狀態，長期行為效果是否仍會出現。",
+        "whyItMatters": "如果這個結果能在其他模型重現，它表示至少某些 psilocybin 的長期效應，可能可以由受器啟動後的神經可塑性機制承擔，而不必把清醒時的迷幻經驗視為絕對必要條件。這對未來『保留治療相關生物效應、降低急性知覺改變』的藥物設計很有吸引力，也為非致幻性 5-HT2A agonist 的研究提供概念支持。",
+        "limitations": "最大的限制是：這是小鼠研究，而且研究的是 Cntnap2-knockout 的社交表型，不是人類自閉症的完整等價模型，更不是憂鬱症臨床治療。麻醉會大幅改變腦活動，但我們不能用小鼠去直接測量『主觀 psychedelic experience』是否存在；因此研究只能說『清醒腦狀態不是這個小鼠行為效果的必要條件』，不能直接推出人類心理治療中的主觀經驗不重要。",
+        "whatNext": "下一步應該找出麻醉與清醒條件下共同保留下來的分子與突觸改變，例如特定 5-HT2A 下游路徑、dendritic spine remodeling 或 gene expression，再對它們做阻斷實驗。臨床上若要回答相同問題，則需要比較具有不同主觀效應但相近受器作用的藥物，而不能直接把小鼠麻醉結果搬到人類。",
+        "sources": [
+          {
+            "label": "Nature Communications 原始研究：Psilocybin enhances sociability only in altered behavioural state and does not need an awake experience to be effective",
+            "url": "https://www.nature.com/articles/s41467-026-77238-0"
+          }
+        ],
+        "questions": [
+          "為什麼『麻醉時給 psilocybin，之後仍改善社交行為』會挑戰主觀迷幻體驗必須存在的強版本假說？",
+          "為什麼研究必須同時看 Cntnap2-knockout 和 isogenic control mice，而不能只看治療後的 knockout 小鼠？",
+          "即使麻醉條件下仍有效，為什麼我們仍不能直接下結論說人類 psilocybin 治療中的主觀體驗不重要？"
+        ]
       }
     ],
     "radar": {
-      "title": "EPFL Life Sciences Summer Research Program 2027：十月開放前先檢查 GPA 與 lab fit",
-      "summary": "EPFL 官方表示 2027 暑期 Life Sciences SRP 將於 2026 年 10 月開放申請，年度截止日為 11 月 15 日。這是約 8 週的 lab immersion，涵蓋 biology、bioengineering、bioinformatics、quantitative biology 與 Brain Mind Institute／Neuro X 等方向。資格門檻值得先看：開始計畫前需至少完成兩年大學課程，且官方目前列出 GPA 約 3.75/4.0 或班級前 5% 的標準；過往 lab experience 是加分而非硬性必要。申請還需要 transcript、短文、推薦與三個 lab choices，而且線上表單開始後不能儲存再回來，所以現在最值得做的是先核對成績資格、閱讀 participating labs，並把候選 lab 的研究問題與方法整理好，而不是等 portal 開才開始看。",
-      "url": "https://www.epfl.ch/schools/sv/education/summer-research-program/how-to-apply/"
+      "title": "2026 Taiwan Open Brain Science Workshop：把神經科學的『可重現性』變成實作技能",
+      "summary": "9 月 26–28 日在成功大學舉行，包含開放科學、腦影像分析工具與兩天 BrainHack；9 月 2 日晚間另有線上說明會，海報摘要截止 9 月 13 日 23:59。它不是單純聽演講，而是把 open data、reproducible workflow、neuroimaging tools 與團隊實作放在一起，特別適合想開始接觸 dry-lab／神經影像分析的人。這類能力未來不論進 wet lab、computational neuroscience 或大型合作計畫都很可轉移。",
+      "url": "https://sites.google.com/kunglab-nckupsy.org/open-brain-science-2026/homepage"
     }
   },
   "importantMail": {
-    "count": 0,
-    "status": "目前沒有符合 Daily Board 嚴格條件、需要立即注意的新郵件；詳細郵件內容不存放在公開 Daily Board。"
+    "count": 2,
+    "status": "目前有 2 項需要注意的郵件事項，包含重要合作後續與近期神經科學活動／報名時程；詳細內容不存放在公開 Daily Board。"
   }
 }
