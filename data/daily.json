@@ -1,92 +1,104 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-28",
-  "updatedAt": "2026-08-28T07:41:00+08:00",
+  "date": "2026-08-29",
+  "updatedAt": "2026-08-29T07:31:26+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇把『環境如何進入大腦』拆成三種尺度：發炎訊號會依遺傳變異改寫神經元的基因調控；腸道與血液中的營養訊號會在全腦多個區域被整合；而 psilocybin 的長期社交效應，在小鼠模型中甚至不需要清醒時的主觀經驗。三篇都提醒我們，看到行為或疾病結果之前，中間還隔著基因調控、全腦迴路與腦狀態等不同層級。",
+    "intro": "今天三篇都在問同一件事：當研究者找到一個看起來能改變疾病或行為的訊號，怎麼把它從「線索」推進到真正的機制？第一篇用奈米載體嘗試把星狀膠細胞重新推向神經元命運；第二篇從慢性疼痛追到藍斑核中的 μ-opioid receptor；第三篇則重新檢查昆蟲嗅覺的經典規則，發現蚊子的單一嗅覺神經元常同時表現多個受器。三篇都很適合練習：看到結果之後，再追問研究者到底操控了哪一步、還有哪些替代解釋。",
     "stories": [
       {
-        "category": "精神醫學・神經免疫",
-        "title": "同一場發炎，為什麼不同人的神經元可能收到不同的『基因指令』？",
-        "widgetTitle": "發炎訊號會和精神疾病風險基因互相作用",
-        "widgetSummary": "研究把精神疾病 GWAS 找到的風險區域放進人類 iPSC 神經元，發現 IL-6 與 IFNα 會讓部分遺傳變異的調控效果改變。基因風險可能不是固定值，而會依免疫環境被放大、削弱或重新導向。",
-        "dek": "我們常把精神疾病風險拆成『基因』和『環境』兩欄，但真正的生物學往往不是兩者相加，而是彼此相乘。8 月 27 日發表在 Nature Communications 的研究，用人類神經元直接測試：同一個精神疾病相關 DNA 變異，在沒有發炎與有發炎訊號時，是否真的會產生不同的基因調控效果。",
-        "background": "GWAS，也就是全基因組關聯研究，會在很多人的 DNA 中尋找『某個變異在患者裡比較常見嗎？』。問題是，多數 GWAS 變異並不位在蛋白質編碼區，而落在 enhancer、promoter 等調控 DNA 裡，因此我們知道它和疾病風險有關，卻不一定知道它到底改了哪個基因。這篇研究另外加入 cytokine（細胞激素）這個維度。IL-6 和 interferon-alpha（IFNα）都是免疫細胞常用的訊號分子，在感染或發炎時會改變細胞的轉錄狀態。",
-        "whatHappened": "研究者發現，部分精神與神經相關風險變異的調控效果不是固定的。某些 DNA 序列在平常就有不同活性；另一些則要等到神經元受到 IL-6 或 IFNα 刺激後，兩個 allele 之間的差異才變明顯。也就是說，『這個遺傳變異有沒有影響』可能取決於細胞當下處在什麼免疫環境。",
-        "howTheyStudied": "團隊先從 10 種腦部性狀／疾病的 GWAS 中挑出 152 個 loci，再利用 massively parallel reporter assay（MPRA）一次測試大量候選調控序列。MPRA 的想法是：把不同 DNA 序列各自接上一個可追蹤的 reporter，再放進同一批細胞，看哪段序列會把 reporter 打開得比較強。研究在人類 iPSC 衍生的 glutamatergic neurons 中解析出 1,156 個有活性的候選調控序列，其中 267 個具有 variant-specific effect，另有 61 個出現明確的『遺傳變異 × cytokine』交互作用。研究也把這些結果和 transcription factor binding、chromatin accessibility 與候選靶基因連起來。",
-        "whyItMatters": "這讓『基因風險』變得更像條件式規則，而不是出生時就固定好的分數。某個 variant 也許平常影響很小，但在發炎、感染或其他免疫狀態下，才會真正改變神經元的基因表現。這提供一個比較具體的 gene–environment interaction 模型，也能解釋為什麼相同的遺傳風險不一定在每個人、每個時間點都轉成相同臨床結果。",
-        "limitations": "MPRA 是人工 reporter system，它能測『這段 DNA 有沒有調控潛力』，但沒有完整保留原本染色體三維結構與遠距 enhancer–gene 關係。iPSC 衍生的 glutamatergic neurons 也不是完整發育中的人腦，缺少 microglia、astrocyte、血管與複雜的細胞間訊號。因此研究證明的是特定 DNA 序列在特定免疫刺激下會改變調控活性，還不能說某次感染會透過這 61 個位點直接造成精神疾病。",
-        "whatNext": "下一步需要把候選 variant 放回原生基因組位置，用 CRISPR editing 改變單一 allele，再觀察 cytokine 刺激後真正的 endogenous gene、突觸與神經元功能是否跟著改變。更進一步還要在包含神經元與膠細胞的共培養或 organoid 中確認，這些 gene–environment interaction 是否仍然存在。",
+        "category": "神經再生・阿茲海默症",
+        "title": "把星狀膠細胞「轉成」神經元？Nano-ERASER 把一個高度爭議的再生策略推進到類器官與小鼠",
+        "widgetTitle": "奈米載體嘗試把星狀膠細胞轉成神經元",
+        "widgetSummary": "研究者用可進入腦部的 polymer nanogel 降低星狀膠細胞中的 PTBP1，並在細胞、腦類器官與阿茲海默症小鼠中觀察到神經元樣細胞增加與行為改善。這提供了再生醫學線索，但「新神經元是否真的由原本的 astrocyte 轉換而來」仍是最需要嚴格驗證的核心問題。",
+        "dek": "成年哺乳類大腦失去大量神經元後，再生能力很有限。因此有一條很吸引人的想法是：與其移植外來幹細胞，能不能直接把腦中原本就很多的 astrocyte（星狀膠細胞）重新編程成神經元？8 月 26 日發表在 Cell Biomaterials 的研究使用名為 Nano-ERASER 的奈米材料系統，嘗試用蛋白質降解而不是永久改寫 DNA 來做到這件事。",
+        "background": "Astrocyte 是中樞神經系統常見的膠細胞，會調節離子環境、提供代謝支援、參與突觸功能與受傷反應。PTBP1 則是 RNA-binding protein，會影響 RNA 剪接與神經細胞分化程式。過去曾有研究主張降低 PTBP1 可以把 astrocyte 轉成 neuron，但後續 lineage-tracing 研究對這種『原位轉換』提出強烈質疑，因此任何新結果都必須特別確認細胞來源，而不能只靠神經元 marker 增加。",
+        "whatHappened": "研究團隊設計的 Nano-ERASER 是一種 polymer nanogel，攜帶能促使目標蛋白被清除的抗體策略。研究者讓系統降低 astrocyte 中的 PTBP1，並在培養的人類 astrocyte、阿茲海默症相關人類腦類器官與小鼠模型中觀察到神經元樣細胞增加。小鼠經治療後，研究報告神經元密度提高、神經發炎與 amyloid-β 累積下降，而且巢築與水迷宮等行為也改善。",
+        "howTheyStudied": "研究跨了三個層級。第一層是在培養的人類 astrocyte 中確認奈米系統能進入細胞並降低 PTBP1；第二層在人類腦類器官觀察細胞命運與神經功能特徵；第三層則把系統用於阿茲海默症小鼠，檢查腦組織、神經發炎、amyloid 與行為。這種設計的優點是同一機制能從細胞一路走到整體動物，但『看到神經元樣細胞增加』仍必須和真正的譜系追蹤區分。",
+        "whyItMatters": "如果未來能證明成年腦中的 astrocyte 可以被安全、可控地重新編程成有功能的新神經元，概念上會提供一種不需要移植細胞的神經再生策略。Nano-ERASER 另一個吸引點是它瞄準蛋白質而不是永久修改 DNA，因此理論上比不可逆的基因編輯更容易調整劑量與停止作用。",
+        "limitations": "目前不能把結果解讀成『已經逆轉阿茲海默症』。首先，核心證據仍來自細胞、類器官與小鼠；其次，PTBP1 介導的 astrocyte-to-neuron conversion 在此領域本來就有 lineage-tracing 爭議。若沒有足夠嚴格的遺傳譜系標記，就可能把原本存在的神經元、marker 改變或細胞融合誤判成真正的轉分化。行為改善也可能來自發炎、amyloid 或其他環境變化，而不一定完全由新生神經元造成。",
+        "whatNext": "最關鍵的下一步是使用不可逆、長期穩定的 astrocyte lineage tracing，直接證明治療後的成熟神經元確實來自治療前的 astrocyte；同時要做長期安全性、異常增殖與網路功能檢查。研究團隊也提出往非人靈長類模型推進，這會是從小鼠走向人體前的重要門檻。",
         "sources": [
           {
-            "label": "Nature Communications 原始研究：Dynamic neuro-immune regulation of psychiatric risk loci in human neurons",
-            "url": "https://www.nature.com/articles/s41467-026-77114-x"
+            "label": "Cell Biomaterials 原始研究：Reverse the progression of Alzheimer's disease through Nano-ERASER-based adult neuroregeneration",
+            "url": "https://doi.org/10.1016/j.celbio.2026.100575"
+          },
+          {
+            "label": "Cell Press／研究新聞摘要",
+            "url": "https://phys.org/news/2026-08-nanoparticles-neuroregeneration-alzheimer-disease.html"
           }
         ],
         "questions": [
-          "為什麼同一個 DNA 變異在沒有發炎與有 IL-6／IFNα 時，可能產生不同的基因調控效果？",
-          "MPRA 一次可以測很多候選序列，但為什麼研究者仍需要用 CRISPR 或原生基因組實驗再驗證？",
-          "如果某個風險 variant 只有在特定免疫狀態下才產生效果，這會如何改變我們對『遺傳風險』與疾病預測的理解？"
+          "為什麼降低 PTBP1 後看到更多神經元 marker，還不能直接證明 astrocyte 真的轉變成新的 neuron？",
+          "這篇研究同時用了培養細胞、腦類器官與小鼠；三個層級各自補足了哪一種證據，又各自缺少什麼？",
+          "如果小鼠的記憶改善同時伴隨 neuroinflammation 與 amyloid-β 降低，你會怎麼設計實驗判斷『新生神經元』是不是行為改善的必要原因？"
         ]
       },
       {
-        "category": "內感覺・全腦神經迴路",
-        "title": "吃進去的葡萄糖，腦怎麼知道？研究者第一次把『腸道訊號』和全腦活動一起看",
-        "widgetTitle": "腸道營養訊號如何被全腦讀取",
-        "widgetSummary": "研究在清醒斑馬魚幼魚中，一邊於腸道或血液釋放營養物、一邊做全腦神經影像。結果顯示營養訊號會在多個時間尺度傳遍腦，而且會和游泳、視覺等外界資訊在不同腦區整合。",
-        "dek": "飢餓、飽足、噁心、心跳或腸胃鼓脹都屬於 interoception，也就是大腦對身體內部狀態的感知。但我們過去常一次只研究迷走神經、腦幹或某個下視丘核團，很難同時回答：一個來自腸道的訊號，最後究竟在整顆腦裡走到哪裡、又在哪裡和視覺與動作資訊相遇？",
-        "background": "Interoception 可以理解成『大腦讀取身體內部』。外感覺是看到光、聽到聲音；內感覺則包括血糖、腸道營養、血壓與內臟狀態。技術上的困難是，如果你真的餵動物吃東西，會同時產生味覺、吞嚥、腸道伸展、移動與血液化學改變，很難知道哪個神經訊號來自哪一步。",
-        "whatHappened": "研究者發現，當營養物被釋放到腸道或血液後，神經活動不是只在一個『飽足中心』變化，而是廣泛出現在多個周邊與中樞區域，而且不同區域在不同時間尺度上反應。反應也具有化學選擇性：D-glucose 和 amino acids 可以觸發明顯活動，無法被正常代謝利用的 L-glucose 則沒有相同效果。很多對腸道訊號敏感的神經元，同時也會對游泳或視覺刺激反應。",
-        "howTheyStudied": "團隊利用透明的斑馬魚幼魚，建立 all-optical system：用光學方法在指定位置『uncage』原本被化學保護的營養分子，讓它在腸道或血液中於精確時間突然變成可用，同時以 whole-brain calcium imaging 追蹤大量神經元活動，並讓魚仍能執行 visuo-motor 行為。這種設計把『營養真正出現的時間』和神經反應對得很準，也避免真正進食帶來的一大串混雜變項。",
-        "whyItMatters": "結果顯示，body–brain communication 不是把一個內臟訊號送到單一腦區後才開始計算；相反地，內部訊號會在全腦多層級被處理。腦幹區域較常把 gut signal 和 motor signal 整合，中腦則更常同時整合 gut、visual 與 motor information。這提示『我現在應不應該繼續找食物、游走或停下』可能是身體內部狀態與外界感覺被共同計算後的結果。",
-        "limitations": "斑馬魚幼魚雖然是脊椎動物，而且透明身體讓全腦影像成為可能，但它的腸腦系統、行為與哺乳類仍有差異。Calcium imaging 也是神經活動的間接 readout；而 optical uncaging 雖能精準控制時間，仍不完全等同自然消化、吸收與荷爾蒙分泌。研究主要建立的是腦區與群體活動地圖，還沒有逐一路徑證明哪些神經元對特定行為是必要的。",
-        "whatNext": "下一步可以對被找出的特定神經群做因果操控：例如只抑制『同時整合 gut 與 motor signal』的細胞，看營養狀態是否還能改變游泳或覓食。也可以加入腸道荷爾蒙、迷走樣感覺路徑與不同營養物，逐步拆解『身體訊號是靠哪條線進腦』。",
+        "category": "疼痛・神經迴路",
+        "title": "同一個藍斑核，怎麼既能止痛又能製造慢性痛？研究找到一個 μ-opioid receptor「煞車」",
+        "widgetTitle": "藍斑核裡的 opioid receptor 可能是慢性痛煞車",
+        "widgetSummary": "小鼠神經損傷後，藍斑核的一部分神經元可從止痛系統轉成疼痛放大器。研究者移除或恢復其中的 μ-opioid receptor，疼痛敏感度會雙向改變，顯示這個受器像局部煞車，而不是只是一個全身性 opioid 藥物的被動靶點。",
+        "dek": "Locus coeruleus（藍斑核，LC）是腦幹一小群以 norepinephrine 為主的神經元，參與警覺、壓力、注意與疼痛調控。它的角色一直很矛盾：急性情況下 LC 可以幫忙抑制疼痛，但神經受傷後，部分 LC 活動反而可能持續放大慢性 neuropathic pain。Current Biology 的研究試圖找出，究竟什麼機制決定 LC 會被踩煞車還是持續輸出疼痛訊號。",
+        "background": "Neuropathic pain 是神經本身受傷或疾病後產生的疼痛，常見灼熱、刺痛或對輕微碰觸過度敏感。μ-opioid receptor（MOR）是神經系統的重要抑制性受器；人體自己的 endogenous opioids，以及 morphine、fentanyl 等藥物都能作用它。問題是 MOR 分布在全腦與脊髓，所以全身性 opioid 同時帶來鎮痛、呼吸抑制、耐受與成癮等風險。",
+        "whatHappened": "研究發現，長期神經損傷後，抑制 LC 活動可以減少小鼠對熱與機械刺激的過度敏感，支持 LC 在慢性期具有『pain generator』功能。進一步把 MOR 只從 LC 神經元移除後，小鼠疼痛敏感度更高；把 MOR 再恢復回同一群細胞，過度敏感又能被逆轉。這表示 LC 中的 MOR 具有真正的功能性 gate，可以限制疼痛放大迴路。",
+        "howTheyStudied": "團隊使用 spared nerve injury 建立 neuropathic pain 小鼠模型，再用 optogenetics 暫時抑制 LC，觀察 mechanical 與 thermal hypersensitivity。之後以細胞型別與投射選擇性的 conditional knockout 移除 MOR，並做 rescue experiment 把 MOR 恢復。『移除後變差、恢復後改善』比單純看到 MOR 表現與疼痛相關，更能支持因果關係。",
+        "whyItMatters": "這篇研究把 opioid 問題從『全身有沒有 opioid receptor』縮小到『哪一個迴路裡的哪一群 receptor 真正在調疼痛』。如果未來能選擇性調節 LC 的 MOR 或其下游投射，理論上可能保留局部鎮痛功能，同時減少傳統全身性 opioid 的廣泛副作用。它也提醒我們：同一腦區不是固定做一件事，受傷後迴路狀態可以改變，原本的止痛系統甚至可能轉成疼痛維持系統。",
+        "limitations": "研究目前是小鼠神經損傷模型，不能直接等同人類慢性疼痛。即使 LC-MOR 是重要 gate，也不代表只刺激這個位置就一定安全；LC 同時控制警覺、壓力與自主神經功能。動物對觸碰或熱刺激的退縮也只是 nociception／pain-related behavior 的代理指標，和人類主觀疼痛經驗並不完全相同。",
+        "whatNext": "下一步需要解析哪一群 LC 投射最適合成為治療標的，以及能否用局部遞送、受器偏向性藥物或非藥物 neuromodulation 選擇性恢復這個煞車。更重要的是在人類影像、神經生理與臨床研究中確認，慢性 neuropathic pain 是否也存在相同的 LC 狀態轉換。",
         "sources": [
           {
-            "label": "Nature Communications 原始研究：Whole-brain, all-optical interrogation of neuronal dynamics underlying gut and vascular interoception in zebrafish",
-            "url": "https://www.nature.com/articles/s41467-026-76242-8"
+            "label": "Current Biology 原始研究：Mu opioid receptors gate the locus coeruleus pain generator",
+            "url": "https://doi.org/10.1016/j.cub.2026.07.048"
+          },
+          {
+            "label": "WashU Medicine 研究說明",
+            "url": "https://www.sciencedaily.com/releases/2026/08/260826055442.htm"
           }
         ],
         "questions": [
-          "為什麼 D-glucose 能引發反應、L-glucose 卻沒有相同效果，能幫助研究者判斷大腦讀到的不只是『有一個糖分子出現』？",
-          "光學 uncaging 營養物，比直接餵斑馬魚吃東西多控制了哪些混雜變項？",
-          "研究看到某些腦幹神經元同時對 gut 與 motor signal 反應，還需要什麼實驗才能證明它們真的負責把兩種資訊整合成行為？"
+          "為什麼同一個 locus coeruleus 在急性狀態可以參與止痛，神經受傷後卻可能變成慢性痛的放大器？",
+          "研究者同時做 MOR knockout 和 rescue，為什麼這比只做其中一個更能支持 MOR 是疼痛 gate？",
+          "即使未來能只刺激 LC 的 μ-opioid receptor，為什麼仍不能假定一定沒有傳統 opioid 的副作用？還需要監測哪些功能？"
         ]
       },
       {
-        "category": "迷幻藥・社交行為",
-        "title": "Psilocybin 的長期社交效應，一定需要清醒時的迷幻體驗嗎？小鼠研究給出一個反直覺答案",
-        "widgetTitle": "迷幻體驗可能不是所有 psilocybin 效應的必要條件",
-        "widgetSummary": "在 Cntnap2 缺失小鼠中，單次 psilocybin 能持續改善社交行為；即使給藥當下的小鼠處於麻醉狀態，之後仍看到類似效果。這挑戰了『主觀迷幻體驗一定是治療效果必要條件』的強版本假說。",
-        "dek": "Psilocybin 研究有一個很核心的爭論：它的長期效果究竟來自藥物造成的細胞與突觸可塑性，還是必須經過清醒時非常強烈的主觀迷幻體驗，才能形成後續改變？8 月 27 日的 Nature Communications 小鼠研究，用一個很直接的實驗把這兩件事暫時拆開。",
-        "background": "Psilocybin 進入體內後會轉成 psilocin，主要作用於 serotonin 2A receptor（5-HT2A）等血清素受器。人類臨床研究中，它可造成強烈知覺、情緒與自我感改變，因此治療過程往往也重視 set and setting。不過受器訊號同時會改變神經元可塑性，所以一直存在另一種可能：部分較長期的行為效果，可能不必完全依賴清醒時的主觀經驗。",
-        "whatHappened": "研究者在 Cntnap2-knockout 小鼠中觀察到較低的社交行為；單次系統性 psilocybin 給藥後，這些小鼠的 sociability 可以持續提高。相同處理在 isogenic control mice 中沒有把本來正常的社交行為再往上推。更關鍵的是，研究者讓 Cntnap2-knockout 小鼠在給藥急性期處於麻醉狀態，之後仍觀察到社交行為改善。",
-        "howTheyStudied": "這是一個疾病模型與狀態操控結合的設計。研究先比較 Cntnap2-knockout 與遺傳背景相同的 control mice，再測單次 psilocybin 對後續 social behavior 的影響；接著把『給藥時是否清醒』當成獨立變項，在麻醉狀態給藥，詢問如果急性期沒有清醒的迷幻樣腦狀態，長期行為效果是否仍會出現。",
-        "whyItMatters": "如果這個結果能在其他模型重現，它表示至少某些 psilocybin 的長期效應，可能可以由受器啟動後的神經可塑性機制承擔，而不必把清醒時的迷幻經驗視為絕對必要條件。這對未來『保留治療相關生物效應、降低急性知覺改變』的藥物設計很有吸引力，也為非致幻性 5-HT2A agonist 的研究提供概念支持。",
-        "limitations": "最大的限制是：這是小鼠研究，而且研究的是 Cntnap2-knockout 的社交表型，不是人類自閉症的完整等價模型，更不是憂鬱症臨床治療。麻醉會大幅改變腦活動，但我們不能用小鼠去直接測量『主觀 psychedelic experience』是否存在；因此研究只能說『清醒腦狀態不是這個小鼠行為效果的必要條件』，不能直接推出人類心理治療中的主觀經驗不重要。",
-        "whatNext": "下一步應該找出麻醉與清醒條件下共同保留下來的分子與突觸改變，例如特定 5-HT2A 下游路徑、dendritic spine remodeling 或 gene expression，再對它們做阻斷實驗。臨床上若要回答相同問題，則需要比較具有不同主觀效應但相近受器作用的藥物，而不能直接把小鼠麻醉結果搬到人類。",
+        "category": "感覺神經科學・嗅覺",
+        "title": "「一顆嗅覺神經元只表現一種受器」不是普遍定律：登革熱蚊子的嗅覺編碼更像混合式系統",
+        "widgetTitle": "蚊子的嗅覺神經元常同時表現多個受器",
+        "widgetSummary": "研究定序約 4.6 萬顆埃及斑蚊觸角神經元，發現約一半嗅覺神經元亞型會共同表現多個受器。這打破教科書式的 one-neuron–one-receptor 想像，也可能解釋蚊子為何能在複雜氣味環境中穩定找到人類宿主。",
+        "dek": "嗅覺研究最經典的架構之一，是一顆 olfactory sensory neuron 主要選擇一種 ligand-specific receptor，再把同類神經元訊號匯到特定下游通道。這個模式在果蠅與哺乳類都很有影響力，因此長期被當成昆蟲嗅覺的基本規則。但蚊子尤其依靠氣味尋找宿主，新研究發現它們可能把規則用得更有彈性。",
+        "background": "Aedes aegypti（埃及斑蚊）會傳播 dengue、Zika、黃熱病等病毒。牠尋找人類時會整合 CO2、體味、熱與濕度。昆蟲嗅覺受器大致可分 odorant receptors（OR）與 ionotropic receptors（IR）等家族。『coexpression』指同一顆 sensory neuron 同時表現多個 ligand-specific receptors；『multi-expression』則是同一個 receptor 出現在多種不同神經元亞型。",
+        "whatHappened": "研究者發現，約一半解析出的嗅覺神經元亞型會 coexpress 多個受器。這並不是完全混亂地把所有 receptor 混在一起：共同表現幾乎都發生在同一受器家族內，OR 和 IR 跨家族共同表現相對罕見。研究也發現同一 receptor 可被多種神經元亞型重複使用，也就是 multi-expression。重新檢查果蠅資料後，研究者也找到較少見的相似例子，因此比較合理的結論不是『蚊子和果蠅完全不同』，而是不同昆蟲可能位在同一套嗅覺架構的不同位置。",
+        "howTheyStudied": "團隊對雌性埃及斑蚊觸角中的約 46,000 顆神經元做 single-cell／single-nucleus transcriptomic profiling，先按基因表現把感覺神經元分成不同亞型，再逐群檢查 OR、IR 與其他感覺受器的表現組合。這種方法能一次建立完整的受器—細胞類型地圖，比只挑幾個 receptor 做染色更容易看出 coexpression 的規模。",
+        "whyItMatters": "嗅覺編碼的基本單位如果不是『一顆 neuron = 一種 receptor』，那下游大腦收到的訊號就更像是多個氣味特徵在周邊感覺神經元階段就先被混合。對蚊子而言，這種 redundancy 可能讓宿主氣味辨識更穩健：即使某一條受器路徑失效，其他 receptor 仍可能保留部分資訊。這也可能解釋為什麼只破壞單一嗅覺受器，有時不足以完全阻止蚊子尋找人類。",
+        "limitations": "RNA 被偵測到，不代表每個 receptor 都一定在細胞膜上形成等量、功能正常的蛋白質；轉錄體地圖也不能直接告訴我們不同 receptor 在氣味刺激時如何共同改變放電。研究主要建立解剖與分子編碼規則，尚不能由此直接預測某種 repellant 或基因干預一定會阻斷宿主搜尋。",
+        "whatNext": "下一步需要把 transcriptomic map 接上 electrophysiology、calcium imaging 與行為操控：逐一改掉特定 receptor 組合，觀察同一顆 sensory neuron 對人類氣味成分的反應是否改變，以及蚊子的宿主選擇是否真的受到影響。這會把『共同表現』從分子地圖推進到功能性嗅覺編碼。",
         "sources": [
           {
-            "label": "Nature Communications 原始研究：Psilocybin enhances sociability only in altered behavioural state and does not need an awake experience to be effective",
-            "url": "https://www.nature.com/articles/s41467-026-77238-0"
+            "label": "Nature Communications 原始研究：Odorant receptor coexpression and multi-expression in the dengue mosquito",
+            "url": "https://www.nature.com/articles/s41467-026-76682-2"
+          },
+          {
+            "label": "Nature Reviews Neuroscience Research Highlight",
+            "url": "https://www.nature.com/articles/s41583-026-01077-7"
           }
         ],
         "questions": [
-          "為什麼『麻醉時給 psilocybin，之後仍改善社交行為』會挑戰主觀迷幻體驗必須存在的強版本假說？",
-          "為什麼研究必須同時看 Cntnap2-knockout 和 isogenic control mice，而不能只看治療後的 knockout 小鼠？",
-          "即使麻醉條件下仍有效，為什麼我們仍不能直接下結論說人類 psilocybin 治療中的主觀體驗不重要？"
+          "如果一顆嗅覺神經元同時表現多個 receptor，和 one-neuron–one-receptor 模型相比，它能在周邊感覺階段多做哪些資訊整合？",
+          "為什麼 single-cell transcriptomics 能證明 receptor mRNA coexpression，卻還不能證明這些 receptor 都有功能？下一步要加什麼實驗？",
+          "如果蚊子的宿主尋找系統具有 receptor redundancy，這會怎麼影響『只阻斷一種嗅覺受器』作為防蚊策略的成功機率？"
         ]
       }
     ],
     "radar": {
-      "title": "2026 Taiwan Open Brain Science Workshop：把神經科學的『可重現性』變成實作技能",
-      "summary": "9 月 26–28 日在成功大學舉行，包含開放科學、腦影像分析工具與兩天 BrainHack；9 月 2 日晚間另有線上說明會，海報摘要截止 9 月 13 日 23:59。它不是單純聽演講，而是把 open data、reproducible workflow、neuroimaging tools 與團隊實作放在一起，特別適合想開始接觸 dry-lab／神經影像分析的人。這類能力未來不論進 wet lab、computational neuroscience 或大型合作計畫都很可轉移。",
-      "url": "https://sites.google.com/kunglab-nckupsy.org/open-brain-science-2026/homepage"
+      "title": "OIST 2027 Spring Research Internship：現在適合先做 project shortlist",
+      "summary": "OIST 的 2027 Spring Research Internship 截止為 2026 年 10 月 15 日 23:59（JST），實習在 2027 年 4–9 月間進行 4–6 個月。它適合想用一段連續時間真正進入研究室、學一套方法並判斷自己是否適合研究型訓練的學生；官方目前已公開 Faculty & Project Availability，而且明確要求申請前不要自行聯絡 faculty 爭取支持。現在最有價值的是先按『研究問題、實際方法、可學到的稀缺技能、4–6 個月投入是否值得』縮成候選清單，再準備成績單、Statement of Purpose 與推薦信。",
+      "url": "https://www.oist.jp/admissions/research-internship/apply-research-internship"
     }
   },
   "importantMail": {
-    "count": 2,
-    "status": "目前有 2 項需要注意的郵件事項，包含重要合作後續與近期神經科學活動／報名時程；詳細內容不存放在公開 Daily Board。"
+    "count": 1,
+    "status": "目前有 1 封需要注意的郵件，涉及學程／研究訓練的近期成果發表與準備事項；詳細內容不存放在公開 Daily Board。"
   }
 }
