@@ -1,104 +1,86 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-08-29",
-  "updatedAt": "2026-08-29T07:31:26+08:00",
+  "date": "2026-08-30",
+  "updatedAt": "2026-08-30T07:29:33+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在問同一件事：當研究者找到一個看起來能改變疾病或行為的訊號，怎麼把它從「線索」推進到真正的機制？第一篇用奈米載體嘗試把星狀膠細胞重新推向神經元命運；第二篇從慢性疼痛追到藍斑核中的 μ-opioid receptor；第三篇則重新檢查昆蟲嗅覺的經典規則，發現蚊子的單一嗅覺神經元常同時表現多個受器。三篇都很適合練習：看到結果之後，再追問研究者到底操控了哪一步、還有哪些替代解釋。",
+    "intro": "今天三篇都在提醒我們，生物醫學裡的『變化』常常不是一條直線。人類髓鞘從嬰兒期到老年呈現分區、分階段的軌跡；一次急性呼吸道病毒感染，在 ALS 小鼠中可能把疾病進程往前推；而帶狀疱疹疫苗與心血管事件的關聯，則示範了如何用自然實驗比一般觀察研究更接近因果問題。讀今天的報告時，可以特別注意：哪些結果是直接量到的、哪些是研究者提出的機制解釋，以及下一步需要什麼實驗才能真正證明因果。",
     "stories": [
       {
-        "category": "神經再生・阿茲海默症",
-        "title": "把星狀膠細胞「轉成」神經元？Nano-ERASER 把一個高度爭議的再生策略推進到類器官與小鼠",
-        "widgetTitle": "奈米載體嘗試把星狀膠細胞轉成神經元",
-        "widgetSummary": "研究者用可進入腦部的 polymer nanogel 降低星狀膠細胞中的 PTBP1，並在細胞、腦類器官與阿茲海默症小鼠中觀察到神經元樣細胞增加與行為改善。這提供了再生醫學線索，但「新神經元是否真的由原本的 astrocyte 轉換而來」仍是最需要嚴格驗證的核心問題。",
-        "dek": "成年哺乳類大腦失去大量神經元後，再生能力很有限。因此有一條很吸引人的想法是：與其移植外來幹細胞，能不能直接把腦中原本就很多的 astrocyte（星狀膠細胞）重新編程成神經元？8 月 26 日發表在 Cell Biomaterials 的研究使用名為 Nano-ERASER 的奈米材料系統，嘗試用蛋白質降解而不是永久改寫 DNA 來做到這件事。",
-        "background": "Astrocyte 是中樞神經系統常見的膠細胞，會調節離子環境、提供代謝支援、參與突觸功能與受傷反應。PTBP1 則是 RNA-binding protein，會影響 RNA 剪接與神經細胞分化程式。過去曾有研究主張降低 PTBP1 可以把 astrocyte 轉成 neuron，但後續 lineage-tracing 研究對這種『原位轉換』提出強烈質疑，因此任何新結果都必須特別確認細胞來源，而不能只靠神經元 marker 增加。",
-        "whatHappened": "研究團隊設計的 Nano-ERASER 是一種 polymer nanogel，攜帶能促使目標蛋白被清除的抗體策略。研究者讓系統降低 astrocyte 中的 PTBP1，並在培養的人類 astrocyte、阿茲海默症相關人類腦類器官與小鼠模型中觀察到神經元樣細胞增加。小鼠經治療後，研究報告神經元密度提高、神經發炎與 amyloid-β 累積下降，而且巢築與水迷宮等行為也改善。",
-        "howTheyStudied": "研究跨了三個層級。第一層是在培養的人類 astrocyte 中確認奈米系統能進入細胞並降低 PTBP1；第二層在人類腦類器官觀察細胞命運與神經功能特徵；第三層則把系統用於阿茲海默症小鼠，檢查腦組織、神經發炎、amyloid 與行為。這種設計的優點是同一機制能從細胞一路走到整體動物，但『看到神經元樣細胞增加』仍必須和真正的譜系追蹤區分。",
-        "whyItMatters": "如果未來能證明成年腦中的 astrocyte 可以被安全、可控地重新編程成有功能的新神經元，概念上會提供一種不需要移植細胞的神經再生策略。Nano-ERASER 另一個吸引點是它瞄準蛋白質而不是永久修改 DNA，因此理論上比不可逆的基因編輯更容易調整劑量與停止作用。",
-        "limitations": "目前不能把結果解讀成『已經逆轉阿茲海默症』。首先，核心證據仍來自細胞、類器官與小鼠；其次，PTBP1 介導的 astrocyte-to-neuron conversion 在此領域本來就有 lineage-tracing 爭議。若沒有足夠嚴格的遺傳譜系標記，就可能把原本存在的神經元、marker 改變或細胞融合誤判成真正的轉分化。行為改善也可能來自發炎、amyloid 或其他環境變化，而不一定完全由新生神經元造成。",
-        "whatNext": "最關鍵的下一步是使用不可逆、長期穩定的 astrocyte lineage tracing，直接證明治療後的成熟神經元確實來自治療前的 astrocyte；同時要做長期安全性、異常增殖與網路功能檢查。研究團隊也提出往非人靈長類模型推進，這會是從小鼠走向人體前的重要門檻。",
+        "category": "腦發育・髓鞘・老化",
+        "title": "大腦的髓鞘不是一路增加到成年：從出生到 100 歲，研究畫出一張三階段的全腦時間地圖",
+        "widgetTitle": "髓鞘從出生到 100 歲的三階段地圖",
+        "widgetSummary": "研究者整合多個大型 MRI 資料集，在 214 個腦區建立從出生到 100 歲的髓鞘敏感指標軌跡。結果顯示髓鞘變化不是單一路徑，而是嬰兒期快速成長、青少年到成人再次加速、晚年下降，而且不同腦區的時間表並不一致。",
+        "dek": "我們常把髓鞘想成神經軸突外面的絕緣層，似乎只要在兒童與青少年階段逐漸增加，成年後就維持穩定，老了才開始退化。但 8 月 29 日發表於 Nature Communications 的研究，把多個大型人類腦影像資料集接在一起，試圖回答一個過去很難完整描述的問題：同一套髓鞘相關指標，從出生一直看到 100 歲，究竟會怎麼變？",
+        "background": "Myelin（髓鞘）是包覆許多神經軸突的富脂質結構，可以提升神經訊號傳導效率，也會隨學習、發育與老化而重塑。研究者無法用一般 MRI 直接看到每一層髓鞘，因此這篇使用 T1w/T2w ratio 作為『myelin-sensitive proxy』：它對髓鞘變化敏感，但也可能受到鐵、水分與其他組織特性的影響，所以不能把它當成純粹的髓鞘厚度測量。",
+        "whatHappened": "研究分析 214 個腦區，年齡範圍從出生到 100 歲。整體而言，T1w/T2w ratio 呈現三階段：嬰兒期快速增加，代表初級髓鞘化；青少年到成年出現第二波再加速；晚年則出現下降。更重要的是，各區域的時間表不同：感覺與運動相關區域通常較早成熟，某些聯合皮質與其他高階區域則持續變化更久。研究也比較腦體積與皮質厚度，發現『宏觀結構成熟』和『髓鞘敏感訊號成熟』不一定在同一時間達到高峰。",
+        "howTheyStudied": "團隊整合 Baby Connectome Project、developing Human Connectome Project、Human Connectome Project、HCP Lifespan、ABCD 等大型資料，先用一致的腦區分割與 harmonization 方法降低不同掃描儀、年齡與研究中心造成的差異，再以非線性統計模型估算各區域的生命史軌跡。這種做法的優勢是第一次把零散的年齡區間接成近乎完整的 lifespan reference；但大部分資料仍是不同年齡的人彼此比較，而不是同一個人從出生追蹤到老年。",
+        "whyItMatters": "這張地圖提供一個『正常變化參考值』。未來研究多發性硬化症、白質疾病、神經發育疾病或老化時，不能只問某個人的髓鞘訊號高不高，而要問『對這個腦區和這個年齡來說，它是否偏離正常軌跡』。它也提醒我們，大腦成熟不是所有區域同步完成；有些迴路可能在成年後仍有相當長的結構可塑性窗口。",
+        "limitations": "T1w/T2w ratio 是髓鞘敏感但不專一的 proxy，不能直接等同真正的 myelin content；跨資料集 harmonization 也無法完全消除掃描條件差異。此外，研究主要建立群體平均軌跡，不能直接用來預測單一個人的認知能力或疾病風險。『晚年訊號下降』也不等於每一個人都在發生同樣速度的 demyelination。",
+        "whatNext": "下一步需要更多真正的 longitudinal 資料，讓同一批人跨多年重複掃描；也要把 T1w/T2w 和 myelin water fraction、quantitative R1、diffusion MRI 甚至組織學資料交叉驗證。如果能再加入認知、基因與疾病資料，就能開始問：哪些人的髓鞘軌跡偏離正常，而且這種偏離究竟是在症狀出現前還是之後。",
         "sources": [
-          {
-            "label": "Cell Biomaterials 原始研究：Reverse the progression of Alzheimer's disease through Nano-ERASER-based adult neuroregeneration",
-            "url": "https://doi.org/10.1016/j.celbio.2026.100575"
-          },
-          {
-            "label": "Cell Press／研究新聞摘要",
-            "url": "https://phys.org/news/2026-08-nanoparticles-neuroregeneration-alzheimer-disease.html"
-          }
+          {"label": "Nature Communications 原始研究：The shifting landscape of brain-wide myelination across the human lifespan", "url": "https://www.nature.com/articles/s41467-026-77073-3"},
+          {"label": "DOI", "url": "https://doi.org/10.1038/s41467-026-77073-3"}
         ],
         "questions": [
-          "為什麼降低 PTBP1 後看到更多神經元 marker，還不能直接證明 astrocyte 真的轉變成新的 neuron？",
-          "這篇研究同時用了培養細胞、腦類器官與小鼠；三個層級各自補足了哪一種證據，又各自缺少什麼？",
-          "如果小鼠的記憶改善同時伴隨 neuroinflammation 與 amyloid-β 降低，你會怎麼設計實驗判斷『新生神經元』是不是行為改善的必要原因？"
+          "為什麼同一個人的大腦不同區域，可能在完全不同的年齡達到髓鞘相關訊號高峰？",
+          "如果 T1w/T2w ratio 不是髓鞘的專一測量，研究者還需要加入哪些影像或組織方法，才能確認觀察到的變化真的主要來自 myelin？",
+          "這篇主要建立群體平均的 lifespan curve；如果未來想判斷某個人的髓鞘變化是不是疾病早期訊號，你會怎麼設計 longitudinal study？"
         ]
       },
       {
-        "category": "疼痛・神經迴路",
-        "title": "同一個藍斑核，怎麼既能止痛又能製造慢性痛？研究找到一個 μ-opioid receptor「煞車」",
-        "widgetTitle": "藍斑核裡的 opioid receptor 可能是慢性痛煞車",
-        "widgetSummary": "小鼠神經損傷後，藍斑核的一部分神經元可從止痛系統轉成疼痛放大器。研究者移除或恢復其中的 μ-opioid receptor，疼痛敏感度會雙向改變，顯示這個受器像局部煞車，而不是只是一個全身性 opioid 藥物的被動靶點。",
-        "dek": "Locus coeruleus（藍斑核，LC）是腦幹一小群以 norepinephrine 為主的神經元，參與警覺、壓力、注意與疼痛調控。它的角色一直很矛盾：急性情況下 LC 可以幫忙抑制疼痛，但神經受傷後，部分 LC 活動反而可能持續放大慢性 neuropathic pain。Current Biology 的研究試圖找出，究竟什麼機制決定 LC 會被踩煞車還是持續輸出疼痛訊號。",
-        "background": "Neuropathic pain 是神經本身受傷或疾病後產生的疼痛，常見灼熱、刺痛或對輕微碰觸過度敏感。μ-opioid receptor（MOR）是神經系統的重要抑制性受器；人體自己的 endogenous opioids，以及 morphine、fentanyl 等藥物都能作用它。問題是 MOR 分布在全腦與脊髓，所以全身性 opioid 同時帶來鎮痛、呼吸抑制、耐受與成癮等風險。",
-        "whatHappened": "研究發現，長期神經損傷後，抑制 LC 活動可以減少小鼠對熱與機械刺激的過度敏感，支持 LC 在慢性期具有『pain generator』功能。進一步把 MOR 只從 LC 神經元移除後，小鼠疼痛敏感度更高；把 MOR 再恢復回同一群細胞，過度敏感又能被逆轉。這表示 LC 中的 MOR 具有真正的功能性 gate，可以限制疼痛放大迴路。",
-        "howTheyStudied": "團隊使用 spared nerve injury 建立 neuropathic pain 小鼠模型，再用 optogenetics 暫時抑制 LC，觀察 mechanical 與 thermal hypersensitivity。之後以細胞型別與投射選擇性的 conditional knockout 移除 MOR，並做 rescue experiment 把 MOR 恢復。『移除後變差、恢復後改善』比單純看到 MOR 表現與疼痛相關，更能支持因果關係。",
-        "whyItMatters": "這篇研究把 opioid 問題從『全身有沒有 opioid receptor』縮小到『哪一個迴路裡的哪一群 receptor 真正在調疼痛』。如果未來能選擇性調節 LC 的 MOR 或其下游投射，理論上可能保留局部鎮痛功能，同時減少傳統全身性 opioid 的廣泛副作用。它也提醒我們：同一腦區不是固定做一件事，受傷後迴路狀態可以改變，原本的止痛系統甚至可能轉成疼痛維持系統。",
-        "limitations": "研究目前是小鼠神經損傷模型，不能直接等同人類慢性疼痛。即使 LC-MOR 是重要 gate，也不代表只刺激這個位置就一定安全；LC 同時控制警覺、壓力與自主神經功能。動物對觸碰或熱刺激的退縮也只是 nociception／pain-related behavior 的代理指標，和人類主觀疼痛經驗並不完全相同。",
-        "whatNext": "下一步需要解析哪一群 LC 投射最適合成為治療標的，以及能否用局部遞送、受器偏向性藥物或非藥物 neuromodulation 選擇性恢復這個煞車。更重要的是在人類影像、神經生理與臨床研究中確認，慢性 neuropathic pain 是否也存在相同的 LC 狀態轉換。",
+        "category": "ALS・神經免疫・病毒感染",
+        "title": "一場已經痊癒的呼吸道感染，還可能改變 ALS 進程嗎？小鼠研究把線索指向持續的脊髓發炎",
+        "widgetTitle": "急性病毒感染可能加速 ALS 小鼠病程",
+        "widgetSummary": "在 SOD1G93A ALS 小鼠中，一次發病前的輕度流感或 SARS-CoV-2 感染，會讓後續運動功能更快惡化。病毒清除後，脊髓膠細胞發炎仍持續；抗發炎或抗病毒介入可部分把病程拉回未感染組的方向。",
+        "dek": "ALS（肌萎縮性側索硬化症）最核心的病理是運動神經元逐漸退化，但同樣帶有 ALS 相關基因的人，發病時間與惡化速度仍可以差很多，因此研究者一直懷疑環境事件會改變疾病軌跡。8 月 29 日發表於 Nature Communications 的研究問了一個很具體的問題：一次常見、短暫、甚至沒有感染腦部的呼吸道病毒感染，能不能在病毒早已被清掉後，仍然加速神經退化？",
+        "background": "研究使用 SOD1G93A 小鼠，這是經典 ALS 模型，會因表現突變型 SOD1 而逐步出現運動神經元退化與後肢功能下降。Gliosis 指 astrocyte 與 microglia 等膠細胞在受傷或發炎時進入反應性狀態；它本來可以幫忙清除損傷，但如果長時間維持，也可能改變神經元周圍環境、放大發炎。",
+        "whatHappened": "研究者在小鼠尚未出現明顯 ALS 臨床徵象前，給予一次亞致死性的 influenza A 或 mouse-adapted SARS-CoV-2 呼吸道感染。之後即使急性感染已經結束，這些小鼠的 ALS 病程仍顯著加速，尤其後肢功能更快喪失。脊髓腰段出現更強的 gliosis，轉錄體也顯示發炎、代謝失衡與肌肉功能相關路徑被重新調整。研究者進一步使用抗發炎小分子抑制 gliosis，或使用直接作用型抗病毒藥物，兩種策略都讓 ALS 臨床表型朝未感染小鼠的方向改善。",
+        "howTheyStudied": "這篇的關鍵不是只做『感染過的小鼠比較差』的相關觀察，而是先控制感染時間點、病毒種類與疾病基因背景，再追蹤運動功能、脊髓組織與基因表現。接著加入治療介入：若降低發炎或壓低病毒相關過程後，後續神經退化也被減輕，就比單純相關更支持『感染所啟動的免疫反應參與了病程加速』。",
+        "whyItMatters": "研究提供一個可能解釋 ALS 病程差異的 environmental modifier：同樣有神經退化脆弱性的系統，在一次急性感染後可能被推進另一個發炎狀態。這也把神經退化和感染免疫學連起來：真正留下長期影響的未必是病毒本身待在神經系統，而可能是病毒離開後仍沒有完全回復的 glial state。",
+        "limitations": "這是 SOD1G93A 小鼠研究，不能直接推論一般人感染流感或 COVID-19 就會增加 ALS 風險，更不能推論 ALS 患者每次感染都會永久加速病程。人類 ALS 大多不是 SOD1G93A 這一種機制，而且感染嚴重度、年齡、疫苗、抗病毒治療與共病都會影響結果。抗病毒藥物改善表型也不一定證明『殘留病毒』是主因，因為治療可能同時降低急性感染期的免疫刺激。",
+        "whatNext": "最重要的下一步是在人類 longitudinal cohorts 中，記錄 ALS 發病前與發病後的感染事件、血液與腦脊髓液發炎指標及病程速度，確認是否存在相同方向。機制上也需要拆解是哪一群 microglia／astrocyte、哪些 cytokine 或代謝路徑維持感染後的『記憶』，再測試只阻斷這些下游訊號是否能保護運動神經元。",
         "sources": [
-          {
-            "label": "Current Biology 原始研究：Mu opioid receptors gate the locus coeruleus pain generator",
-            "url": "https://doi.org/10.1016/j.cub.2026.07.048"
-          },
-          {
-            "label": "WashU Medicine 研究說明",
-            "url": "https://www.sciencedaily.com/releases/2026/08/260826055442.htm"
-          }
+          {"label": "Nature Communications 原始研究：Acute viral infection accelerates neurodegeneration in a mouse model of ALS", "url": "https://www.nature.com/articles/s41467-026-77353-y"},
+          {"label": "DOI", "url": "https://doi.org/10.1038/s41467-026-77353-y"}
         ],
         "questions": [
-          "為什麼同一個 locus coeruleus 在急性狀態可以參與止痛，神經受傷後卻可能變成慢性痛的放大器？",
-          "研究者同時做 MOR knockout 和 rescue，為什麼這比只做其中一個更能支持 MOR 是疼痛 gate？",
-          "即使未來能只刺激 LC 的 μ-opioid receptor，為什麼仍不能假定一定沒有傳統 opioid 的副作用？還需要監測哪些功能？"
+          "為什麼病毒已經被清除後，gliosis 仍可能讓 ALS 病程繼續加速？",
+          "研究同時用了感染模型、組織／轉錄體分析和治療介入；哪一部分證據最能把『感染相關』往『感染參與因果』推進？",
+          "如果要在人類 ALS 中驗證這個模型，最大的替代解釋會是什麼？你會收集哪些資料來排除『病情本來較重的人也更容易感染』這種反向因果？"
         ]
       },
       {
-        "category": "感覺神經科學・嗅覺",
-        "title": "「一顆嗅覺神經元只表現一種受器」不是普遍定律：登革熱蚊子的嗅覺編碼更像混合式系統",
-        "widgetTitle": "蚊子的嗅覺神經元常同時表現多個受器",
-        "widgetSummary": "研究定序約 4.6 萬顆埃及斑蚊觸角神經元，發現約一半嗅覺神經元亞型會共同表現多個受器。這打破教科書式的 one-neuron–one-receptor 想像，也可能解釋蚊子為何能在複雜氣味環境中穩定找到人類宿主。",
-        "dek": "嗅覺研究最經典的架構之一，是一顆 olfactory sensory neuron 主要選擇一種 ligand-specific receptor，再把同類神經元訊號匯到特定下游通道。這個模式在果蠅與哺乳類都很有影響力，因此長期被當成昆蟲嗅覺的基本規則。但蚊子尤其依靠氣味尋找宿主，新研究發現它們可能把規則用得更有彈性。",
-        "background": "Aedes aegypti（埃及斑蚊）會傳播 dengue、Zika、黃熱病等病毒。牠尋找人類時會整合 CO2、體味、熱與濕度。昆蟲嗅覺受器大致可分 odorant receptors（OR）與 ionotropic receptors（IR）等家族。『coexpression』指同一顆 sensory neuron 同時表現多個 ligand-specific receptors；『multi-expression』則是同一個 receptor 出現在多種不同神經元亞型。",
-        "whatHappened": "研究者發現，約一半解析出的嗅覺神經元亞型會 coexpress 多個受器。這並不是完全混亂地把所有 receptor 混在一起：共同表現幾乎都發生在同一受器家族內，OR 和 IR 跨家族共同表現相對罕見。研究也發現同一 receptor 可被多種神經元亞型重複使用，也就是 multi-expression。重新檢查果蠅資料後，研究者也找到較少見的相似例子，因此比較合理的結論不是『蚊子和果蠅完全不同』，而是不同昆蟲可能位在同一套嗅覺架構的不同位置。",
-        "howTheyStudied": "團隊對雌性埃及斑蚊觸角中的約 46,000 顆神經元做 single-cell／single-nucleus transcriptomic profiling，先按基因表現把感覺神經元分成不同亞型，再逐群檢查 OR、IR 與其他感覺受器的表現組合。這種方法能一次建立完整的受器—細胞類型地圖，比只挑幾個 receptor 做染色更容易看出 coexpression 的規模。",
-        "whyItMatters": "嗅覺編碼的基本單位如果不是『一顆 neuron = 一種 receptor』，那下游大腦收到的訊號就更像是多個氣味特徵在周邊感覺神經元階段就先被混合。對蚊子而言，這種 redundancy 可能讓宿主氣味辨識更穩健：即使某一條受器路徑失效，其他 receptor 仍可能保留部分資訊。這也可能解釋為什麼只破壞單一嗅覺受器，有時不足以完全阻止蚊子尋找人類。",
-        "limitations": "RNA 被偵測到，不代表每個 receptor 都一定在細胞膜上形成等量、功能正常的蛋白質；轉錄體地圖也不能直接告訴我們不同 receptor 在氣味刺激時如何共同改變放電。研究主要建立解剖與分子編碼規則，尚不能由此直接預測某種 repellant 或基因干預一定會阻斷宿主搜尋。",
-        "whatNext": "下一步需要把 transcriptomic map 接上 electrophysiology、calcium imaging 與行為操控：逐一改掉特定 receptor 組合，觀察同一顆 sensory neuron 對人類氣味成分的反應是否改變，以及蚊子的宿主選擇是否真的受到影響。這會把『共同表現』從分子地圖推進到功能性嗅覺編碼。",
+        "category": "疫苗・心血管・因果推論",
+        "title": "帶狀疱疹疫苗可能也和心血管事件較少有關：一場『自然實驗』比一般觀察研究多告訴了我們什麼？",
+        "widgetTitle": "帶狀疱疹疫苗與較低心血管事件的自然實驗",
+        "widgetSummary": "研究利用美國在 2017–2018 年迅速從活性減毒帶狀疱疹疫苗轉換成重組疫苗的政策變化，比較兩個各 36,460 人的接種族群。重組疫苗組七年內心血管疾病負擔較低，但這仍不是隨機試驗，不能直接宣告疫苗具有心臟保護作用。",
+        "dek": "觀察研究常發現『打疫苗的人比較健康』，但這裡有一個經典陷阱：願意接種疫苗的人，本來就可能更常運動、就醫、接受預防保健，也可能社經條件更好。這叫 healthy-vaccinee bias。8 月 26 日的 Nature Medicine 研究利用美國帶狀疱疹疫苗在 2017 年後快速從 live attenuated vaccine 轉成 recombinant vaccine 的時間切點，創造了一個接近自然實驗的比較。",
+        "background": "帶狀疱疹來自童年水痘病毒 varicella-zoster virus 在體內潛伏後重新活化。美國原本主要使用活性減毒疫苗，後來快速改用含 AS01 adjuvant 的重組疫苗。Natural experiment 指研究者沒有隨機分派治療，但外部政策或制度變化讓兩群人的治療暴露近似由時間或規則決定，因此比單純『接種者 vs 未接種者』更能減少某些選擇偏差。",
+        "whatHappened": "研究比較 2017 年 4–9 月與 2018 年同期、年齡至少 60 歲的接種者，經 propensity score matching 後形成兩個各 36,460 人的群體。2017 組 98.6% 使用活性減毒疫苗，2018 組 93.5% 使用重組疫苗。七年追蹤中，重組疫苗組的複合心血管終點負擔約低 9%；缺血性心臟病與心衰竭的負擔分別約低 10% 與 12%。研究者指出，缺血性心臟病與心衰竭累積發生率的絕對差約 0.8%，如果未來被隨機臨床試驗證實，公共衛生意義可能很大。",
+        "howTheyStudied": "研究者刻意比較『都願意打帶狀疱疹疫苗的人』，只差在政策轉換前後主要接種的疫苗種類，藉此減少 healthy-vaccinee bias；再使用 propensity score matching 讓可測量的健康特徵更接近，並加入 negative control、疫情前追蹤與其他疫苗的敏感度分析。這些設計能讓因果推論更有說服力，但仍不能取代真正的 randomized controlled trial。",
+        "whyItMatters": "如果重組帶狀疱疹疫苗真的具有額外心血管保護，機制可能不只來自『少得帶狀疱疹』。研究者提出 AS01 adjuvant 可能重新調整先天免疫細胞，使 monocyte 的發炎反應發生長期改變；例如過去研究觀察到 IL-6 反應下降，而 IL-6 與心血管風險有因果關聯。這是一個值得測試的機制假說，但目前不是已證實結論。",
+        "limitations": "最重要的限制是這仍然不是隨機試驗。即使兩群人看起來很像，2017 與 2018 年之間仍可能有沒被資料庫記錄到的行為、醫療政策或族群差異。電子病歷也會漏掉未診斷疾病。研究本身明確指出 natural experiment 只能降低偏差，不能自動證明因果；而且結果是和舊型疫苗比較，不是和完全未接種比較。",
+        "whatNext": "下一步需要臨床試驗或更強的準實驗設計，直接把心血管事件列為預先設定終點，同時追蹤免疫細胞、IL-6、血管內皮與其他炎症標記。如果未來能證明『免疫重編程 → 發炎下降 → 心血管事件下降』的完整鏈條，才有資格把這種疫苗效應稱為真正的 cardioprotection。",
         "sources": [
-          {
-            "label": "Nature Communications 原始研究：Odorant receptor coexpression and multi-expression in the dengue mosquito",
-            "url": "https://www.nature.com/articles/s41467-026-76682-2"
-          },
-          {
-            "label": "Nature Reviews Neuroscience Research Highlight",
-            "url": "https://www.nature.com/articles/s41583-026-01077-7"
-          }
+          {"label": "Nature Medicine 原始研究：Recombinant shingles vaccination and the risk of cardiovascular events", "url": "https://www.nature.com/articles/s41591-026-04606-0"},
+          {"label": "DOI", "url": "https://doi.org/10.1038/s41591-026-04606-0"}
         ],
         "questions": [
-          "如果一顆嗅覺神經元同時表現多個 receptor，和 one-neuron–one-receptor 模型相比，它能在周邊感覺階段多做哪些資訊整合？",
-          "為什麼 single-cell transcriptomics 能證明 receptor mRNA coexpression，卻還不能證明這些 receptor 都有功能？下一步要加什麼實驗？",
-          "如果蚊子的宿主尋找系統具有 receptor redundancy，這會怎麼影響『只阻斷一種嗅覺受器』作為防蚊策略的成功機率？"
+          "為什麼直接比較『有打疫苗的人』和『沒打疫苗的人』很容易產生 healthy-vaccinee bias？",
+          "這篇利用 2017–2018 年疫苗政策轉換形成 natural experiment，它比一般 matched cohort 多控制了哪一類偏差，又仍然留下哪些偏差？",
+          "如果下一個 randomized trial 真的發現心血管事件下降，你還需要哪些免疫或血管資料，才能判斷效果是因為少得帶狀疱疹，還是 AS01 adjuvant 的免疫重編程？"
         ]
       }
     ],
     "radar": {
-      "title": "OIST 2027 Spring Research Internship：現在適合先做 project shortlist",
-      "summary": "OIST 的 2027 Spring Research Internship 截止為 2026 年 10 月 15 日 23:59（JST），實習在 2027 年 4–9 月間進行 4–6 個月。它適合想用一段連續時間真正進入研究室、學一套方法並判斷自己是否適合研究型訓練的學生；官方目前已公開 Faculty & Project Availability，而且明確要求申請前不要自行聯絡 faculty 爭取支持。現在最有價值的是先按『研究問題、實際方法、可學到的稀缺技能、4–6 個月投入是否值得』縮成候選清單，再準備成績單、Statement of Purpose 與推薦信。",
-      "url": "https://www.oist.jp/admissions/research-internship/apply-research-internship"
+      "title": "技能趨勢：生命科學職缺正在把『會用 AI』和『能驗證 AI』分開看",
+      "summary": "Nature Careers 8 月 28 日的專題指出，美國科學職缺中把 AI 列為必要技能的比例正在快速增加，即使整體科學職缺數量下降。值得注意的不是學會更多 prompt，而是能把 AI 接進真正研究流程：理解資料結構、Python／R、版本控制與可重現分析，知道模型在哪裡可能 hallucinate 或 overfit，並能用領域知識檢查結果。對生醫與神經科學學生而言，最有價值的組合會是『一個扎實的生物問題 + 一套可驗證的 computational workflow』，而不是把 AI 當成黑箱答案機。",
+      "url": "https://www.nature.com/articles/d41586-026-01913-x"
     }
   },
   "importantMail": {
     "count": 1,
-    "status": "目前有 1 封需要注意的郵件，涉及學程／研究訓練的近期成果發表與準備事項；詳細內容不存放在公開 Daily Board。"
+    "status": "目前有 1 封需要注意的郵件，屬於工作／教學安排並需要後續回覆或行動；詳細內容不存放在公開 Daily Board。"
   }
 }
