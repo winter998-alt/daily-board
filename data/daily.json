@@ -1,1 +1,83 @@
-{"schemaVersion":"0.4","date":"2026-09-05","updatedAt":"2026-09-05T07:29:00+08:00","report":{"title":"每日生醫・神經科學摘要","intro":"今天三篇都在問同一件事：神經系統的表現，究竟有多少是由『哪條路徑被啟動』決定，又有多少是由個體差異與周邊免疫環境共同塑造？一篇從海馬迴與視覺皮質看記憶如何先替注意力排除競爭；一篇在超過 1,200 人的腦影像資料中，把獎勵處理分成偏向線索與偏向結果的兩種可重現表型；另一篇則把 tau 神經退化的部分推力追到腦外的樹突細胞與 CD8 T 細胞啟動。共同訊息是：看到相關性只是第一步，真正有力量的是能把『哪個節點必要、哪個節點可被操控』拆出來。","stories":[{"category":"認知神經科學・記憶・視覺注意","title":"記憶不是只在腦中回想：海馬迴把競爭記憶分得更開，視覺皮質就更能提前鎖定正確目標","widgetTitle":"記憶會先替眼睛排除干擾？","widgetSummary":"人類 fMRI 研究發現，當海馬迴把兩個相似記憶表徵分得更清楚，視覺皮質在真正看到場景前就更精準預備正確位置，之後的搜尋也更不容易被干擾。","dek":"我們常把記憶和視覺注意想成兩套系統：海馬迴負責記住『在哪裡見過什麼』，視覺皮質負責處理眼前畫面。但現實任務往往需要兩者合作。例如你知道鑰匙通常放在桌子的右邊，真正走進房間前，大腦可能已經先把注意力偏向那個位置。9 月 4 日發表於 Nature Communications 的研究進一步問：如果兩段相似記憶彼此干擾，海馬迴能否先把它們分開，進而讓視覺皮質形成更精準的『預期模板』？","background":"海馬迴是內側顳葉的重要記憶結構，擅長把事件中的人物、場景、位置和時間綁在一起。當兩段記憶很相似時，大腦需要避免它們互相混淆，這可用 representational distinctiveness 來描述：兩段記憶在神經活動模式上越不同，就越容易分辨。另一方面，早期視覺皮質不是被動等刺激出現；若我們知道接下來該注意哪裡，它可以在刺激出現前先提高對特定空間位置的準備。","whatHappened":"受試者要利用先前學到的場景—位置記憶來完成視覺搜尋。研究發現，海馬迴中兩個互相競爭的記憶表徵越容易被區分，受試者之後用眼睛找對目標位置的準確度越高。更關鍵的是，在真正搜尋開始前，視覺皮質已經出現位置特異的準備活動：成功搜尋前，代表正確目標位置的神經訊號較強；發生干擾錯誤前，代表競爭位置的訊號反而較強。海馬迴表徵越分離，視覺皮質對錯誤競爭位置的預備活動就越低。","howTheyStudied":"研究者把三種方法結合：fMRI 用來量測不同腦區的活動模式；pattern similarity analysis 比較兩段記憶在海馬迴中的神經表徵是否相似；population receptive field modeling 則估計早期視覺皮質不同位置偏好的神經群，進而判斷刺激出現前究竟是『正確位置』還是『干擾位置』被預先活化。眼動追蹤提供行為結果，讓研究者能把腦中的預備訊號和真正看向哪裡連起來。","whyItMatters":"這項研究把『記憶干擾』和『注意力失誤』接成同一條因果候選鏈：如果海馬迴沒有把相似記憶分清楚，錯誤記憶就可能提前進入視覺皮質，讓注意力在刺激出現前就偏向錯的地方。這也提醒我們，感知錯誤不一定只是眼前資訊處理失敗，有時問題早在看見刺激之前、在記憶檢索階段就開始。","limitations":"這仍是人類 fMRI 研究，因此主要證明的是可重現的關聯與時間順序，不是海馬迴活動直接『造成』視覺皮質預備。BOLD 訊號也比單神經元活動慢，無法精確描述毫秒尺度的訊息流向。任務是受控的記憶導向視覺搜尋，未必能直接外推到日常所有注意力失誤。","whatNext":"下一步可用 TMS、顱內電生理或更高時間解析度的方法測試方向性：短暫干擾海馬迴相關網路後，視覺皮質的預備位置訊號是否跟著變差？也可以進一步研究老化、海馬迴疾病或焦慮等容易出現記憶／注意偏誤的族群，看看同一機制是否受到破壞。","sources":[{"label":"Nature Communications 原始研究：Hippocampal mechanisms underlying the resolution of competition in memory and perception","url":"https://www.nature.com/articles/s41467-026-77400-8"}],"questions":["如果兩段場景記憶太相似，為什麼這可能讓你在真正看到畫面以前，就先把注意力放到錯的位置？","研究者同時量海馬迴表徵、視覺皮質預備訊號和眼動，這三層資料各自補上了什麼證據？","如果要證明海馬迴表徵分離『因果上』影響視覺皮質，而不只是兩者同時受第三個因素影響，你會加入什麼操控或實驗設計？"]},{"category":"獎勵系統・多巴胺・精神醫學","title":"不是每個人的獎勵系統都同一種：1,251 人腦影像分出『線索型』與『結果型』，對 D2 藥物反應也不同","widgetTitle":"同一顆多巴胺藥，為何有人反應不同？","widgetSummary":"跨五個 cohort、共 1,251 人的 fMRI 研究找到兩種可重現的獎勵處理模式：有人在獎勵還沒到前就對線索反應強，有人則對真正得到獎勵時反應較強，而且兩型對 D2/D3 藥物的神經反應不同。","dek":"多巴胺常被簡化成『快樂分子』，但它更重要的角色之一，是幫大腦標記哪些線索值得追、哪些行為值得重複。動物研究早就發現，有些個體會被預告獎勵的線索強烈吸引，有些則更關注實際獎勵本身。新的 Nature Communications 研究問：人類是不是也有穩定、可重現的這類差異？如果有，常見的多巴胺 D2/D3 藥物是否會對不同人產生不同神經效應？","background":"腹側紋狀體是獎勵與動機網路的重要節點。當你看到『可能有獎勵』的提示時，它可以在獎勵真正到來前就活化。研究把偏向獎勵線索的人稱為 ST-like（sign-tracking-like），把對獎勵結果反應更強的人稱為 GT-like（goal-tracking-like）。D2/D3 receptor 是多巴胺受器，許多抗精神病藥會阻斷它；aripiprazole 則是 partial agonist，可依背景多巴胺狀態產生較複雜的調節。","whatHappened":"研究整合五個 cohort、總計 1,251 人的 fMRI，辨識出兩種可在不同樣本重現的獎勵影像表型。ST-like 個體在看到獎勵預告線索時，腹側紋狀體反應更強；GT-like 個體則在獎勵真正出現時反應更強。更重要的是，risperidone、haloperidol、amisulpride 等 D2/D3 拮抗劑會特別降低 ST-like 個體的預期期腹側紋狀體活動；相反地，partial agonist aripiprazole 在 GT-like 個體中增加預期反應、降低結果期反應。精神病 cohort 中，藥物 D2 親和力越高，較弱的獎勵預期訊號與較重陰性症狀也出現關聯。","howTheyStudied":"團隊不是只在單一樣本『分群一次』，而是利用多個獨立 cohort 檢查能否複製同樣的獎勵反應軸，再利用不同藥理資料集觀察單次或重複 D2/D3 藥物給予後的 fMRI 變化。這種設計的重要性在於：若一個 imaging phenotype 只存在於單一掃描中心或分析流程，它很可能只是偶然；跨場域重現並出現藥理選擇性，才更接近真正的生物差異。","whyItMatters":"如果這種表型未來能穩定預測藥物反應，它提供的是『同樣診斷，不同獎勵系統機制』的觀點。對精神病患者尤其重要，因為陰性症狀包括動機低下、快感減少和社會退縮，而 D2 阻斷雖能治療部分陽性症狀，也可能讓某些人的獎勵預期訊號更弱。長期來看，影像表型可能協助挑選較合適的多巴胺調節策略。","limitations":"這還不能直接拿來做臨床選藥。不同 cohort 的樣本數差異很大，真正接受藥理操控的子樣本遠小於總數 1,251 人；精神病資料中的症狀關聯也不是隨機化比較不同抗精神病藥。fMRI 表型可能受年齡、任務策略、目前情緒和既往用藥影響，因此『ST-like/GT-like』不應被當成永久不變的人格標籤。","whatNext":"最關鍵的下一步是前瞻性試驗：先在治療前量出患者的獎勵表型，再隨機分配或系統比較不同 D2 作用型態的藥物，看表型是否真的能預測療效與陰性症狀副作用。也需要評估同一個人的表型跨月、跨任務是否穩定。","sources":[{"label":"Nature Communications 原始研究：Reproducible human reward imaging phenotypes exhibit differential sensitivity to dopamine D2 receptor antagonism","url":"https://www.nature.com/articles/s41467-026-77317-2"}],"questions":["ST-like 和 GT-like 最大差別，是大腦在『獎勵到來前』還是『獎勵到來後』反應較強；這可能如何改變一個人被線索驅動的行為？","為什麼跨五個 cohort 重現同樣影像模式，比只在一批受試者中找到漂亮分群更有說服力？","精神病 cohort 中的藥物親和力與陰性症狀關聯，為什麼還不足以證明 D2 阻斷造成陰性症狀？你會如何設計前瞻性驗證？"]},{"category":"神經免疫・Tauopathy・樹突細胞","title":"Tau 神經退化的免疫推力可能從腦外開始：周邊樹突細胞先『教會』CD8 T 細胞辨認腦來源抗原","widgetTitle":"神經退化的 T 細胞，可能先在腦外被啟動","widgetSummary":"Tauopathy 小鼠研究顯示，若拿掉擅長 cross-presentation 的 cDC1 樹突細胞，或阻斷它們啟動 CD8 T 細胞的能力，腦內 T 細胞累積、膠細胞活化與神經退化都下降。","dek":"阿茲海默症與其他 tauopathy 最核心的病理之一，是 tau 蛋白在神經元內異常聚集。但近年研究越來越清楚：真正推動神經死亡的不只是神經元內的蛋白問題，免疫細胞也參與其中。過去已看到 CD8 T 細胞會進入 tauopathy 大腦，新的 Nature Neuroscience 研究把問題往前追：這些 T 細胞在進腦之前，是誰先把它們『教成』能辨認腦來源抗原的效應細胞？","background":"CD8 T 細胞平常負責辨認並殺死被病毒感染或異常的細胞，但初始 T 細胞必須先被 antigen-presenting cell 啟動。cDC1 是一類樹突細胞，特別擅長 cross-presentation：把從細胞外取得的抗原片段放到 MHC-I 上，交給 CD8 T 細胞辨認。研究者因此懷疑，tauopathy 中腦內產生或釋出的抗原可能流到周邊淋巴組織，先由 cDC1 啟動 T 細胞，再讓它們回頭進入腦。","whatHappened":"在表現病理 tau 且帶有人類 APOE4 背景的 TE4 小鼠中，研究者用遺傳方式移除 cDC1，或破壞它們的 antigen cross-presentation 能力。兩種干預都使腦內 CD8 T 細胞累積下降、T 細胞克隆擴增變弱，microglia/astrocyte 活化減少，並保留更多海馬迴與梨狀—內嗅皮質組織。研究還找到腦來源抗原會在 secondary lymphoid tissues 被呈現，支持『腦外先啟動、之後再進腦』的路徑。","howTheyStudied":"團隊使用多組遺傳小鼠：其中一個關鍵工具是刪除 Irf8 的 cDC1-specific enhancer，使 cDC1 缺失，但盡量保留其他免疫細胞與 microglia 的 Irf8 功能。研究者再比較腦萎縮、行為、膠細胞反應、T 細胞數量與 TCR clonality。另一組實驗則直接破壞 cross-presentation，以確認保護效果不是單純因為少了一類樹突細胞，而和它們『啟動 CD8 T 細胞』的功能有關。","whyItMatters":"這把治療靶點從腦內往外移了一步。若真正關鍵事件之一是在頸部淋巴結或其他周邊淋巴組織中，cDC1 將腦來源抗原交給 CD8 T 細胞，那麼未來不一定非得把藥物送進腦內才能干預。更廣義地說，神經退化可能包含一個循環：神經受損釋放抗原 → 周邊免疫被啟動 → T 細胞進腦 → 發炎與神經傷害加劇。","limitations":"主要證據來自特定 tau transgenic/APOE4 小鼠，不能直接等同人類阿茲海默症。移除 cDC1 從發育期就存在，也可能改變免疫系統長期平衡；這和成年後用藥短暫阻斷 cDC1 並不相同。此外，研究支持 cDC1-dependent priming 是重要驅動因素，但還沒有完全確認被 T 細胞辨認的關鍵腦抗原究竟是哪一些。","whatNext":"接下來最重要的是辨識實際抗原與人類對應證據：在人類 AD 或其他 tauopathy 的淋巴結、血液與腦脊髓液中，是否能找到相同 clonally expanded CD8 T cells？這些 T 細胞究竟認哪些 tau 相關或神經來源 peptide？如果成年後暫時抑制 cross-presentation，也能在不嚴重削弱抗病毒免疫的前提下減慢退化，才比較接近可治療策略。","sources":[{"label":"Nature Neuroscience 原始研究：Priming of CD8+ T cells by peripheral dendritic cells exacerbates tau-mediated neurodegeneration","url":"https://www.nature.com/articles/s41593-026-02427-5"}],"questions":["請把研究提出的路徑串起來：腦內 tau 病理如何可能一路連到周邊 cDC1、CD8 T 細胞，再回到腦內神經退化？","研究者同時『移除 cDC1』和『破壞 cross-presentation』有什麼價值？第二種實驗排除了哪一類替代解釋？","如果要把這個機制轉成治療，最大的風險之一是壓制正常抗病毒 CD8 T 細胞反應。你會如何設計一個更選擇性的介入策略？"]}],"radar":{"title":"ISTA 奧地利全年 Scientific Internships：夏季 fellowship 暫停時，仍可直接向研究群申請 2–12 個月研究實習","summary":"Institute of Science and Technology Austria（ISTA）的 ISTernship summer fellowship 在 2026 暫停，2027 是否恢復要等 2026 年底公告；但它的 year-round Scientific Internships 仍持續接受申請。正在攻讀或已取得自然科學、電腦科學、數學或相關 Bachelor/Master 的學生都可申請，實習長度約 2 個月至 1 年，直接聯絡有興趣的 group leader 或 staff scientist，是否錄取取決於研究契合度與實驗室經費。對想測試 neuroscience、biology、quantitative/computational research 的學生特別有價值，因為不像固定 summer program 必須等統一申請季；若鎖定 2027 暑假，現在可先用 ISTA research groups 反向盤點自己想學的技術，再決定哪些教授值得聯絡。","url":"https://phd.pages.ista.ac.at/scientific-internships/"}},"importantMail":{"count":1,"status":"目前有 1 封需要注意的學程／課程相關郵件，包含近期明確截止日期與需完成事項；詳細內容不存放在公開 Daily Board。"}}
+{
+  "schemaVersion": "0.4",
+  "date": "2026-09-06",
+  "updatedAt": "2026-09-06T07:31:00+08:00",
+  "report": {
+    "title": "每日生醫・神經科學摘要",
+    "intro": "今天三篇都在看『跨系統溝通』如何改變疾病：中風後，凝血與發炎相關的 kallikrein-kinin system 可能幫助 CD4 T 細胞進入腦；幽門桿菌感染則透過上皮、免疫與基質細胞的接力，把胃黏膜推向類似胎兒期的再生程式；另一篇則把交感神經與人類心肌做成同一個工程化模型，直接觀察神經活動如何放大遺傳性心律不整。共同訊息是，疾病常不是單一細胞出問題，而是細胞彼此『傳話』的方式改變了。",
+    "stories": [
+      {
+        "category": "神經免疫・中風・T 細胞",
+        "title": "中風後，免疫細胞怎麼進入腦？研究把線索指向 kallikrein-kinin system",
+        "widgetTitle": "中風後，T 細胞可能被一條血液訊號帶進腦",
+        "widgetSummary": "人類與小鼠資料顯示，中風後 CD4 T 細胞會變得更容易黏附與遷移；阻斷 plasma kallikrein，則可減少小鼠腦內 T 細胞累積。",
+        "dek": "中風最急迫的第一步是把堵住的血管重新打通，但真正決定後續恢復的，不只有缺血當下造成的傷害。幾天內，血管、凝血、發炎與免疫系統會形成第二波反應。9 月 5 日發表於 Journal of Neuroinflammation 的研究，聚焦一套同時連結凝血與發炎的 kallikrein-kinin system，問它是否也會幫助 CD4 T 細胞跨過血管、進入受傷的腦。",
+        "background": "kallikrein-kinin system，簡稱 KKS，是血液中的一組蛋白酶與訊號分子。plasma kallikrein 可以促成 bradykinin 及其代謝物 Des-Arg9-bradykinin 的生成；這些分子會影響血管通透性、發炎與血腦屏障。CD4 T 細胞則是一類調節免疫反應的淋巴球。平常它們在血液中巡邏，但要進入腦組織，必須先黏上血管內皮，再穿過血管壁。",
+        "whatHappened": "研究者在缺血性中風患者與小鼠中都看到，循環中的 CD4 T 細胞出現較強的活化與遷移相關特徵。體外實驗進一步顯示，KKS 的訊號可增加 T 細胞黏附與遷移能力；其中 Des-Arg9-bradykinin 會讓 CD4 T 細胞呈現較明顯的發炎與促遷移表型。更關鍵的是，在小鼠中風後第 3 天才開始給予中和 plasma kallikrein 的抗體，到了第 7 天，腦內累積的 T 細胞較少，而血液中的 CD4 T 細胞比例較高，符合『進腦變少』的方向。",
+        "howTheyStudied": "研究結合人類患者血液、小鼠 transient middle cerebral artery occlusion 中風模型、flow cytometry、細胞培養與 transwell 遷移實驗。研究者也把 T 細胞放在由內皮細胞形成的屏障上，測試它們是否更容易黏附、穿越，並用 plasma kallikrein 中和抗體觀察延後阻斷 KKS 對腦內 T 細胞累積的影響。這種設計把『患者現象』、『細胞機制』和『活體介入』三層證據串在一起。",
+        "whyItMatters": "目前急性中風治療主要處理血管阻塞，但再灌流後的 thromboinflammation，也就是凝血與發炎互相放大的反應，可能持續造成次發性傷害。KKS 本來就位在凝血、血管通透性與發炎的交叉點，這篇研究再把 CD4 T 細胞納入同一條路徑。如果未來能精準調節這條訊號，也許有機會在不全面壓制免疫的情況下，減少有害的腦內免疫浸潤。",
+        "limitations": "最重要的因果介入證據仍來自小鼠。研究者也明確指出，活體中 plasma kallikrein inhibition 可能同時影響 T 細胞與血管內皮，因此目前還不能說腦內 T 細胞變少完全是 T 細胞自身被改變所致。此外，研究主要追蹤中風後第 3–7 天，還不知道長期恢復、感染風險與功能預後會怎麼變。",
+        "whatNext": "下一步需要更選擇性的實驗，把 T 細胞內在效應和血管效應拆開，並確認這條路徑是否真的改善長期神經功能，而不只是讓腦內 T 細胞變少。若要走向臨床，也要特別確認介入時機，因為太早或太強的免疫調節可能干擾正常防禦與修復。",
+        "sources": [
+          {"label": "Journal of Neuroinflammation 原始研究", "url": "https://link.springer.com/article/10.1186/s12974-026-04034-4"}
+        ],
+        "questions": [
+          "請把這條鏈串一次：中風後的 KKS 訊號，可能如何一步一步讓 CD4 T 細胞更容易進入腦？",
+          "為什麼研究者同時需要患者血液、體外遷移實驗和小鼠中和抗體實驗，而不是只做其中一種？",
+          "如果阻斷 plasma kallikrein 同時會改變 T 細胞和血管內皮，你會怎麼設計實驗來判斷哪一邊才是腦內 T 細胞減少的主要原因？"
+        ]
+      },
+      {
+        "category": "感染生物學・胃黏膜・再生程式",
+        "title": "幽門桿菌不只造成發炎：它可能把成人胃黏膜推回『類胎兒再生狀態』",
+        "widgetTitle": "幽門桿菌讓胃黏膜切回類胎兒模式？",
+        "widgetSummary": "小鼠與胃組織模型顯示，幽門桿菌感染可透過 BMP、IL-1β、前列腺素 E2 與 YAP 的細胞接力，讓胃上皮啟動類似胎兒期的再生轉錄程式。",
+        "dek": "組織受傷後，成人細胞有時會暫時『退回』比較原始、偏再生的狀態，好讓組織快速修補。這通常是有用的，但如果訊號長期開著，就可能造成結構重塑甚至增加疾病風險。新的 Nature Communications 研究指出，幽門桿菌感染的胃黏膜可能正是在走這條路，而且關鍵不是單一細胞，而是上皮細胞、免疫細胞與纖維母細胞之間的接力。",
+        "background": "幽門桿菌是可長期定殖在胃黏膜的細菌，和慢性胃炎、胃潰瘍及胃癌風險增加有關。BMP signaling 平常幫助維持胃上皮的成熟狀態；YAP 則是一個會感應組織損傷與機械環境、推動細胞生長與再生的轉錄調節因子。所謂 fetal-like transcriptional program，指的是成人細胞重新啟動一組比較像胎兒發育或強力修復時期的基因表達模式。",
+        "whatHappened": "研究發現，幽門桿菌造成的胃腺增生伴隨 BMP 訊號下降與 YAP 依賴的類胎兒轉錄程式。只要抑制胃上皮 BMP，就足以啟動類似變化：上皮細胞先分泌 chemokines 招募會產生 IL-1β 的免疫細胞；IL-1β 再作用於基質中的纖維母細胞，使它們偏向促再生狀態並製造 prostaglandin E2；最後 prostaglandin E2 促進上皮 YAP 活化。當研究者刪除基質細胞上的 IL-1 receptor，幽門桿菌驅動的重編程與病理變化會明顯減弱。",
+        "howTheyStudied": "團隊使用幽門桿菌感染的小鼠、基因操作、轉錄體分析，以及由胃上皮與基質細胞共同組成的 assembloid。assembloid 可以把不同細胞類型放在較接近組織環境的三維系統中，讓研究者測試 IL-1β 是否真的會先改變基質細胞，再透過 prostaglandin E2 影響上皮 YAP。最重要的因果證據之一，是直接刪除 stromal IL-1 receptor 後，感染引起的重編程被削弱。",
+        "whyItMatters": "這篇研究把『慢性感染 → 發炎 → 組織重塑』拆成了具體細胞間訊號鏈。它也提醒我們，再生程式不是單純好或壞：短期可以幫助修復，但長期持續的類胎兒狀態可能讓組織維持在不成熟、增生中的環境。對幽門桿菌相關胃病來說，真正值得注意的也許不只有細菌本身，而是感染後被固定下來的免疫—基質—上皮迴路。",
+        "limitations": "目前核心機制來自小鼠與人工組織模型，還不能直接證明同一條 IL-1β → prostaglandin E2 → YAP 路徑在所有人類幽門桿菌感染者中都同樣重要。類胎兒轉錄程式也不等於癌症；它比較像是一種再生狀態，是否、何時會推向腫瘤，需要長期研究。",
+        "whatNext": "下一步可在不同階段的人類胃炎、腸化生與胃癌前病變樣本中，確認這條路徑何時開始、是否可逆，以及根除幽門桿菌後會不會自然關閉。若這個細胞間迴路會長期維持，才值得進一步評估 IL-1、prostaglandin 或 YAP 路徑是否能成為補充治療靶點。",
+        "sources": [
+          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-77520-1"}
+        ],
+        "questions": [
+          "為什麼幽門桿菌造成的類胎兒程式不能只理解成『細菌直接刺激胃上皮』？請把中間的細胞接力串起來。",
+          "刪除 stromal IL-1 receptor 為什麼是一個很重要的因果實驗？它比單純看到 IL-1β 上升多告訴我們什麼？",
+          "如果類胎兒再生程式本身也可能是修復機制，直接抑制 YAP 或 IL-1β 可能有什麼代價？你會如何找出安全的介入時機？"
+        ]
+      },
+      {
+        "category": "神經心臟學・組織工程・心律不整",
+        "title": "把交感神經和人類心肌真正接起來：新模型顯示神經過度活化可能放大 KCNH2 心律不整",
+        "widgetTitle": "心律不整，問題可能不只在心肌",
+        "widgetSummary": "研究者把交感神經類器官與工程化人類心肌融合，做出可被光刺激的神經—心肌接點；在 KCNH2 長 QT 模型中，神經過度活化加重了異常電活動。",
+        "dek": "研究遺傳性心律不整時，我們常把注意力放在心肌細胞的離子通道。但真實的心臟從來不是單獨運作：交感神經持續調節心跳與收縮。9 月 2 日發表於 Nature Communications 的研究，把人類交感神經與工程化心肌放在同一個組織模型中，直接問：當 KCNH2 離子通道有缺陷時，神經訊號會不會成為把心律不整推得更嚴重的第二股力量？",
+        "background": "KCNH2 編碼心肌中的 hERG 鉀離子通道，幫助動作電位完成 repolarization，也就是讓細胞在一次放電後回到基線。功能下降會造成 long QT syndrome type 2，增加危險性心律不整。交感神經則會釋放 noradrenaline，作用於心肌的 adrenergic receptors，提高心跳與收縮。過去很多模型只有心肌，難以同時研究『神經端』和『心肌端』的互動。",
+        "whatHappened": "團隊建立 innervated engineered human myocardium，也就是 iEHM：把 sympathetic neuronal organoids 和 engineered human myocardium 融合。神經纖維會伸向心肌，形成接近 cardiomyocytes 的突觸前結構；用 optogenetics 光刺激神經後，心肌收縮會跟著改變，證明兩者不是只靠在一起，而是有功能連結。在 KCNH2-associated long-QT 2 模型裡，研究者看到交感神經過度活化與 after-depolarizations。單純 β-adrenoreceptor blockade 無法完整救回促心律不整表型，而同時影響神經與心肌離子電流的 mexiletine 效果較好。",
+        "howTheyStudied": "研究者使用人類幹細胞衍生的交感神經類器官與工程化心肌，讓兩者共同成熟，再透過顯微結構、分子標記與功能測試確認神經—心肌接點。optogenetics 讓神經細胞表現可被光控制的離子通道，研究者因此能只刺激神經端，再看心肌收縮與電生理如何改變。接著把 KCNH2 缺陷帶進模型，測試不同藥理介入。",
+        "whyItMatters": "這項工作的意義不只是做出一個漂亮的類器官，而是提醒藥物測試不能永遠把器官拆開看。若某些心律不整的嚴重度取決於神經—心肌互動，單獨測心肌可能會漏掉真正的治療反應。這種多組織整合模型也可能成為研究腦—心軸、癲癇猝死或自律神經失衡的中間平台。",
+        "limitations": "iEHM 仍是體外模型，沒有完整的循環、免疫、荷爾蒙與中樞神經調節，也不等同完整的人體心臟。藥物比較目前主要是在模型中證明機制，不能直接推出 mexiletine 在所有 KCNH2 患者都優於 β-blocker。臨床決策還需要患者層級試驗。",
+        "whatNext": "下一步可加入 parasympathetic neurons、更多血管與免疫細胞，建立更完整的自律神經—心臟模型；也可使用不同患者來源 iPSC 比較個體差異。若模型能預測患者實際藥物反應，它才會真正從機制工具走向 precision medicine。",
+        "sources": [
+          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-76956-9"}
+        ],
+        "questions": [
+          "為什麼 KCNH2 缺陷造成的心律不整，可能不只是一個『心肌細胞本身』的問題？",
+          "研究者用 optogenetics 只刺激神經端，再觀察心肌反應，這比單純把神經和心肌一起培養多提供了什麼證據？",
+          "如果 iEHM 裡 mexiletine 比 β-blockade 更有效，為什麼仍不能直接據此改變所有 long-QT 2 患者的臨床用藥？"
+        ]
+      }
+    ],
+    "radar": {
+      "title": "Barrow Neurological Institute 2027 Summer Undergraduate Internship：你先前特別標記為重要的神經研究機會",
+      "summary": "Barrow 的 2027 Summer Undergraduate Internship 是有薪、10 週、全職研究實習，接受美國與國際大學生。參與者會進入 Barrow 的實驗室或相關部門，由 faculty、scientist、clinician 或 manager 指導；研究方向包含 Alzheimer’s disease、ALS、Parkinson’s disease、brain tumor、neuroinflammation、stroke、neurotrauma 與腦血管疾病。2027 申請預計 2026 年 12 月 4 日開放，2027 年 2 月 12 日截止；國際學生若符合資格，官方寫明可提供 visa application support。這不是交換修課，而是非常純粹的神經科學研究實習，因此很適合拿來和 Amgen Scholars、DIGS-ILS 一起比較『實際研究內容、訓練方式與你會學到的技術』。",
+      "url": "https://www.barrowneuro.org/for-physicians-researchers/research/training-programs/summer-undergraduate-program/"
+    }
+  },
+  "importantMail": {
+    "count": 1,
+    "status": "目前有 1 封需要注意的重要合作／社團相關郵件，包含今天的明確時間安排與需採取行動；詳細內容不存放在公開 Daily Board。"
+  }
+}
