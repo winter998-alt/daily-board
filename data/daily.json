@@ -1,83 +1,84 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-06",
-  "updatedAt": "2026-09-06T07:31:00+08:00",
+  "date": "2026-09-07",
+  "updatedAt": "2026-09-07T07:29:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在看『跨系統溝通』如何改變疾病：中風後，凝血與發炎相關的 kallikrein-kinin system 可能幫助 CD4 T 細胞進入腦；幽門桿菌感染則透過上皮、免疫與基質細胞的接力，把胃黏膜推向類似胎兒期的再生程式；另一篇則把交感神經與人類心肌做成同一個工程化模型，直接觀察神經活動如何放大遺傳性心律不整。共同訊息是，疾病常不是單一細胞出問題，而是細胞彼此『傳話』的方式改變了。",
+    "intro": "今天三篇分別從基因調控、認知發展與臨床治療切入，但其實都在問同一件事：我們過去以為穩定的系統，究竟會在什麼條件下改變運作方式？帕金森氏症研究把注意力放到原本沉默的轉座子與干擾素發炎反應；兒童認知研究則發現，對環境規律的隱性學習能力可能不是一路變強，而是在成長中逐步下降；AML 隨機試驗則挑戰『能承受強烈化療的人就一定該先做強烈化療』這個長期慣例。",
     "stories": [
       {
-        "category": "神經免疫・中風・T 細胞",
-        "title": "中風後，免疫細胞怎麼進入腦？研究把線索指向 kallikrein-kinin system",
-        "widgetTitle": "中風後，T 細胞可能被一條血液訊號帶進腦",
-        "widgetSummary": "人類與小鼠資料顯示，中風後 CD4 T 細胞會變得更容易黏附與遷移；阻斷 plasma kallikrein，則可減少小鼠腦內 T 細胞累積。",
-        "dek": "中風最急迫的第一步是把堵住的血管重新打通，但真正決定後續恢復的，不只有缺血當下造成的傷害。幾天內，血管、凝血、發炎與免疫系統會形成第二波反應。9 月 5 日發表於 Journal of Neuroinflammation 的研究，聚焦一套同時連結凝血與發炎的 kallikrein-kinin system，問它是否也會幫助 CD4 T 細胞跨過血管、進入受傷的腦。",
-        "background": "kallikrein-kinin system，簡稱 KKS，是血液中的一組蛋白酶與訊號分子。plasma kallikrein 可以促成 bradykinin 及其代謝物 Des-Arg9-bradykinin 的生成；這些分子會影響血管通透性、發炎與血腦屏障。CD4 T 細胞則是一類調節免疫反應的淋巴球。平常它們在血液中巡邏，但要進入腦組織，必須先黏上血管內皮，再穿過血管壁。",
-        "whatHappened": "研究者在缺血性中風患者與小鼠中都看到，循環中的 CD4 T 細胞出現較強的活化與遷移相關特徵。體外實驗進一步顯示，KKS 的訊號可增加 T 細胞黏附與遷移能力；其中 Des-Arg9-bradykinin 會讓 CD4 T 細胞呈現較明顯的發炎與促遷移表型。更關鍵的是，在小鼠中風後第 3 天才開始給予中和 plasma kallikrein 的抗體，到了第 7 天，腦內累積的 T 細胞較少，而血液中的 CD4 T 細胞比例較高，符合『進腦變少』的方向。",
-        "howTheyStudied": "研究結合人類患者血液、小鼠 transient middle cerebral artery occlusion 中風模型、flow cytometry、細胞培養與 transwell 遷移實驗。研究者也把 T 細胞放在由內皮細胞形成的屏障上，測試它們是否更容易黏附、穿越，並用 plasma kallikrein 中和抗體觀察延後阻斷 KKS 對腦內 T 細胞累積的影響。這種設計把『患者現象』、『細胞機制』和『活體介入』三層證據串在一起。",
-        "whyItMatters": "目前急性中風治療主要處理血管阻塞，但再灌流後的 thromboinflammation，也就是凝血與發炎互相放大的反應，可能持續造成次發性傷害。KKS 本來就位在凝血、血管通透性與發炎的交叉點，這篇研究再把 CD4 T 細胞納入同一條路徑。如果未來能精準調節這條訊號，也許有機會在不全面壓制免疫的情況下，減少有害的腦內免疫浸潤。",
-        "limitations": "最重要的因果介入證據仍來自小鼠。研究者也明確指出，活體中 plasma kallikrein inhibition 可能同時影響 T 細胞與血管內皮，因此目前還不能說腦內 T 細胞變少完全是 T 細胞自身被改變所致。此外，研究主要追蹤中風後第 3–7 天，還不知道長期恢復、感染風險與功能預後會怎麼變。",
-        "whatNext": "下一步需要更選擇性的實驗，把 T 細胞內在效應和血管效應拆開，並確認這條路徑是否真的改善長期神經功能，而不只是讓腦內 T 細胞變少。若要走向臨床，也要特別確認介入時機，因為太早或太強的免疫調節可能干擾正常防禦與修復。",
+        "category": "神經退化・帕金森氏症・轉座子",
+        "title": "帕金森氏症的腦發炎，可能和沉睡在基因組裡的『跳躍基因』重新被打開有關",
+        "widgetTitle": "帕金森氏症裡，沉睡的跳躍基因被喚醒了？",
+        "widgetSummary": "最新 Science Advances 研究發現，帕金森氏症的黑質與殼核中，部分神經元與小膠質細胞出現較高的轉座子表現，並和干擾素型先天免疫反應一起升高。",
+        "dek": "人類基因組裡不全是典型的蛋白質基因。相當大一部分來自轉座子，也就是在演化史上能夠複製、移動自身序列的 DNA 元件。多數轉座子在成熟細胞中會被壓制，但如果這些本來被沉默的序列重新被轉錄，細胞可能把它們產生的 RNA 或其他分子特徵誤認成病毒入侵，進而啟動先天免疫。新的帕金森氏症研究問：腦內長期發炎，是否部分來自這種『自己基因組被當成外敵』的現象？",
+        "background": "轉座子（transposable elements, TEs）可粗略理解成基因組裡具有複製或移動歷史的 DNA 序列，包括 LINE-1 與內源性反轉錄病毒（ERV）等。正常情況下，細胞會用 DNA 甲基化、染色質壓縮等方式把許多這類序列關起來。若它們重新被表現，產生的 RNA 或雙股 RNA 特徵可能刺激細胞的抗病毒感測系統，啟動 interferon response。干擾素反應原本是細胞抵抗病毒的重要機制，但如果在沒有真正感染的情況下長期開啟，也可能造成慢性發炎。帕金森氏症最典型的病變集中在黑質，尤其是製造多巴胺的神經元逐漸退化；殼核則是這些多巴胺神經投射的重要目標之一。",
+        "whatHappened": "研究者分析帕金森氏症患者死後腦組織，發現超過一千種轉座子可在成人腦內被偵測到，而且其表現高度依賴腦區與細胞類型。和對照組相比，帕金森氏症的黑質與殼核中，神經元與小膠質細胞出現較高的 TE 表現；但在前額葉與杏仁核並沒有看到相同幅度的變化。更重要的是，TE 活化較明顯的區域也同時出現較強的先天免疫與 interferon gene signature。這種空間上的重疊符合『轉座子活化可能和疾病相關發炎相連』的模型。",
+        "howTheyStudied": "團隊結合 bulk RNA-seq 與 single-nucleus RNA-seq。前者把一整塊組織裡的 RNA 混合起來看整體表現，後者則把單一細胞核分開，因此能判斷究竟是哪一類神經元或膠質細胞出現變化。研究涵蓋黑質、殼核、杏仁核與前額葉四個腦區。為了不只停留在死後人腦的相關性，研究者也使用人類多能幹細胞分化出的神經元與小膠質細胞，測試 TE 活化和 interferon response 之間是否能在細胞模型中互相影響。",
+        "whyItMatters": "帕金森氏症研究長期知道腦內有神經發炎，但『到底什麼先把免疫系統叫醒』仍沒有單一答案。如果部分發炎來自細胞失去壓制轉座子的能力，那治療思路就不一定只能是直接壓低免疫反應，也可能往更上游處理染色質穩定、轉座子 RNA、核酸感測器或相關 interferon pathway。這也把神經退化和老化研究中常見的另一個概念接起來：隨著細胞壓制基因組雜訊的能力下降，原本應被沉默的序列可能重新出聲。",
+        "limitations": "最重要的限制是方向仍沒有完全釐清。患者死後腦組織只能告訴我們 TE 表現與發炎同時出現，不能證明一定是 TE 先升高再引起發炎；反過來也可能是疾病壓力或 interferon 本身先改變染色質，再讓 TE 被打開。此外，不同轉座子家族功能差異很大，不能把所有 TE 都當成同一種致病因子。細胞模型雖然提供機制證據，仍缺乏完整老化腦環境與神經迴路。",
+        "whatNext": "下一步最關鍵的是建立時間順序與必要性：如果選擇性抑制特定 TE，帕金森氏症模型的 interferon response 和神經退化是否真的下降？相反地，若單獨提高特定 TE 表現，是否足以誘發類似發炎？研究者也需要確認究竟是哪些核酸感測器把 TE 產物辨認成威脅，才可能找到比全面抑制免疫更精準的介入點。",
         "sources": [
-          {"label": "Journal of Neuroinflammation 原始研究", "url": "https://link.springer.com/article/10.1186/s12974-026-04034-4"}
+          {"label": "Science Advances 原始研究", "url": "https://www.science.org/doi/10.1126/sciadv.aed2952"},
+          {"label": "UK Dementia Research Institute 研究摘要", "url": "https://ukdri.ac.uk/publications/activation-transposable-elements-linked-region-and-cell-type-specific-interferon"}
         ],
         "questions": [
-          "請把這條鏈串一次：中風後的 KKS 訊號，可能如何一步一步讓 CD4 T 細胞更容易進入腦？",
-          "為什麼研究者同時需要患者血液、體外遷移實驗和小鼠中和抗體實驗，而不是只做其中一種？",
-          "如果阻斷 plasma kallikrein 同時會改變 T 細胞和血管內皮，你會怎麼設計實驗來判斷哪一邊才是腦內 T 細胞減少的主要原因？"
+          "如果轉座子平常被細胞壓制，為什麼它們重新被轉錄後可能讓細胞誤以為自己正在遭受病毒感染？",
+          "為什麼同時使用 bulk RNA-seq、single-nucleus RNA-seq 和幹細胞衍生神經細胞，比只做死後腦組織比較更能支持機制推論？",
+          "目前資料仍無法分辨『TE 活化造成發炎』還是『發炎造成 TE 活化』。你會設計什麼實驗來建立兩者的方向性？"
         ]
       },
       {
-        "category": "感染生物學・胃黏膜・再生程式",
-        "title": "幽門桿菌不只造成發炎：它可能把成人胃黏膜推回『類胎兒再生狀態』",
-        "widgetTitle": "幽門桿菌讓胃黏膜切回類胎兒模式？",
-        "widgetSummary": "小鼠與胃組織模型顯示，幽門桿菌感染可透過 BMP、IL-1β、前列腺素 E2 與 YAP 的細胞接力，讓胃上皮啟動類似胎兒期的再生轉錄程式。",
-        "dek": "組織受傷後，成人細胞有時會暫時『退回』比較原始、偏再生的狀態，好讓組織快速修補。這通常是有用的，但如果訊號長期開著，就可能造成結構重塑甚至增加疾病風險。新的 Nature Communications 研究指出，幽門桿菌感染的胃黏膜可能正是在走這條路，而且關鍵不是單一細胞，而是上皮細胞、免疫細胞與纖維母細胞之間的接力。",
-        "background": "幽門桿菌是可長期定殖在胃黏膜的細菌，和慢性胃炎、胃潰瘍及胃癌風險增加有關。BMP signaling 平常幫助維持胃上皮的成熟狀態；YAP 則是一個會感應組織損傷與機械環境、推動細胞生長與再生的轉錄調節因子。所謂 fetal-like transcriptional program，指的是成人細胞重新啟動一組比較像胎兒發育或強力修復時期的基因表達模式。",
-        "whatHappened": "研究發現，幽門桿菌造成的胃腺增生伴隨 BMP 訊號下降與 YAP 依賴的類胎兒轉錄程式。只要抑制胃上皮 BMP，就足以啟動類似變化：上皮細胞先分泌 chemokines 招募會產生 IL-1β 的免疫細胞；IL-1β 再作用於基質中的纖維母細胞，使它們偏向促再生狀態並製造 prostaglandin E2；最後 prostaglandin E2 促進上皮 YAP 活化。當研究者刪除基質細胞上的 IL-1 receptor，幽門桿菌驅動的重編程與病理變化會明顯減弱。",
-        "howTheyStudied": "團隊使用幽門桿菌感染的小鼠、基因操作、轉錄體分析，以及由胃上皮與基質細胞共同組成的 assembloid。assembloid 可以把不同細胞類型放在較接近組織環境的三維系統中，讓研究者測試 IL-1β 是否真的會先改變基質細胞，再透過 prostaglandin E2 影響上皮 YAP。最重要的因果證據之一，是直接刪除 stromal IL-1 receptor 後，感染引起的重編程被削弱。",
-        "whyItMatters": "這篇研究把『慢性感染 → 發炎 → 組織重塑』拆成了具體細胞間訊號鏈。它也提醒我們，再生程式不是單純好或壞：短期可以幫助修復，但長期持續的類胎兒狀態可能讓組織維持在不成熟、增生中的環境。對幽門桿菌相關胃病來說，真正值得注意的也許不只有細菌本身，而是感染後被固定下來的免疫—基質—上皮迴路。",
-        "limitations": "目前核心機制來自小鼠與人工組織模型，還不能直接證明同一條 IL-1β → prostaglandin E2 → YAP 路徑在所有人類幽門桿菌感染者中都同樣重要。類胎兒轉錄程式也不等於癌症；它比較像是一種再生狀態，是否、何時會推向腫瘤，需要長期研究。",
-        "whatNext": "下一步可在不同階段的人類胃炎、腸化生與胃癌前病變樣本中，確認這條路徑何時開始、是否可逆，以及根除幽門桿菌後會不會自然關閉。若這個細胞間迴路會長期維持，才值得進一步評估 IL-1、prostaglandin 或 YAP 路徑是否能成為補充治療靶點。",
+        "category": "認知神經科學・兒童發展・統計學習",
+        "title": "長大不一定什麼都學得更快：兒童對環境規律的隱性學習能力可能反而逐年下降",
+        "widgetTitle": "孩子越長大，隱性抓規律反而變弱？",
+        "widgetSummary": "同一批參與者在 7、8、11、14 歲反覆測量後，研究者發現統計學習能力隨年齡下降，而且較成熟的執行功能與這種下降同時出現。",
+        "dek": "我們很直覺地認為孩子長大後，注意力、記憶和解題能力都會變好，所以『學習能力』應該也一路上升。但有一類學習並不是靠理解規則或刻意背誦，而是大腦在不知不覺中從重複經驗抓出機率規律。這叫統計學習。新的縱向研究追蹤同一批孩子多年，得到一個反直覺結果：這類隱性規律學習可能在較小的年紀反而更強。",
+        "background": "統計學習（statistical learning）指的是大腦從環境中自動察覺『哪些事件常一起出現、哪些順序比較可能發生』的能力。嬰幼兒可以利用聲音出現的機率切分語句中的單詞，大人也會在動作、視覺與音樂中持續使用類似機制。它和執行功能不同：執行功能是為了達成目標而主動控制注意力、抑制衝動、記住規則並切換策略的能力，通常在兒童與青少年時期逐步成熟。研究者因此提出一個重要問題：當頂層控制越來越強，會不會反而干擾某些原本非常自動化的學習？",
+        "whatHappened": "研究者在同一批參與者 7、8、11 與 14 歲時反覆測量統計學習能力。整體趨勢顯示，隨年齡增加，從序列中隱性抓出機率規律的表現逐漸下降。研究也發現，較高的 executive function 與較明顯的 statistical learning decline 有關。這不表示執行功能『有害』，而比較像兩套學習系統的權重正在重新平衡：年幼的大腦可能比較願意直接吸收環境分布，年長後則越來越依賴有目標、可控制的策略。",
+        "howTheyStudied": "這篇研究的重要優勢是 longitudinal design，也就是縱向追蹤。同一批孩子在不同年齡被重複測試，因此研究者不是拿一群 7 歲兒童和另一群 14 歲青少年做一次性比較，而是真的觀察個體隨時間怎麼改變。分析使用 linear mixed models 來處理重複測量資料，也使用 latent class analysis 尋找不同發展軌跡的人群。這種設計能減少橫斷研究裡『不同年齡其實只是不同人』造成的混淆。",
+        "whyItMatters": "這個結果讓『大腦成熟等於所有學習都更好』的想法變得太簡單。人類兒童可能存在一段特別適合吸收語言、動作與環境統計規律的時期，而後來成熟的認知控制則讓學習變得更有策略、更有選擇性。這也可能幫助解釋為什麼某些複雜規則與解題能力在青春期更強，但口音、語音規律或某些動作模式卻往往更容易在早年自然習得。",
+        "limitations": "研究觀察到 executive function 與 statistical learning decline 的關聯，仍不能直接說『執行功能成熟造成統計學習下降』。兩者可能同時受到其他神經發展變化影響。統計學習本身也不是單一能力；視覺序列、語言、運動或社會環境中的規律學習未必都有相同發展曲線。此外，研究結果不能被簡化成『小孩比青少年聰明』，因為不同年齡只是擅長不同型態的學習。",
+        "whatNext": "後續研究可以直接操控注意力與明確策略，看看讓青少年『不要刻意找規則』是否能恢復較自動的學習；也可以用腦造影追蹤海馬迴、基底核與前額葉在成長中的分工變化。另一個重要方向是比較語言、運動與視覺統計學習，確認這個下降究竟是廣泛的大腦發展原則，還是只發生在特定任務。",
         "sources": [
-          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-77520-1"}
+          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-77261-1"}
         ],
         "questions": [
-          "為什麼幽門桿菌造成的類胎兒程式不能只理解成『細菌直接刺激胃上皮』？請把中間的細胞接力串起來。",
-          "刪除 stromal IL-1 receptor 為什麼是一個很重要的因果實驗？它比單純看到 IL-1β 上升多告訴我們什麼？",
-          "如果類胎兒再生程式本身也可能是修復機制，直接抑制 YAP 或 IL-1β 可能有什麼代價？你會如何找出安全的介入時機？"
+          "統計學習和執行功能有什麼本質差異？為什麼一個變強時，另一個不一定也跟著變強？",
+          "為什麼追蹤同一批孩子從 7 歲到 14 歲，比一次比較不同年齡的孩子更能回答『能力是否隨成長下降』？",
+          "如果研究者想驗證『成熟的認知控制會干擾自動統計學習』這個解釋，而不只是兩者相關，你會如何操控注意力或策略使用？"
         ]
       },
       {
-        "category": "神經心臟學・組織工程・心律不整",
-        "title": "把交感神經和人類心肌真正接起來：新模型顯示神經過度活化可能放大 KCNH2 心律不整",
-        "widgetTitle": "心律不整，問題可能不只在心肌",
-        "widgetSummary": "研究者把交感神經類器官與工程化人類心肌融合，做出可被光刺激的神經—心肌接點；在 KCNH2 長 QT 模型中，神經過度活化加重了異常電活動。",
-        "dek": "研究遺傳性心律不整時，我們常把注意力放在心肌細胞的離子通道。但真實的心臟從來不是單獨運作：交感神經持續調節心跳與收縮。9 月 2 日發表於 Nature Communications 的研究，把人類交感神經與工程化心肌放在同一個組織模型中，直接問：當 KCNH2 離子通道有缺陷時，神經訊號會不會成為把心律不整推得更嚴重的第二股力量？",
-        "background": "KCNH2 編碼心肌中的 hERG 鉀離子通道，幫助動作電位完成 repolarization，也就是讓細胞在一次放電後回到基線。功能下降會造成 long QT syndrome type 2，增加危險性心律不整。交感神經則會釋放 noradrenaline，作用於心肌的 adrenergic receptors，提高心跳與收縮。過去很多模型只有心肌，難以同時研究『神經端』和『心肌端』的互動。",
-        "whatHappened": "團隊建立 innervated engineered human myocardium，也就是 iEHM：把 sympathetic neuronal organoids 和 engineered human myocardium 融合。神經纖維會伸向心肌，形成接近 cardiomyocytes 的突觸前結構；用 optogenetics 光刺激神經後，心肌收縮會跟著改變，證明兩者不是只靠在一起，而是有功能連結。在 KCNH2-associated long-QT 2 模型裡，研究者看到交感神經過度活化與 after-depolarizations。單純 β-adrenoreceptor blockade 無法完整救回促心律不整表型，而同時影響神經與心肌離子電流的 mexiletine 效果較好。",
-        "howTheyStudied": "研究者使用人類幹細胞衍生的交感神經類器官與工程化心肌，讓兩者共同成熟，再透過顯微結構、分子標記與功能測試確認神經—心肌接點。optogenetics 讓神經細胞表現可被光控制的離子通道，研究者因此能只刺激神經端，再看心肌收縮與電生理如何改變。接著把 KCNH2 缺陷帶進模型，測試不同藥理介入。",
-        "whyItMatters": "這項工作的意義不只是做出一個漂亮的類器官，而是提醒藥物測試不能永遠把器官拆開看。若某些心律不整的嚴重度取決於神經—心肌互動，單獨測心肌可能會漏掉真正的治療反應。這種多組織整合模型也可能成為研究腦—心軸、癲癇猝死或自律神經失衡的中間平台。",
-        "limitations": "iEHM 仍是體外模型，沒有完整的循環、免疫、荷爾蒙與中樞神經調節，也不等同完整的人體心臟。藥物比較目前主要是在模型中證明機制，不能直接推出 mexiletine 在所有 KCNH2 患者都優於 β-blocker。臨床決策還需要患者層級試驗。",
-        "whatNext": "下一步可加入 parasympathetic neurons、更多血管與免疫細胞，建立更完整的自律神經—心臟模型；也可使用不同患者來源 iPSC 比較個體差異。若模型能預測患者實際藥物反應，它才會真正從機制工具走向 precision medicine。",
+        "category": "血液腫瘤・臨床試驗・急性骨髓性白血病",
+        "title": "AML 一定要先用最猛烈的化療嗎？一項隨機試驗讓較溫和療法正面挑戰傳統 induction chemotherapy",
+        "widgetTitle": "AML 的第一線治療，較溫和方案可能不只是備案",
+        "widgetSummary": "在 172 名原本被認為能承受強烈誘導化療的 AML 成人中，azacitidine 加 venetoclax 的中位無事件存活期為 14.5 個月，對照傳統 induction chemotherapy 的 6.2 個月。",
+        "dek": "急性骨髓性白血病（AML）是一種骨髓中的未成熟髓系細胞失控增生的血癌。對身體狀況能承受治療的患者，幾十年來的標準思路是先做強烈 induction chemotherapy，也就是用高強度化療快速把白血病細胞壓到最低，希望取得 remission，再進入後續鞏固治療或造血幹細胞移植。較低強度的 azacitidine 加 venetoclax 原本主要被保留給年長或不適合強烈化療的人。現在，一項隨機 phase 2 trial 直接問：如果患者其實也能做強烈化療，較低強度組合是否可能一開始就更好？",
+        "background": "azacitidine 是 hypomethylating agent，可改變癌細胞的 DNA 甲基化與基因表現；venetoclax 則抑制 BCL-2，一種幫助細胞逃避凋亡的蛋白。兩者組合能讓白血病細胞更容易走向 programmed cell death。傳統 induction chemotherapy 則以高強度細胞毒性藥物快速殺死大量分裂中的細胞。這兩種策略不是單純『弱藥 versus 強藥』，而是生物學機制、毒性與後續治療安排都不同。",
+        "whatHappened": "PARADIGM 試驗將 172 名先前未治療、而且原本符合 induction chemotherapy 條件的 AML 成人隨機分成兩組，各 86 人。中位追蹤 21.9 個月時，azacitidine–venetoclax 組的 median event-free survival 為 14.5 個月，傳統 induction chemotherapy 組為 6.2 個月。所謂 event-free survival，計算的是從治療開始到疾病未能達到預期 remission、復發或死亡等事件發生前的時間，因此不是單純看腫瘤縮小，而是看疾病控制能維持多久。嚴重感染發生率分別為 28% 與 41%，嚴重出血則為 2% 與 12%，都較偏向 azacitidine–venetoclax 組較低。",
+        "howTheyStudied": "這是一項多中心、randomized phase 2 trial。隨機分派很重要，因為如果只拿現實世界裡接受兩種療法的患者相比，較虛弱、較年長的人本來就更可能被分配到較低強度療法，會讓比較失真。試驗刻意納入『原本可以做 induction chemotherapy』的人，才真正能測試 azacitidine–venetoclax 是否有機會取代傳統第一線策略。不過研究排除了部分具有 core-binding factor fusion、FLT3 mutation，及多數 NPM1 mutation 的患者，因此結果不能直接套用到所有 AML。",
+        "whyItMatters": "這項結果挑戰的是 AML 很根深蒂固的治療直覺：病人只要夠健康，就應該先用最強的化療。若後續大型試驗確認，第一線 azacitidine–venetoclax 可能讓部分患者得到更長的疾病控制，同時減少感染與出血等住院相關併發症。這也代表『治療強度』不一定等同『抗癌效果』，更精準攻擊癌細胞生存機制的組合，有時可能比廣泛細胞毒性更有效率。",
+        "limitations": "這仍是 phase 2、172 人的試驗，不是足以一次改寫所有 AML treatment guideline 的最終證據。研究族群也經過選擇，某些具有特定分子變異、已有其他高度有效標靶治療選項的患者被排除。event-free survival 顯著改善很重要，但臨床上還需要成熟的 overall survival、長期復發、移植率、生活品質與不同分子亞群分析。試驗也有 AbbVie 等產業資助，因此結果需要由後續獨立與大型研究重現。",
+        "whatNext": "真正會決定臨床實務是否改變的是更大型的 confirmatory trial，以及哪些 AML 分子亞型最適合這種策略。如果所有患者平均有效，但某些基因型其實更適合傳統化療，未來治療就可能不是『兩者擇一』，而是依照 mutation profile、年齡、移植計畫與 minimal residual disease 反應來分流。",
         "sources": [
-          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-76956-9"}
+          {"label": "New England Journal of Medicine 原始研究", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2602804"}
         ],
         "questions": [
-          "為什麼 KCNH2 缺陷造成的心律不整，可能不只是一個『心肌細胞本身』的問題？",
-          "研究者用 optogenetics 只刺激神經端，再觀察心肌反應，這比單純把神經和心肌一起培養多提供了什麼證據？",
-          "如果 iEHM 裡 mexiletine 比 β-blockade 更有效，為什麼仍不能直接據此改變所有 long-QT 2 患者的臨床用藥？"
+          "為什麼 azacitidine 加 venetoclax 被稱為較低強度療法，卻不代表它的抗白血病作用一定比較弱？",
+          "這項研究為什麼一定要在『原本有資格接受強烈化療』的患者中做隨機分派，才能真正回答臨床問題？",
+          "即使 event-free survival 從 6.2 個月延長到 14.5 個月，你還會想看到哪些資料，才足以支持全面改變 AML 第一線標準治療？"
         ]
       }
     ],
     "radar": {
-      "title": "Barrow Neurological Institute 2027 Summer Undergraduate Internship：你先前特別標記為重要的神經研究機會",
-      "summary": "Barrow 的 2027 Summer Undergraduate Internship 是有薪、10 週、全職研究實習，接受美國與國際大學生。參與者會進入 Barrow 的實驗室或相關部門，由 faculty、scientist、clinician 或 manager 指導；研究方向包含 Alzheimer’s disease、ALS、Parkinson’s disease、brain tumor、neuroinflammation、stroke、neurotrauma 與腦血管疾病。2027 申請預計 2026 年 12 月 4 日開放，2027 年 2 月 12 日截止；國際學生若符合資格，官方寫明可提供 visa application support。這不是交換修課，而是非常純粹的神經科學研究實習，因此很適合拿來和 Amgen Scholars、DIGS-ILS 一起比較『實際研究內容、訓練方式與你會學到的技術』。",
-      "url": "https://www.barrowneuro.org/for-physicians-researchers/research/training-programs/summer-undergraduate-program/"
+      "title": "值得追蹤：Max Planck CaCTüS — 計算 × 認知 × 神經科學的三個月暑期研究實習",
+      "summary": "CaCTüS（Computation & Cognition Tübingen Summer Internship）由德國 Max Planck Institute for Biological Cybernetics、Max Planck Institute for Intelligent Systems 與 Tübingen AI Center 合作，面向 Bachelor／Master 學生，研究題目橫跨 theoretical neuroscience、behavioral experiments、data analysis、machine learning 與 engineering。2026 梯次提供約三個月的 paid internship，申請期落在前一年的 10–11 月；目前 2027 梯次尚未公布，因此不是現在可以送件的機會，而是很值得在今年秋季持續追蹤。對想測試『神經科學＋資料分析／程式』是否適合自己的人，它比直接跳入純 AI 更像一個有生物與認知問題牽引的計算研究入口。",
+      "url": "https://www.projects.tuebingen.mpg.de/"
     }
   },
   "importantMail": {
-    "count": 1,
-    "status": "目前有 1 封需要注意的重要合作／社團相關郵件，包含今天的明確時間安排與需採取行動；詳細內容不存放在公開 Daily Board。"
+    "count": 0,
+    "status": "目前沒有新的郵件同時符合學校／課程／教授或工作／社團／重要合作事項，且包含明確截止日期、需要回覆／行動、取消／異常／時間變更等條件。"
   }
 }
