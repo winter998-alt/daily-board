@@ -1,96 +1,84 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-11",
-  "updatedAt": "2026-09-11T07:32:34+08:00",
+  "date": "2026-09-12",
+  "updatedAt": "2026-09-12T07:38:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天的三篇主線都在問：大腦與疾病系統究竟如何把複雜資訊整理成可行動的訊號。第一篇從斑馬魚嗅覺學習看到，記憶不只是讓神經元『反應更強』，而是重新整理群體活動的幾何形狀；第二篇追到任務不確定時，無關特徵如何滲入神經表徵並製造決策錯誤；第三篇則來到臨床 COPD，兩個大型第三期試驗顯示阻斷 IL-33 可明顯降低急性惡化，並把生物製劑治療推向更廣的患者族群。",
+    "intro": "今天的三篇主線都在挑戰我們習慣把器官或腦區各自獨立理解的方式。第一篇發現一群極少見的皮質抑制神經元，竟能跨腦區同步低頻活動並促進睡眠；第二篇把觀察尺度擴到整條脊椎動物身體，第一次在細胞解析度下同時看見多器官如何即時協作；第三篇則建立人類內耳發育的單核轉錄體圖譜，並用類器官驗證 Hedgehog 訊號如何決定重要的分泌細胞命運。",
     "stories": [
       {
-        "category": "神經科學・學習與記憶・計算神經科學",
-        "title": "學會分辨氣味後，大腦不是單純『放大訊號』：它會重新整理神經活動的幾何形狀",
-        "widgetTitle": "學習會把氣味表徵『重新排版』",
-        "widgetSummary": "Nature Neuroscience 在斑馬魚嗅覺系統發現，訓練後與任務相關的氣味表徵變得更容易彼此分開；改變的不是只有平均神經活動，而是整個神經群體活動空間的幾何結構。",
-        "dek": "當我們學會分辨兩個相似刺激時，大腦究竟改變了什麼？新的研究指出，答案可能不是『某幾顆神經元變得更強』，而是很多神經元共同形成的活動模式被重新整理，使重要刺激在神經狀態空間中更容易被下游系統分類。",
-        "background": "同一種氣味每次出現時，大腦的神經活動都不會完全一模一樣。若同時記錄很多神經元，每一個時間點都可以看成高維空間中的一個點；同一氣味在不同時間與不同試次形成的一整團點，就是所謂 neural manifold（神經流形）。研究者關心的不是單一神經元，而是這些『點雲』彼此的距離、大小、方向與重疊程度。若兩種氣味的流形更容易被一條簡單界線分開，下游神經網路就更容易判斷它們不是同一個東西。",
-        "whatHappened": "研究者訓練幼年與成年斑馬魚分辨特定氣味，再量測嗅覺相關前腦區 pDp——它被視為哺乳類 piriform cortex（梨狀皮質）的同源區——的神經群體活動。訓練後，和任務相關的氣味流形彼此以及和其他氣味的流形都變得更可分。研究用 manifold capacity 衡量這種『可分類性』，發現訓練魚顯著高於未訓練魚，而且個體的 manifold capacity 越高，實際氣味辨識表現也越好。這些改變不是只靠平均反應放大；流形變得更緊密、有效維度降低、不同流形中心的對齊程度下降，合起來讓分類更容易。",
-        "howTheyStudied": "研究者使用表現 GCaMP6s 的斑馬魚，對 pDp 做三維 two-photon calcium imaging，估算大量神經元的放電活動，再把每種氣味在多個時間點、試次形成的群體活動向量建成 neural manifolds。他們同時分析 Euclidean distance、Mahalanobis distance 與 manifold capacity，並建立具有興奮／抑制平衡的 recurrent network model，測試哪種突觸連結改變可以重現實驗中的幾何變化。",
-        "whyItMatters": "這篇研究提供一個很直觀但重要的學習模型：記憶可能不是把某個刺激『刻成固定圖案』，而是重新塑造整個表徵空間，使與任務相關的資訊變得容易讀出。這也和人工神經網路中的 representation learning 很相似——好的內部表徵不一定讓訊號最大，而是讓真正重要的類別更容易被後續層分開。",
-        "limitations": "研究主要在斑馬魚 pDp 進行，不能直接假定人類皮質也使用完全相同的幾何機制。研究看到訓練後的表徵幾何改變，也用計算模型提出可能的 E/I assembly 機制，但並沒有在突觸解析度直接重建哪些連結真的被改寫。manifold capacity 與行為相關，也還不能單獨證明這個幾何變化就是造成學習表現提升的唯一原因。",
-        "whatNext": "下一步可直接操控形成特定流形幾何的細胞或突觸連結，測試是否能增強、削弱甚至改寫氣味辨識；另一個方向是比較不同腦區與不同任務，看看『把重要表徵 untangle』是否是一個跨物種、跨感覺系統的普遍學習原理。",
+        "category": "神經科學・睡眠・神經迴路",
+        "title": "睡眠不只是腦幹按下開關：一小群皮質抑制神經元也能把整片大腦拉進同步狀態",
+        "widgetTitle": "皮質自己也能推動睡眠",
+        "widgetSummary": "Nature 研究發現，一群極稀少的 Sst-Chodl 抑制神經元具有長距離皮質投射；啟動它們不只讓局部神經變安靜，而會增加跨區域低頻同步並促進小鼠入睡。",
+        "dek": "傳統睡眠模型常把下視丘、腦幹等皮質下區域視為主要的睡眠控制中心，皮質則像被動接收者。新研究指出，皮質本身可能也有主動推動睡眠狀態的神經元。",
+        "background": "清醒時，大腦皮質的神經活動通常較去同步化；慢波睡眠時，大片皮質會出現同步的低頻 delta 波，以及神經元共同進入和離開放電的 UP／DOWN states。GABAergic inhibitory neurons（GABA 抑制神經元）會降低其他神經元活動，但『抑制』不代表只是讓整個腦變安靜；如果抑制在正確時間、跨正確區域發生，也可能把很多神經元的節奏對齊。研究聚焦一群同時表現 somatostatin（Sst）與 chondrolectin（Chodl）的稀少神經元。",
+        "whatHappened": "研究者發現，多數 Sst-Chodl 細胞在慢波睡眠和安靜清醒等低 arousal 狀態最活躍，在移動與 REM 睡眠時則受到抑制。和大多數局部抑制神經元不同，它們的軸突可延伸到數毫米外的其他皮質區。光遺傳刺激後，delta power、spike synchrony 與 DOWN-state 發生都增加，而且效應可從視覺皮質傳到較遠的額葉運動區。更進一步，廣泛以 chemogenetics 啟動這些細胞會縮短入睡時間、增加慢波睡眠，也增加 REM 睡眠。",
+        "howTheyStudied": "團隊使用交叉遺傳策略精準標記 Sst-Chodl 細胞，再結合 two-photon calcium imaging、矽探針與多點 LFP 電生理、離體 patch clamp、optogenetics 和 chemogenetics。除了觀察它們自然在哪些睡眠狀態活躍，也直接刺激細胞，測試同步化與睡眠是否隨之改變；另以 Martinotti cells 作為另一類 Sst 神經元對照，確認『促同步』不是所有 Sst 細胞的共同能力。",
+        "whyItMatters": "這篇研究把睡眠控制從『皮質下中心控制皮質』的單向模型，推向更雙向的迴路觀點：皮質不只呈現睡眠狀態，也可能參與製造與維持睡眠。如果未來在人類找到相近細胞與調控方式，可能幫助理解失眠、精神疾病或神經退化疾病中為何會同時出現皮質同步異常與睡眠問題。",
+        "limitations": "核心實驗都在小鼠完成，人工廣泛啟動細胞不等於自然入睡時的正常驅動來源。長距離同步效應也可能部分透過其他皮質迴路間接傳遞，而不全是單一 Sst-Chodl 軸突直接造成。研究證明啟動它們『足以』促進睡眠，但還沒有證明自然睡眠『一定需要』它們。",
+        "whatNext": "下一步可在自然睡眠轉換時選擇性抑制 Sst-Chodl 細胞，測試它們是否為必要條件；也需要追查哪些腦區把睡眠／arousal 訊號送給這群細胞，以及人類皮質是否存在可比擬的細胞亞型與長距離投射。",
         "sources": [
-          {
-            "label": "Nature Neuroscience 原始研究",
-            "url": "https://www.nature.com/articles/s41593-026-02429-3"
-          }
+          {"label": "Nature 原始研究", "url": "https://www.nature.com/articles/s41586-026-10876-y"}
         ],
         "questions": [
-          "如果同一個氣味每次引起的神經活動都稍微不同，為什麼把一整團活動看成 neural manifold 會比只看平均反應更有資訊？",
-          "研究同時分析流形中心距離、形狀與 manifold capacity，這比只比較兩種氣味的平均神經活動多回答了什麼問題？",
-          "如果要證明流形幾何的改變『造成』辨識能力提升，而不只是伴隨學習出現，你會想操控哪一層神經機制？"
+          "為什麼『抑制神經元被啟動』不一定只是讓神經活動變少，也可能讓大量神經元變得更同步？",
+          "研究者同時使用自然活動記錄、optogenetics 和 chemogenetics，各自回答了哪些不同層級的證據問題？",
+          "如果刺激 Sst-Chodl 細胞能讓小鼠睡著，還需要什麼實驗才能證明它們是自然睡眠形成的必要原因？"
         ]
       },
       {
-        "category": "神經科學・注意力・決策",
-        "title": "為什麼『不知道等一下要看哪個特徵』會讓人更容易答錯？神經元之間的特徵干擾可能是關鍵",
-        "widgetTitle": "任務不確定時，無關特徵會闖進決策",
-        "widgetSummary": "Nature Neuroscience 結合猴子神經電生理、人類心理物理與人工神經網路，指出任務規則不確定時，與當前判斷無關的特徵會更強地進入神經表徵，造成資訊糾纏與錯誤。",
-        "dek": "人可以靈活地在不同規則間切換，但這種彈性有代價：如果刺激出現時還不知道最後要判斷哪一個特徵，表現通常會下降。新研究把這個『多工成本』追到神經表徵層級，發現問題可能不是大腦完全沒有處理正確資訊，而是無關資訊同時闖進來、和真正需要的特徵互相干擾。",
-        "background": "想像同一個視覺刺激同時具有方向、顏色、速度等多個特徵。如果你事先知道要判斷方向，大腦可以把資源集中在方向；但如果直到最後才知道要回答哪個特徵，系統必須暫時保留多種可能。這種 task uncertainty（任務不確定性）在日常生活很常見，也被認為與有限的 cognitive capacity 有關。研究者把『不同特徵的神經表徵彼此混在一起』稱為 feature interference。",
-        "whatHappened": "研究發現，人類與猴子在任務規則不確定時，感知決策準確率都下降；相反地，一個只以『答對』為目標訓練的人工 recurrent neural network 並不自然出現同樣程度的成本。當研究者再訓練另一個網路去模仿人與猴子的實際錯誤，它產生了更明顯的特徵干擾。猴子 V1 電生理資料也顯示，不確定條件下，與當前決策無關的特徵表徵變強，原本可以分開的特徵在群體活動空間中變得更糾纏。研究還加入因果操控，支持這種干擾能直接推動部分行為錯誤。",
-        "howTheyStudied": "團隊建立兩種不同視覺判斷任務，操控受試者是否事先知道要使用哪個特徵，再比較人類心理物理、猴子神經電生理與 recurrent neural networks。AI 模型在這裡不是拿來取代動物實驗，而是當成『假說產生器』：比較一個理想化、只追求正確答案的網路和一個模仿生物行為錯誤的網路，找出什麼內部計算差異最可能解釋生物的限制，再回到行為與神經實驗驗證。",
-        "whyItMatters": "這提供了一種不同於『大腦資源不足』的具體機制。容量限制可能不是因為神經元數量不夠，而是多組同時活躍的表徵彼此干擾。這種框架也能延伸到工作記憶、注意力切換甚至多工：資訊越多不一定越好，關鍵是大腦能否讓彼此不該混在一起的表徵保持分離。",
-        "limitations": "研究的核心神經生理證據來自特定視覺任務與猴子 V1，還不能保證所有形式的多工、工作記憶或高階決策都由相同機制主導。人工神經網路能重現某些錯誤不等於人腦真的使用完全相同的演算法；模型主要用來提出可驗證機制。未來也需要更清楚分離『不確定本身』和注意分散、記憶負荷等其他因素。",
-        "whatNext": "可以進一步測試前額葉或頂葉等控制區是否透過 top-down 訊號抑制 feature interference，以及訓練能否讓表徵重新分離。如果能找到哪些神經迴路負責『把不相關特徵壓下去』，就能更精確理解注意力與認知控制的容量限制。",
+        "category": "生理學・系統生物學・成像技術",
+        "title": "從腦到腎臟一次看完整條魚：WHOLISTIC 讓研究者第一次在細胞尺度觀察全身器官如何同步工作",
+        "widgetTitle": "第一次把全身細胞動態一起拍下來",
+        "widgetSummary": "Nature 發表 WHOLISTIC 全身活體成像系統，可在幼年斑馬魚中以秒級時間解析與細胞尺度，同時記錄幾乎所有器官的 calcium activity，讓『腦—身體』互動不再只能一個器官一個器官地猜。",
+        "dek": "生理學知道器官彼此高度互動，但技術上我們常只能一次量一小塊。新方法把 volumetric fluorescence microscopy、全身 calcium sensor 與機器學習整合，試圖直接看見整個脊椎動物體內的動態網路。",
+        "background": "Calcium imaging 常被用來當作細胞活動的近似指標，因為神經元、肌肉、分泌細胞等在工作時常伴隨細胞內 calcium 濃度變化。但以往多半只能拍一個腦區或器官。若只看單一器官，就很容易漏掉『另一個器官先改變，才造成這裡反應』的因果鏈。WHOLISTIC（Whole-Organism Live-Imaging System for recording Tissue and IntraCellular activity）就是為了解決這個視野限制。",
+        "whatHappened": "研究者在幼年斑馬魚全身廣泛表現 calcium sensor，再以高速體積成像與運動校正分析整隻動物。系統意外發現多種過去不容易看到的現象，包括軟骨細胞對低溫的反應、腦膜細胞對 ketamine 的反應、腎元內具有方向性的節律 travelling waves，以及不同肌肉和內臟器官間的協同。研究還觀察到腦幹控制全身血流重新分配的動態，並結合 optogenetics 對特定神經迴路做因果操控。",
+        "howTheyStudied": "方法整合 spinning-disk volumetric fluorescence microscopy、全身性 GCaMP 表現、解剖參考螢光、機器學習分割與 motion correction。研究者先把全身影像拆成不同功能組織 ensemble，再分析它們在秒級時間尺度上的共同波動。為了連接功能與結構，他們還發展 whole-body expansion microscopy，讓同一種全身尺度問題能進一步追到較細的細胞與分子結構。",
+        "whyItMatters": "很多疾病其實不是單一器官故障，而是腦、免疫、循環、內分泌與代謝系統的回饋失去協調。WHOLISTIC 提供一種新的 discovery platform：不先假設哪兩個器官有關，而是同時觀察全身，找出意料之外的同步或先後關係，再用針對性實驗驗證。對藥物研究也很重要，因為同一個藥物可能同時改變腦與周邊器官。",
+        "limitations": "目前最完整的展示是在透明、體積小的幼年斑馬魚；成魚甚至哺乳動物因組織散射、體積與運動複雜度更高，還無法直接照搬。Calcium 訊號也不是所有細胞功能的完整代理，例如基因表達、代謝或分泌未必都能由 calcium 推知。大規模關聯圖仍需要後續操控才能建立因果。",
+        "whatNext": "未來可以加入更多 genetically encoded sensors，例如電壓、代謝物或第二訊息分子，並建立跨個體的全身細胞註冊。另一條重要路線，是把發現的跨器官關係逐一做 optogenetic、藥理或遺傳操控，判斷哪些是真正具有方向性的生理迴路。",
         "sources": [
-          {
-            "label": "Nature Neuroscience 原始研究",
-            "url": "https://www.nature.com/articles/s41593-026-02430-w"
-          }
+          {"label": "Nature 原始研究", "url": "https://www.nature.com/articles/s41586-026-10979-6"}
         ],
         "questions": [
-          "為什麼任務規則不確定時，即使大腦仍有處理正確特徵，無關特徵變強也可能讓最後判斷變差？",
-          "研究者為什麼要比較『只追求答對』的人工網路和『模仿人類錯誤』的人工網路，而不是只做一個模型？",
-          "如果你想證明 feature interference 是一般性的認知容量限制，而不是只存在於這個視覺任務，下一步會選什麼不同任務或腦區驗證？"
+          "為什麼只分別量腦、腎臟與肌肉，可能會漏掉真正重要的跨器官生理關係？",
+          "WHOLISTIC 發現兩個器官的 calcium 訊號同步變化後，為什麼還要用 optogenetics 或其他操控才能談因果？",
+          "如果未來要把這種全身成像概念移到哺乳動物，你認為最大的物理或生物學限制會是什麼？"
         ]
       },
       {
-        "category": "臨床醫學・呼吸系統・免疫治療",
-        "title": "COPD 生物製劑不再只瞄準高嗜酸性球族群？兩個第三期試驗用 IL-33 抗體降低急性惡化",
-        "widgetTitle": "IL-33 抗體在 COPD 第三期試驗降低急性惡化",
-        "widgetSummary": "兩個大型、相互複製的第三期試驗顯示，在已接受標準吸入治療但仍反覆急性惡化的 COPD 患者中，tozorakimab 每四週注射一次，可把中重度急性惡化率降低約三成。",
-        "dek": "慢性阻塞性肺病（COPD）最危險的往往不是每天穩定的咳嗽或喘，而是一次次急性惡化：症狀突然變糟，可能需要類固醇、抗生素、急診甚至住院。新的兩個第三期試驗把目標放在 IL-33——受損呼吸道上皮釋放的『警報型』免疫訊號——並得到兩套方向一致的結果。",
-        "background": "COPD 是長期氣流受限與呼吸道慢性發炎的疾病，常和吸菸暴露相關。現有吸入型支氣管擴張劑與類固醇可以改善症狀與降低惡化，但部分患者仍一年發作多次。IL-33 是一種 alarmin：上皮細胞受到刺激或傷害後會釋放它，進一步啟動多種免疫與黏液相關反應。tozorakimab 是針對 IL-33 的單株抗體，目的不是直接把氣管撐開，而是壓低上游的發炎與上皮失調訊號。",
-        "whatHappened": "OBERON 與 TITANIA 是兩個設計幾乎相同的第三期、隨機、雙盲、安慰劑對照試驗。兩試驗合計超過 2,300 名 COPD 成人，所有人即使接受穩定標準吸入治療，前一年仍曾反覆中度或重度急性惡化，而且納入時不以血中 eosinophil（嗜酸性球）數量設門檻。整體族群中，OBERON 的年化中重度急性惡化率從 placebo 的 2.00 次降到 tozorakimab 的 1.41 次；TITANIA 則從 2.03 次降到 1.44 次，大約都是 29–30% 的下降。以前吸菸者這個主要分析族群的下降幅度則約 29% 與 34%。",
-        "howTheyStudied": "受試者被隨機分派，在原本 inhaled standard of care 之外，每四週皮下注射 300 mg tozorakimab 或 placebo，共 52 週。主要終點不是一次肺功能測量，而是一整年內中度或重度 exacerbation 的年化發生率。研究刻意做成兩個 replicate trials：如果兩個彼此獨立但設計近似的試驗都得到相同方向，會比單一大型試驗更能降低偶然結果的疑慮。",
-        "whyItMatters": "過去 COPD 生物製劑通常特別關注 type 2 inflammation 或較高 eosinophil 的患者。這次試驗沒有用 eosinophil 作為納入門檻，而且整體族群都看到效益，因此 IL-33 可能提供一條更廣泛的治療路徑。就實際意義而言，年化惡化率從約 2 次降到約 1.4 次，等於平均每位患者每年少掉約 0.6 次中重度惡化；對反覆住院或需要全身性類固醇的人來說，這可能相當重要。",
-        "limitations": "兩個試驗都由藥廠 AstraZeneca 資助，而且追蹤主要是 52 週；長期安全性、死亡率、住院負擔、生活品質與哪些患者受益最大仍需持續分析。雖然不同 eosinophil 族群都看到效益，但這不代表所有 COPD 患者都會得到相同好處。藥物目前仍處於監管審查階段，試驗結果不等於已獲核准或應立刻改變所有人的治療。",
-        "whatNext": "接下來最重要的是監管機構審查、長期延伸資料，以及找出能預測反應的 biomarker。另一個問題是 IL-33 抑制是否真的同時改善發炎與 mucus plugging，以及它和現有吸入藥、生物製劑的最佳定位與成本效益。",
+        "category": "神經科學・發育生物學・單細胞體學",
+        "title": "人類耳朵如何長出『聽覺、平衡與離子環境』？新單核圖譜把內耳發育拆到細胞命運層級",
+        "widgetTitle": "人類內耳發育首次有完整單核地圖",
+        "widgetSummary": "Nature Neuroscience 建立 HIEDRA，涵蓋人類第一與第二孕期內耳的 single-nucleus RNA-seq atlas，並指出抑制 Hedgehog signaling 是形成維持離子平衡之分泌細胞的重要條件。",
+        "dek": "內耳不只是毛細胞。要真正聽見聲音、維持平衡，周圍細胞還必須建立精密的離子環境、神經連結與組織結構。新研究第一次用單核轉錄體把早期人類內耳的主要細胞族群與發育路徑系統性畫出來。",
+        "background": "single-nucleus RNA sequencing（snRNA-seq）不是把整塊組織的 RNA 混在一起量，而是從單一細胞核分離 RNA，依每個核的基因表現把細胞分類，因此特別適合難以完整解離的組織。內耳包含 sensory hair cells、supporting cells、神經元、間質細胞與維持特殊高鉀內淋巴環境的分泌細胞；任何一環發育異常，都可能造成聽力或平衡障礙。",
+        "whatHappened": "研究建立 Human Inner Ear Development snRNA-seq Atlas（HIEDRA），涵蓋第一與第二孕期的人類內耳，辨識感覺與非感覺上皮、神經元、間質相關細胞，以及過去較少被完整描述、負責離子穩態的 secretory lineages。把已知耳聾疾病基因投射到圖譜後，研究發現感覺與分泌細胞譜系具有不同的疾病基因易感性。調控網路分析進一步指出，形成部分分泌細胞需要降低 Hedgehog signaling；在人類內耳 organoids 中抑制這條路徑後，模型能產生更完整的主要內耳細胞類型。",
+        "howTheyStudied": "團隊對人類胎兒第一、第二孕期內耳進行 snRNA-seq，依轉錄表現做 cell clustering、marker annotation、developmental trajectory 與 gene-regulatory-network 推定，再將 hearing-loss-associated genes 映射到不同細胞譜系。最後不是只停在計算推論，而是在 human inner ear organoids 中實際操控 Hedgehog signaling，檢驗預測的 cell-fate mechanism。",
+        "whyItMatters": "很多遺傳性耳聾研究知道『哪個基因壞掉』，卻未必知道它在發育的哪種細胞、哪個時間窗出問題。HIEDRA 提供一張可把疾病基因放回真實人類發育脈絡的地圖，也讓內耳類器官更接近完整器官，而不只是產生少數 sensory cells。這對未來基因治療、細胞治療與藥物測試都很關鍵。",
+        "limitations": "人類胎兒樣本不可避免是不同個體在不同時間點的快照，而不是縱向追蹤同一個內耳發育。snRNA-seq 主要告訴我們轉錄狀態，不等同蛋白量與實際生理功能。Hedgehog 抑制在 organoid 中改善細胞組成，也不代表體內所有細胞命運都只由這條訊號決定。",
+        "whatNext": "下一步可把 HIEDRA 與 spatial transcriptomics、蛋白體和功能性電生理整合，確認細胞在真實內耳中的位置與成熟功能；也可以用患者特定變異建立 organoids，測試某個遺傳性耳聾基因究竟在哪個發育階段造成失敗。",
         "sources": [
-          {
-            "label": "New England Journal of Medicine 原始第三期試驗",
-            "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2606998"
-          },
-          {
-            "label": "AstraZeneca 2026-09-08 試驗與監管更新",
-            "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/tozorakimab-demonstrated-statistically-significant-highly-clinically-meaningful-reduction-copd-exacerbations-oberon-titania-phase-iii-trials.html"
-          }
+          {"label": "Nature Neuroscience 期刊頁", "url": "https://www.nature.com/neuro/"},
+          {"label": "HIEDRA 分析程式與資料資源", "url": "https://github.com/OtoBiologyLeiden/HIEDRA"}
         ],
         "questions": [
-          "為什麼阻斷 IL-33 和使用支氣管擴張劑在治療邏輯上是兩種不同層次的介入？",
-          "為什麼 OBERON 和 TITANIA 要刻意做成兩個相互複製的第三期試驗，而不是只做一個更大的試驗？",
-          "如果平均急性惡化率下降約三成，但不同患者受益可能差很多，你會想找哪些 biomarker 來決定誰最值得使用這種藥？"
+          "為什麼研究內耳不能只研究感覺毛細胞，還必須理解周圍負責離子穩態的分泌細胞？",
+          "研究者從 snRNA-seq 推測 Hedgehog 與細胞命運有關後，為什麼還要在 organoid 中真正操控這條訊號？",
+          "如果某個耳聾基因在 HIEDRA 中只出現在特定發育階段與細胞類型，你會如何利用這個資訊設計更精準的治療？"
         ]
       }
     ],
     "radar": {
-      "title": "EPFL Life Sciences Summer Research Program 2027：10 月中旬開放申請",
-      "summary": "瑞士 EPFL School of Life Sciences 的 Summer Research Program 已確認：2027 暑期梯次將在 2026 年 10 月中旬開放申請。它是實際進入研究室做暑期研究，而不是一般 summer school；領域涵蓋 biology、biophysics、chemistry、bioengineering、bioinformatics、quantitative biology、genetics 等。官方要求在實習開始前至少完成兩年大學課程，並設定相當高的學業門檻（GPA 約等同 3.75/4.0 或班級前 5%）。申請資料包括 CV、motivation letter／科學短文、正式成績單、兩位推薦人、護照以及三個 EPFL 實驗室志願。對想同時比較 wet lab、quantitative biology 與 bioinformatics 研究環境的學生很有價值；現在值得做的是先看 2027 可選 lab、確認資格並準備 CV 與推薦人，等 10 月系統一開就能送件。",
-      "url": "https://www.epfl.ch/schools/sv/education/summer-research-program/how-to-apply/"
+      "title": "Amgen Scholars 2027：亞洲申請將在 11 月 1 日開放",
+      "summary": "Amgen Scholars 官方首頁已更新：除澳洲外，2027 Summer applications 將於 2026 年 11 月 1 日開放。對臺灣大學生而言，Asia Program 可申請 University of Tokyo、Kyoto University、NUS、Tsinghua 與 IIIT Hyderabad；2026 的亞洲梯次統一在 2 月初截止，2027 各校精確日期仍應等 11 月官方頁面更新。這類計畫提供真正的暑期研究、實驗室指導、seminars 與跨校 symposium，而且通常需要 transcript、推薦信與 personal statement，因此現在最值得做的是先整理研究興趣、CV、英文成績與可擔任推薦人的老師，而不是等開放後才開始。",
+      "url": "https://amgenscholars.com/"
     }
   },
   "importantMail": {
-    "count": 1,
-    "status": "目前有 1 封需要注意的郵件，涉及工作機會並需要查看與決定是否回覆；詳細內容不存放在公開 Daily Board。"
+    "count": 0,
+    "status": "目前沒有新的郵件同時符合學校／課程／教授或重要工作合作事項，且包含明確截止日期、需要回覆或行動、取消／異常／時間變更的條件。"
   }
 }
