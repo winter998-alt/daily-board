@@ -1,80 +1,80 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-12",
-  "updatedAt": "2026-09-12T07:38:00+08:00",
+  "date": "2026-09-13",
+  "updatedAt": "2026-09-13T07:36:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天的三篇主線都在挑戰我們習慣把器官或腦區各自獨立理解的方式。第一篇發現一群極少見的皮質抑制神經元，竟能跨腦區同步低頻活動並促進睡眠；第二篇把觀察尺度擴到整條脊椎動物身體，第一次在細胞解析度下同時看見多器官如何即時協作；第三篇則建立人類內耳發育的單核轉錄體圖譜，並用類器官驗證 Hedgehog 訊號如何決定重要的分泌細胞命運。",
+    "intro": "今天的三篇都在追問同一件事：我們平常看到的『功能失常』，真正的機制到底藏在哪一層？第一篇把阿茲海默症的睡眠問題從慢波強弱進一步拆成『慢波能不能跨皮質旅行』；第二篇從技術面處理傳統 fMRI 本身的噪音、壓力與失真；第三篇則發現腫瘤中的 DNMT3A 不只改變 DNA 甲基化，還能改造膽固醇代謝，從兩條路一起削弱 T 細胞。",
     "stories": [
       {
-        "category": "神經科學・睡眠・神經迴路",
-        "title": "睡眠不只是腦幹按下開關：一小群皮質抑制神經元也能把整片大腦拉進同步狀態",
-        "widgetTitle": "皮質自己也能推動睡眠",
-        "widgetSummary": "Nature 研究發現，一群極稀少的 Sst-Chodl 抑制神經元具有長距離皮質投射；啟動它們不只讓局部神經變安靜，而會增加跨區域低頻同步並促進小鼠入睡。",
-        "dek": "傳統睡眠模型常把下視丘、腦幹等皮質下區域視為主要的睡眠控制中心，皮質則像被動接收者。新研究指出，皮質本身可能也有主動推動睡眠狀態的神經元。",
-        "background": "清醒時，大腦皮質的神經活動通常較去同步化；慢波睡眠時，大片皮質會出現同步的低頻 delta 波，以及神經元共同進入和離開放電的 UP／DOWN states。GABAergic inhibitory neurons（GABA 抑制神經元）會降低其他神經元活動，但『抑制』不代表只是讓整個腦變安靜；如果抑制在正確時間、跨正確區域發生，也可能把很多神經元的節奏對齊。研究聚焦一群同時表現 somatostatin（Sst）與 chondrolectin（Chodl）的稀少神經元。",
-        "whatHappened": "研究者發現，多數 Sst-Chodl 細胞在慢波睡眠和安靜清醒等低 arousal 狀態最活躍，在移動與 REM 睡眠時則受到抑制。和大多數局部抑制神經元不同，它們的軸突可延伸到數毫米外的其他皮質區。光遺傳刺激後，delta power、spike synchrony 與 DOWN-state 發生都增加，而且效應可從視覺皮質傳到較遠的額葉運動區。更進一步，廣泛以 chemogenetics 啟動這些細胞會縮短入睡時間、增加慢波睡眠，也增加 REM 睡眠。",
-        "howTheyStudied": "團隊使用交叉遺傳策略精準標記 Sst-Chodl 細胞，再結合 two-photon calcium imaging、矽探針與多點 LFP 電生理、離體 patch clamp、optogenetics 和 chemogenetics。除了觀察它們自然在哪些睡眠狀態活躍，也直接刺激細胞，測試同步化與睡眠是否隨之改變；另以 Martinotti cells 作為另一類 Sst 神經元對照，確認『促同步』不是所有 Sst 細胞的共同能力。",
-        "whyItMatters": "這篇研究把睡眠控制從『皮質下中心控制皮質』的單向模型，推向更雙向的迴路觀點：皮質不只呈現睡眠狀態，也可能參與製造與維持睡眠。如果未來在人類找到相近細胞與調控方式，可能幫助理解失眠、精神疾病或神經退化疾病中為何會同時出現皮質同步異常與睡眠問題。",
-        "limitations": "核心實驗都在小鼠完成，人工廣泛啟動細胞不等於自然入睡時的正常驅動來源。長距離同步效應也可能部分透過其他皮質迴路間接傳遞，而不全是單一 Sst-Chodl 軸突直接造成。研究證明啟動它們『足以』促進睡眠，但還沒有證明自然睡眠『一定需要』它們。",
-        "whatNext": "下一步可在自然睡眠轉換時選擇性抑制 Sst-Chodl 細胞，測試它們是否為必要條件；也需要追查哪些腦區把睡眠／arousal 訊號送給這群細胞，以及人類皮質是否存在可比擬的細胞亞型與長距離投射。",
+        "category": "神經科學・阿茲海默症・睡眠與記憶",
+        "title": "深睡時的慢波不只是要『夠大』：阿茲海默症 tau 可能讓它們失去跨皮質旅行的能力",
+        "widgetTitle": "Tau 讓睡眠慢波變得孤立",
+        "widgetSummary": "Nature Neuroscience 研究發現，額葉 tau 較多的老年人，NREM 慢波較難跨越大片皮質傳播；這種『不旅行的慢波』又與較差的隔夜記憶保留有關。",
+        "dek": "慢波睡眠長期被認為有助記憶鞏固，但研究通常關注慢波有多強。新的人體研究把焦點轉向另一個特徵：一個慢波究竟能不能從額葉出發，協調遠處皮質一起進入節律。",
+        "background": "非快速動眼睡眠（NREM sleep）中的 slow waves，是大批皮質神經元在高活動與低活動狀態間同步切換所形成的低頻腦波。它們並不是永遠同時在整顆腦出現；很多慢波會像波浪一樣，從一個區域沿著皮質向其他區域傳播。這種 traveling wave 可能有助於讓不同腦區在睡眠中協調，支持白天建立的記憶被重新整理。阿茲海默症中的 tau 則是一種會異常聚集的蛋白，隨疾病進展逐步影響更多神經網路。",
+        "whatHappened": "研究發現，較年長成人的慢波比年輕成人更常侷限在局部，尤其額葉的慢波較難向其他皮質區長距離傳播。更關鍵的是，在老年人中，額葉 tau PET 訊號越高，慢波涉及的皮質範圍與旅行距離越小；而慢波越孤立的人，隔夜記憶保留也越差。部分受試者有縱向追蹤：在 19 人的重複 PET 資料中，額葉 tau 增加越多，之後慢波牽涉的皮質範圍下降也越明顯。另一個 82 人的獨立 cohort 使用腦脊髓液阿茲海默症 biomarkers，再次支持睡眠慢波傳播與認知表現之間的關聯。",
+        "howTheyStudied": "團隊結合整夜 EEG、記憶測驗與 tau PET。EEG 不只計算 slow-wave power，也追蹤每一個慢波先在哪些電極出現、再傳到哪些位置，估計 cortical involvement 與 travel distance。研究者另外控制年齡、睡眠呼吸中止等潛在干擾，並檢查 amyloid PET，發現慢波旅行受損與 frontal tau 的空間關聯比 amyloid 更明顯。之後再用華盛頓大學 cohort 的腦脊髓液 biomarkers 與認知資料做獨立驗證。",
+        "whyItMatters": "這篇研究提醒我們，睡眠品質不能只用『睡多久』或『慢波有多強』描述。兩個人的慢波功率可能差不多，但其中一人的慢波能協調大片皮質，另一人的慢波只停在局部；這種網路層級差異可能直接影響記憶鞏固。若未來證明慢波傳播是可操控的因果環節，睡眠刺激或 closed-loop neuromodulation 可能不只是增加慢波，而是試著恢復它的正常傳播。",
+        "limitations": "這是人體關聯研究，不能證明 tau 直接造成 slow-wave travel 受損，也不能證明恢復 traveling waves 就一定改善阿茲海默症。樣本中可同時完成所有睡眠、PET 與縱向測量的人數並不大，例如縱向 tau 與慢波分析只有 19 人；而 tau、睡眠與認知也可能受其他老化因素共同影響。研究者做了區域與 amyloid 對照，但仍無法完全排除未測得的混雜因素。",
+        "whatNext": "下一步可用 closed-loop auditory stimulation、經顱電刺激或其他非侵入式方法，刻意改變慢波的傳播範圍，再測試隔夜記憶是否隨之改善。更長期則需要追蹤尚未出現症狀的人，判斷 traveling-wave deterioration 是 tau 病理的結果、早期功能標誌，還是會反過來加速疾病。",
         "sources": [
-          {"label": "Nature 原始研究", "url": "https://www.nature.com/articles/s41586-026-10876-y"}
+          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02415-9"}
         ],
         "questions": [
-          "為什麼『抑制神經元被啟動』不一定只是讓神經活動變少，也可能讓大量神經元變得更同步？",
-          "研究者同時使用自然活動記錄、optogenetics 和 chemogenetics，各自回答了哪些不同層級的證據問題？",
-          "如果刺激 Sst-Chodl 細胞能讓小鼠睡著，還需要什麼實驗才能證明它們是自然睡眠形成的必要原因？"
+          "為什麼兩個人的 slow-wave power 一樣高，仍可能因為慢波傳播範圍不同而有不同的記憶效果？",
+          "研究者同時使用 tau PET、EEG、隔夜記憶測驗與另一個 CSF cohort，各自補足了哪一種證據？",
+          "如果要證明『恢復慢波旅行可以改善記憶』，你會如何設計一個真正能測因果的介入實驗？"
         ]
       },
       {
-        "category": "生理學・系統生物學・成像技術",
-        "title": "從腦到腎臟一次看完整條魚：WHOLISTIC 讓研究者第一次在細胞尺度觀察全身器官如何同步工作",
-        "widgetTitle": "第一次把全身細胞動態一起拍下來",
-        "widgetSummary": "Nature 發表 WHOLISTIC 全身活體成像系統，可在幼年斑馬魚中以秒級時間解析與細胞尺度，同時記錄幾乎所有器官的 calcium activity，讓『腦—身體』互動不再只能一個器官一個器官地猜。",
-        "dek": "生理學知道器官彼此高度互動，但技術上我們常只能一次量一小塊。新方法把 volumetric fluorescence microscopy、全身 calcium sensor 與機器學習整合，試圖直接看見整個脊椎動物體內的動態網路。",
-        "background": "Calcium imaging 常被用來當作細胞活動的近似指標，因為神經元、肌肉、分泌細胞等在工作時常伴隨細胞內 calcium 濃度變化。但以往多半只能拍一個腦區或器官。若只看單一器官，就很容易漏掉『另一個器官先改變，才造成這裡反應』的因果鏈。WHOLISTIC（Whole-Organism Live-Imaging System for recording Tissue and IntraCellular activity）就是為了解決這個視野限制。",
-        "whatHappened": "研究者在幼年斑馬魚全身廣泛表現 calcium sensor，再以高速體積成像與運動校正分析整隻動物。系統意外發現多種過去不容易看到的現象，包括軟骨細胞對低溫的反應、腦膜細胞對 ketamine 的反應、腎元內具有方向性的節律 travelling waves，以及不同肌肉和內臟器官間的協同。研究還觀察到腦幹控制全身血流重新分配的動態，並結合 optogenetics 對特定神經迴路做因果操控。",
-        "howTheyStudied": "方法整合 spinning-disk volumetric fluorescence microscopy、全身性 GCaMP 表現、解剖參考螢光、機器學習分割與 motion correction。研究者先把全身影像拆成不同功能組織 ensemble，再分析它們在秒級時間尺度上的共同波動。為了連接功能與結構，他們還發展 whole-body expansion microscopy，讓同一種全身尺度問題能進一步追到較細的細胞與分子結構。",
-        "whyItMatters": "很多疾病其實不是單一器官故障，而是腦、免疫、循環、內分泌與代謝系統的回饋失去協調。WHOLISTIC 提供一種新的 discovery platform：不先假設哪兩個器官有關，而是同時觀察全身，找出意料之外的同步或先後關係，再用針對性實驗驗證。對藥物研究也很重要，因為同一個藥物可能同時改變腦與周邊器官。",
-        "limitations": "目前最完整的展示是在透明、體積小的幼年斑馬魚；成魚甚至哺乳動物因組織散射、體積與運動複雜度更高，還無法直接照搬。Calcium 訊號也不是所有細胞功能的完整代理，例如基因表達、代謝或分泌未必都能由 calcium 推知。大規模關聯圖仍需要後續操控才能建立因果。",
-        "whatNext": "未來可以加入更多 genetically encoded sensors，例如電壓、代謝物或第二訊息分子，並建立跨個體的全身細胞註冊。另一條重要路線，是把發現的跨器官關係逐一做 optogenetic、藥理或遺傳操控，判斷哪些是真正具有方向性的生理迴路。",
+        "category": "神經科學・腦影像・研究方法",
+        "title": "fMRI 為什麼一定要吵得像施工現場？SORDINO 嘗試把掃描器本身的噪音從腦研究裡拿掉",
+        "widgetTitle": "把 fMRI 的噪音降下來",
+        "widgetSummary": "新的 SORDINO fMRI 序列在小鼠中大幅降低掃描噪音與失真，並能在清醒、可活動的條件下建立全腦功能連結圖。它可能讓研究者更少把『掃描器造成的壓力』誤認成動物本身的腦活動。",
+        "dek": "傳統 fMRI 很強，但它的環境本身並不中性：巨大的聲響、快速磁場梯度、固定姿勢與影像失真，都可能改變受試者狀態。對清醒小鼠尤其如此，因為研究者真正想量的是自然腦功能，卻可能先把動物嚇到。",
+        "background": "最常見的 BOLD-fMRI 並不是直接看到神經元放電，而是利用神經活動造成的局部血氧與血流變化作為間接訊號。傳統 echo-planar imaging（EPI）會快速切換磁場梯度，這也是 MRI 掃描時巨大敲擊聲的重要來源；同時，EPI 容易受到運動與磁場不均勻影響，某些靠近鼻竇、耳部或金屬裝置的位置尤其容易失真。對動物研究而言，噪音和壓力還可能改變 arousal、cortisol、心血管與神經活動，等於測量工具本身就在干擾被測量的系統。",
+        "whatHappened": "研究團隊開發 SORDINO（Steady-state On-the-Ramp Detection of INduction-decay with Oversampling），屬於 zero-echo-time 類型的 fMRI acquisition。和傳統 GRE-EPI 相比，它以非常低的 gradient slew rate 運作，並在梯度方向轉換時取樣，因此顯著降低聲音、電磁干擾、磁場 susceptibility artifact 與 motion artifact。研究者在 9.4 T 小鼠 MRI 中顯示，SORDINO 可以在清醒小鼠取得 400 μm isotropic、每 2 秒一個全腦 volume 的資料，並重建出預期的 default mode、lateral cortical 與 salience-like functional networks。",
+        "howTheyStudied": "團隊不只比影像好不好看，而是從多個層級驗證。研究者比較 SORDINO 與 GRE-EPI 的訊噪比、失真、運動敏感度與血清 cortisol；以受控制的肢體運動測試 motion artifact；把小鼠訓練在 MRI 相容跑步帶上清醒接受掃描；也把 SORDINO 與 calcium imaging、fast-scan cyclic voltammetry 等其他神經訊號工具同步。清醒 resting-state 實驗包含 25 隻充分 habituated 的小鼠，另有 30 隻接受 SORDINO 與 GRE-EPI 的直接運動比較。",
+        "whyItMatters": "這項技術最重要的不只是『比較安靜』。如果掃描器聲音本身會引起壓力與感覺刺激，研究者就很難知道量到的 functional connectivity 到底代表自然狀態，還是動物對 MRI 環境的反應。SORDINO 也更適合與電生理、光學成像或兩隻動物的 hyperscanning 結合，可能擴大清醒動物 fMRI 可以研究的行為範圍。",
+        "limitations": "目前最完整證據來自高磁場 9.4 T 的小鼠系統，尚不能假定在人類臨床 3 T 掃描器上會有完全相同的解析度與優勢。SORDINO 的功能對比機制與傳統 BOLD 並不完全相同，研究顯示其中帶有重要的 T1-based contrast，因此如何精確連回神經活動與血流生理還需要更多驗證。清醒小鼠雖能活動身體，但頭部仍被固定，也不等於完全自然自由行為。",
+        "whatNext": "接下來需要在人體與不同磁場強度上比較 SORDINO 和標準 fMRI，也要進一步拆解它的生理訊號來源。若能保持低噪音又有足夠敏感度，這種方法可能特別適合兒童、對聲音敏感者、需要反覆掃描的人，以及同時做 EEG、神經刺激或行為任務的研究。",
         "sources": [
-          {"label": "Nature 原始研究", "url": "https://www.nature.com/articles/s41586-026-10979-6"}
+          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02424-8"},
+          {"label": "UNC School of Medicine 研究說明", "url": "https://news.unchealthcare.org/2026/09/unc-researchers-develop-technique-to-silence-mri-noise/"}
         ],
         "questions": [
-          "為什麼只分別量腦、腎臟與肌肉，可能會漏掉真正重要的跨器官生理關係？",
-          "WHOLISTIC 發現兩個器官的 calcium 訊號同步變化後，為什麼還要用 optogenetics 或其他操控才能談因果？",
-          "如果未來要把這種全身成像概念移到哺乳動物，你認為最大的物理或生物學限制會是什麼？"
+          "為什麼 MRI 掃描器本身的巨大聲音與壓力，可能成為研究清醒動物腦功能時的系統性干擾？",
+          "研究者為什麼不能只比較 SORDINO 與傳統 fMRI 的影像清晰度，而還要量 cortisol、motion artifact 與 functional connectivity？",
+          "如果 SORDINO 的訊號機制不完全等同傳統 BOLD，你認為在把它用於人類疾病研究前最需要先驗證什麼？"
         ]
       },
       {
-        "category": "神經科學・發育生物學・單細胞體學",
-        "title": "人類耳朵如何長出『聽覺、平衡與離子環境』？新單核圖譜把內耳發育拆到細胞命運層級",
-        "widgetTitle": "人類內耳發育首次有完整單核地圖",
-        "widgetSummary": "Nature Neuroscience 建立 HIEDRA，涵蓋人類第一與第二孕期內耳的 single-nucleus RNA-seq atlas，並指出抑制 Hedgehog signaling 是形成維持離子平衡之分泌細胞的重要條件。",
-        "dek": "內耳不只是毛細胞。要真正聽見聲音、維持平衡，周圍細胞還必須建立精密的離子環境、神經連結與組織結構。新研究第一次用單核轉錄體把早期人類內耳的主要細胞族群與發育路徑系統性畫出來。",
-        "background": "single-nucleus RNA sequencing（snRNA-seq）不是把整塊組織的 RNA 混在一起量，而是從單一細胞核分離 RNA，依每個核的基因表現把細胞分類，因此特別適合難以完整解離的組織。內耳包含 sensory hair cells、supporting cells、神經元、間質細胞與維持特殊高鉀內淋巴環境的分泌細胞；任何一環發育異常，都可能造成聽力或平衡障礙。",
-        "whatHappened": "研究建立 Human Inner Ear Development snRNA-seq Atlas（HIEDRA），涵蓋第一與第二孕期的人類內耳，辨識感覺與非感覺上皮、神經元、間質相關細胞，以及過去較少被完整描述、負責離子穩態的 secretory lineages。把已知耳聾疾病基因投射到圖譜後，研究發現感覺與分泌細胞譜系具有不同的疾病基因易感性。調控網路分析進一步指出，形成部分分泌細胞需要降低 Hedgehog signaling；在人類內耳 organoids 中抑制這條路徑後，模型能產生更完整的主要內耳細胞類型。",
-        "howTheyStudied": "團隊對人類胎兒第一、第二孕期內耳進行 snRNA-seq，依轉錄表現做 cell clustering、marker annotation、developmental trajectory 與 gene-regulatory-network 推定，再將 hearing-loss-associated genes 映射到不同細胞譜系。最後不是只停在計算推論，而是在 human inner ear organoids 中實際操控 Hedgehog signaling，檢驗預測的 cell-fate mechanism。",
-        "whyItMatters": "很多遺傳性耳聾研究知道『哪個基因壞掉』，卻未必知道它在發育的哪種細胞、哪個時間窗出問題。HIEDRA 提供一張可把疾病基因放回真實人類發育脈絡的地圖，也讓內耳類器官更接近完整器官，而不只是產生少數 sensory cells。這對未來基因治療、細胞治療與藥物測試都很關鍵。",
-        "limitations": "人類胎兒樣本不可避免是不同個體在不同時間點的快照，而不是縱向追蹤同一個內耳發育。snRNA-seq 主要告訴我們轉錄狀態，不等同蛋白量與實際生理功能。Hedgehog 抑制在 organoid 中改善細胞組成，也不代表體內所有細胞命運都只由這條訊號決定。",
-        "whatNext": "下一步可把 HIEDRA 與 spatial transcriptomics、蛋白體和功能性電生理整合，確認細胞在真實內耳中的位置與成熟功能；也可以用患者特定變異建立 organoids，測試某個遺傳性耳聾基因究竟在哪個發育階段造成失敗。",
+        "category": "癌症生物學・免疫治療・表觀遺傳與代謝",
+        "title": "腫瘤用同一個 DNMT3A 做兩件事：一邊降低自己對 TNF 的敏感度，一邊讓 T 細胞缺少膽固醇",
+        "widgetTitle": "DNMT3A 的雙重免疫逃脫",
+        "widgetSummary": "體內 CRISPR screen 找到 DNMT3A 是腫瘤免疫逃脫的重要節點：它既能透過 DNA 甲基化降低腫瘤對 TNFα 的反應，又能改造膽固醇代謝，讓 CD8 T 細胞效應功能下降。",
+        "dek": "免疫治療失敗通常不是只因為一條訊號。新的 Nature Communications 研究找到一個特別有意思的例子：同一個腫瘤蛋白 DNMT3A，同時從『癌細胞比較不容易被殺』和『T 細胞比較沒力』兩端建立防線。",
+        "background": "DNMT3A 是 DNA methyltransferase，會把 methyl group 加到 DNA 的特定位置，常用來長期調節哪些基因容易被表現。另一方面，CD8 T cells 殺死癌細胞時會使用 cytokines 與細胞毒性分子，其中 TNFα 可以透過癌細胞表面的 TNF receptors 觸發壓力與死亡訊號。T 細胞本身也需要正常的脂質與膽固醇代謝，才能維持膜結構、訊號傳遞與效應功能。",
+        "whatHappened": "研究者先在活體腫瘤模型做 CRISPR-Cas9 screen，發現失去 DNMT3A 的腫瘤細胞在有免疫壓力時明顯失去優勢。機制分析顯示，DNMT3A 第一條路徑是透過其 methyltransferase 活性壓低 TNFRSF1A 與 TNFRSF1B，使癌細胞比較不容易被 TNFα 殺死。第二條路徑卻不需要 methyltransferase 活性：DNMT3A 可以和轉錄因子 NFYA 互動，提升腫瘤的膽固醇生合成，造成 zymosterol 在 tumor interstitial fluid 累積。這個代謝物進一步干擾 CD8 T cells 的 SREBP2 cleavage、促進 HMGCR 降解，使 T 細胞自己的膽固醇合成下降，抗腫瘤功能因而被削弱。",
+        "howTheyStudied": "研究從 in vivo CRISPR screen 出發，再用基因 knockout、DNMT3A catalytic-function 分離實驗、基因表現與代謝分析去拆解兩條機制。研究者測量腫瘤間質液中的脂質與 sterol，並觀察 zymosterol 對 CD8 T-cell cholesterol pathway 與 effector function 的影響。最後，他們使用 antisense oligonucleotides 降低 DNMT3A，測試是否能讓原本對 immune-checkpoint blockade 不敏感的腫瘤重新出現治療反應。",
+        "whyItMatters": "這篇最值得學的是『免疫逃脫不是單向的』。DNMT3A 一方面改變癌細胞本身，讓它比較不怕 TNF；另一方面又改變腫瘤微環境中的代謝物，去削弱攻擊它的 CD8 T cells。這把 epigenetics、tumor metabolism 與 immunology 接成同一條因果鏈，也解釋了為什麼只針對單一免疫 checkpoint 有時效果有限。",
+        "limitations": "核心因果證據主要來自小鼠腫瘤模型與實驗系統，尚未證明抑制 DNMT3A 在人類癌症中具有相同治療效果。DNMT3A 在正常造血與其他組織也有重要功能，因此全身性抑制可能有副作用；antisense oligonucleotide 是否能安全、有效且選擇性地進入人類實體腫瘤也仍需臨床前與臨床驗證。不同癌種對 TNF 與膽固醇代謝的依賴程度也可能不同。",
+        "whatNext": "下一步需要在患者樣本確認 DNMT3A、TNF-receptor repression、zymosterol 與 T-cell cholesterol dysfunction 是否真的一起出現，並找出最適合此策略的腫瘤類型。治療上更實際的方向可能是腫瘤選擇性 DNMT3A 抑制，或只阻斷它和 NFYA 的非甲基化功能，避免全面干擾正常 DNMT3A 生理作用。",
         "sources": [
-          {"label": "Nature Neuroscience 期刊頁", "url": "https://www.nature.com/neuro/"},
-          {"label": "HIEDRA 分析程式與資料資源", "url": "https://github.com/OtoBiologyLeiden/HIEDRA"}
+          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-77495-z"}
         ],
         "questions": [
-          "為什麼研究內耳不能只研究感覺毛細胞，還必須理解周圍負責離子穩態的分泌細胞？",
-          "研究者從 snRNA-seq 推測 Hedgehog 與細胞命運有關後，為什麼還要在 organoid 中真正操控這條訊號？",
-          "如果某個耳聾基因在 HIEDRA 中只出現在特定發育階段與細胞類型，你會如何利用這個資訊設計更精準的治療？"
+          "DNMT3A 為什麼可以同時讓『腫瘤比較不容易被 TNF 殺』和『CD8 T 細胞比較沒力』？請把兩條路徑分開串一次。",
+          "為什麼研究者要把 DNMT3A 的 methyltransferase-dependent 與 -independent 功能拆開，而不能只做整個基因 knockout？",
+          "如果要把 DNMT3A 當成藥物標的，你會如何避免影響正常造血細胞與其他需要 DNMT3A 的組織？"
         ]
       }
     ],
     "radar": {
-      "title": "Amgen Scholars 2027：亞洲申請將在 11 月 1 日開放",
-      "summary": "Amgen Scholars 官方首頁已更新：除澳洲外，2027 Summer applications 將於 2026 年 11 月 1 日開放。對臺灣大學生而言，Asia Program 可申請 University of Tokyo、Kyoto University、NUS、Tsinghua 與 IIIT Hyderabad；2026 的亞洲梯次統一在 2 月初截止，2027 各校精確日期仍應等 11 月官方頁面更新。這類計畫提供真正的暑期研究、實驗室指導、seminars 與跨校 symposium，而且通常需要 transcript、推薦信與 personal statement，因此現在最值得做的是先整理研究興趣、CV、英文成績與可擔任推薦人的老師，而不是等開放後才開始。",
-      "url": "https://amgenscholars.com/"
+      "title": "EMBL undergraduate internships：不是等統一申請季，而是直接向研究室提案",
+      "summary": "EMBL 目前持續接受 undergraduate internship 的個別洽詢，領域橫跨 biology、chemistry、physics、mathematics、medicine、informatics 與 engineering，地點包含 Heidelberg、Rome、Barcelona、Hinxton 等研究站。和固定梯次 summer program 不同，它沒有單一年度 deadline；申請者要先找合適的 Group Leader，直接寄短 CV、研究興趣、希望加入的時間與實習長度，並提供可出具推薦／支持信的母校 faculty 聯絡資訊。這類模式很適合已有明確研究問題或想測試某個實驗室的學生，因為你不是被分配題目，而是主動挑 laboratory。經費不是中央統一保證，是否有 stipend 取決於 host lab 的 grant，因此聯絡教授時必須同時確認 funding、住宿與 visa 安排。對規劃 2027 海外研究的人而言，現在就可以開始用研究題目反向篩 lab，而不用等到冬季集中申請開放。",
+      "url": "https://www.embl.org/about/info/undergraduates/how-to-apply/"
     }
   },
   "importantMail": {
