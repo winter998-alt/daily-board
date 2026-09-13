@@ -1,84 +1,83 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-13",
-  "updatedAt": "2026-09-13T07:36:00+08:00",
+  "date": "2026-09-14",
+  "updatedAt": "2026-09-14T07:30:24+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天的三篇都在追問同一件事：我們平常看到的『功能失常』，真正的機制到底藏在哪一層？第一篇把阿茲海默症的睡眠問題從慢波強弱進一步拆成『慢波能不能跨皮質旅行』；第二篇從技術面處理傳統 fMRI 本身的噪音、壓力與失真；第三篇則發現腫瘤中的 DNMT3A 不只改變 DNA 甲基化，還能改造膽固醇代謝，從兩條路一起削弱 T 細胞。",
+    "intro": "今天三篇研究都在提醒我們：神經系統疾病的關鍵機制，往往不只藏在『神經元有沒有壞掉』這一層。第一篇把亨丁頓舞蹈症的血管問題拆成不同腦血管屏障、不同血管節段各自失效；第二篇嘗試把脊髓損傷後形成疤痕的反應性星狀膠細胞直接改造成具功能的神經元；第三篇則從脆折 X 症候群切入，顯示發育期軸突起始段的位置與成熟，也可能決定離子通道是否真正能發揮作用。",
     "stories": [
       {
-        "category": "神經科學・阿茲海默症・睡眠與記憶",
-        "title": "深睡時的慢波不只是要『夠大』：阿茲海默症 tau 可能讓它們失去跨皮質旅行的能力",
-        "widgetTitle": "Tau 讓睡眠慢波變得孤立",
-        "widgetSummary": "Nature Neuroscience 研究發現，額葉 tau 較多的老年人，NREM 慢波較難跨越大片皮質傳播；這種『不旅行的慢波』又與較差的隔夜記憶保留有關。",
-        "dek": "慢波睡眠長期被認為有助記憶鞏固，但研究通常關注慢波有多強。新的人體研究把焦點轉向另一個特徵：一個慢波究竟能不能從額葉出發，協調遠處皮質一起進入節律。",
-        "background": "非快速動眼睡眠（NREM sleep）中的 slow waves，是大批皮質神經元在高活動與低活動狀態間同步切換所形成的低頻腦波。它們並不是永遠同時在整顆腦出現；很多慢波會像波浪一樣，從一個區域沿著皮質向其他區域傳播。這種 traveling wave 可能有助於讓不同腦區在睡眠中協調，支持白天建立的記憶被重新整理。阿茲海默症中的 tau 則是一種會異常聚集的蛋白，隨疾病進展逐步影響更多神經網路。",
-        "whatHappened": "研究發現，較年長成人的慢波比年輕成人更常侷限在局部，尤其額葉的慢波較難向其他皮質區長距離傳播。更關鍵的是，在老年人中，額葉 tau PET 訊號越高，慢波涉及的皮質範圍與旅行距離越小；而慢波越孤立的人，隔夜記憶保留也越差。部分受試者有縱向追蹤：在 19 人的重複 PET 資料中，額葉 tau 增加越多，之後慢波牽涉的皮質範圍下降也越明顯。另一個 82 人的獨立 cohort 使用腦脊髓液阿茲海默症 biomarkers，再次支持睡眠慢波傳播與認知表現之間的關聯。",
-        "howTheyStudied": "團隊結合整夜 EEG、記憶測驗與 tau PET。EEG 不只計算 slow-wave power，也追蹤每一個慢波先在哪些電極出現、再傳到哪些位置，估計 cortical involvement 與 travel distance。研究者另外控制年齡、睡眠呼吸中止等潛在干擾，並檢查 amyloid PET，發現慢波旅行受損與 frontal tau 的空間關聯比 amyloid 更明顯。之後再用華盛頓大學 cohort 的腦脊髓液 biomarkers 與認知資料做獨立驗證。",
-        "whyItMatters": "這篇研究提醒我們，睡眠品質不能只用『睡多久』或『慢波有多強』描述。兩個人的慢波功率可能差不多，但其中一人的慢波能協調大片皮質，另一人的慢波只停在局部；這種網路層級差異可能直接影響記憶鞏固。若未來證明慢波傳播是可操控的因果環節，睡眠刺激或 closed-loop neuromodulation 可能不只是增加慢波，而是試著恢復它的正常傳播。",
-        "limitations": "這是人體關聯研究，不能證明 tau 直接造成 slow-wave travel 受損，也不能證明恢復 traveling waves 就一定改善阿茲海默症。樣本中可同時完成所有睡眠、PET 與縱向測量的人數並不大，例如縱向 tau 與慢波分析只有 19 人；而 tau、睡眠與認知也可能受其他老化因素共同影響。研究者做了區域與 amyloid 對照，但仍無法完全排除未測得的混雜因素。",
-        "whatNext": "下一步可用 closed-loop auditory stimulation、經顱電刺激或其他非侵入式方法，刻意改變慢波的傳播範圍，再測試隔夜記憶是否隨之改善。更長期則需要追蹤尚未出現症狀的人，判斷 traveling-wave deterioration 是 tau 病理的結果、早期功能標誌，還是會反過來加速疾病。",
+        "category": "神經科學・亨丁頓舞蹈症・神經血管單元",
+        "title": "亨丁頓舞蹈症的『血腦屏障破掉』其實不是一種故障：不同血管用不同方式漏",
+        "widgetTitle": "亨丁頓症的血管不是一起壞掉",
+        "widgetSummary": "Nature Communications 研究發現，亨丁頓舞蹈症模型中，腦表面的血液－腦脊髓液屏障和腦實質內的血腦屏障會以不同機制失效，其中小動脈特別脆弱。刺激 S1PR1 還能部分逆轉這些異常。",
+        "dek": "神經退化疾病常被描述成『血腦屏障變得比較漏』，但這句話其實太粗糙。新的研究把腦血管拆成不同屏障與不同血管節段後發現：有的問題發生在細胞接縫，有的卻是血管細胞主動把更多物質裝進小囊泡搬過去，而且最嚴重的地方集中在小動脈。",
+        "background": "腦不是直接泡在血液裡。血管內皮細胞、周細胞、星狀膠細胞等共同形成神經血管單元，嚴格控制哪些物質能從血液進入腦。腦實質內微血管形成的是 blood-brain barrier（BBB，血腦屏障）；腦表面與腦脊髓液相關的血管則參與 blood-cerebrospinal fluid barrier（BCSFB，血液－腦脊髓液屏障）。屏障失效也不只一種方式：物質可以從細胞與細胞之間的縫隙穿過，稱為 paracellular leakage；也可以被內皮細胞裝進囊泡，從細胞的一側運到另一側，稱為 transcytosis。亨丁頓舞蹈症（Huntington's disease, HD）由 HTT 基因中的 CAG 重複擴增造成，最著名的是神經元逐漸退化，但患者也會出現腦血管與星狀膠細胞異常。",
+        "whatHappened": "研究者在 R6/2 亨丁頓症小鼠中發現，兩套腦血管屏障並不是用同一種方式壞掉。腦表面的 BCSFB 主要呈現 paracellular leakage，也就是細胞間屏障變鬆；腦實質內的 BBB 則主要出現囊泡運輸與 adsorptive-mediated transcytosis（AMT）增加。更細分血管節段後，小動脈是 BBB 異常最明顯的區域，並不是所有毛細血管、靜脈都平均受影響。這些異常血管附近也出現空間上相對應的 astrogliosis，也就是星狀膠細胞進入反應狀態；研究者在人類 HD 死後腦組織中也看到血管異常與星狀膠細胞活化彼此鄰近的模式。最後，給予 sphingosine-1-phosphate receptor 1（S1PR1）agonist 後，BCSFB 的漏出可被逆轉，BBB 功能也部分恢復，其中對小動脈 AMT 的改善最明顯。",
+        "howTheyStudied": "核心方法是活體 two-photon microscopy。研究者把不同大小、不同運輸特性的螢光示蹤物送入血液，直接觀察它們怎麼從血管跑到周圍組織，再依血管直徑與型態區分 arterioles、capillaries 和 venules。為了判斷物質是從細胞縫隙漏出，還是透過內皮細胞中的囊泡搬運，團隊搭配組織學與超微結構／運輸相關分析，並觀察 astrocyte reactivity 是否和受損血管空間共定位。最後以 S1PR1 agonist 做藥理介入，測試屏障異常是否具有可逆性，而不只是疾病末期留下的固定結果。",
+        "whyItMatters": "這篇研究最重要的不是又一次證明『HD 有血管問題』，而是把一句模糊的『barrier breakdown』拆成可以真正設計實驗與治療的機制。若小動脈主要是 transcytosis 過強，而另一個屏障主要是細胞間隙漏出，那麼只想用一種『把血管封緊』的方法，很可能無法同時處理所有問題。S1PR1 的結果也提示，至少一部分血管異常可能是動態、可被調節的，而不是神經退化發生後不可逆的附帶損傷。",
+        "limitations": "最強的因果與治療證據仍來自 R6/2 小鼠。這是一種疾病進展快速的 HD 模型，不能保證完全重現人類數十年的病程。人類組織部分主要提供病理學上的空間對應，不能直接證明星狀膠細胞造成血管異常，或反過來是血管異常先讓 astrocytes 活化。另外，S1PR1 廣泛參與血管與免疫調控；藥物改善 barrier 並不等於已經證明它能改善 HD 的運動、認知或長期神經元存活。",
+        "whatNext": "下一步需要在較慢進展的 HD 模型與人類影像／體液資料中確認：血管異常究竟在症狀前多久出現，以及是否能預測後續神經退化。機制上則要分辨 S1PR1 主要作用於內皮、astrocytes 或其他細胞。若能把『哪一種血管、哪一種運輸路徑、哪一個疾病階段』對上，才有可能把神經血管治療變成精準介入，而不是泛稱保護血腦屏障。",
         "sources": [
-          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02415-9"}
+          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-77474-4"}
         ],
         "questions": [
-          "為什麼兩個人的 slow-wave power 一樣高，仍可能因為慢波傳播範圍不同而有不同的記憶效果？",
-          "研究者同時使用 tau PET、EEG、隔夜記憶測驗與另一個 CSF cohort，各自補足了哪一種證據？",
-          "如果要證明『恢復慢波旅行可以改善記憶』，你會如何設計一個真正能測因果的介入實驗？"
+          "為什麼同樣被描述成『血腦屏障變漏』，paracellular leakage 和 transcytosis 增加其實代表完全不同的細胞機制？",
+          "研究者把血管進一步分成小動脈、毛細血管與靜脈來分析，比只算整體 BBB permeability 多提供了什麼證據？",
+          "即使 S1PR1 agonist 能改善血管屏障，你還需要看到哪些結果，才會相信這條路徑值得作為亨丁頓舞蹈症的治療標的？"
         ]
       },
       {
-        "category": "神經科學・腦影像・研究方法",
-        "title": "fMRI 為什麼一定要吵得像施工現場？SORDINO 嘗試把掃描器本身的噪音從腦研究裡拿掉",
-        "widgetTitle": "把 fMRI 的噪音降下來",
-        "widgetSummary": "新的 SORDINO fMRI 序列在小鼠中大幅降低掃描噪音與失真，並能在清醒、可活動的條件下建立全腦功能連結圖。它可能讓研究者更少把『掃描器造成的壓力』誤認成動物本身的腦活動。",
-        "dek": "傳統 fMRI 很強，但它的環境本身並不中性：巨大的聲響、快速磁場梯度、固定姿勢與影像失真，都可能改變受試者狀態。對清醒小鼠尤其如此，因為研究者真正想量的是自然腦功能，卻可能先把動物嚇到。",
-        "background": "最常見的 BOLD-fMRI 並不是直接看到神經元放電，而是利用神經活動造成的局部血氧與血流變化作為間接訊號。傳統 echo-planar imaging（EPI）會快速切換磁場梯度，這也是 MRI 掃描時巨大敲擊聲的重要來源；同時，EPI 容易受到運動與磁場不均勻影響，某些靠近鼻竇、耳部或金屬裝置的位置尤其容易失真。對動物研究而言，噪音和壓力還可能改變 arousal、cortisol、心血管與神經活動，等於測量工具本身就在干擾被測量的系統。",
-        "whatHappened": "研究團隊開發 SORDINO（Steady-state On-the-Ramp Detection of INduction-decay with Oversampling），屬於 zero-echo-time 類型的 fMRI acquisition。和傳統 GRE-EPI 相比，它以非常低的 gradient slew rate 運作，並在梯度方向轉換時取樣，因此顯著降低聲音、電磁干擾、磁場 susceptibility artifact 與 motion artifact。研究者在 9.4 T 小鼠 MRI 中顯示，SORDINO 可以在清醒小鼠取得 400 μm isotropic、每 2 秒一個全腦 volume 的資料，並重建出預期的 default mode、lateral cortical 與 salience-like functional networks。",
-        "howTheyStudied": "團隊不只比影像好不好看，而是從多個層級驗證。研究者比較 SORDINO 與 GRE-EPI 的訊噪比、失真、運動敏感度與血清 cortisol；以受控制的肢體運動測試 motion artifact；把小鼠訓練在 MRI 相容跑步帶上清醒接受掃描；也把 SORDINO 與 calcium imaging、fast-scan cyclic voltammetry 等其他神經訊號工具同步。清醒 resting-state 實驗包含 25 隻充分 habituated 的小鼠，另有 30 隻接受 SORDINO 與 GRE-EPI 的直接運動比較。",
-        "whyItMatters": "這項技術最重要的不只是『比較安靜』。如果掃描器聲音本身會引起壓力與感覺刺激，研究者就很難知道量到的 functional connectivity 到底代表自然狀態，還是動物對 MRI 環境的反應。SORDINO 也更適合與電生理、光學成像或兩隻動物的 hyperscanning 結合，可能擴大清醒動物 fMRI 可以研究的行為範圍。",
-        "limitations": "目前最完整證據來自高磁場 9.4 T 的小鼠系統，尚不能假定在人類臨床 3 T 掃描器上會有完全相同的解析度與優勢。SORDINO 的功能對比機制與傳統 BOLD 並不完全相同，研究顯示其中帶有重要的 T1-based contrast，因此如何精確連回神經活動與血流生理還需要更多驗證。清醒小鼠雖能活動身體，但頭部仍被固定，也不等於完全自然自由行為。",
-        "whatNext": "接下來需要在人體與不同磁場強度上比較 SORDINO 和標準 fMRI，也要進一步拆解它的生理訊號來源。若能保持低噪音又有足夠敏感度，這種方法可能特別適合兒童、對聲音敏感者、需要反覆掃描的人，以及同時做 EEG、神經刺激或行為任務的研究。",
+        "category": "神經再生・脊髓損傷・細胞重編程",
+        "title": "不另外移植神經元，而是把脊髓損傷後的疤痕細胞直接改造成神經元：TRANsCre-DIONE 做到了什麼？",
+        "widgetTitle": "把脊髓疤痕細胞改造成神經元",
+        "widgetSummary": "研究者用雙啟動子 split-Cre 系統鎖定嚴重反應性星狀膠細胞，再讓它們表現 Neurog2。小鼠脊髓損傷中，轉換效率達 87%，新細胞具有神經元電生理特徵，而且暫時關掉這些新神經元後，原本改善的運動能力會再次變差。",
+        "dek": "脊髓受傷後會死掉很多神經元，同時形成由反應性星狀膠細胞參與的 glial scar。新的研究嘗試一次處理兩個問題：不是把外來細胞塞進去，而是把損傷區附近原本會形成疤痕的細胞，原地改寫成神經元。真正困難的是如何只挑到『該改的』反應性 astrocytes，又讓轉換過程不中途熄火。",
+        "background": "星狀膠細胞（astrocytes）平常負責維持離子環境、清除神經傳遞物質、支持神經元代謝與突觸功能。脊髓損傷後，它們會進入 reactive state；其中部分細胞增生並形成 glial scar。這個疤痕並非純粹壞事：急性期可以限制損傷擴散，但慢性、嚴重反應狀態也可能阻礙軸突再生。因此，如果要把 reactive astrocytes 轉成神經元，最大的風險之一就是誤把仍有保護功能的正常或輕度反應 astrocytes 一起轉掉。另一個問題是，以往常用 GFAP promoter 驅動神經轉錄因子，但當 astrocyte 開始變成 neuron，GFAP 本身就會下降，等於轉換程式進行到一半，驅動它的開關反而逐漸熄火。",
+        "whatHappened": "研究團隊設計 TRANsCre-DIONE 系統，讓 Cre recombinase 被拆成兩半，分別由 GFAP 與反應性相關基因 Lcn2（小鼠）或 iNOS（非人靈長類）控制。只有同時符合兩個條件的細胞，兩半 Cre 才會重新組合，開啟由強力 EF1α promoter 驅動的 Neurog2。Neurog2 是能啟動神經生成程式的轉錄因子。脊髓損傷小鼠中，系統報告約 87% 的轉換效率與 96% 的細胞選擇性；轉換後可看到 Isl1、ChAT 等 motor-neuron-related markers。這些細胞能產生 action potentials、鈉鉀電流與 spontaneous excitatory postsynaptic currents，表示它們不只是長得像神經元。接受 Neurog2 重編程的小鼠運動表現也改善。更關鍵的是，研究者再讓這些新生成神經元表現抑制型 DREADD；藥理性暫時關掉它們後，先前得到的運動改善會明顯消退，支持新神經元本身確實參與功能恢復。",
+        "howTheyStudied": "研究用了多層級驗證。第一層以 AAV 載體送入 split-Cre 與 Cre-dependent Neurog2，並用 GFAP、NeuN、Isl1、ChAT 等免疫標記判定起始細胞與轉換後身份。第二層做 whole-cell patch clamp，檢查新細胞能否放 action potentials、是否具有 voltage-gated sodium/potassium currents，以及有沒有收到突觸輸入。第三層做脊髓損傷後的行為測試。第四層以 inhibitory DREADD 暫時沉默轉換後神經元，看功能改善是否被逆轉，這比單純看到『新神經元數量和走路變好同時發生』更接近因果證據。團隊也在猴腦損傷環境測試以 GFAP+iNOS 定位 reactive astrocytes 的可行性，但真正的脊髓功能恢復實驗仍是在小鼠。",
+        "whyItMatters": "這項策略結合了兩個神經再生思路：減少慢性疤痕環境中的不利細胞，同時在原地補上新的神經元。它也展示了 synthetic biology 在神經科學裡的一個核心用途：不是只問『哪個 marker 表現在 astrocyte』，而是建立 AND gate——只有同時符合兩個生物學條件的細胞才啟動治療程式。這種邏輯式 targeting 如果能持續提高精準度，未來可能比單一 promoter 更適合複雜、異質的損傷環境。",
+        "limitations": "這離人體治療仍很遠。首先，reactive astrocytes 具有高度異質性，而且 glial scar 在某些階段具有保護作用；把哪一群細胞轉掉、什麼時間點轉掉，可能決定結果是幫助還是傷害。第二，研究中的『motor neuron』主要依 marker、電生理與功能結果判定，新細胞是否建立了正常脊髓運動神經元應有的長距離輸出與完整連線，仍需更嚴格追蹤。第三，AAV、多載體共感染、Cre 系統和長期 Neurog2 表現都涉及轉譯與安全問題。研究雖在非人靈長類測試 targeting 概念，但尚未在靈長類脊髓損傷中證明功能恢復。",
+        "whatNext": "最重要的下一步包括 lineage tracing 與長期 circuit mapping，確認所有新神經元真的來自目標 reactive astrocytes、能建立恰當輸入輸出連線，而且數月後仍穩定安全。研究也需要系統性比較不同受傷時間點，找出既不破壞急性保護性 glial response、又能利用慢性疤痕細胞作為重編程來源的最佳治療窗口。最後才是把同樣邏輯放進更接近人體的脊髓損傷模型。",
         "sources": [
-          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02424-8"},
-          {"label": "UNC School of Medicine 研究說明", "url": "https://news.unchealthcare.org/2026/09/unc-researchers-develop-technique-to-silence-mri-noise/"}
+          {"label": "Experimental & Molecular Medicine 原始研究", "url": "https://www.nature.com/articles/s12276-026-01815-y"}
         ],
         "questions": [
-          "為什麼 MRI 掃描器本身的巨大聲音與壓力，可能成為研究清醒動物腦功能時的系統性干擾？",
-          "研究者為什麼不能只比較 SORDINO 與傳統 fMRI 的影像清晰度，而還要量 cortisol、motion artifact 與 functional connectivity？",
-          "如果 SORDINO 的訊號機制不完全等同傳統 BOLD，你認為在把它用於人類疾病研究前最需要先驗證什麼？"
+          "為什麼只用 GFAP promoter 來把 astrocytes 轉成 neurons，會同時面臨『選錯細胞』和『轉到一半驅動訊號變弱』兩個問題？",
+          "DREADD 暫時關掉新生成神經元後，運動改善又消失，這比單純看到神經元數量增加提供了什麼更強的證據？",
+          "如果 glial scar 在急性期其實也有保護作用，你會怎麼設計實驗找出最安全的細胞族群與治療時間窗？"
         ]
       },
       {
-        "category": "癌症生物學・免疫治療・表觀遺傳與代謝",
-        "title": "腫瘤用同一個 DNMT3A 做兩件事：一邊降低自己對 TNF 的敏感度，一邊讓 T 細胞缺少膽固醇",
-        "widgetTitle": "DNMT3A 的雙重免疫逃脫",
-        "widgetSummary": "體內 CRISPR screen 找到 DNMT3A 是腫瘤免疫逃脫的重要節點：它既能透過 DNA 甲基化降低腫瘤對 TNFα 的反應，又能改造膽固醇代謝，讓 CD8 T 細胞效應功能下降。",
-        "dek": "免疫治療失敗通常不是只因為一條訊號。新的 Nature Communications 研究找到一個特別有意思的例子：同一個腫瘤蛋白 DNMT3A，同時從『癌細胞比較不容易被殺』和『T 細胞比較沒力』兩端建立防線。",
-        "background": "DNMT3A 是 DNA methyltransferase，會把 methyl group 加到 DNA 的特定位置，常用來長期調節哪些基因容易被表現。另一方面，CD8 T cells 殺死癌細胞時會使用 cytokines 與細胞毒性分子，其中 TNFα 可以透過癌細胞表面的 TNF receptors 觸發壓力與死亡訊號。T 細胞本身也需要正常的脂質與膽固醇代謝，才能維持膜結構、訊號傳遞與效應功能。",
-        "whatHappened": "研究者先在活體腫瘤模型做 CRISPR-Cas9 screen，發現失去 DNMT3A 的腫瘤細胞在有免疫壓力時明顯失去優勢。機制分析顯示，DNMT3A 第一條路徑是透過其 methyltransferase 活性壓低 TNFRSF1A 與 TNFRSF1B，使癌細胞比較不容易被 TNFα 殺死。第二條路徑卻不需要 methyltransferase 活性：DNMT3A 可以和轉錄因子 NFYA 互動，提升腫瘤的膽固醇生合成，造成 zymosterol 在 tumor interstitial fluid 累積。這個代謝物進一步干擾 CD8 T cells 的 SREBP2 cleavage、促進 HMGCR 降解，使 T 細胞自己的膽固醇合成下降，抗腫瘤功能因而被削弱。",
-        "howTheyStudied": "研究從 in vivo CRISPR screen 出發，再用基因 knockout、DNMT3A catalytic-function 分離實驗、基因表現與代謝分析去拆解兩條機制。研究者測量腫瘤間質液中的脂質與 sterol，並觀察 zymosterol 對 CD8 T-cell cholesterol pathway 與 effector function 的影響。最後，他們使用 antisense oligonucleotides 降低 DNMT3A，測試是否能讓原本對 immune-checkpoint blockade 不敏感的腫瘤重新出現治療反應。",
-        "whyItMatters": "這篇最值得學的是『免疫逃脫不是單向的』。DNMT3A 一方面改變癌細胞本身，讓它比較不怕 TNF；另一方面又改變腫瘤微環境中的代謝物，去削弱攻擊它的 CD8 T cells。這把 epigenetics、tumor metabolism 與 immunology 接成同一條因果鏈，也解釋了為什麼只針對單一免疫 checkpoint 有時效果有限。",
-        "limitations": "核心因果證據主要來自小鼠腫瘤模型與實驗系統，尚未證明抑制 DNMT3A 在人類癌症中具有相同治療效果。DNMT3A 在正常造血與其他組織也有重要功能，因此全身性抑制可能有副作用；antisense oligonucleotide 是否能安全、有效且選擇性地進入人類實體腫瘤也仍需臨床前與臨床驗證。不同癌種對 TNF 與膽固醇代謝的依賴程度也可能不同。",
-        "whatNext": "下一步需要在患者樣本確認 DNMT3A、TNF-receptor repression、zymosterol 與 T-cell cholesterol dysfunction 是否真的一起出現，並找出最適合此策略的腫瘤類型。治療上更實際的方向可能是腫瘤選擇性 DNMT3A 抑制，或只阻斷它和 NFYA 的非甲基化功能，避免全面干擾正常 DNMT3A 生理作用。",
+        "category": "神經發育・脆折 X 症候群・離子通道",
+        "title": "脆折 X 症候群裡，Kv7 通道可能不是『壞掉』，而是發育時被放到了功能不對的位置",
+        "widgetTitle": "離子通道沒壞，位置卻不對",
+        "widgetSummary": "Fmr1 knockout 大鼠研究發現，幼年海馬神經元的 Kv7 功能異常可能源自 axon initial segment 發育改變，而不是 Kv7 通道本身失去功能。這種異常到成年又部分恢復，凸顯發育時間窗的重要性。",
+        "dek": "研究神經疾病時，我們很常看到某個離子通道功能變差，就直覺認為『通道本身有問題』。但新的脆折 X 症候群研究顯示，神經元還有另一種失敗方式：通道蛋白可能存在，分子本身也未必壞掉，卻因為軸突起始段的發育改變而失去原本應有的生理影響。",
+        "background": "Fragile X syndrome（FXS，脆折 X 症候群）通常來自 FMR1 基因沉默，導致 FMRP 蛋白缺失，是常見的單基因遺傳性智能障礙，也和自閉症特徵高度相關。神經元產生 action potential 時，真正決定『要不要發出這一發』的重要位置之一是 axon initial segment（AIS，軸突起始段）：它位在細胞體接到軸突的最前端，密集排列多種電壓依賴型離子通道。Kv7 是一類鉀離子通道，會形成所謂 M-current，幫助限制神經元過度興奮並控制連續放電。因此 Kv7 是否位於正確的 AIS 微結構中，和單純『細胞裡有沒有 Kv7 蛋白』不是同一件事。",
+        "whatHappened": "研究者比較幼年（出生後第 12–15 天）與較成熟（6–10 週）的雄性 Fmr1 knockout 大鼠海馬 CA1 pyramidal neurons。幼年 knockout 神經元出現 sustained firing 受損、action potential 在連續放電時逐步變寬，以及 activity-dependent synaptic vesicle replenishment 增強。用 Kv7 activator 操控時，野生型神經元的 action-potential dynamics 與 neurotransmission 會被改變，但幼年 Fmr1 knockout 神經元對這種操控變得不敏感，乍看很像 Kv7 通道失去功能。可是研究進一步發現，問題並不是 Kv7 分子本身直接壞掉，而是 Fmr1 缺失改變了 AIS 的發育，使 Kv7 在這個結構中的功能耦合變得近乎『失效』。更有意思的是，到 6–10 週時，這些早期電生理缺陷多數已恢復。",
+        "howTheyStudied": "研究結合 ex vivo hippocampal electrophysiology、藥理學、影像與生化分析。研究者用 patch clamp 量 CA1 pyramidal neurons 的 sustained firing、action-potential waveform 與突觸傳遞，再以 Kv7 channel activator 比較野生型與 knockout 神經元是否仍對 Kv7 操控有反應。接著透過 AIS 結構標記與影像分析，比較發育過程中 axon initial segment 的成熟狀態。最關鍵的設計是同時比較 P12–15 與 6–10 週兩個時間點，因此能看到缺陷不是固定存在，而是具有明顯 developmental trajectory。",
+        "whyItMatters": "這篇研究提供一個很重要的機制觀念：離子通道疾病不一定是『通道基因突變 → 通道壞掉』。神經元把通道放在哪裡、和哪些支架蛋白或膜區域組裝，也可能決定功能。對發育性神經疾病而言，這又多了一層時間問題：幼年期的 circuit dysfunction 可能很強，成年後卻被其他補償機制部分掩蓋。若只在成年動物量一次，很可能錯過真正影響神經迴路形成的早期關鍵窗口。",
+        "limitations": "這項研究使用雄性 Fmr1 knockout 大鼠與離體海馬切片，不能直接等同人類 FXS，也還不知道 AIS/Kv7 的早期異常如何具體連到學習、感覺過敏或社交行為。成年時電生理表型恢復也不代表發育期完全沒有留下長期後果：神經迴路可能已在早期異常活動下形成不同連線。研究目前支持 AIS development 與 Kv7 dysfunction 的機制連結，但哪些 FMRP downstream pathways 造成 AIS 發育改變，仍未完全拆解。",
+        "whatNext": "下一步可以在活體追蹤 AIS 發育與海馬迴路形成，並在幼年特定時間窗恢復 Kv7 功能或修正 AIS 結構，測試是否能改變成年後行為。另一個關鍵問題是比較雄性與雌性，以及人類 iPSC-derived neurons，確認這個 developmental mechanism 是否跨模型成立。若早期介入有效，也會引出一個臨床上非常重要的問題：FXS 的治療是否必須在某些神經迴路尚未完成成熟前開始。",
         "sources": [
-          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-77495-z"}
+          {"label": "Communications Biology 原始研究", "url": "https://www.nature.com/articles/s42003-026-10958-7"}
         ],
         "questions": [
-          "DNMT3A 為什麼可以同時讓『腫瘤比較不容易被 TNF 殺』和『CD8 T 細胞比較沒力』？請把兩條路徑分開串一次。",
-          "為什麼研究者要把 DNMT3A 的 methyltransferase-dependent 與 -independent 功能拆開，而不能只做整個基因 knockout？",
-          "如果要把 DNMT3A 當成藥物標的，你會如何避免影響正常造血細胞與其他需要 DNMT3A 的組織？"
+          "為什麼『Kv7 通道蛋白存在』仍不代表它一定能正常控制神經元放電？axonal initial segment 在其中扮演什麼角色？",
+          "研究同時比較幼年與成年 Fmr1 knockout 大鼠，為什麼比只研究成年動物更能回答脆折 X 症候群的發育機制？",
+          "如果成年時電生理缺陷已恢復，你會如何測試幼年期短暫的 AIS/Kv7 異常是否仍對成年認知或行為留下永久影響？"
         ]
       }
     ],
     "radar": {
-      "title": "EMBL undergraduate internships：不是等統一申請季，而是直接向研究室提案",
-      "summary": "EMBL 目前持續接受 undergraduate internship 的個別洽詢，領域橫跨 biology、chemistry、physics、mathematics、medicine、informatics 與 engineering，地點包含 Heidelberg、Rome、Barcelona、Hinxton 等研究站。和固定梯次 summer program 不同，它沒有單一年度 deadline；申請者要先找合適的 Group Leader，直接寄短 CV、研究興趣、希望加入的時間與實習長度，並提供可出具推薦／支持信的母校 faculty 聯絡資訊。這類模式很適合已有明確研究問題或想測試某個實驗室的學生，因為你不是被分配題目，而是主動挑 laboratory。經費不是中央統一保證，是否有 stipend 取決於 host lab 的 grant，因此聯絡教授時必須同時確認 funding、住宿與 visa 安排。對規劃 2027 海外研究的人而言，現在就可以開始用研究題目反向篩 lab，而不用等到冬季集中申請開放。",
-      "url": "https://www.embl.org/about/info/undergraduates/how-to-apply/"
+      "title": "Max Planck School Matter to Life URO 2027：正在申請中，10 月 1 日截止",
+      "summary": "Max Planck School Matter to Life 的 Undergraduate Research Opportunities（MtL-URO）目前正在接受 2027 申請，截止日是 2026 年 10 月 1 日。這是 10 週、全額支援型研究實習：官方負擔往返家鄉的旅費與住宿，另提供每月生活補助；實習可安排在 2027 年 6–11 月之間，研究室分布於德國多個城市。申請人必須在整段實習期間仍是 Bachelor 在學生，領域可包括 biology、chemistry、physics、informatics、materials science、engineering、bioengineering 等；不要求既有研究經驗，也不要求推薦信或正式英語檢定。申請時要直接選一個 Matter to Life faculty lab，繳交最多兩頁 CV、成績單、一頁 personal statement 與可實習時段。這個機會特別值得注意，因為 Matter to Life 本身就在問『生命如何從分子、材料與物理機制中出現』，很適合想測試自己是否喜歡生物學與定量／跨領域研究交界的人，而且今年只選約 10 人，現在已經進入需要實際看 lab、決定研究方向並寫 targeted statement 的階段。",
+      "url": "https://mattertolife.maxplanckschools.org/uro-research-internship"
     }
   },
   "importantMail": {
-    "count": 0,
-    "status": "目前沒有新的郵件同時符合學校／課程／教授或重要工作合作事項，且包含明確截止日期、需要回覆或行動、取消／異常／時間變更的條件。"
+    "count": 2,
+    "status": "目前有 2 封需要注意的郵件，涉及重要合作／社團事項的取消或明確回覆期限；詳細內容不存放在公開 Daily Board。"
   }
 }
