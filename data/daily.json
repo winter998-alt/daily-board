@@ -1,83 +1,84 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-14",
-  "updatedAt": "2026-09-14T07:30:24+08:00",
+  "date": "2026-09-15",
+  "updatedAt": "2026-09-15T07:27:17+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇研究都在提醒我們：神經系統疾病的關鍵機制，往往不只藏在『神經元有沒有壞掉』這一層。第一篇把亨丁頓舞蹈症的血管問題拆成不同腦血管屏障、不同血管節段各自失效；第二篇嘗試把脊髓損傷後形成疤痕的反應性星狀膠細胞直接改造成具功能的神經元；第三篇則從脆折 X 症候群切入，顯示發育期軸突起始段的位置與成熟，也可能決定離子通道是否真正能發揮作用。",
+    "intro": "今天三篇研究都在問一個共同問題：如果我們把生物系統放回更接近真實情境的狀態，原本簡化的結論會不會改變？第一篇腦機介面顯示，說話與手勢同時發生時，皮質活動不能只靠各自分開訓練的解碼器直接拼起來；第二篇恐懼記憶研究發現，腹側海馬迴反而可能靠『較重疊』的情境表徵來快速切換威脅記憶；第三篇大腸癌試驗則測試能否利用術後血液中的 ctDNA，依殘存腫瘤訊號動態增減輔助化療。",
     "stories": [
       {
-        "category": "神經科學・亨丁頓舞蹈症・神經血管單元",
-        "title": "亨丁頓舞蹈症的『血腦屏障破掉』其實不是一種故障：不同血管用不同方式漏",
-        "widgetTitle": "亨丁頓症的血管不是一起壞掉",
-        "widgetSummary": "Nature Communications 研究發現，亨丁頓舞蹈症模型中，腦表面的血液－腦脊髓液屏障和腦實質內的血腦屏障會以不同機制失效，其中小動脈特別脆弱。刺激 S1PR1 還能部分逆轉這些異常。",
-        "dek": "神經退化疾病常被描述成『血腦屏障變得比較漏』，但這句話其實太粗糙。新的研究把腦血管拆成不同屏障與不同血管節段後發現：有的問題發生在細胞接縫，有的卻是血管細胞主動把更多物質裝進小囊泡搬過去，而且最嚴重的地方集中在小動脈。",
-        "background": "腦不是直接泡在血液裡。血管內皮細胞、周細胞、星狀膠細胞等共同形成神經血管單元，嚴格控制哪些物質能從血液進入腦。腦實質內微血管形成的是 blood-brain barrier（BBB，血腦屏障）；腦表面與腦脊髓液相關的血管則參與 blood-cerebrospinal fluid barrier（BCSFB，血液－腦脊髓液屏障）。屏障失效也不只一種方式：物質可以從細胞與細胞之間的縫隙穿過，稱為 paracellular leakage；也可以被內皮細胞裝進囊泡，從細胞的一側運到另一側，稱為 transcytosis。亨丁頓舞蹈症（Huntington's disease, HD）由 HTT 基因中的 CAG 重複擴增造成，最著名的是神經元逐漸退化，但患者也會出現腦血管與星狀膠細胞異常。",
-        "whatHappened": "研究者在 R6/2 亨丁頓症小鼠中發現，兩套腦血管屏障並不是用同一種方式壞掉。腦表面的 BCSFB 主要呈現 paracellular leakage，也就是細胞間屏障變鬆；腦實質內的 BBB 則主要出現囊泡運輸與 adsorptive-mediated transcytosis（AMT）增加。更細分血管節段後，小動脈是 BBB 異常最明顯的區域，並不是所有毛細血管、靜脈都平均受影響。這些異常血管附近也出現空間上相對應的 astrogliosis，也就是星狀膠細胞進入反應狀態；研究者在人類 HD 死後腦組織中也看到血管異常與星狀膠細胞活化彼此鄰近的模式。最後，給予 sphingosine-1-phosphate receptor 1（S1PR1）agonist 後，BCSFB 的漏出可被逆轉，BBB 功能也部分恢復，其中對小動脈 AMT 的改善最明顯。",
-        "howTheyStudied": "核心方法是活體 two-photon microscopy。研究者把不同大小、不同運輸特性的螢光示蹤物送入血液，直接觀察它們怎麼從血管跑到周圍組織，再依血管直徑與型態區分 arterioles、capillaries 和 venules。為了判斷物質是從細胞縫隙漏出，還是透過內皮細胞中的囊泡搬運，團隊搭配組織學與超微結構／運輸相關分析，並觀察 astrocyte reactivity 是否和受損血管空間共定位。最後以 S1PR1 agonist 做藥理介入，測試屏障異常是否具有可逆性，而不只是疾病末期留下的固定結果。",
-        "whyItMatters": "這篇研究最重要的不是又一次證明『HD 有血管問題』，而是把一句模糊的『barrier breakdown』拆成可以真正設計實驗與治療的機制。若小動脈主要是 transcytosis 過強，而另一個屏障主要是細胞間隙漏出，那麼只想用一種『把血管封緊』的方法，很可能無法同時處理所有問題。S1PR1 的結果也提示，至少一部分血管異常可能是動態、可被調節的，而不是神經退化發生後不可逆的附帶損傷。",
-        "limitations": "最強的因果與治療證據仍來自 R6/2 小鼠。這是一種疾病進展快速的 HD 模型，不能保證完全重現人類數十年的病程。人類組織部分主要提供病理學上的空間對應，不能直接證明星狀膠細胞造成血管異常，或反過來是血管異常先讓 astrocytes 活化。另外，S1PR1 廣泛參與血管與免疫調控；藥物改善 barrier 並不等於已經證明它能改善 HD 的運動、認知或長期神經元存活。",
-        "whatNext": "下一步需要在較慢進展的 HD 模型與人類影像／體液資料中確認：血管異常究竟在症狀前多久出現，以及是否能預測後續神經退化。機制上則要分辨 S1PR1 主要作用於內皮、astrocytes 或其他細胞。若能把『哪一種血管、哪一種運輸路徑、哪一個疾病階段』對上，才有可能把神經血管治療變成精準介入，而不是泛稱保護血腦屏障。",
+        "category": "神經科技・腦機介面・癱瘓溝通",
+        "title": "腦機介面第一次同時解碼『說話＋手勢』：自然溝通不是兩個獨立解碼器簡單相加",
+        "widgetTitle": "BCI 同時讀出說話與手勢",
+        "widgetSummary": "Nature Neuroscience 研究用單一高密度 ECoG 植入物，同時解碼癱瘓參與者嘗試說出的詞句與上半身手勢，再驅動個人化虛擬 avatar。關鍵發現是：只用單獨說話或單獨手勢資料訓練的模型，遇到兩者同時發生時會明顯掉效能。",
+        "dek": "真正的人類溝通很少只有嘴巴：我們會一邊說話、一邊點頭、揮手、比方向或做表情。過去 BCI 多半把 speech decoding 與 movement decoding 分開做，但這篇研究證明，同時行為會改變皮質群體活動的組合，因此若希望 BCI 恢復的是『自然表達』，訓練資料本身也必須包含自然的多重行為情境。",
+        "background": "腦機介面（brain–computer interface, BCI）會把神經活動轉成外部裝置可執行的命令。這篇研究使用 electrocorticography（ECoG）：把一片高密度電極陣列放在大腦皮質表面，記錄數千個神經元共同產生的局部電場變化。感覺運動皮質具有大致的身體拓撲：口腔與發聲相關區域較腹側，手臂與手部較背側，但不同動作表徵並不是完全分離，部分電極會同時對 speech 與 gesture 有反應。這就產生一個實際工程問題：一個在『只說話』時學會的模型，能不能直接拿去解碼『一邊說話一邊比手勢』？",
+        "whatHappened": "研究納入 3 名嚴重癱瘓、已長期植入 ECoG 的參與者，先證明單一電極陣列可以區分口面、上肢甚至部分其他身體動作。之後其中兩名參與者進行 speech-only、gesture-only 與 speech+gesture 三種任務，兩套平行解碼器分別輸出文字與 avatar 動作。結果顯示，只用 isolated trials 訓練的模型，在 simultaneous trials 上表現較差；把單獨與同時行為都納入訓練後，跨情境表現與 false activation 都改善。完整資料下，一名參與者同時情境的平均離線正確率約為手勢 68.8%、語句 77.5%，另一名則約為手勢 88.3%、語句 84.0%。研究還發現，模型不必看過每一種可能的『語句×手勢』組合，也能解碼新的配對，這對未來擴大詞彙非常重要。",
+        "howTheyStudied": "研究屬於 BRAVO phase I early-feasibility clinical trial。團隊先從 ECoG 的 high-gamma activity 建立不同動作的皮質表徵，再訓練 participant-specific neural-network decoders，比較三種訓練策略：只用 isolated data、只用 simultaneous data、以及兩者混合。兩套模型並行運作：speech decoder 輸出文字，gesture decoder 控制全身 avatar；兩者都可以輸出 rest，避免沒有意圖時誤觸發。研究者還測試了新語句－手勢組合與跨日、跨月穩定性。",
+        "whyItMatters": "這篇的突破不只是 avatar 看起來更像真人，而是揭露『同一個動作在不同同時情境下，神經表徵會改變』。未來 BCI 如果只在乾淨、一次一種動作的實驗室資料上訓練，很可能到了真實生活就失效。相反地，context-inclusive training 提供一條實際路徑：讓一個植入物同時支援多個效應器，使癱瘓者不只能傳遞文字，也有機會恢復語言中的身體語氣與非語言訊息。",
+        "limitations": "這仍是 proof of concept：總共只有 3 名參與者，而真正的 simultaneous avatar 測試只有 2 人，詞彙與手勢集合也很小。不同參與者保留的動作能力、癱瘓原因與嘗試策略不同；其中有人實際發聲、有人靜默嘗試，有人想像手勢，因此還不能知道模型對更大族群的泛化程度。系統目前也主要是有線研究裝置，並非可長期日常使用的成熟醫療產品。",
+        "whatNext": "下一步除了擴大參與者與詞彙量，也要把離散分類推向連續、低延遲解碼，讓 speech prosody、臉部表情、手臂與姿勢能更自然地一起輸出。研究團隊也預計測試完全植入式的無線版本。另一個關鍵問題是：當同時任務變得更複雜，神經表徵互相干擾的上限在哪裡，以及是否能用更好的電極配置與模型架構把它拆開。",
         "sources": [
-          {"label": "Nature Communications 原始研究", "url": "https://www.nature.com/articles/s41467-026-77474-4"}
+          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02446-2"},
+          {"label": "NIH 官方研究新聞", "url": "https://www.nih.gov/news-events/news-releases/neuroprosthesis-paralysis-enables-simultaneous-speech-body-language"}
         ],
         "questions": [
-          "為什麼同樣被描述成『血腦屏障變漏』，paracellular leakage 和 transcytosis 增加其實代表完全不同的細胞機制？",
-          "研究者把血管進一步分成小動脈、毛細血管與靜脈來分析，比只算整體 BBB permeability 多提供了什麼證據？",
-          "即使 S1PR1 agonist 能改善血管屏障，你還需要看到哪些結果，才會相信這條路徑值得作為亨丁頓舞蹈症的治療標的？"
+          "為什麼『只說話』時的大腦活動，不能保證和『一邊說話一邊比手勢』時的說話活動完全一樣？",
+          "研究者比較 isolated-only、simultaneous-only 與混合訓練，分別是在測試什麼模型泛化問題？",
+          "即使小詞彙下的 speech 與 gesture 都能被同時解碼，你還會要求哪些證據，才會認為這種 BCI 已接近真實日常溝通？"
         ]
       },
       {
-        "category": "神經再生・脊髓損傷・細胞重編程",
-        "title": "不另外移植神經元，而是把脊髓損傷後的疤痕細胞直接改造成神經元：TRANsCre-DIONE 做到了什麼？",
-        "widgetTitle": "把脊髓疤痕細胞改造成神經元",
-        "widgetSummary": "研究者用雙啟動子 split-Cre 系統鎖定嚴重反應性星狀膠細胞，再讓它們表現 Neurog2。小鼠脊髓損傷中，轉換效率達 87%，新細胞具有神經元電生理特徵，而且暫時關掉這些新神經元後，原本改善的運動能力會再次變差。",
-        "dek": "脊髓受傷後會死掉很多神經元，同時形成由反應性星狀膠細胞參與的 glial scar。新的研究嘗試一次處理兩個問題：不是把外來細胞塞進去，而是把損傷區附近原本會形成疤痕的細胞，原地改寫成神經元。真正困難的是如何只挑到『該改的』反應性 astrocytes，又讓轉換過程不中途熄火。",
-        "background": "星狀膠細胞（astrocytes）平常負責維持離子環境、清除神經傳遞物質、支持神經元代謝與突觸功能。脊髓損傷後，它們會進入 reactive state；其中部分細胞增生並形成 glial scar。這個疤痕並非純粹壞事：急性期可以限制損傷擴散，但慢性、嚴重反應狀態也可能阻礙軸突再生。因此，如果要把 reactive astrocytes 轉成神經元，最大的風險之一就是誤把仍有保護功能的正常或輕度反應 astrocytes 一起轉掉。另一個問題是，以往常用 GFAP promoter 驅動神經轉錄因子，但當 astrocyte 開始變成 neuron，GFAP 本身就會下降，等於轉換程式進行到一半，驅動它的開關反而逐漸熄火。",
-        "whatHappened": "研究團隊設計 TRANsCre-DIONE 系統，讓 Cre recombinase 被拆成兩半，分別由 GFAP 與反應性相關基因 Lcn2（小鼠）或 iNOS（非人靈長類）控制。只有同時符合兩個條件的細胞，兩半 Cre 才會重新組合，開啟由強力 EF1α promoter 驅動的 Neurog2。Neurog2 是能啟動神經生成程式的轉錄因子。脊髓損傷小鼠中，系統報告約 87% 的轉換效率與 96% 的細胞選擇性；轉換後可看到 Isl1、ChAT 等 motor-neuron-related markers。這些細胞能產生 action potentials、鈉鉀電流與 spontaneous excitatory postsynaptic currents，表示它們不只是長得像神經元。接受 Neurog2 重編程的小鼠運動表現也改善。更關鍵的是，研究者再讓這些新生成神經元表現抑制型 DREADD；藥理性暫時關掉它們後，先前得到的運動改善會明顯消退，支持新神經元本身確實參與功能恢復。",
-        "howTheyStudied": "研究用了多層級驗證。第一層以 AAV 載體送入 split-Cre 與 Cre-dependent Neurog2，並用 GFAP、NeuN、Isl1、ChAT 等免疫標記判定起始細胞與轉換後身份。第二層做 whole-cell patch clamp，檢查新細胞能否放 action potentials、是否具有 voltage-gated sodium/potassium currents，以及有沒有收到突觸輸入。第三層做脊髓損傷後的行為測試。第四層以 inhibitory DREADD 暫時沉默轉換後神經元，看功能改善是否被逆轉，這比單純看到『新神經元數量和走路變好同時發生』更接近因果證據。團隊也在猴腦損傷環境測試以 GFAP+iNOS 定位 reactive astrocytes 的可行性，但真正的脊髓功能恢復實驗仍是在小鼠。",
-        "whyItMatters": "這項策略結合了兩個神經再生思路：減少慢性疤痕環境中的不利細胞，同時在原地補上新的神經元。它也展示了 synthetic biology 在神經科學裡的一個核心用途：不是只問『哪個 marker 表現在 astrocyte』，而是建立 AND gate——只有同時符合兩個生物學條件的細胞才啟動治療程式。這種邏輯式 targeting 如果能持續提高精準度，未來可能比單一 promoter 更適合複雜、異質的損傷環境。",
-        "limitations": "這離人體治療仍很遠。首先，reactive astrocytes 具有高度異質性，而且 glial scar 在某些階段具有保護作用；把哪一群細胞轉掉、什麼時間點轉掉，可能決定結果是幫助還是傷害。第二，研究中的『motor neuron』主要依 marker、電生理與功能結果判定，新細胞是否建立了正常脊髓運動神經元應有的長距離輸出與完整連線，仍需更嚴格追蹤。第三，AAV、多載體共感染、Cre 系統和長期 Neurog2 表現都涉及轉譯與安全問題。研究雖在非人靈長類測試 targeting 概念，但尚未在靈長類脊髓損傷中證明功能恢復。",
-        "whatNext": "最重要的下一步包括 lineage tracing 與長期 circuit mapping，確認所有新神經元真的來自目標 reactive astrocytes、能建立恰當輸入輸出連線，而且數月後仍穩定安全。研究也需要系統性比較不同受傷時間點，找出既不破壞急性保護性 glial response、又能利用慢性疤痕細胞作為重編程來源的最佳治療窗口。最後才是把同樣邏輯放進更接近人體的脊髓損傷模型。",
+        "category": "神經科學・記憶・恐懼迴路",
+        "title": "恐懼記憶不一定靠『把兩個場景分得越開越好』：腹側海馬迴反而利用重疊表徵快速切換威脅",
+        "widgetTitle": "恐懼記憶為何需要重疊表徵？",
+        "widgetSummary": "Nature Neuroscience 研究追蹤小鼠背側與腹側 CA1，發現恐懼學習後，腹側 CA1 對安全與威脅場景的神經表徵反而更相似，而且越能快速重建威脅表徵，動物越快出現 freezing。",
+        "dek": "教科書常強調海馬迴會做 pattern separation：把相似情境編成不同記憶，避免彼此干擾。但若危險突然出現，大腦也需要另一種能力——迅速從『目前安全』跳回『這裡曾經很危險』的狀態。這篇研究發現，沿著海馬迴背腹軸，兩端可能採用不同編碼策略。",
+        "background": "海馬迴 CA1 參與空間與情境記憶。背側 CA1（dCA1）通常和較精確的空間資訊密切相關；腹側 CA1（vCA1）則和情緒、焦慮、威脅及較廣泛情境訊號有較強連結。所謂『表徵』，不是某一顆神經元單獨代表一個房間，而是整群神經元形成的 population pattern。傳統 pattern-separation 思路會預測：安全場景與曾被電擊的場景表徵越不同，越能避免在安全處誤害怕。但 attractor-network 理論也提供另一種可能：如果兩個狀態在神經活動空間中靠得較近，大腦反而能更快從一個狀態跳到另一個狀態。",
+        "whatHappened": "小鼠在一個情境中接受 fear conditioning，之後在威脅與中性情境間被快速切換。恐懼學習讓 dCA1 與 vCA1 都改變，但 vCA1 的變化更強，而且和 freezing 程度成比例。真正出乎直覺的是：測試時，dCA1 仍把兩個情境維持得相對分開；vCA1 的威脅與中性表徵卻變得更相似。當小鼠突然回到威脅情境，vCA1 比 dCA1 更快、更強地重新出現威脅場景的 population pattern，而 vCA1 當下哪個表徵占上風也能預測 freezing。作者因此提出，恐懼學習可能讓 vCA1 的 attractor landscape 變得較『淺』、威脅 attractor 的 basin 變寬，使神經網路更容易迅速切換到防禦狀態。",
+        "howTheyStudied": "研究者分別在 dCA1 與 vCA1 植入 GRIN lens，使用頭戴式 miniature microscope 進行自由活動小鼠的 calcium imaging，長時間追蹤同一群神經元。實驗設計讓小鼠能在威脅與中性環境間幾乎瞬間切換，再將空間位置、freezing 行為與 population-vector similarity 對齊，分析兩個腦區在切換前後幾秒到數十秒內如何重建情境表徵。研究同時包含 conditioned 與 nonconditioned 對照組，以區分單純環境切換和真正恐懼學習造成的表徵重塑。",
+        "whyItMatters": "這篇讓 pattern separation 變得更細緻：大腦不一定希望所有記憶都彼此最大程度分離。對需要精準導航的 dCA1，分開相似場景可能有利；但對需要迅速保命的 vCA1，讓安全與威脅表徵保持部分重疊，反而可能降低『切換成本』。這提供了一個能連接記憶、情緒與神經網路動力學的模型，也可能幫助理解為什麼某些創傷記憶會被非常快地重新叫回來。",
+        "limitations": "研究是在小鼠 contextual fear conditioning 中完成，不能直接等同人類 PTSD 或焦慮症。calcium imaging 主要是相關性證據：它顯示 vCA1 表徵切換和 freezing 同步，但沒有直接操控『表徵重疊程度』來證明重疊本身造成快速恐懼反應。此外，attractor landscape 是根據群體活動與理論框架推導，並不是直接量到一個實體的能量地形。",
+        "whatNext": "最關鍵的下一步是因果操控：選擇性擾亂那些同時參與安全與威脅表徵的 vCA1 神經元，看是否會延遲恐懼回憶；反過來，人為提高兩個表徵的重疊，是否會讓動物更容易在模糊情境下誤啟動恐懼。若這個機制可延伸到人類，還可進一步測試過度泛化的焦慮或創傷記憶是否和腹側海馬／前海馬的 attractor dynamics 有關。",
         "sources": [
-          {"label": "Experimental & Molecular Medicine 原始研究", "url": "https://www.nature.com/articles/s12276-026-01815-y"}
+          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02435-5"}
         ],
         "questions": [
-          "為什麼只用 GFAP promoter 來把 astrocytes 轉成 neurons，會同時面臨『選錯細胞』和『轉到一半驅動訊號變弱』兩個問題？",
-          "DREADD 暫時關掉新生成神經元後，運動改善又消失，這比單純看到神經元數量增加提供了什麼更強的證據？",
-          "如果 glial scar 在急性期其實也有保護作用，你會怎麼設計實驗找出最安全的細胞族群與治療時間窗？"
+          "為什麼安全與威脅情境的表徵『比較重疊』，反而可能讓 vCA1 更快叫回恐懼記憶？",
+          "同時比較 conditioned 與 nonconditioned 小鼠的 dCA1、vCA1，有助於排除哪些替代解釋？",
+          "如果要證明表徵重疊本身造成快速 freezing，而不是恐懼學習的附帶現象，你會怎麼做因果實驗？"
         ]
       },
       {
-        "category": "神經發育・脆折 X 症候群・離子通道",
-        "title": "脆折 X 症候群裡，Kv7 通道可能不是『壞掉』，而是發育時被放到了功能不對的位置",
-        "widgetTitle": "離子通道沒壞，位置卻不對",
-        "widgetSummary": "Fmr1 knockout 大鼠研究發現，幼年海馬神經元的 Kv7 功能異常可能源自 axon initial segment 發育改變，而不是 Kv7 通道本身失去功能。這種異常到成年又部分恢復，凸顯發育時間窗的重要性。",
-        "dek": "研究神經疾病時，我們很常看到某個離子通道功能變差，就直覺認為『通道本身有問題』。但新的脆折 X 症候群研究顯示，神經元還有另一種失敗方式：通道蛋白可能存在，分子本身也未必壞掉，卻因為軸突起始段的發育改變而失去原本應有的生理影響。",
-        "background": "Fragile X syndrome（FXS，脆折 X 症候群）通常來自 FMR1 基因沉默，導致 FMRP 蛋白缺失，是常見的單基因遺傳性智能障礙，也和自閉症特徵高度相關。神經元產生 action potential 時，真正決定『要不要發出這一發』的重要位置之一是 axon initial segment（AIS，軸突起始段）：它位在細胞體接到軸突的最前端，密集排列多種電壓依賴型離子通道。Kv7 是一類鉀離子通道，會形成所謂 M-current，幫助限制神經元過度興奮並控制連續放電。因此 Kv7 是否位於正確的 AIS 微結構中，和單純『細胞裡有沒有 Kv7 蛋白』不是同一件事。",
-        "whatHappened": "研究者比較幼年（出生後第 12–15 天）與較成熟（6–10 週）的雄性 Fmr1 knockout 大鼠海馬 CA1 pyramidal neurons。幼年 knockout 神經元出現 sustained firing 受損、action potential 在連續放電時逐步變寬，以及 activity-dependent synaptic vesicle replenishment 增強。用 Kv7 activator 操控時，野生型神經元的 action-potential dynamics 與 neurotransmission 會被改變，但幼年 Fmr1 knockout 神經元對這種操控變得不敏感，乍看很像 Kv7 通道失去功能。可是研究進一步發現，問題並不是 Kv7 分子本身直接壞掉，而是 Fmr1 缺失改變了 AIS 的發育，使 Kv7 在這個結構中的功能耦合變得近乎『失效』。更有意思的是，到 6–10 週時，這些早期電生理缺陷多數已恢復。",
-        "howTheyStudied": "研究結合 ex vivo hippocampal electrophysiology、藥理學、影像與生化分析。研究者用 patch clamp 量 CA1 pyramidal neurons 的 sustained firing、action-potential waveform 與突觸傳遞，再以 Kv7 channel activator 比較野生型與 knockout 神經元是否仍對 Kv7 操控有反應。接著透過 AIS 結構標記與影像分析，比較發育過程中 axon initial segment 的成熟狀態。最關鍵的設計是同時比較 P12–15 與 6–10 週兩個時間點，因此能看到缺陷不是固定存在，而是具有明顯 developmental trajectory。",
-        "whyItMatters": "這篇研究提供一個很重要的機制觀念：離子通道疾病不一定是『通道基因突變 → 通道壞掉』。神經元把通道放在哪裡、和哪些支架蛋白或膜區域組裝，也可能決定功能。對發育性神經疾病而言，這又多了一層時間問題：幼年期的 circuit dysfunction 可能很強，成年後卻被其他補償機制部分掩蓋。若只在成年動物量一次，很可能錯過真正影響神經迴路形成的早期關鍵窗口。",
-        "limitations": "這項研究使用雄性 Fmr1 knockout 大鼠與離體海馬切片，不能直接等同人類 FXS，也還不知道 AIS/Kv7 的早期異常如何具體連到學習、感覺過敏或社交行為。成年時電生理表型恢復也不代表發育期完全沒有留下長期後果：神經迴路可能已在早期異常活動下形成不同連線。研究目前支持 AIS development 與 Kv7 dysfunction 的機制連結，但哪些 FMRP downstream pathways 造成 AIS 發育改變，仍未完全拆解。",
-        "whatNext": "下一步可以在活體追蹤 AIS 發育與海馬迴路形成，並在幼年特定時間窗恢復 Kv7 功能或修正 AIS 結構，測試是否能改變成年後行為。另一個關鍵問題是比較雄性與雌性，以及人類 iPSC-derived neurons，確認這個 developmental mechanism 是否跨模型成立。若早期介入有效，也會引出一個臨床上非常重要的問題：FXS 的治療是否必須在某些神經迴路尚未完成成熟前開始。",
+        "category": "精準腫瘤學・液態活檢・大腸癌",
+        "title": "術後驗血決定化療要加強還是減量：PEGASUS 試驗告訴我們 ctDNA 很會分風險，但還沒證明能安全取代標準治療",
+        "widgetTitle": "用 ctDNA 決定大腸癌化療強度",
+        "widgetSummary": "Nature Cancer 的 PEGASUS phase 2 trial 用術後 circulating tumor DNA 動態調整輔助化療。ctDNA 陰性患者接受較低強度治療後神經毒性較少，但試驗沒有達到預先設定的主要終點；ctDNA 陽性者即使升級治療，復發風險仍明顯更高。",
+        "dek": "大腸癌切乾淨後最大的難題是：醫師看不到身體裡是否還藏著少量癌細胞。標準做法因此常對高風險 stage II、stage III 病人普遍給含 oxaliplatin 的輔助化療，但有人其實早已沒有殘存病灶，只承受了周邊神經毒性；另一些人即使接受標準療程，仍會復發。ctDNA 想解決的就是這個『看不見的殘存疾病』問題。",
+        "background": "circulating tumor DNA（ctDNA）是腫瘤細胞釋放到血液中的 DNA 碎片。腫瘤手術切除後若仍驗得到特定腫瘤突變，代表體內很可能仍有 microscopic residual disease，也就是影像看不到、但足以日後復發的殘存癌細胞。這種用途和一般癌症篩檢不同：它是在已知患者腫瘤基因特徵後，用血液追蹤『是否還有同一個腫瘤留下來』。PEGASUS 想測試的不只是 ctDNA 能不能預測復發，而是能否真的拿它來決定誰減少化療、誰升級治療。",
+        "whatHappened": "PEGASUS 是多中心、single-arm phase 2 trial，共納入 135 名已手術切除、microsatellite-stable 的高風險 stage II 或 stage III 大腸癌患者。術後 landmark 時約 26%（35 人）ctDNA 陽性。陽性者先接受 3 個月 CAPOX，如果 ctDNA 持續陽性就升級成 6 個月 FOLFIRI；經連續檢測確認陰性者則降階為 6 個月 capecitabine 單藥。ctDNA 陽性患者 3 年 disease-free survival 約 58%，陰性者約 83%，顯示 ctDNA 對風險分層非常強。但研究預先設定的主要終點沒有達成：ctDNA 陰性組 2 年 relapse-free rate 為 88%，低於預定成功門檻 92%。和配對歷史對照相比，整體 disease-free survival 類似，而神經毒性明顯較少。",
+        "howTheyStudied": "研究者在術後和治療過程中反覆抽血，用腫瘤導向的 ctDNA assay 判斷 molecular residual disease，再依結果動態調整療程，而不是只在術後測一次。除了臨床復發與毒性，團隊也把 ctDNA dynamics 和腫瘤 transcriptomic subtype 結合，發現部分復發和 stroma-rich 的 consensus molecular subtype 4 有關。因為試驗沒有隨機分派標準治療對照組，效果比較主要依賴 matched TOSCA historical cohort。",
+        "whyItMatters": "這篇最值得學的是『biomarker 很會預測』和『biomarker-guided treatment 已被證明比較好』是兩件事。ctDNA 的確清楚分出高、低復發風險，而且減量策略可能少掉 oxaliplatin 常見的長期周邊神經病變；但主要終點沒過，代表目前還不能只因 ctDNA 陰性就宣告降階治療已被證明安全。另一方面，陽性患者即使升級治療仍有很差的 DFS，也顯示 ctDNA 不只是告訴我們誰需要『更多同類化療』，可能是在標記一群需要完全不同策略的高風險生物學。",
+        "limitations": "這是 single-arm phase 2、樣本只有 135 人，而且 ctDNA 陰性組實際納入 100 人，低於原先規劃的 134 人；主要 endpoint 未達標。歷史配對對照無法完全取代隨機試驗，因為不同年代的影像、支持治療、手術品質與患者選擇都可能造成偏差。ctDNA 陰性也不代表百分之百沒有殘存腫瘤，低量腫瘤 DNA、採血時間與 assay sensitivity 都可能造成 false negative。",
+        "whatNext": "真正改變標準治療需要更大型 randomized trials，直接比較 ctDNA-guided strategy 與現行 guideline therapy。對 ctDNA-positive 患者，下一步也不應只問『化療加更久有沒有用』，而要找能清除 molecular residual disease 的新型藥物或免疫策略；對 ctDNA-negative 患者則需要更敏感的 serial testing，確認哪些人可以真正避免 oxaliplatin 而不增加復發。",
         "sources": [
-          {"label": "Communications Biology 原始研究", "url": "https://www.nature.com/articles/s42003-026-10958-7"}
+          {"label": "Nature Cancer 原始研究：PEGASUS phase 2 trial", "url": "https://www.nature.com/articles/s43018-026-01237-9"}
         ],
         "questions": [
-          "為什麼『Kv7 通道蛋白存在』仍不代表它一定能正常控制神經元放電？axonal initial segment 在其中扮演什麼角色？",
-          "研究同時比較幼年與成年 Fmr1 knockout 大鼠，為什麼比只研究成年動物更能回答脆折 X 症候群的發育機制？",
-          "如果成年時電生理缺陷已恢復，你會如何測試幼年期短暫的 AIS/Kv7 異常是否仍對成年認知或行為留下永久影響？"
+          "為什麼手術後 ctDNA 陽性，可以被理解成影像還看不到的 molecular residual disease 訊號？",
+          "為什麼 PEGASUS 即使看到 ctDNA 陰性組毒性較少，也不能直接證明 ctDNA-guided de-escalation 優於標準治療？",
+          "ctDNA 陽性患者在治療升級後仍高復發，這比較支持『需要更多同類化療』還是『需要不同治療機制』？你會怎麼設計下一個試驗區分兩者？"
         ]
       }
     ],
     "radar": {
-      "title": "Max Planck School Matter to Life URO 2027：正在申請中，10 月 1 日截止",
-      "summary": "Max Planck School Matter to Life 的 Undergraduate Research Opportunities（MtL-URO）目前正在接受 2027 申請，截止日是 2026 年 10 月 1 日。這是 10 週、全額支援型研究實習：官方負擔往返家鄉的旅費與住宿，另提供每月生活補助；實習可安排在 2027 年 6–11 月之間，研究室分布於德國多個城市。申請人必須在整段實習期間仍是 Bachelor 在學生，領域可包括 biology、chemistry、physics、informatics、materials science、engineering、bioengineering 等；不要求既有研究經驗，也不要求推薦信或正式英語檢定。申請時要直接選一個 Matter to Life faculty lab，繳交最多兩頁 CV、成績單、一頁 personal statement 與可實習時段。這個機會特別值得注意，因為 Matter to Life 本身就在問『生命如何從分子、材料與物理機制中出現』，很適合想測試自己是否喜歡生物學與定量／跨領域研究交界的人，而且今年只選約 10 人，現在已經進入需要實際看 lab、決定研究方向並寫 targeted statement 的階段。",
-      "url": "https://mattertolife.maxplanckschools.org/uro-research-internship"
+      "title": "MSK Mechanistic Biology Summer Program 2027：11 月開放，但國際學生要先看懂簽證限制",
+      "summary": "Memorial Sloan Kettering 的 Mechanistic Biology Summer Program 是 2027/6/1–8/6 的暑期研究計畫，涵蓋 cell biology、immunology、genomics、DNA repair、stem cells、cancer biology 與 therapeutics；錄取者提供 6,500 美元 stipend 與住宿。申請將於 2026/11/2 開放、2027/2/1 截止，要求至少 GPA 3.0、修過大學生物與基礎化學、具進階科學課程與既有研究經驗，並提交兩封推薦信。它特別值得現在先記下來，是因為研究內容很適合想把基礎生物機制和疾病研究接起來的人；但國際申請者有一個重要限制：MSK 雖接受非美國公民申請，卻不代辦 F-1/J-1 或 CPT/OPT，錄取者必須自行已有可在美國參與實習的學生簽證／工作資格。因此對目前在臺灣就學的學生而言，研究契合度很高，但簽證可行性必須在投入完整申請前先確認。",
+      "url": "https://www.mskcc.org/education-training/summer-scientific-undergraduate-programs/mechanistic-biology-summer-program"
     }
   },
   "importantMail": {
-    "count": 2,
-    "status": "目前有 2 封需要注意的郵件，涉及重要合作／社團事項的取消或明確回覆期限；詳細內容不存放在公開 Daily Board。"
+    "count": 0,
+    "status": "目前沒有新的郵件同時符合『學校／課程／教授或重要工作／社團／合作事項』且包含明確截止日期、需要回覆／行動、取消／異常／時間變更的條件；私人郵件內容不存放在公開 Daily Board。"
   }
 }
