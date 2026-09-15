@@ -1,84 +1,58 @@
 {
-  "schemaVersion": "0.4",
-  "date": "2026-09-15",
-  "updatedAt": "2026-09-15T07:27:17+08:00",
-  "report": {
-    "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇研究都在問一個共同問題：如果我們把生物系統放回更接近真實情境的狀態，原本簡化的結論會不會改變？第一篇腦機介面顯示，說話與手勢同時發生時，皮質活動不能只靠各自分開訓練的解碼器直接拼起來；第二篇恐懼記憶研究發現，腹側海馬迴反而可能靠『較重疊』的情境表徵來快速切換威脅記憶；第三篇大腸癌試驗則測試能否利用術後血液中的 ctDNA，依殘存腫瘤訊號動態增減輔助化療。",
-    "stories": [
+  "schemaVersion":"0.4",
+  "date":"2026-09-16",
+  "updatedAt":"2026-09-16T07:31:52+08:00",
+  "report":{
+    "title":"每日生醫・神經科學摘要",
+    "intro":"今天三條主線都在提醒我們：疾病研究不能只看最後出現的症狀，而要追到細胞狀態與治療設計背後的機制。第一篇從人類海馬迴多組學資料重新檢視憂鬱症與成人神經新生；第二篇追到老化小膠質細胞如何因染色質鬆動而喚醒內源性反轉錄病毒序列；第三篇則用肺癌第三期試驗說明，臨床試驗中的 crossover 為什麼會讓『活多久』這個看似直觀的終點變得難以解讀。",
+    "stories":[
       {
-        "category": "神經科技・腦機介面・癱瘓溝通",
-        "title": "腦機介面第一次同時解碼『說話＋手勢』：自然溝通不是兩個獨立解碼器簡單相加",
-        "widgetTitle": "BCI 同時讀出說話與手勢",
-        "widgetSummary": "Nature Neuroscience 研究用單一高密度 ECoG 植入物，同時解碼癱瘓參與者嘗試說出的詞句與上半身手勢，再驅動個人化虛擬 avatar。關鍵發現是：只用單獨說話或單獨手勢資料訓練的模型，遇到兩者同時發生時會明顯掉效能。",
-        "dek": "真正的人類溝通很少只有嘴巴：我們會一邊說話、一邊點頭、揮手、比方向或做表情。過去 BCI 多半把 speech decoding 與 movement decoding 分開做，但這篇研究證明，同時行為會改變皮質群體活動的組合，因此若希望 BCI 恢復的是『自然表達』，訓練資料本身也必須包含自然的多重行為情境。",
-        "background": "腦機介面（brain–computer interface, BCI）會把神經活動轉成外部裝置可執行的命令。這篇研究使用 electrocorticography（ECoG）：把一片高密度電極陣列放在大腦皮質表面，記錄數千個神經元共同產生的局部電場變化。感覺運動皮質具有大致的身體拓撲：口腔與發聲相關區域較腹側，手臂與手部較背側，但不同動作表徵並不是完全分離，部分電極會同時對 speech 與 gesture 有反應。這就產生一個實際工程問題：一個在『只說話』時學會的模型，能不能直接拿去解碼『一邊說話一邊比手勢』？",
-        "whatHappened": "研究納入 3 名嚴重癱瘓、已長期植入 ECoG 的參與者，先證明單一電極陣列可以區分口面、上肢甚至部分其他身體動作。之後其中兩名參與者進行 speech-only、gesture-only 與 speech+gesture 三種任務，兩套平行解碼器分別輸出文字與 avatar 動作。結果顯示，只用 isolated trials 訓練的模型，在 simultaneous trials 上表現較差；把單獨與同時行為都納入訓練後，跨情境表現與 false activation 都改善。完整資料下，一名參與者同時情境的平均離線正確率約為手勢 68.8%、語句 77.5%，另一名則約為手勢 88.3%、語句 84.0%。研究還發現，模型不必看過每一種可能的『語句×手勢』組合，也能解碼新的配對，這對未來擴大詞彙非常重要。",
-        "howTheyStudied": "研究屬於 BRAVO phase I early-feasibility clinical trial。團隊先從 ECoG 的 high-gamma activity 建立不同動作的皮質表徵，再訓練 participant-specific neural-network decoders，比較三種訓練策略：只用 isolated data、只用 simultaneous data、以及兩者混合。兩套模型並行運作：speech decoder 輸出文字，gesture decoder 控制全身 avatar；兩者都可以輸出 rest，避免沒有意圖時誤觸發。研究者還測試了新語句－手勢組合與跨日、跨月穩定性。",
-        "whyItMatters": "這篇的突破不只是 avatar 看起來更像真人，而是揭露『同一個動作在不同同時情境下，神經表徵會改變』。未來 BCI 如果只在乾淨、一次一種動作的實驗室資料上訓練，很可能到了真實生活就失效。相反地，context-inclusive training 提供一條實際路徑：讓一個植入物同時支援多個效應器，使癱瘓者不只能傳遞文字，也有機會恢復語言中的身體語氣與非語言訊息。",
-        "limitations": "這仍是 proof of concept：總共只有 3 名參與者，而真正的 simultaneous avatar 測試只有 2 人，詞彙與手勢集合也很小。不同參與者保留的動作能力、癱瘓原因與嘗試策略不同；其中有人實際發聲、有人靜默嘗試，有人想像手勢，因此還不能知道模型對更大族群的泛化程度。系統目前也主要是有線研究裝置，並非可長期日常使用的成熟醫療產品。",
-        "whatNext": "下一步除了擴大參與者與詞彙量，也要把離散分類推向連續、低延遲解碼，讓 speech prosody、臉部表情、手臂與姿勢能更自然地一起輸出。研究團隊也預計測試完全植入式的無線版本。另一個關鍵問題是：當同時任務變得更複雜，神經表徵互相干擾的上限在哪裡，以及是否能用更好的電極配置與模型架構把它拆開。",
-        "sources": [
-          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02446-2"},
-          {"label": "NIH 官方研究新聞", "url": "https://www.nih.gov/news-events/news-releases/neuroprosthesis-paralysis-enables-simultaneous-speech-body-language"}
-        ],
-        "questions": [
-          "為什麼『只說話』時的大腦活動，不能保證和『一邊說話一邊比手勢』時的說話活動完全一樣？",
-          "研究者比較 isolated-only、simultaneous-only 與混合訓練，分別是在測試什麼模型泛化問題？",
-          "即使小詞彙下的 speech 與 gesture 都能被同時解碼，你還會要求哪些證據，才會認為這種 BCI 已接近真實日常溝通？"
-        ]
+        "category":"神經科學・憂鬱症・成人神經新生",
+        "title":"憂鬱症可能不是完全『停止製造新神經元』，而是神經新生卡在發育途中",
+        "widgetTitle":"憂鬱症讓新神經元卡在半路？",
+        "widgetSummary":"人類海馬迴多組學研究支持成年後仍存在神經新生，並發現重度憂鬱症患者的神經前驅細胞並非單純消失，而可能在成熟成新神經元的過程中受阻。",
+        "dek":"成人海馬迴到底還會不會長出新神經元，多年來一直有爭論。新的 Nature Medicine 研究利用單核轉錄體、染色質可及性、蛋白與空間資訊建立人類海馬迴圖譜，不只找到成年神經新生的細胞軌跡，也發現重度憂鬱症中的問題更像是『發育流程塞車』，而不是一個簡單的開／關故障。",
+        "background":"海馬迴參與記憶、情緒與情境學習。在齒狀回的 subgranular zone，一部分 neural progenitor cells 可以分裂，逐步經過 immature neuron 階段，最後整合成成熟顆粒神經元；這個過程稱為 adult hippocampal neurogenesis。動物研究早就顯示壓力、運動與部分抗憂鬱治療會改變神經新生，但在人類成年腦中，新神經元究竟持續產生到什麼程度一直有技術爭議，因為死後組織很難只靠一兩個 marker 就判定細胞年齡與發育方向。",
+        "whatHappened":"研究者在成人海馬迴辨認出連續的 neurogenic lineage，支持成年後仍存在神經新生。比較未服藥的重度憂鬱症患者與對照後，研究並不是看到所有神經前驅細胞都消失，而是看到神經新生軌跡在多個階段出現失衡，特別呈現『stalled neurogenic process』：細胞仍進入發育路徑，卻較難順利往成熟神經元推進。同時，壓力相關基因調控、interferon 免疫訊號、代謝能力、突觸可塑性以及興奮／抑制平衡也出現改變。這些結果支持憂鬱症的海馬迴異常是多層次細胞狀態重塑，而不是只缺少某一種神經傳導物質。",
+        "howTheyStudied":"團隊整合 single-nucleus RNA sequencing、chromatin accessibility、蛋白表現與海馬迴不同 subfield 的空間資訊。單核 RNA 資料先用基因表現辨認不同細胞類型，再利用不同成熟階段的轉錄特徵重建從 progenitor 到 immature neuron 的發育軌跡；染色質可及性則回答哪些 DNA 調控區域處於較容易被轉錄因子使用的狀態。這種 multi-omic 設計的價值，是避免只看到某個 marker 變少就直接宣稱『神經新生停止』，而能同時檢查細胞數量、發育狀態與上游基因調控。",
+        "whyItMatters":"如果憂鬱症中的 neurogenesis 是『卡住』而非完全消失，治療問題就可能從『怎麼製造更多前驅細胞』改成『怎麼讓已存在的細胞完成成熟與整合』。更廣泛地說，研究也把壓力、免疫訊號、代謝與神經迴路可塑性放進同一張人類海馬迴地圖，提供未來分辨不同憂鬱症生物亞型的候選機制。",
+        "limitations":"這是人類死後腦組織研究，因此可以建立很強的細胞與分子關聯，卻無法直接觀察同一顆前驅細胞數週後是否真的成熟，也不能證明神經新生受阻本身造成憂鬱症狀。患者生前的壓力、疾病時間、死亡前狀態等也可能影響組織。NIH 對這項研究的介紹提到成人海馬迴每日約可產生數百個新神經元，但這種估算不應理解成每個人每天都有固定、可精準計數的 700 顆新神經元。",
+        "whatNext":"下一步需要能追蹤人類神經新生動態的 biomarker 或更可靠的活體替代指標，並在 organoid、細胞模型或動物中針對研究找到的 interferon、stress-response 與 transcription-factor pathways 做因果操控。臨床上更重要的問題則是：不同患者是否存在不同的 neurogenesis phenotype，以及這些狀態能否預測特定抗憂鬱治療反應。",
+        "sources":[{"label":"Nature Medicine 原始研究","url":"https://www.nature.com/articles/s41591-026-04571-8"},{"label":"NIH Research Matters 解讀","url":"https://www.nih.gov/news-events/nih-research-matters/depression-may-stall-development-new-neurons"}],
+        "questions":["為什麼『神經前驅細胞還存在』和『神經新生正常』不是同一件事？請把 progenitor 到成熟 neuron 的因果鏈串一次。","為什麼研究者要同時使用 RNA、染色質可及性與空間／蛋白資訊，而不能只靠一個 immature-neuron marker 判定憂鬱症的神經新生是否下降？","如果憂鬱症患者同時有 interferon 訊號升高與 neurogenesis stalled，你會怎麼設計實驗分辨免疫訊號是原因、結果，還是兩者都由第三個因素造成？"]
       },
       {
-        "category": "神經科學・記憶・恐懼迴路",
-        "title": "恐懼記憶不一定靠『把兩個場景分得越開越好』：腹側海馬迴反而利用重疊表徵快速切換威脅",
-        "widgetTitle": "恐懼記憶為何需要重疊表徵？",
-        "widgetSummary": "Nature Neuroscience 研究追蹤小鼠背側與腹側 CA1，發現恐懼學習後，腹側 CA1 對安全與威脅場景的神經表徵反而更相似，而且越能快速重建威脅表徵，動物越快出現 freezing。",
-        "dek": "教科書常強調海馬迴會做 pattern separation：把相似情境編成不同記憶，避免彼此干擾。但若危險突然出現，大腦也需要另一種能力——迅速從『目前安全』跳回『這裡曾經很危險』的狀態。這篇研究發現，沿著海馬迴背腹軸，兩端可能採用不同編碼策略。",
-        "background": "海馬迴 CA1 參與空間與情境記憶。背側 CA1（dCA1）通常和較精確的空間資訊密切相關；腹側 CA1（vCA1）則和情緒、焦慮、威脅及較廣泛情境訊號有較強連結。所謂『表徵』，不是某一顆神經元單獨代表一個房間，而是整群神經元形成的 population pattern。傳統 pattern-separation 思路會預測：安全場景與曾被電擊的場景表徵越不同，越能避免在安全處誤害怕。但 attractor-network 理論也提供另一種可能：如果兩個狀態在神經活動空間中靠得較近，大腦反而能更快從一個狀態跳到另一個狀態。",
-        "whatHappened": "小鼠在一個情境中接受 fear conditioning，之後在威脅與中性情境間被快速切換。恐懼學習讓 dCA1 與 vCA1 都改變，但 vCA1 的變化更強，而且和 freezing 程度成比例。真正出乎直覺的是：測試時，dCA1 仍把兩個情境維持得相對分開；vCA1 的威脅與中性表徵卻變得更相似。當小鼠突然回到威脅情境，vCA1 比 dCA1 更快、更強地重新出現威脅場景的 population pattern，而 vCA1 當下哪個表徵占上風也能預測 freezing。作者因此提出，恐懼學習可能讓 vCA1 的 attractor landscape 變得較『淺』、威脅 attractor 的 basin 變寬，使神經網路更容易迅速切換到防禦狀態。",
-        "howTheyStudied": "研究者分別在 dCA1 與 vCA1 植入 GRIN lens，使用頭戴式 miniature microscope 進行自由活動小鼠的 calcium imaging，長時間追蹤同一群神經元。實驗設計讓小鼠能在威脅與中性環境間幾乎瞬間切換，再將空間位置、freezing 行為與 population-vector similarity 對齊，分析兩個腦區在切換前後幾秒到數十秒內如何重建情境表徵。研究同時包含 conditioned 與 nonconditioned 對照組，以區分單純環境切換和真正恐懼學習造成的表徵重塑。",
-        "whyItMatters": "這篇讓 pattern separation 變得更細緻：大腦不一定希望所有記憶都彼此最大程度分離。對需要精準導航的 dCA1，分開相似場景可能有利；但對需要迅速保命的 vCA1，讓安全與威脅表徵保持部分重疊，反而可能降低『切換成本』。這提供了一個能連接記憶、情緒與神經網路動力學的模型，也可能幫助理解為什麼某些創傷記憶會被非常快地重新叫回來。",
-        "limitations": "研究是在小鼠 contextual fear conditioning 中完成，不能直接等同人類 PTSD 或焦慮症。calcium imaging 主要是相關性證據：它顯示 vCA1 表徵切換和 freezing 同步，但沒有直接操控『表徵重疊程度』來證明重疊本身造成快速恐懼反應。此外，attractor landscape 是根據群體活動與理論框架推導，並不是直接量到一個實體的能量地形。",
-        "whatNext": "最關鍵的下一步是因果操控：選擇性擾亂那些同時參與安全與威脅表徵的 vCA1 神經元，看是否會延遲恐懼回憶；反過來，人為提高兩個表徵的重疊，是否會讓動物更容易在模糊情境下誤啟動恐懼。若這個機制可延伸到人類，還可進一步測試過度泛化的焦慮或創傷記憶是否和腹側海馬／前海馬的 attractor dynamics 有關。",
-        "sources": [
-          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02435-5"}
-        ],
-        "questions": [
-          "為什麼安全與威脅情境的表徵『比較重疊』，反而可能讓 vCA1 更快叫回恐懼記憶？",
-          "同時比較 conditioned 與 nonconditioned 小鼠的 dCA1、vCA1，有助於排除哪些替代解釋？",
-          "如果要證明表徵重疊本身造成快速 freezing，而不是恐懼學習的附帶現象，你會怎麼做因果實驗？"
-        ]
+        "category":"神經免疫・老化・表觀遺傳",
+        "title":"老化小膠質細胞為什麼越來越容易發炎？線索可能藏在被重新喚醒的『內源性病毒』",
+        "widgetTitle":"老化讓沉睡的病毒 DNA 醒來？",
+        "widgetSummary":"Nature Neuroscience 研究發現，維持小膠質細胞染色質緊密的 DAXX 隨老化下降；當這道表觀遺傳防線鬆動，原本被封存的反轉錄轉座序列會重新表現，推動發炎、DNA 損傷與細胞衰老。",
+        "dek":"人類基因組裡有大量源自遠古病毒或可移動 DNA 元件的序列。它們通常被 heterochromatin 緊緊封存，不讓細胞把它們當成活躍基因使用。這篇研究把老化常見的兩件事——染色質鬆動與腦內慢性發炎——接成一條可以被實驗操控的因果鏈。",
+        "background":"Microglia 是中樞神經系統的常駐免疫細胞，平時負責監測環境、清除碎屑並參與突觸維護。細胞核中的 DNA 並不是全部同樣開放：heterochromatin 是壓得較緊、通常較不容易被轉錄的區域，其中封存大量 retrotransposable elements（RTEs），包括源自古老病毒感染留下的 endogenous retroviral sequences。DAXX 是 histone chaperone，會和 H3.3、TRIM28 等染色質調控元件合作，幫助維持這些區域的抑制狀態。",
+        "whatHappened":"研究發現 DAXX 在老化過程中下降。當研究者在年輕成年小鼠的小膠質細胞中移除 Daxx，即使動物本身還不老，microglia 也快速失去原本的 homeostatic identity：RTE 周圍染色質變得較鬆、內源性反轉錄病毒序列被解除抑制，細胞進入 reactive state，之後出現 DNA damage、細胞數量下降，並由帶有 Apoe-high、senescence-like 特徵的 microglia 取代。研究也指出 PML 這個 DAXX-interacting、同時受 interferon 調控的蛋白參與維持後續的 senescence 狀態。",
+        "howTheyStudied":"研究者把老化觀察和細胞特異性的 Daxx loss-of-function 結合：先看自然老化時 DAXX 與 RTE repression 如何改變，再在較年輕動物中主動破壞 Daxx，檢查是否能提前重現老化型 microglial phenotype。團隊使用基因表現與染色質分析追蹤 RTE derepression、homeostatic markers、Apoe-high state、DNA damage 與 senescence，並進一步測試 DAXX 互作與 interferon-related pathways。這種『年輕細胞人工重現老化狀態』的設計，比單純比較年輕與老年腦更接近因果證據。",
+        "whyItMatters":"老化腦常見低度、持續的 neuroinflammation，但『年齡增加』本身不是可操作的分子機制。這篇把其中一條路徑具體化成：DAXX／heterochromatin 維持下降 → RTE derepression → microglial stress 與 inflammatory response → DNA damage／senescence。這也提供一個有趣的觀念：部分老化發炎可能不是外界病原入侵，而是細胞失去能力去安靜自己基因組裡原本被封存的病毒樣序列。",
+        "limitations":"核心因果操控主要來自小鼠，不能直接假定人類老化 microglia 完全依賴同一條 DAXX 路徑。RTE derepression 也可能同時產生 RNA、DNA 損傷與其他染色質效應，目前還沒有把每一種 downstream sensor 的貢獻完全拆開。更重要的是，microglial activation 並非永遠有害；感染、損傷與清除病理蛋白時都需要它，因此『把 microglia 永久維持在安靜狀態』不會是合理的簡單治療目標。",
+        "whatNext":"下一步要分辨 microglia 究竟用哪些 innate immune sensors 偵測被重新表現的 RTE，以及能否只恢復特定 heterochromatin／RTE silencing，而不壓掉正常免疫反應。另一個重要方向，是在阿茲海默症、帕金森氏症等人類神經退化疾病中檢查 DAXX–RTE 軸是否比正常老化更早或更強地失衡。",
+        "sources":[{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02404-y"},{"label":"ImmunoSensation 研究摘要","url":"https://www.immunosensation.de/publications/microglia-activation-by-derepression-of-endogenous-retroviruses-drives-inflammation-and-cellular-senescence"}],
+        "questions":["請把 DAXX 下降到 microglia 進入 senescence-like state 的可能因果鏈完整串起來：中間 heterochromatin 與 RTE 各扮演什麼角色？","為什麼在年輕小鼠中主動刪除 Daxx，比只比較年輕與老年小鼠更能支持 DAXX 是機制的一部分？","如果 RTE derepression、DNA damage 與 interferon signaling 同時出現，你會優先做什麼操控來判斷哪一個是推動 microglial senescence 的必要步驟？"]
       },
       {
-        "category": "精準腫瘤學・液態活檢・大腸癌",
-        "title": "術後驗血決定化療要加強還是減量：PEGASUS 試驗告訴我們 ctDNA 很會分風險，但還沒證明能安全取代標準治療",
-        "widgetTitle": "用 ctDNA 決定大腸癌化療強度",
-        "widgetSummary": "Nature Cancer 的 PEGASUS phase 2 trial 用術後 circulating tumor DNA 動態調整輔助化療。ctDNA 陰性患者接受較低強度治療後神經毒性較少，但試驗沒有達到預先設定的主要終點；ctDNA 陽性者即使升級治療，復發風險仍明顯更高。",
-        "dek": "大腸癌切乾淨後最大的難題是：醫師看不到身體裡是否還藏著少量癌細胞。標準做法因此常對高風險 stage II、stage III 病人普遍給含 oxaliplatin 的輔助化療，但有人其實早已沒有殘存病灶，只承受了周邊神經毒性；另一些人即使接受標準療程，仍會復發。ctDNA 想解決的就是這個『看不見的殘存疾病』問題。",
-        "background": "circulating tumor DNA（ctDNA）是腫瘤細胞釋放到血液中的 DNA 碎片。腫瘤手術切除後若仍驗得到特定腫瘤突變，代表體內很可能仍有 microscopic residual disease，也就是影像看不到、但足以日後復發的殘存癌細胞。這種用途和一般癌症篩檢不同：它是在已知患者腫瘤基因特徵後，用血液追蹤『是否還有同一個腫瘤留下來』。PEGASUS 想測試的不只是 ctDNA 能不能預測復發，而是能否真的拿它來決定誰減少化療、誰升級治療。",
-        "whatHappened": "PEGASUS 是多中心、single-arm phase 2 trial，共納入 135 名已手術切除、microsatellite-stable 的高風險 stage II 或 stage III 大腸癌患者。術後 landmark 時約 26%（35 人）ctDNA 陽性。陽性者先接受 3 個月 CAPOX，如果 ctDNA 持續陽性就升級成 6 個月 FOLFIRI；經連續檢測確認陰性者則降階為 6 個月 capecitabine 單藥。ctDNA 陽性患者 3 年 disease-free survival 約 58%，陰性者約 83%，顯示 ctDNA 對風險分層非常強。但研究預先設定的主要終點沒有達成：ctDNA 陰性組 2 年 relapse-free rate 為 88%，低於預定成功門檻 92%。和配對歷史對照相比，整體 disease-free survival 類似，而神經毒性明顯較少。",
-        "howTheyStudied": "研究者在術後和治療過程中反覆抽血，用腫瘤導向的 ctDNA assay 判斷 molecular residual disease，再依結果動態調整療程，而不是只在術後測一次。除了臨床復發與毒性，團隊也把 ctDNA dynamics 和腫瘤 transcriptomic subtype 結合，發現部分復發和 stroma-rich 的 consensus molecular subtype 4 有關。因為試驗沒有隨機分派標準治療對照組，效果比較主要依賴 matched TOSCA historical cohort。",
-        "whyItMatters": "這篇最值得學的是『biomarker 很會預測』和『biomarker-guided treatment 已被證明比較好』是兩件事。ctDNA 的確清楚分出高、低復發風險，而且減量策略可能少掉 oxaliplatin 常見的長期周邊神經病變；但主要終點沒過，代表目前還不能只因 ctDNA 陰性就宣告降階治療已被證明安全。另一方面，陽性患者即使升級治療仍有很差的 DFS，也顯示 ctDNA 不只是告訴我們誰需要『更多同類化療』，可能是在標記一群需要完全不同策略的高風險生物學。",
-        "limitations": "這是 single-arm phase 2、樣本只有 135 人，而且 ctDNA 陰性組實際納入 100 人，低於原先規劃的 134 人；主要 endpoint 未達標。歷史配對對照無法完全取代隨機試驗，因為不同年代的影像、支持治療、手術品質與患者選擇都可能造成偏差。ctDNA 陰性也不代表百分之百沒有殘存腫瘤，低量腫瘤 DNA、採血時間與 assay sensitivity 都可能造成 false negative。",
-        "whatNext": "真正改變標準治療需要更大型 randomized trials，直接比較 ctDNA-guided strategy 與現行 guideline therapy。對 ctDNA-positive 患者，下一步也不應只問『化療加更久有沒有用』，而要找能清除 molecular residual disease 的新型藥物或免疫策略；對 ctDNA-negative 患者則需要更敏感的 serial testing，確認哪些人可以真正避免 oxaliplatin 而不增加復發。",
-        "sources": [
-          {"label": "Nature Cancer 原始研究：PEGASUS phase 2 trial", "url": "https://www.nature.com/articles/s43018-026-01237-9"}
-        ],
-        "questions": [
-          "為什麼手術後 ctDNA 陽性，可以被理解成影像還看不到的 molecular residual disease 訊號？",
-          "為什麼 PEGASUS 即使看到 ctDNA 陰性組毒性較少，也不能直接證明 ctDNA-guided de-escalation 優於標準治療？",
-          "ctDNA 陽性患者在治療升級後仍高復發，這比較支持『需要更多同類化療』還是『需要不同治療機制』？你會怎麼設計下一個試驗區分兩者？"
-        ]
+        "category":"精準醫療・肺癌・臨床試驗",
+        "title":"肺癌治療多活 6.4 個月，為什麼統計上仍不能直接說『延長存活』？PAPILLON 試驗示範 crossover 的難題",
+        "widgetTitle":"多活 6.4 個月，為何仍不能直接下結論？",
+        "widgetSummary":"EGFR exon 20 insertion 肺癌第三期 PAPILLON 試驗最終分析中，amivantamab 加化療的中位總存活為 34.3 個月，化療組為 27.9 個月；但大量對照組患者在惡化後改用 amivantamab，使最直觀的存活比較變得複雜。",
+        "dek":"臨床試驗最容易被誤讀的情況之一，就是看到兩組 median survival 相差幾個月便宣布藥物『延命』。PAPILLON 的最新長期資料很適合當教材：治療組的數字確實較好，但 intention-to-treat 的 overall-survival hazard ratio 信賴區間跨過 1；另一方面，化療組有大量患者惡化後又接受了實驗藥。兩件事必須一起理解。",
+        "background":"部分非小細胞肺癌帶有 EGFR exon 20 insertion（Ex20ins）變異。EGFR 是細胞表面的生長訊號受器，這類插入變異會讓訊號異常活化，但其結構使許多傳統 EGFR tyrosine-kinase inhibitors 效果有限。Amivantamab 是雙特異性抗體，同時辨認 EGFR 與 MET。PAPILLON phase 3 trial 把第一線 amivantamab＋carboplatin／pemetrexed 化療和單純化療做隨機比較。",
+        "whatHappened":"308 名先前未接受治療的 advanced EGFR Ex20ins NSCLC 患者被 1:1 隨機分組。追蹤中位 48.6 個月後，amivantamab＋化療組 median overall survival 為 34.3 個月，化療組為 27.9 個月，相差 6.4 個月；但 ITT hazard ratio 為 0.87，95% CI 0.66–1.14，P=0.307，因此這個 overall-survival 比較本身沒有達到傳統統計顯著門檻。關鍵背景是：化療組在疾病惡化後，128 名停止原治療者中有 97 人（76%）依試驗設計 crossover 接受第二線 amivantamab。研究者使用預先指定的統計模型校正 crossover 後，估計的死亡風險差異變大；但這屬模型調整結果，證據層級不能和原始隨機 ITT 比較完全畫上等號。",
+        "howTheyStudied":"PAPILLON 是 phase 3 randomized trial，153 人接受 amivantamab＋化療，155 人接受化療。Overall survival 是從隨機分組到死亡的時間；median OS 表示一組人中有一半已發生死亡事件時所對應的時間，不等於每個人平均多活 6.4 個月。Hazard ratio 則比較整段追蹤期間的瞬時事件風險。因為對照組可以在 progression 後 crossover，研究另外使用 inverse probability of censoring weighting（IPCW）嘗試估計『如果沒有 crossover』可能看到的差異，但這需要額外統計假設。",
+        "whyItMatters":"這組合先前已因明顯改善 progression-free survival 而改變 EGFR Ex20ins 肺癌第一線治療。最新資料則補上更長期的疾病控制資訊：PFS2 為 28.3 對 17.5 個月，支持早期使用 amivantamab 可能讓疾病控制延續更久。更重要的是，這份結果示範 precision oncology 裡很常見的倫理與統計衝突：一旦實驗藥已顯示效果，就很難要求對照組惡化後永遠不能使用它；但允許 crossover 又會把兩組 overall survival 拉近。",
+        "limitations":"不能把 34.3 對 27.9 個月直接寫成『證明延長存活 6.4 個月』，因為原始 ITT OS 分析沒有統計顯著，而且 median difference 不是 individual treatment effect。IPCW crossover-adjusted analysis 支持更大的潛在效益，但依賴模型假設，因此應視為補充解讀而不是取代隨機比較。最新 final OS 結果目前主要以 WCLC 2026 會議資料與 IASLC 公布資訊呈現，仍應等待完整同行評審論文來檢查細節。",
+        "whatNext":"下一步除了完整發表 long-term OS 與 safety，也要進一步比較哪些 Ex20ins variants、腦轉移狀態或共突變患者獲益最大，以及皮下劑型與預防性副作用策略能否降低 rash、paronychia 與 infusion-related burden。方法學上，這類試驗也會持續推動更透明的 crossover-adjustment 報告方式，讓讀者同時看到原始隨機結果與模型估計。",
+        "sources":[{"label":"IASLC 2026 WCLC 官方 PAPILLON 最終分析","url":"https://www.iaslc.org/iaslc-news/press-release/papillon-study-first-line-amivantamab-chemotherapy-demonstrates-longest"},{"label":"PAPILLON ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04538664"}],
+        "questions":["為什麼化療組很多人在惡化後改用 amivantamab，會讓兩組 overall survival 看起來比真正的第一線治療差異更接近？","median OS、hazard ratio 與 crossover-adjusted IPCW 分析各回答什麼不同問題？為什麼不能只挑最漂亮的一個數字？","如果 ITT OS 沒有統計顯著、但 PFS 與 PFS2 明顯改善且 crossover 很高，你會如何判斷『第一線使用』的證據強度，還想看到哪些資料？"]
       }
     ],
-    "radar": {
-      "title": "MSK Mechanistic Biology Summer Program 2027：11 月開放，但國際學生要先看懂簽證限制",
-      "summary": "Memorial Sloan Kettering 的 Mechanistic Biology Summer Program 是 2027/6/1–8/6 的暑期研究計畫，涵蓋 cell biology、immunology、genomics、DNA repair、stem cells、cancer biology 與 therapeutics；錄取者提供 6,500 美元 stipend 與住宿。申請將於 2026/11/2 開放、2027/2/1 截止，要求至少 GPA 3.0、修過大學生物與基礎化學、具進階科學課程與既有研究經驗，並提交兩封推薦信。它特別值得現在先記下來，是因為研究內容很適合想把基礎生物機制和疾病研究接起來的人；但國際申請者有一個重要限制：MSK 雖接受非美國公民申請，卻不代辦 F-1/J-1 或 CPT/OPT，錄取者必須自行已有可在美國參與實習的學生簽證／工作資格。因此對目前在臺灣就學的學生而言，研究契合度很高，但簽證可行性必須在投入完整申請前先確認。",
-      "url": "https://www.mskcc.org/education-training/summer-scientific-undergraduate-programs/mechanistic-biology-summer-program"
-    }
+    "radar":{"title":"技能趨勢：single-cell multi-omics 正從『會跑 RNA-seq』升級成『能整合細胞狀態、染色質與 3D genome』","summary":"今天兩篇神經科學主題都指向同一個研究技能趨勢：只知道某個基因表現升降已經越來越不夠。人類海馬迴老化研究已把 single-nucleus RNA、chromatin accessibility、DNA methylation 與 3D genome architecture 放在同一框架；憂鬱症研究也用多組學重建神經新生軌跡。對準備研究所或暑期研究的人，現在值得累積的不是『背更多 omics 名稱』，而是能回答：每一層資料測到什麼、哪些結論只能相關、如何把多層證據接成可驗證機制。這會同時連到生物資訊、神經科學、癌症與藥物研發，而且很適合作為 Python／R 學習的真實專案牽引。","url":"https://www.science.org/doi/10.1126/science.adt8307"}
   },
-  "importantMail": {
-    "count": 0,
-    "status": "目前沒有新的郵件同時符合『學校／課程／教授或重要工作／社團／合作事項』且包含明確截止日期、需要回覆／行動、取消／異常／時間變更的條件；私人郵件內容不存放在公開 Daily Board。"
-  }
+  "importantMail":{"count":2,"status":"目前有 2 封需要注意的郵件，涉及今日有明確時間的社團安排，以及一項重要合作／會議工具的異常狀態；詳細內容不存放在公開 Daily Board。"}
 }
