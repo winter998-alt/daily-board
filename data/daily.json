@@ -1,58 +1,83 @@
 {
-  "schemaVersion":"0.4",
-  "date":"2026-09-16",
-  "updatedAt":"2026-09-16T07:31:52+08:00",
-  "report":{
-    "title":"每日生醫・神經科學摘要",
-    "intro":"今天三條主線都在提醒我們：疾病研究不能只看最後出現的症狀，而要追到細胞狀態與治療設計背後的機制。第一篇從人類海馬迴多組學資料重新檢視憂鬱症與成人神經新生；第二篇追到老化小膠質細胞如何因染色質鬆動而喚醒內源性反轉錄病毒序列；第三篇則用肺癌第三期試驗說明，臨床試驗中的 crossover 為什麼會讓『活多久』這個看似直觀的終點變得難以解讀。",
-    "stories":[
+  "schemaVersion": "0.4",
+  "date": "2026-09-17",
+  "updatedAt": "2026-09-17T07:30:10+08:00",
+  "report": {
+    "title": "每日生醫・神經科學摘要",
+    "intro": "今天三篇都在修正我們對『誰在做事』的直覺：記憶的時間結構不只神經元在編碼，小腦也不只負責動作，而異種移植真正的瓶頸也不只是免疫排斥。從星狀膠細胞、獎賞迴路到基因改造豬肝，今天的共同主題是把複雜生物功能拆成可測量、可操控的機制。",
+    "stories": [
       {
-        "category":"神經科學・憂鬱症・成人神經新生",
-        "title":"憂鬱症可能不是完全『停止製造新神經元』，而是神經新生卡在發育途中",
-        "widgetTitle":"憂鬱症讓新神經元卡在半路？",
-        "widgetSummary":"人類海馬迴多組學研究支持成年後仍存在神經新生，並發現重度憂鬱症患者的神經前驅細胞並非單純消失，而可能在成熟成新神經元的過程中受阻。",
-        "dek":"成人海馬迴到底還會不會長出新神經元，多年來一直有爭論。新的 Nature Medicine 研究利用單核轉錄體、染色質可及性、蛋白與空間資訊建立人類海馬迴圖譜，不只找到成年神經新生的細胞軌跡，也發現重度憂鬱症中的問題更像是『發育流程塞車』，而不是一個簡單的開／關故障。",
-        "background":"海馬迴參與記憶、情緒與情境學習。在齒狀回的 subgranular zone，一部分 neural progenitor cells 可以分裂，逐步經過 immature neuron 階段，最後整合成成熟顆粒神經元；這個過程稱為 adult hippocampal neurogenesis。動物研究早就顯示壓力、運動與部分抗憂鬱治療會改變神經新生，但在人類成年腦中，新神經元究竟持續產生到什麼程度一直有技術爭議，因為死後組織很難只靠一兩個 marker 就判定細胞年齡與發育方向。",
-        "whatHappened":"研究者在成人海馬迴辨認出連續的 neurogenic lineage，支持成年後仍存在神經新生。比較未服藥的重度憂鬱症患者與對照後，研究並不是看到所有神經前驅細胞都消失，而是看到神經新生軌跡在多個階段出現失衡，特別呈現『stalled neurogenic process』：細胞仍進入發育路徑，卻較難順利往成熟神經元推進。同時，壓力相關基因調控、interferon 免疫訊號、代謝能力、突觸可塑性以及興奮／抑制平衡也出現改變。這些結果支持憂鬱症的海馬迴異常是多層次細胞狀態重塑，而不是只缺少某一種神經傳導物質。",
-        "howTheyStudied":"團隊整合 single-nucleus RNA sequencing、chromatin accessibility、蛋白表現與海馬迴不同 subfield 的空間資訊。單核 RNA 資料先用基因表現辨認不同細胞類型，再利用不同成熟階段的轉錄特徵重建從 progenitor 到 immature neuron 的發育軌跡；染色質可及性則回答哪些 DNA 調控區域處於較容易被轉錄因子使用的狀態。這種 multi-omic 設計的價值，是避免只看到某個 marker 變少就直接宣稱『神經新生停止』，而能同時檢查細胞數量、發育狀態與上游基因調控。",
-        "whyItMatters":"如果憂鬱症中的 neurogenesis 是『卡住』而非完全消失，治療問題就可能從『怎麼製造更多前驅細胞』改成『怎麼讓已存在的細胞完成成熟與整合』。更廣泛地說，研究也把壓力、免疫訊號、代謝與神經迴路可塑性放進同一張人類海馬迴地圖，提供未來分辨不同憂鬱症生物亞型的候選機制。",
-        "limitations":"這是人類死後腦組織研究，因此可以建立很強的細胞與分子關聯，卻無法直接觀察同一顆前驅細胞數週後是否真的成熟，也不能證明神經新生受阻本身造成憂鬱症狀。患者生前的壓力、疾病時間、死亡前狀態等也可能影響組織。NIH 對這項研究的介紹提到成人海馬迴每日約可產生數百個新神經元，但這種估算不應理解成每個人每天都有固定、可精準計數的 700 顆新神經元。",
-        "whatNext":"下一步需要能追蹤人類神經新生動態的 biomarker 或更可靠的活體替代指標，並在 organoid、細胞模型或動物中針對研究找到的 interferon、stress-response 與 transcription-factor pathways 做因果操控。臨床上更重要的問題則是：不同患者是否存在不同的 neurogenesis phenotype，以及這些狀態能否預測特定抗憂鬱治療反應。",
-        "sources":[{"label":"Nature Medicine 原始研究","url":"https://www.nature.com/articles/s41591-026-04571-8"},{"label":"NIH Research Matters 解讀","url":"https://www.nih.gov/news-events/nih-research-matters/depression-may-stall-development-new-neurons"}],
-        "questions":["為什麼『神經前驅細胞還存在』和『神經新生正常』不是同一件事？請把 progenitor 到成熟 neuron 的因果鏈串一次。","為什麼研究者要同時使用 RNA、染色質可及性與空間／蛋白資訊，而不能只靠一個 immature-neuron marker 判定憂鬱症的神經新生是否下降？","如果憂鬱症患者同時有 interferon 訊號升高與 neurogenesis stalled，你會怎麼設計實驗分辨免疫訊號是原因、結果，還是兩者都由第三個因素造成？"]
+        "category": "神經科學・記憶・星狀膠細胞",
+        "title": "記憶的『時間順序』不只神經元在記：海馬迴星狀膠細胞也會排出可重現的活動序列",
+        "widgetTitle": "星狀膠細胞也會記時間順序？",
+        "widgetSummary": "小鼠形成恐懼記憶時，海馬迴星狀膠細胞會依序出現鈣訊號；之後回到同一情境，即使沒有再受刺激，類似的活動序列仍會重新出現。",
+        "dek": "星狀膠細胞過去常被當成神經元的支援角色，但新的 Nature Neuroscience 研究發現，它們在學習後會形成具有時間結構的活動序列，而且這些序列在記憶回想時會再次出現。這不等於星狀膠細胞已被證明『儲存記憶』，卻顯示記憶的時間編碼可能是神經元與膠細胞共同完成的網路現象。",
+        "background": "海馬迴是形成情境與事件記憶的重要腦區。神經科學早已知道其中存在 time cells：不同神經元會在一段經驗的不同時間點依序活化，像把事件切成時間座標。Astrocytes（星狀膠細胞）不是典型會發出動作電位的神經元，但它們能透過細胞內 Ca2+ 訊號反應神經傳導物質、調節突觸與局部網路。問題是，這些膠細胞訊號究竟只是跟著神經元變化，還是也帶有經驗本身的結構資訊？",
+        "whatHappened": "研究者讓小鼠接受 contextual fear conditioning：在特定環境中遭遇足部電擊。電擊後，背側海馬 CA1 的星狀膠細胞不是全部同時亮起，而是出現具有順序的 calcium-event sequences，而且時間結構被壓縮。之後小鼠重新回到曾經受電擊的情境，即使不再電擊，類似序列仍會重新出現；換到另一個不同情境則沒有同樣現象。在原本的條件化情境中，星狀膠細胞自發活動也和 freezing 等行為狀態轉換相關。已確認的是『情境特異、可重現的星狀膠細胞活動序列』；研究者進一步解讀它可能參與 associative memory 的時間表徵，但尚未證明序列本身就是記憶痕跡。",
+        "howTheyStudied": "團隊在自由活動小鼠的 dorsal CA1 使用 one-photon calcium imaging，跨多天追蹤星狀膠細胞。Calcium imaging 利用會隨細胞內 Ca2+ 改變亮度的螢光感測器，把細胞訊號轉成可追蹤的時間序列。研究者比較足部電擊後、之後回到 conditioned context，以及進入不同新情境時的活動，並用事件偵測與序列分析判斷哪些細胞在什麼時間點依序活化。這種設計的關鍵是同時保留『時間』與『情境』兩個維度，而不是只比較平均螢光強度。",
+        "whyItMatters": "如果星狀膠細胞真的參與記憶的時間組織，那麼海馬迴記憶模型就不能只由神經元組成。星狀膠細胞能感受 norepinephrine、調節突觸與局部代謝，因此可能把整體行為狀態和局部神經活動接起來。對記憶障礙研究而言，未來也需要問：疾病中的問題究竟只發生在 neuronal engram，還是神經元—膠細胞協作一起失衡？",
+        "limitations": "這項研究主要證明活動序列與學習、回想及行為狀態具有關聯，沒有直接操控某一段星狀膠細胞序列來證明它對記憶形成或回想是必要的。Calcium signal 也不是星狀膠細胞所有生理功能的完整代理，而且研究中的部分行為關聯在性別上並非完全一致。因此不能把結果簡化成『星狀膠細胞就是另一種 time cell』。",
+        "whatNext": "下一步最重要的是做因果操控：在學習或回想的特定時間窗選擇性干擾這些 astrocytic sequences，看小鼠是否失去時間結構或情境特異的記憶；同時記錄神經元與星狀膠細胞，才能判斷兩種細胞的序列誰先出現、如何互相影響。",
+        "sources": [
+          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02448-0"}
+        ],
+        "questions": [
+          "為什麼『不同星狀膠細胞依序活化』比單純看到整體 calcium signal 上升，更能支持它們可能攜帶時間資訊？",
+          "研究者為什麼一定要加入一個不同的新情境，而不能只比較電擊當下與之後回想？",
+          "如果你要證明 astrocytic sequence 不是神經元活動的被動副產品，而是真的參與記憶，你會優先操控哪個環節？"
+        ]
       },
       {
-        "category":"神經免疫・老化・表觀遺傳",
-        "title":"老化小膠質細胞為什麼越來越容易發炎？線索可能藏在被重新喚醒的『內源性病毒』",
-        "widgetTitle":"老化讓沉睡的病毒 DNA 醒來？",
-        "widgetSummary":"Nature Neuroscience 研究發現，維持小膠質細胞染色質緊密的 DAXX 隨老化下降；當這道表觀遺傳防線鬆動，原本被封存的反轉錄轉座序列會重新表現，推動發炎、DNA 損傷與細胞衰老。",
-        "dek":"人類基因組裡有大量源自遠古病毒或可移動 DNA 元件的序列。它們通常被 heterochromatin 緊緊封存，不讓細胞把它們當成活躍基因使用。這篇研究把老化常見的兩件事——染色質鬆動與腦內慢性發炎——接成一條可以被實驗操控的因果鏈。",
-        "background":"Microglia 是中樞神經系統的常駐免疫細胞，平時負責監測環境、清除碎屑並參與突觸維護。細胞核中的 DNA 並不是全部同樣開放：heterochromatin 是壓得較緊、通常較不容易被轉錄的區域，其中封存大量 retrotransposable elements（RTEs），包括源自古老病毒感染留下的 endogenous retroviral sequences。DAXX 是 histone chaperone，會和 H3.3、TRIM28 等染色質調控元件合作，幫助維持這些區域的抑制狀態。",
-        "whatHappened":"研究發現 DAXX 在老化過程中下降。當研究者在年輕成年小鼠的小膠質細胞中移除 Daxx，即使動物本身還不老，microglia 也快速失去原本的 homeostatic identity：RTE 周圍染色質變得較鬆、內源性反轉錄病毒序列被解除抑制，細胞進入 reactive state，之後出現 DNA damage、細胞數量下降，並由帶有 Apoe-high、senescence-like 特徵的 microglia 取代。研究也指出 PML 這個 DAXX-interacting、同時受 interferon 調控的蛋白參與維持後續的 senescence 狀態。",
-        "howTheyStudied":"研究者把老化觀察和細胞特異性的 Daxx loss-of-function 結合：先看自然老化時 DAXX 與 RTE repression 如何改變，再在較年輕動物中主動破壞 Daxx，檢查是否能提前重現老化型 microglial phenotype。團隊使用基因表現與染色質分析追蹤 RTE derepression、homeostatic markers、Apoe-high state、DNA damage 與 senescence，並進一步測試 DAXX 互作與 interferon-related pathways。這種『年輕細胞人工重現老化狀態』的設計，比單純比較年輕與老年腦更接近因果證據。",
-        "whyItMatters":"老化腦常見低度、持續的 neuroinflammation，但『年齡增加』本身不是可操作的分子機制。這篇把其中一條路徑具體化成：DAXX／heterochromatin 維持下降 → RTE derepression → microglial stress 與 inflammatory response → DNA damage／senescence。這也提供一個有趣的觀念：部分老化發炎可能不是外界病原入侵，而是細胞失去能力去安靜自己基因組裡原本被封存的病毒樣序列。",
-        "limitations":"核心因果操控主要來自小鼠，不能直接假定人類老化 microglia 完全依賴同一條 DAXX 路徑。RTE derepression 也可能同時產生 RNA、DNA 損傷與其他染色質效應，目前還沒有把每一種 downstream sensor 的貢獻完全拆開。更重要的是，microglial activation 並非永遠有害；感染、損傷與清除病理蛋白時都需要它，因此『把 microglia 永久維持在安靜狀態』不會是合理的簡單治療目標。",
-        "whatNext":"下一步要分辨 microglia 究竟用哪些 innate immune sensors 偵測被重新表現的 RTE，以及能否只恢復特定 heterochromatin／RTE silencing，而不壓掉正常免疫反應。另一個重要方向，是在阿茲海默症、帕金森氏症等人類神經退化疾病中檢查 DAXX–RTE 軸是否比正常老化更早或更強地失衡。",
-        "sources":[{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02404-y"},{"label":"ImmunoSensation 研究摘要","url":"https://www.immunosensation.de/publications/microglia-activation-by-derepression-of-endogenous-retroviruses-drives-inflammation-and-cellular-senescence"}],
-        "questions":["請把 DAXX 下降到 microglia 進入 senescence-like state 的可能因果鏈完整串起來：中間 heterochromatin 與 RTE 各扮演什麼角色？","為什麼在年輕小鼠中主動刪除 Daxx，比只比較年輕與老年小鼠更能支持 DAXX 是機制的一部分？","如果 RTE derepression、DNA damage 與 interferon signaling 同時出現，你會優先做什麼操控來判斷哪一個是推動 microglial senescence 的必要步驟？"]
+        "category": "神經科學・小腦・多巴胺獎賞",
+        "title": "小腦不只修正動作誤差：它會預測多巴胺獎賞何時到來，甚至參與學會『為獎賞而行動』",
+        "widgetTitle": "小腦也在預測多巴胺獎賞",
+        "widgetSummary": "小鼠為腦內多巴胺刺激學習按壓後，小腦顆粒細胞會在等待獎賞期間持續活動，而且會隨 1 秒或 2 秒延遲自動拉長。",
+        "dek": "小腦長期被視為動作協調與誤差修正中心，但新的 Nature Neuroscience 研究把吃、喝等動作因素拿掉，直接把多巴胺刺激當成獎賞，發現小腦同時存在『預測獎賞』與『收到獎賞後教導網路』的訊號。",
+        "background": "Dopamine（多巴胺）是獎賞學習的重要神經調節物質，但『獎賞』常和實際動作綁在一起：得到水就要舔、得到食物就要吃。因此如果小腦在吃東西時活化，很難知道它是在處理 reward，還是在協調 movement。小腦主要輸入系統中，granule cells（顆粒細胞）接收大量 mossy-fiber 資訊；climbing fibers 則從 inferior olive 投射到 Purkinje cells，常被視為具有教學或誤差信號功能。",
+        "whatHappened": "研究者讓小鼠學會按壓裝置，等待 1 秒或 2 秒後直接獲得腦內 dopamine reward，而不是食物或水。許多小腦 granule cells 在等待期間持續活化，而且活動長度會隨預期延遲從 1 秒『伸長』到 2 秒，直到獎賞抵達才結束；這很像一個對『何時會得到獎賞』的預測碼。相反地，多數 climbing fibers 在 dopamine delivery 之後才出現 spike，更像收到結果後的 instructive signal。抑制 granule cells 會破壞自我刺激學習；而直接把 climbing-fiber activation 當成獎賞，原本沒有訓練的小鼠也能形成中等程度的操作制約。",
+        "howTheyStudied": "團隊把 operant task、直接 dopamine self-stimulation、two-photon calcium imaging 與細胞類型特異操控結合。直接提供腦內 dopamine reward 的好處，是把『獎賞』和舔水、咀嚼等 consummatory movement 分離。研究者還改變 action-to-reward delay，測試神經活動是否真的追蹤預期時間；最後再用 chronic granule-cell inhibition 與 climbing-fiber self-stimulation 測試這些訊號是否只是相關，還是能影響學習。",
+        "whyItMatters": "這項研究把小腦放進更廣的 reward-prediction network。它顯示 motivated behavior 可能不是基底核與中腦多巴胺系統單獨完成：小腦也能建立對獎賞時間的預期，並提供會改變未來行為的教學訊號。這對成癮、動機缺失與強迫行為等疾病研究提供新的 circuit-level 問題。",
+        "limitations": "研究使用小鼠與人工腦內 dopamine stimulation，這種獎賞非常乾淨、適合拆機制，但和自然世界中帶有味覺、飽足感、社會情境與不確定性的獎賞不同。Granule-cell inhibition 也可能影響其他小腦計算，因此不能把所有學習缺陷都歸因於單一『獎賞倒數計時器』。",
+        "whatNext": "下一步可以在自然食物、社會獎賞與概率性獎賞中測試相同細胞是否仍保留時間預測碼，並追蹤小腦如何和 ventral tegmental area、striatum、prefrontal cortex 交換資訊。若要走向疾病研究，還需要測試這套小腦獎賞碼在 addiction、depression 或 dopamine-related disorders 中是否失衡。",
+        "sources": [
+          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02449-z"}
+        ],
+        "questions": [
+          "為什麼直接用 dopamine stimulation 當獎賞，可以比給水或食物更乾淨地回答『小腦是否真的編碼 reward』？",
+          "把 reward delay 從 1 秒改成 2 秒，而 granule-cell activity 也跟著拉長，提供了什麼比單純 reward-related activation 更強的證據？",
+          "如果 artificial dopamine reward 和自然獎賞得到不同的小腦活動，你會怎麼判斷差異來自感覺／動作成分，還是來自獎賞本身的價值計算？"
+        ]
       },
       {
-        "category":"精準醫療・肺癌・臨床試驗",
-        "title":"肺癌治療多活 6.4 個月，為什麼統計上仍不能直接說『延長存活』？PAPILLON 試驗示範 crossover 的難題",
-        "widgetTitle":"多活 6.4 個月，為何仍不能直接下結論？",
-        "widgetSummary":"EGFR exon 20 insertion 肺癌第三期 PAPILLON 試驗最終分析中，amivantamab 加化療的中位總存活為 34.3 個月，化療組為 27.9 個月；但大量對照組患者在惡化後改用 amivantamab，使最直觀的存活比較變得複雜。",
-        "dek":"臨床試驗最容易被誤讀的情況之一，就是看到兩組 median survival 相差幾個月便宣布藥物『延命』。PAPILLON 的最新長期資料很適合當教材：治療組的數字確實較好，但 intention-to-treat 的 overall-survival hazard ratio 信賴區間跨過 1；另一方面，化療組有大量患者惡化後又接受了實驗藥。兩件事必須一起理解。",
-        "background":"部分非小細胞肺癌帶有 EGFR exon 20 insertion（Ex20ins）變異。EGFR 是細胞表面的生長訊號受器，這類插入變異會讓訊號異常活化，但其結構使許多傳統 EGFR tyrosine-kinase inhibitors 效果有限。Amivantamab 是雙特異性抗體，同時辨認 EGFR 與 MET。PAPILLON phase 3 trial 把第一線 amivantamab＋carboplatin／pemetrexed 化療和單純化療做隨機比較。",
-        "whatHappened":"308 名先前未接受治療的 advanced EGFR Ex20ins NSCLC 患者被 1:1 隨機分組。追蹤中位 48.6 個月後，amivantamab＋化療組 median overall survival 為 34.3 個月，化療組為 27.9 個月，相差 6.4 個月；但 ITT hazard ratio 為 0.87，95% CI 0.66–1.14，P=0.307，因此這個 overall-survival 比較本身沒有達到傳統統計顯著門檻。關鍵背景是：化療組在疾病惡化後，128 名停止原治療者中有 97 人（76%）依試驗設計 crossover 接受第二線 amivantamab。研究者使用預先指定的統計模型校正 crossover 後，估計的死亡風險差異變大；但這屬模型調整結果，證據層級不能和原始隨機 ITT 比較完全畫上等號。",
-        "howTheyStudied":"PAPILLON 是 phase 3 randomized trial，153 人接受 amivantamab＋化療，155 人接受化療。Overall survival 是從隨機分組到死亡的時間；median OS 表示一組人中有一半已發生死亡事件時所對應的時間，不等於每個人平均多活 6.4 個月。Hazard ratio 則比較整段追蹤期間的瞬時事件風險。因為對照組可以在 progression 後 crossover，研究另外使用 inverse probability of censoring weighting（IPCW）嘗試估計『如果沒有 crossover』可能看到的差異，但這需要額外統計假設。",
-        "whyItMatters":"這組合先前已因明顯改善 progression-free survival 而改變 EGFR Ex20ins 肺癌第一線治療。最新資料則補上更長期的疾病控制資訊：PFS2 為 28.3 對 17.5 個月，支持早期使用 amivantamab 可能讓疾病控制延續更久。更重要的是，這份結果示範 precision oncology 裡很常見的倫理與統計衝突：一旦實驗藥已顯示效果，就很難要求對照組惡化後永遠不能使用它；但允許 crossover 又會把兩組 overall survival 拉近。",
-        "limitations":"不能把 34.3 對 27.9 個月直接寫成『證明延長存活 6.4 個月』，因為原始 ITT OS 分析沒有統計顯著，而且 median difference 不是 individual treatment effect。IPCW crossover-adjusted analysis 支持更大的潛在效益，但依賴模型假設，因此應視為補充解讀而不是取代隨機比較。最新 final OS 結果目前主要以 WCLC 2026 會議資料與 IASLC 公布資訊呈現，仍應等待完整同行評審論文來檢查細節。",
-        "whatNext":"下一步除了完整發表 long-term OS 與 safety，也要進一步比較哪些 Ex20ins variants、腦轉移狀態或共突變患者獲益最大，以及皮下劑型與預防性副作用策略能否降低 rash、paronychia 與 infusion-related burden。方法學上，這類試驗也會持續推動更透明的 crossover-adjustment 報告方式，讓讀者同時看到原始隨機結果與模型估計。",
-        "sources":[{"label":"IASLC 2026 WCLC 官方 PAPILLON 最終分析","url":"https://www.iaslc.org/iaslc-news/press-release/papillon-study-first-line-amivantamab-chemotherapy-demonstrates-longest"},{"label":"PAPILLON ClinicalTrials.gov","url":"https://clinicaltrials.gov/study/NCT04538664"}],
-        "questions":["為什麼化療組很多人在惡化後改用 amivantamab，會讓兩組 overall survival 看起來比真正的第一線治療差異更接近？","median OS、hazard ratio 與 crossover-adjusted IPCW 分析各回答什麼不同問題？為什麼不能只挑最漂亮的一個數字？","如果 ITT OS 沒有統計顯著、但 PFS 與 PFS2 明顯改善且 crossover 很高，你會如何判斷『第一線使用』的證據強度，還想看到哪些資料？"]
+        "category": "生醫・異種移植・器官工程",
+        "title": "基因改造豬肝完整取代人類肝臟 11 天：真正先卡住的不是『完全排斥』，而是微血栓與灌流",
+        "widgetTitle": "豬肝在人類體內工作了 11 天",
+        "widgetSummary": "研究者把基因改造豬肝完整移植到一名腦死亡人體中；器官持續製造膽汁與白蛋白，但後期功能下降暴露出微血栓與血流灌注仍是核心障礙。",
+        "dek": "異種移植常被想成『免疫系統會不會立刻把豬器官排掉』，但肝臟比腎臟更複雜：它同時參與代謝、凝血、免疫與蛋白製造。新的 Nature Biomedical Engineering 研究完成基因改造豬到腦死亡人體的 orthotopic liver xenotransplantation，讓我們第一次更接近看到『完整豬肝取代原肝後，哪個生理環節先成為瓶頸』。",
+        "background": "Xenotransplantation（異種移植）是把不同物種的器官移植給人類，希望緩解器官短缺。豬器官大小與生理條件較接近人類，但豬細胞表面分子會觸發人類抗體、補體與凝血系統，因此需要基因工程降低排斥與血栓。Orthotopic transplantation 指把原本器官移除，再把新器官放到原本解剖位置；這比把豬肝當作額外的 auxiliary support 更嚴格，因為移植物必須真正承擔整個肝臟功能。",
+        "whatHappened": "研究團隊把基因改造豬肝移植到一名腦死亡個體，觀察 11 天。期間豬肝持續產生 albumin 與 bile，而且膽汁成分大致正常；受試者整體 hemodynamics 也能維持穩定。可是後期肝功能逐漸下降，研究者發現 suboptimal hepatic perfusion 與 microthrombosis，認為這很可能是重要原因。這表示至少在這段短期觀察中，器官並沒有立刻因典型超急性排斥而完全失效，但豬—人之間的血管、凝血與灌流相容性仍遠未解決。",
+        "howTheyStudied": "這是一項 decedent model：在經倫理程序取得同意的腦死亡人體中進行實際 orthotopic transplantation，再連續監測循環、肝臟灌流、膽汁、albumin、凝血與組織病理。這種模型位在非人靈長類與活體臨床試驗之間：它能測試真正的人體血液、免疫與器官尺寸環境，又不等同於把尚未成熟的技術直接用在需要長期存活的患者身上。",
+        "whyItMatters": "肝臟異種移植的價值不只在『有沒有多一顆器官』，而是能否提供代謝、解毒、蛋白合成與凝血等高度整合功能。這次結果把研發問題變得更具體：除了抑制免疫排斥，下一代基因改造與治療方案還必須處理 endothelial compatibility、coagulation mismatch 與微循環灌流。這些失敗點被看見，本身就是走向臨床前的重要資訊。",
+        "limitations": "這只是單一腦死亡人體、11 天觀察，不能推論活體患者能安全存活數月或數年。腦死亡本身會造成強烈的內分泌、發炎與循環變化，也和一般移植患者不同。白蛋白與膽汁產生證明豬肝具有部分功能，但產量偏低，而且不能代表完整代謝、凝血與長期免疫相容性都正常。",
+        "whatNext": "下一步需要在更多 decedent 與大型動物模型中拆解 microthrombosis 的來源：是豬內皮和人類凝血蛋白不相容、局部血流力學、免疫活化，還是多者共同造成；同時也需要改良豬的基因組、抗凝與免疫抑制策略。只有當長期灌流、凝血與完整肝功能更穩定後，才有理由評估活體患者的早期臨床試驗。",
+        "sources": [
+          {"label": "Nature Biomedical Engineering 原始研究", "url": "https://www.nature.com/articles/s41551-026-01797-2"}
+        ],
+        "questions": [
+          "為什麼豬肝能製造膽汁和白蛋白，仍不能直接說它已經完整取代人類肝臟功能？",
+          "為什麼 decedent model 對異種移植特別有價值？它比動物實驗多測到什麼，又比活體臨床試驗少承擔什麼風險？",
+          "如果你要找出 microthrombosis 的主因，會如何區分免疫活化、凝血蛋白不相容與單純灌流不足這三種替代解釋？"
+        ]
       }
     ],
-    "radar":{"title":"技能趨勢：single-cell multi-omics 正從『會跑 RNA-seq』升級成『能整合細胞狀態、染色質與 3D genome』","summary":"今天兩篇神經科學主題都指向同一個研究技能趨勢：只知道某個基因表現升降已經越來越不夠。人類海馬迴老化研究已把 single-nucleus RNA、chromatin accessibility、DNA methylation 與 3D genome architecture 放在同一框架；憂鬱症研究也用多組學重建神經新生軌跡。對準備研究所或暑期研究的人，現在值得累積的不是『背更多 omics 名稱』，而是能回答：每一層資料測到什麼、哪些結論只能相關、如何把多層證據接成可驗證機制。這會同時連到生物資訊、神經科學、癌症與藥物研發，而且很適合作為 Python／R 學習的真實專案牽引。","url":"https://www.science.org/doi/10.1126/science.adt8307"}
+    "radar": {
+      "title": "技能趨勢：神經科學正在要求『同時懂細胞活動與群體時間序列』",
+      "summary": "今天兩篇 Nature Neuroscience 研究都不是只問某種細胞『亮不亮』，而是分析跨秒、跨細胞的 activity sequence、delay scaling 與情境特異性。這代表 calcium imaging、time-series analysis、population coding 與因果操控正在越來越緊密地綁在一起。對準備神經科學研究訓練的人，值得逐步建立 Python 資料分析能力：先學時間序列視覺化、event detection、trial alignment，再進到 population representation 與 decoding。這類能力同時能銜接 wet-lab imaging 與 computational neuroscience，而不需要一開始就把自己鎖定成純程式研究者。",
+      "url": "https://www.nature.com/articles/s41593-026-02448-0"
+    }
   },
-  "importantMail":{"count":2,"status":"目前有 2 封需要注意的郵件，涉及今日有明確時間的社團安排，以及一項重要合作／會議工具的異常狀態；詳細內容不存放在公開 Daily Board。"}
+  "importantMail": {
+    "count": 0,
+    "status": "目前沒有新的郵件同時符合『學校／課程／教授或重要工作、社團、合作事項』以及『明確截止、需要回覆／行動、取消／異常／時間變更』條件。"
+  }
 }
