@@ -1,83 +1,62 @@
 {
-  "schemaVersion": "0.4",
-  "date": "2026-09-17",
-  "updatedAt": "2026-09-17T07:30:10+08:00",
-  "report": {
-    "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在修正我們對『誰在做事』的直覺：記憶的時間結構不只神經元在編碼，小腦也不只負責動作，而異種移植真正的瓶頸也不只是免疫排斥。從星狀膠細胞、獎賞迴路到基因改造豬肝，今天的共同主題是把複雜生物功能拆成可測量、可操控的機制。",
-    "stories": [
+  "schemaVersion":"0.4",
+  "date":"2026-09-18",
+  "updatedAt":"2026-09-18T07:31:44+08:00",
+  "report":{
+    "title":"每日生醫・神經科學摘要",
+    "intro":"今天三篇都在提醒我們：疾病機制常藏在傳統分類之外。兒童腦瘤可能利用真正的神經突觸取得生長訊號，多發性硬化復發前數月已能看到 EBV 與免疫系統共同變化，而阿茲海默症研究則挖出過去蛋白質資料庫幾乎看不見的微蛋白層。共同主線是把疾病往細胞間訊號、時間序列與尚未註解的分子層級往下拆。",
+    "stories":[
       {
-        "category": "神經科學・記憶・星狀膠細胞",
-        "title": "記憶的『時間順序』不只神經元在記：海馬迴星狀膠細胞也會排出可重現的活動序列",
-        "widgetTitle": "星狀膠細胞也會記時間順序？",
-        "widgetSummary": "小鼠形成恐懼記憶時，海馬迴星狀膠細胞會依序出現鈣訊號；之後回到同一情境，即使沒有再受刺激，類似的活動序列仍會重新出現。",
-        "dek": "星狀膠細胞過去常被當成神經元的支援角色，但新的 Nature Neuroscience 研究發現，它們在學習後會形成具有時間結構的活動序列，而且這些序列在記憶回想時會再次出現。這不等於星狀膠細胞已被證明『儲存記憶』，卻顯示記憶的時間編碼可能是神經元與膠細胞共同完成的網路現象。",
-        "background": "海馬迴是形成情境與事件記憶的重要腦區。神經科學早已知道其中存在 time cells：不同神經元會在一段經驗的不同時間點依序活化，像把事件切成時間座標。Astrocytes（星狀膠細胞）不是典型會發出動作電位的神經元，但它們能透過細胞內 Ca2+ 訊號反應神經傳導物質、調節突觸與局部網路。問題是，這些膠細胞訊號究竟只是跟著神經元變化，還是也帶有經驗本身的結構資訊？",
-        "whatHappened": "研究者讓小鼠接受 contextual fear conditioning：在特定環境中遭遇足部電擊。電擊後，背側海馬 CA1 的星狀膠細胞不是全部同時亮起，而是出現具有順序的 calcium-event sequences，而且時間結構被壓縮。之後小鼠重新回到曾經受電擊的情境，即使不再電擊，類似序列仍會重新出現；換到另一個不同情境則沒有同樣現象。在原本的條件化情境中，星狀膠細胞自發活動也和 freezing 等行為狀態轉換相關。已確認的是『情境特異、可重現的星狀膠細胞活動序列』；研究者進一步解讀它可能參與 associative memory 的時間表徵，但尚未證明序列本身就是記憶痕跡。",
-        "howTheyStudied": "團隊在自由活動小鼠的 dorsal CA1 使用 one-photon calcium imaging，跨多天追蹤星狀膠細胞。Calcium imaging 利用會隨細胞內 Ca2+ 改變亮度的螢光感測器，把細胞訊號轉成可追蹤的時間序列。研究者比較足部電擊後、之後回到 conditioned context，以及進入不同新情境時的活動，並用事件偵測與序列分析判斷哪些細胞在什麼時間點依序活化。這種設計的關鍵是同時保留『時間』與『情境』兩個維度，而不是只比較平均螢光強度。",
-        "whyItMatters": "如果星狀膠細胞真的參與記憶的時間組織，那麼海馬迴記憶模型就不能只由神經元組成。星狀膠細胞能感受 norepinephrine、調節突觸與局部代謝，因此可能把整體行為狀態和局部神經活動接起來。對記憶障礙研究而言，未來也需要問：疾病中的問題究竟只發生在 neuronal engram，還是神經元—膠細胞協作一起失衡？",
-        "limitations": "這項研究主要證明活動序列與學習、回想及行為狀態具有關聯，沒有直接操控某一段星狀膠細胞序列來證明它對記憶形成或回想是必要的。Calcium signal 也不是星狀膠細胞所有生理功能的完整代理，而且研究中的部分行為關聯在性別上並非完全一致。因此不能把結果簡化成『星狀膠細胞就是另一種 time cell』。",
-        "whatNext": "下一步最重要的是做因果操控：在學習或回想的特定時間窗選擇性干擾這些 astrocytic sequences，看小鼠是否失去時間結構或情境特異的記憶；同時記錄神經元與星狀膠細胞，才能判斷兩種細胞的序列誰先出現、如何互相影響。",
-        "sources": [
-          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02448-0"}
-        ],
-        "questions": [
-          "為什麼『不同星狀膠細胞依序活化』比單純看到整體 calcium signal 上升，更能支持它們可能攜帶時間資訊？",
-          "研究者為什麼一定要加入一個不同的新情境，而不能只比較電擊當下與之後回想？",
-          "如果你要證明 astrocytic sequence 不是神經元活動的被動副產品，而是真的參與記憶，你會優先操控哪個環節？"
-        ]
+        "category":"神經腫瘤・神經突觸・藥物再利用",
+        "title":"抗癲癇藥為什麼可能抑制兒童腦瘤？因為有些腫瘤真的會接上神經元的突觸",
+        "widgetTitle":"腦瘤也會接收神經突觸訊號",
+        "widgetSummary":"Nature Medicine 研究發現，levetiracetam 能削弱神經元傳給 diffuse midline glioma 的 GABAergic synaptic signal，並在小鼠模型中減慢腫瘤生長。人類回溯資料也看到較長存活，但還不是臨床試驗證明。",
+        "dek":"Diffuse midline glioma 是極難治療的兒童中樞神經腫瘤。研究者把原本治療癲癇的 levetiracetam，連到近年才逐漸清楚的腫瘤機制：癌細胞不只是長在神經組織旁邊，而能建立真正的 neuron-to-glioma synapses，利用神經活動促進生長。",
+        "background":"Diffuse midline glioma（DMG）常發生在腦幹、丘腦或脊髓等中線結構，許多腫瘤帶有 H3K27M 相關異常。近年的 cancer neuroscience 發現，某些 glioma cells 可以和正常神經元建立功能性突觸。突觸是細胞把電化學訊號精準送給下一個細胞的連接點；在 DMG 中，GABAergic neurons 傳來的訊號反而能使腫瘤細胞去極化並促進生長。Levetiracetam 原本是常用抗癲癇藥，經典機制是作用於突觸囊泡蛋白 SV2A。",
+        "whatHappened":"研究發現 levetiracetam 能降低 DMG malignant cells 接收到的低頻 GABAergic synaptic currents，並在多個病人來源的 DMG 小鼠模型中降低腫瘤負荷、減少癌細胞增殖並延長存活。這個效應在 hemispheric high-grade glioma 模型中沒有出現。更意外的是，抗腫瘤效應似乎不是經典 SV2A 機制：更專一作用 SV2A 的 brivaracetam 沒有重現同樣效果。人類回溯資料也發現服用 levetiracetam 的 DMG 兒童存活較長，但只能說相關，不能把差異直接當成藥物造成的延命。",
+        "howTheyStudied":"團隊串起三層證據：先比較接受與未接受 levetiracetam 的患者病歷；再用 patient-derived orthotopic xenografts，把患者腫瘤細胞放進小鼠相對應位置後給藥；最後以電生理直接量 GABAergic synaptic currents，並用 brivaracetam、SV2A knockdown 等方式測試是否依賴傳統抗癲癇機制。",
+        "whyItMatters":"這篇研究把 cancer neuroscience 推進到治療層級：如果腫瘤把神經迴路當成生長訊號來源，治療標的就不只在癌細胞內部，也可能是 neuron–cancer communication 本身。未來甚至可能需要依腫瘤接收哪一種神經訊號來選治療。",
+        "limitations":"人類存活資料是回溯性觀察，不是隨機試驗；服藥者可能在腫瘤位置、癲癇表現或其他治療上本來就不同。主要因果證據來自細胞與小鼠，而且尚未找出 levetiracetam 在 DMG 上真正的分子靶點。",
+        "whatNext":"下一步是前瞻性臨床試驗，事先規定 levetiracetam 使用方式並和適當對照比較，同時量藥物濃度、腫瘤反應與存活；機制上則要找出它為何選擇性削弱 DMG 的 GABAergic synapse。",
+        "sources":[{"label":"Nature Medicine 原始研究","url":"https://www.nature.com/articles/s41591-026-04646-6"}],
+        "questions":["為什麼抑制 neuron-to-glioma 的 GABAergic synaptic current，可能讓 DMG 生長變慢，而不只是改變患者是否癲癇？","研究同時比較 DMG 與 hemispheric high-grade glioma，又加入 brivaracetam 與 SV2A knockdown，分別是在排除哪些替代解釋？","即使回溯病歷中服用 levetiracetam 的 DMG 患者存活較長，你還需要什麼臨床證據，才會相信是藥物本身造成差異？"]
       },
       {
-        "category": "神經科學・小腦・多巴胺獎賞",
-        "title": "小腦不只修正動作誤差：它會預測多巴胺獎賞何時到來，甚至參與學會『為獎賞而行動』",
-        "widgetTitle": "小腦也在預測多巴胺獎賞",
-        "widgetSummary": "小鼠為腦內多巴胺刺激學習按壓後，小腦顆粒細胞會在等待獎賞期間持續活動，而且會隨 1 秒或 2 秒延遲自動拉長。",
-        "dek": "小腦長期被視為動作協調與誤差修正中心，但新的 Nature Neuroscience 研究把吃、喝等動作因素拿掉，直接把多巴胺刺激當成獎賞，發現小腦同時存在『預測獎賞』與『收到獎賞後教導網路』的訊號。",
-        "background": "Dopamine（多巴胺）是獎賞學習的重要神經調節物質，但『獎賞』常和實際動作綁在一起：得到水就要舔、得到食物就要吃。因此如果小腦在吃東西時活化，很難知道它是在處理 reward，還是在協調 movement。小腦主要輸入系統中，granule cells（顆粒細胞）接收大量 mossy-fiber 資訊；climbing fibers 則從 inferior olive 投射到 Purkinje cells，常被視為具有教學或誤差信號功能。",
-        "whatHappened": "研究者讓小鼠學會按壓裝置，等待 1 秒或 2 秒後直接獲得腦內 dopamine reward，而不是食物或水。許多小腦 granule cells 在等待期間持續活化，而且活動長度會隨預期延遲從 1 秒『伸長』到 2 秒，直到獎賞抵達才結束；這很像一個對『何時會得到獎賞』的預測碼。相反地，多數 climbing fibers 在 dopamine delivery 之後才出現 spike，更像收到結果後的 instructive signal。抑制 granule cells 會破壞自我刺激學習；而直接把 climbing-fiber activation 當成獎賞，原本沒有訓練的小鼠也能形成中等程度的操作制約。",
-        "howTheyStudied": "團隊把 operant task、直接 dopamine self-stimulation、two-photon calcium imaging 與細胞類型特異操控結合。直接提供腦內 dopamine reward 的好處，是把『獎賞』和舔水、咀嚼等 consummatory movement 分離。研究者還改變 action-to-reward delay，測試神經活動是否真的追蹤預期時間；最後再用 chronic granule-cell inhibition 與 climbing-fiber self-stimulation 測試這些訊號是否只是相關，還是能影響學習。",
-        "whyItMatters": "這項研究把小腦放進更廣的 reward-prediction network。它顯示 motivated behavior 可能不是基底核與中腦多巴胺系統單獨完成：小腦也能建立對獎賞時間的預期，並提供會改變未來行為的教學訊號。這對成癮、動機缺失與強迫行為等疾病研究提供新的 circuit-level 問題。",
-        "limitations": "研究使用小鼠與人工腦內 dopamine stimulation，這種獎賞非常乾淨、適合拆機制，但和自然世界中帶有味覺、飽足感、社會情境與不確定性的獎賞不同。Granule-cell inhibition 也可能影響其他小腦計算，因此不能把所有學習缺陷都歸因於單一『獎賞倒數計時器』。",
-        "whatNext": "下一步可以在自然食物、社會獎賞與概率性獎賞中測試相同細胞是否仍保留時間預測碼，並追蹤小腦如何和 ventral tegmental area、striatum、prefrontal cortex 交換資訊。若要走向疾病研究，還需要測試這套小腦獎賞碼在 addiction、depression 或 dopamine-related disorders 中是否失衡。",
-        "sources": [
-          {"label": "Nature Neuroscience 原始研究", "url": "https://www.nature.com/articles/s41593-026-02449-z"}
-        ],
-        "questions": [
-          "為什麼直接用 dopamine stimulation 當獎賞，可以比給水或食物更乾淨地回答『小腦是否真的編碼 reward』？",
-          "把 reward delay 從 1 秒改成 2 秒，而 granule-cell activity 也跟著拉長，提供了什麼比單純 reward-related activation 更強的證據？",
-          "如果 artificial dopamine reward 和自然獎賞得到不同的小腦活動，你會怎麼判斷差異來自感覺／動作成分，還是來自獎賞本身的價值計算？"
-        ]
+        "category":"神經免疫・多發性硬化・EBV",
+        "title":"多發性硬化復發不是突然發生：EBV 與免疫系統的變化可能提前三個月出現",
+        "widgetTitle":"MS 復發前，EBV 已留下免疫訊號",
+        "widgetSummary":"研究者縱向追蹤多發性硬化患者血液，發現臨床復發前數週到三個月，B 細胞與單核球已出現 EBV 相關轉錄變化；帶 EBV gp350 的 B 細胞也增加。",
+        "dek":"EBV 幾乎是多發性硬化發病不可忽略的背景因素，但曾感染 EBV 無法解釋為什麼同一名患者會在某個月份突然復發。新的 Nature Medicine 研究改用時間軸追問：復發之前，潛伏在 B 細胞裡的 EBV 是否先重新活化？",
+        "background":"Multiple sclerosis（MS）是免疫系統攻擊中樞神經髓鞘與相關組織的疾病。Relapsing-remitting MS 患者會經歷相對穩定的 remission，再突然出現新的神經症狀與 MRI 發炎病灶。EBV 是感染 B 細胞的疱疹病毒，初次感染後通常以 latent state 潛伏；reactivation 則是病毒重新啟動部分基因表現甚至進入 lytic program。過去研究已把 EBV 和 MS 一生的發病風險連在一起，但某一次 relapse 何時發生是不同問題。",
+        "whatHappened":"在臨床與 MRI 確認的 relapse 前最多約三個月，monocytes 與 B cells 已出現可重現的 pre-relapse transcriptional signature，並富含 EBV lytic-reactivation factors 會影響的宿主基因。B 細胞中 EBV LMP-1 transcript 升高，帶有 EBV late-lytic surface protein gp350 的 B cells 也增加。最明顯改變的 ABC-like／CD11c+ B-cell states，同時富集 MS GWAS risk genes 與 EBV protein EBNA-2 會結合的調控區域，支持病毒活動和宿主遺傳易感性可能在同一批免疫細胞交會。",
+        "howTheyStudied":"研究納入 135 名參與者，其中 114 名為 MS 患者、21 名健康對照，共分析 240 份血液樣本。關鍵是利用縱向樣本把 remission、0–90 天 pre-relapse 與 relapse 排在同一時間軸，並整合 single-cell RNA-seq、B-cell bulk RNA-seq、multiparameter flow cytometry、viral RT-qPCR 與 genetic-risk analysis。復發還要求兩位神經科醫師確認並有 contrast-enhancing MRI lesion。",
+        "whyItMatters":"這篇把 EBV–MS 關係從『可能參與疾病形成』推到更具時間性的問題：病毒活動可能在一次真正 relapse 前就參與免疫系統的預熱。若能重複驗證，pre-relapse signature 有機會成為預警 biomarker，也可能支持針對 EBV reservoir 或特定 B-cell state 的精準介入。",
+        "limitations":"這仍是 observational study。即使 EBV-related signals 在時間上先於 relapse，也不能證明 EBV reactivation 就是起始原因；第三個感染、壓力或免疫事件可能同時促使 EBV 活化和 MS 復發。周邊血液的變化如何一步步轉成 CNS lesion 也仍未建立。",
+        "whatNext":"需要更高頻率、前瞻性的抽血追蹤，確認這套 signature 能否在不知道未來結果時預測 relapse；更強的因果測試則是介入 EBV reactivation 或特定 pre-relapse B-cell population，看復發率是否真正下降。",
+        "sources":[{"label":"Nature Medicine 原始研究","url":"https://www.nature.com/articles/s41591-026-04665-3"}],
+        "questions":["為什麼 EBV reactivation 訊號出現在 relapse 前，比只比較 MS 患者與健康人的 EBV 指標，更能幫助理解復發機制？","研究者為什麼要把 scRNA-seq、viral RT-qPCR、flow cytometry 與 MRI-confirmed relapse 放在一起，而不能只靠其中一種證據？","如果 EBV reactivation 和 MS relapse 都由第三個免疫事件觸發，你會怎麼區分『EBV 是原因』和『EBV 只是同時被喚醒的旁觀者』？"]
       },
       {
-        "category": "生醫・異種移植・器官工程",
-        "title": "基因改造豬肝完整取代人類肝臟 11 天：真正先卡住的不是『完全排斥』，而是微血栓與灌流",
-        "widgetTitle": "豬肝在人類體內工作了 11 天",
-        "widgetSummary": "研究者把基因改造豬肝完整移植到一名腦死亡人體中；器官持續製造膽汁與白蛋白，但後期功能下降暴露出微血栓與血流灌注仍是核心障礙。",
-        "dek": "異種移植常被想成『免疫系統會不會立刻把豬器官排掉』，但肝臟比腎臟更複雜：它同時參與代謝、凝血、免疫與蛋白製造。新的 Nature Biomedical Engineering 研究完成基因改造豬到腦死亡人體的 orthotopic liver xenotransplantation，讓我們第一次更接近看到『完整豬肝取代原肝後，哪個生理環節先成為瓶頸』。",
-        "background": "Xenotransplantation（異種移植）是把不同物種的器官移植給人類，希望緩解器官短缺。豬器官大小與生理條件較接近人類，但豬細胞表面分子會觸發人類抗體、補體與凝血系統，因此需要基因工程降低排斥與血栓。Orthotopic transplantation 指把原本器官移除，再把新器官放到原本解剖位置；這比把豬肝當作額外的 auxiliary support 更嚴格，因為移植物必須真正承擔整個肝臟功能。",
-        "whatHappened": "研究團隊把基因改造豬肝移植到一名腦死亡個體，觀察 11 天。期間豬肝持續產生 albumin 與 bile，而且膽汁成分大致正常；受試者整體 hemodynamics 也能維持穩定。可是後期肝功能逐漸下降，研究者發現 suboptimal hepatic perfusion 與 microthrombosis，認為這很可能是重要原因。這表示至少在這段短期觀察中，器官並沒有立刻因典型超急性排斥而完全失效，但豬—人之間的血管、凝血與灌流相容性仍遠未解決。",
-        "howTheyStudied": "這是一項 decedent model：在經倫理程序取得同意的腦死亡人體中進行實際 orthotopic transplantation，再連續監測循環、肝臟灌流、膽汁、albumin、凝血與組織病理。這種模型位在非人靈長類與活體臨床試驗之間：它能測試真正的人體血液、免疫與器官尺寸環境，又不等同於把尚未成熟的技術直接用在需要長期存活的患者身上。",
-        "whyItMatters": "肝臟異種移植的價值不只在『有沒有多一顆器官』，而是能否提供代謝、解毒、蛋白合成與凝血等高度整合功能。這次結果把研發問題變得更具體：除了抑制免疫排斥，下一代基因改造與治療方案還必須處理 endothelial compatibility、coagulation mismatch 與微循環灌流。這些失敗點被看見，本身就是走向臨床前的重要資訊。",
-        "limitations": "這只是單一腦死亡人體、11 天觀察，不能推論活體患者能安全存活數月或數年。腦死亡本身會造成強烈的內分泌、發炎與循環變化，也和一般移植患者不同。白蛋白與膽汁產生證明豬肝具有部分功能，但產量偏低，而且不能代表完整代謝、凝血與長期免疫相容性都正常。",
-        "whatNext": "下一步需要在更多 decedent 與大型動物模型中拆解 microthrombosis 的來源：是豬內皮和人類凝血蛋白不相容、局部血流力學、免疫活化，還是多者共同造成；同時也需要改良豬的基因組、抗凝與免疫抑制策略。只有當長期灌流、凝血與完整肝功能更穩定後，才有理由評估活體患者的早期臨床試驗。",
-        "sources": [
-          {"label": "Nature Biomedical Engineering 原始研究", "url": "https://www.nature.com/articles/s41551-026-01797-2"}
-        ],
-        "questions": [
-          "為什麼豬肝能製造膽汁和白蛋白，仍不能直接說它已經完整取代人類肝臟功能？",
-          "為什麼 decedent model 對異種移植特別有價值？它比動物實驗多測到什麼，又比活體臨床試驗少承擔什麼風險？",
-          "如果你要找出 microthrombosis 的主因，會如何區分免疫活化、凝血蛋白不相容與單純灌流不足這三種替代解釋？"
-        ]
+        "category":"阿茲海默症・蛋白質體學・小膠質細胞",
+        "title":"人類蛋白質地圖可能漏掉了一整層：阿茲海默症研究找到超過一千種未註解微蛋白",
+        "widgetTitle":"阿茲海默症的隱藏微蛋白地圖",
+        "widgetSummary":"研究整合 600 多份人類額葉死後腦組織的轉錄體與質譜資料，找到 1,067 種未收錄於 reviewed UniProtKB 的高可信度微蛋白，其中一種 63 個胺基酸的 MKKS 微蛋白會影響小膠質細胞粒線體呼吸。",
+        "dek":"基因組裡能被翻譯的序列，不一定都長得像教科書中的大型 protein-coding gene。Nature Aging 的新 atlas 專門尋找約 150 個胺基酸以下的 microproteins，結果在老化與阿茲海默症人腦中挖出一個過去標準 proteome 很容易漏掉的分子世界。",
+        "background":"傳統基因註解比較容易辨認長 open reading frame（ORF），但人類 RNA 裡還有許多 small ORFs，可以產生只有幾十到約 150 個胺基酸的 microproteins。因為它們短、訊號弱，而且很多沒有收進標準 reference proteome，傳統 mass spectrometry 分析常直接忽略。這不代表它們沒有功能，只代表過去的搜尋字典可能沒有把它們列進去。",
+        "whatHappened":"研究在超過 600 份有、無阿茲海默症的人類額葉死後樣本中，找到 1,067 種不在 reviewed UniProtKB entries 裡、但有高可信度光譜支持的 microproteins。一部分在 AD 中差異表現，而且可獨立於同一 locus 的 canonical protein。研究特別追蹤 MKKS locus：其中一個 small ORF 產生 63-amino-acid microprotein，在 AD 中下降；讓 microglia 缺少這個 microprotein 後，mitochondrial respiration 受損，顯示它可能真的參與小膠質細胞能量代謝。",
+        "howTheyStudied":"團隊使用 proteogenomics：利用 transcriptomic information 找可能的 small ORFs，再用 mass spectrometry 尋找對應 peptide spectra，並加入 deep-learning-predicted spectra 提高鑑定可信度。大樣本人類死後腦資料用來比較 AD pathology 與 microprotein abundance；接著挑候選 microprotein 做細胞功能實驗，測量失去它後 microglial mitochondrial respiration 是否改變。",
+        "whyItMatters":"如果 reference proteome 本身不完整，那麼過去做 Alzheimer’s proteomics、biomarker discovery 甚至 drug-target screening 時，可能系統性忽略了一批真正有功能的小蛋白。一個 genomic locus 也不一定只有教科書標註的 canonical protein 值得研究；small ORF 產物可能有自己的調控與疾病關聯。",
+        "limitations":"1,067 種 microproteins 並不代表全部都和 AD 有關，更不代表都是治療標的。死後腦差異表現可能是疾病結果而非原因，目前深入功能驗證只涵蓋少數候選。MKKS microprotein 影響 microglial respiration，也還沒有證明它會改變 amyloid、tau 或患者認知。",
+        "whatNext":"接下來要確認哪些 microproteins 在 neuron、astrocyte、microglia 或 oligodendrocyte 中表現，找出細胞內位置與結合夥伴，再以基因編輯分離 canonical protein 與 small-ORF product 的功能。對 MKKS microprotein，關鍵是測試恢復它是否能救回 microglial metabolism，以及是否真正改變 AD model 的病理。",
+        "sources":[{"label":"Nature Aging 原始研究","url":"https://www.nature.com/articles/s43587-026-01207-x"},{"label":"Nature Aging Research Briefing","url":"https://www.nature.com/articles/s43587-026-01215-x"}],
+        "questions":["為什麼標準 protein database 沒有收錄某個 small ORF 產物，不代表那個 microprotein 不存在或沒有功能？","研究者為什麼需要把 transcriptomics、mass spectrometry、預測光譜和細胞功能實驗串起來，才能讓 microprotein 的證據更可靠？","如果 MKKS microprotein 在 AD 腦中下降，而且 knockdown 會傷害 microglial respiration，你還需要哪一步證據才能判斷它是疾病原因、補償反應，還是疾病後果？"]
       }
     ],
-    "radar": {
-      "title": "技能趨勢：神經科學正在要求『同時懂細胞活動與群體時間序列』",
-      "summary": "今天兩篇 Nature Neuroscience 研究都不是只問某種細胞『亮不亮』，而是分析跨秒、跨細胞的 activity sequence、delay scaling 與情境特異性。這代表 calcium imaging、time-series analysis、population coding 與因果操控正在越來越緊密地綁在一起。對準備神經科學研究訓練的人，值得逐步建立 Python 資料分析能力：先學時間序列視覺化、event detection、trial alignment，再進到 population representation 與 decoding。這類能力同時能銜接 wet-lab imaging 與 computational neuroscience，而不需要一開始就把自己鎖定成純程式研究者。",
-      "url": "https://www.nature.com/articles/s41593-026-02448-0"
+    "radar":{
+      "title":"Barrow Neurological Institute 2027 Summer Undergraduate Internship：國際學生可留意的神經科學研究實習",
+      "summary":"Barrow Neurological Institute 已公布 2027 暑期大學生研究實習時程：2026 年 12 月 4 日開放、2027 年 2 月 12 日截止，6 月 3 日 orientation、6 月 7 日正式開始，8 月 13 日結束。計畫直接聚焦 neuroscience／neurological research，適合想測試自己是否喜歡長時間進神經科學實驗室的人。特別值得注意的是，官方明確寫 international applicants 若符合條件可獲得 visa application support；這比許多要求學生自己已有 CPT／OPT 的美國暑研更值得臺灣學生追蹤。不過仍需逐項確認研究室、經費與簽證資格，不能把『提供簽證協助』理解成保證取得簽證。",
+      "url":"https://www.barrowneuro.org/for-physicians-researchers/research/training-programs/summer-undergraduate-program/"
     }
   },
-  "importantMail": {
-    "count": 0,
-    "status": "目前沒有新的郵件同時符合『學校／課程／教授或重要工作、社團、合作事項』以及『明確截止、需要回覆／行動、取消／異常／時間變更』條件。"
-  }
+  "importantMail":{"count":0,"status":"目前沒有新增郵件同時符合學校／課程／教授通知或重要工作、社團、合作事項，且包含明確截止、需要回覆／行動、取消／異常／時間變更；詳細郵件內容不存放在公開 Daily Board。"}
 }
