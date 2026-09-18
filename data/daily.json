@@ -1,62 +1,62 @@
 {
-  "schemaVersion":"0.4",
-  "date":"2026-09-18",
-  "updatedAt":"2026-09-18T07:31:44+08:00",
-  "report":{
-    "title":"每日生醫・神經科學摘要",
-    "intro":"今天三篇都在提醒我們：疾病機制常藏在傳統分類之外。兒童腦瘤可能利用真正的神經突觸取得生長訊號，多發性硬化復發前數月已能看到 EBV 與免疫系統共同變化，而阿茲海默症研究則挖出過去蛋白質資料庫幾乎看不見的微蛋白層。共同主線是把疾病往細胞間訊號、時間序列與尚未註解的分子層級往下拆。",
-    "stories":[
+  "schemaVersion": "0.4",
+  "date": "2026-09-19",
+  "updatedAt": "2026-09-19T07:27:12+08:00",
+  "report": {
+    "title": "每日生醫・神經科學摘要",
+    "intro": "今天三條主線都在重新畫我們以為已經很熟悉的生物學地圖：大腦胚胎發育可能從一開始就有兩套彼此受限的祖細胞路徑；不同視覺皮質區不是各算各的，而會透過雙向連線把彼此矛盾的活動快速消掉；而一項罕見兒童神經退化疾病的基因治療正式獲 FDA 核准，也讓我們看到『補回缺失酵素』如何一路連到認知結果與長期安全性。今天特別適合練習把發育、神經迴路與臨床轉譯三個尺度放在一起看。",
+    "stories": [
       {
-        "category":"神經腫瘤・神經突觸・藥物再利用",
-        "title":"抗癲癇藥為什麼可能抑制兒童腦瘤？因為有些腫瘤真的會接上神經元的突觸",
-        "widgetTitle":"腦瘤也會接收神經突觸訊號",
-        "widgetSummary":"Nature Medicine 研究發現，levetiracetam 能削弱神經元傳給 diffuse midline glioma 的 GABAergic synaptic signal，並在小鼠模型中減慢腫瘤生長。人類回溯資料也看到較長存活，但還不是臨床試驗證明。",
-        "dek":"Diffuse midline glioma 是極難治療的兒童中樞神經腫瘤。研究者把原本治療癲癇的 levetiracetam，連到近年才逐漸清楚的腫瘤機制：癌細胞不只是長在神經組織旁邊，而能建立真正的 neuron-to-glioma synapses，利用神經活動促進生長。",
-        "background":"Diffuse midline glioma（DMG）常發生在腦幹、丘腦或脊髓等中線結構，許多腫瘤帶有 H3K27M 相關異常。近年的 cancer neuroscience 發現，某些 glioma cells 可以和正常神經元建立功能性突觸。突觸是細胞把電化學訊號精準送給下一個細胞的連接點；在 DMG 中，GABAergic neurons 傳來的訊號反而能使腫瘤細胞去極化並促進生長。Levetiracetam 原本是常用抗癲癇藥，經典機制是作用於突觸囊泡蛋白 SV2A。",
-        "whatHappened":"研究發現 levetiracetam 能降低 DMG malignant cells 接收到的低頻 GABAergic synaptic currents，並在多個病人來源的 DMG 小鼠模型中降低腫瘤負荷、減少癌細胞增殖並延長存活。這個效應在 hemispheric high-grade glioma 模型中沒有出現。更意外的是，抗腫瘤效應似乎不是經典 SV2A 機制：更專一作用 SV2A 的 brivaracetam 沒有重現同樣效果。人類回溯資料也發現服用 levetiracetam 的 DMG 兒童存活較長，但只能說相關，不能把差異直接當成藥物造成的延命。",
-        "howTheyStudied":"團隊串起三層證據：先比較接受與未接受 levetiracetam 的患者病歷；再用 patient-derived orthotopic xenografts，把患者腫瘤細胞放進小鼠相對應位置後給藥；最後以電生理直接量 GABAergic synaptic currents，並用 brivaracetam、SV2A knockdown 等方式測試是否依賴傳統抗癲癇機制。",
-        "whyItMatters":"這篇研究把 cancer neuroscience 推進到治療層級：如果腫瘤把神經迴路當成生長訊號來源，治療標的就不只在癌細胞內部，也可能是 neuron–cancer communication 本身。未來甚至可能需要依腫瘤接收哪一種神經訊號來選治療。",
-        "limitations":"人類存活資料是回溯性觀察，不是隨機試驗；服藥者可能在腫瘤位置、癲癇表現或其他治療上本來就不同。主要因果證據來自細胞與小鼠，而且尚未找出 levetiracetam 在 DMG 上真正的分子靶點。",
-        "whatNext":"下一步是前瞻性臨床試驗，事先規定 levetiracetam 使用方式並和適當對照比較，同時量藥物濃度、腫瘤反應與存活；機制上則要找出它為何選擇性削弱 DMG 的 GABAergic synapse。",
-        "sources":[{"label":"Nature Medicine 原始研究","url":"https://www.nature.com/articles/s41591-026-04646-6"}],
-        "questions":["為什麼抑制 neuron-to-glioma 的 GABAergic synaptic current，可能讓 DMG 生長變慢，而不只是改變患者是否癲癇？","研究同時比較 DMG 與 hemispheric high-grade glioma，又加入 brivaracetam 與 SV2A knockdown，分別是在排除哪些替代解釋？","即使回溯病歷中服用 levetiracetam 的 DMG 患者存活較長，你還需要什麼臨床證據，才會相信是藥物本身造成差異？"]
+        "category": "發育神經科學・幹細胞・腦幹",
+        "title": "大腦可能不是從同一種祖細胞一路分岔：前腦／中腦與後腦從胚胎早期就走上兩條路",
+        "widgetTitle": "大腦發育其實有兩條起跑線",
+        "widgetSummary": "Nature Neuroscience 研究用小鼠胚胎 lineage tracing 與人類多能幹細胞指出，前腦／中腦和後腦可能源自兩群彼此受限的 neural ectoderm progenitors。這也讓研究者更有效率地製造過去難培養的人類後腦運動神經元。",
+        "dek": "教科書常把大腦發育畫成一棵樹：先有共同的 neural progenitor，再逐步分成前腦、中腦和後腦。新研究提出更根本的修正——在非常早的 gastrulation 階段，形成前腦／中腦與形成後腦的細胞可能已經是兩條平行、彼此受限的 lineage。",
+        "background": "胚胎發育時，ectoderm 的一部分會成為 neural ectoderm，之後建立中樞神經系統。所謂 progenitor cell，是還能增殖並產生後代細胞、但命運已受到一定限制的前驅細胞。傳統模型常假設整個腦先共享一個共同神經外胚層祖先，再靠位置訊號逐漸分化；但如果前端與後端從一開始就是不同 progenitors，那麼『怎麼把幹細胞變成特定腦區神經元』的實驗設計也必須改寫。",
+        "whatHappened": "研究者在小鼠胚胎看到兩群同時出現、命運幾乎不重疊的 neural ectoderm progenitors：anterior neural ectoderm 主要形成 forebrain 與 midbrain，posterior neural ectoderm 則形成 hindbrain。把人類 pluripotent stem cells 分別導向這兩種狀態後，它們也維持不同的 lineage commitment，並具有不同的 chromatin accessibility landscape；也就是還沒完全長成神經元以前，哪些 DNA 調控區域容易被使用就已經不同。研究者進一步利用這套發育邏輯，製造出 rhombomere 5/6 特異的 hindbrain motor neurons，這類細胞過去在體外一直相當難穩定生成。跨物種比較還顯示類似 anterior/posterior 分界可見於其他脊椎動物甚至更遠的動物類群，作者因此提出這種雙祖細胞架構可能具有深遠的演化來源。",
+        "howTheyStudied": "核心證據不是只看幾個 marker。研究先在小鼠胚胎做 lineage tracing，直接追蹤早期細胞後代最後去了哪裡；再把人類 pluripotent stem cells 誘導成 anterior 或 posterior neural ectoderm，利用 single-cell RNA-seq、bulk RNA-seq、Omni-ATAC-seq 與免疫染色比較基因表現和染色質狀態，並測試它們是否會跨越原本的腦區命運。最後再把 posterior lineage 往特定 hindbrain motor-neuron fate 推進，並做神經元功能驗證。",
+        "whyItMatters": "這不只是替胚胎學改一張圖。ALS、spinal muscular atrophy 等疾病會傷害參與吞嚥、呼吸與其他基本功能的後腦／腦幹運動神經元，但研究者長期較難在培養皿中做出真正符合後腦身份的細胞。如果細胞從非常早期就必須先走對 posterior neural ectoderm 路徑，過去直接從『共同 neural progenitor』往後腦推的流程可能從起點就不夠自然。新方法因此可能改善疾病模型與藥物測試的細胞身分準確度。",
+        "limitations": "『大腦是兩個器官』是作者用來描述發育與演化架構的概念模型，不應被理解成成人腦真的由兩個彼此獨立運作的器官拼起來。最強的 in vivo lineage tracing 來自小鼠；人類部分主要依賴 pluripotent-stem-cell differentiation，因此仍需更多人類胚胎與空間資料驗證。跨物種看到相似分界也支持演化保守性，但不能單靠現代物種比較完整重建五億多年前的演化事件。",
+        "whatNext": "下一步一方面要用更多人類發育樣本確認 anterior/posterior progenitors 在真實胚胎中的時間與空間關係；另一方面可比較用新方法生成的 hindbrain motor neurons，是否比舊方法更接近患者腦幹細胞的 transcriptome、electrophysiology 與疾病 phenotype，並實際用於 ALS、SMA 等疾病模型。",
+        "sources": [{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02433-7"},{"label":"Stanford Medicine 研究介紹","url":"https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html"}],
+        "questions": ["如果前腦／中腦與後腦從很早期就是不同 progenitor lineage，為什麼這會改變我們從 pluripotent stem cells 製造腦幹神經元的策略？","為什麼 lineage tracing 加上 RNA 與 chromatin accessibility，比只看到 OTX2 或 GBX2 等區域 marker 更能支持『兩條受限 lineage』？","跨物種都看到 anterior/posterior 分界，仍然不能直接證明兩套神經系統在演化史上曾是兩個獨立器官；還需要哪些比較或發育證據才能把這個演化推論做得更強？"]
       },
       {
-        "category":"神經免疫・多發性硬化・EBV",
-        "title":"多發性硬化復發不是突然發生：EBV 與免疫系統的變化可能提前三個月出現",
-        "widgetTitle":"MS 復發前，EBV 已留下免疫訊號",
-        "widgetSummary":"研究者縱向追蹤多發性硬化患者血液，發現臨床復發前數週到三個月，B 細胞與單核球已出現 EBV 相關轉錄變化；帶 EBV gp350 的 B 細胞也增加。",
-        "dek":"EBV 幾乎是多發性硬化發病不可忽略的背景因素，但曾感染 EBV 無法解釋為什麼同一名患者會在某個月份突然復發。新的 Nature Medicine 研究改用時間軸追問：復發之前，潛伏在 B 細胞裡的 EBV 是否先重新活化？",
-        "background":"Multiple sclerosis（MS）是免疫系統攻擊中樞神經髓鞘與相關組織的疾病。Relapsing-remitting MS 患者會經歷相對穩定的 remission，再突然出現新的神經症狀與 MRI 發炎病灶。EBV 是感染 B 細胞的疱疹病毒，初次感染後通常以 latent state 潛伏；reactivation 則是病毒重新啟動部分基因表現甚至進入 lytic program。過去研究已把 EBV 和 MS 一生的發病風險連在一起，但某一次 relapse 何時發生是不同問題。",
-        "whatHappened":"在臨床與 MRI 確認的 relapse 前最多約三個月，monocytes 與 B cells 已出現可重現的 pre-relapse transcriptional signature，並富含 EBV lytic-reactivation factors 會影響的宿主基因。B 細胞中 EBV LMP-1 transcript 升高，帶有 EBV late-lytic surface protein gp350 的 B cells 也增加。最明顯改變的 ABC-like／CD11c+ B-cell states，同時富集 MS GWAS risk genes 與 EBV protein EBNA-2 會結合的調控區域，支持病毒活動和宿主遺傳易感性可能在同一批免疫細胞交會。",
-        "howTheyStudied":"研究納入 135 名參與者，其中 114 名為 MS 患者、21 名健康對照，共分析 240 份血液樣本。關鍵是利用縱向樣本把 remission、0–90 天 pre-relapse 與 relapse 排在同一時間軸，並整合 single-cell RNA-seq、B-cell bulk RNA-seq、multiparameter flow cytometry、viral RT-qPCR 與 genetic-risk analysis。復發還要求兩位神經科醫師確認並有 contrast-enhancing MRI lesion。",
-        "whyItMatters":"這篇把 EBV–MS 關係從『可能參與疾病形成』推到更具時間性的問題：病毒活動可能在一次真正 relapse 前就參與免疫系統的預熱。若能重複驗證，pre-relapse signature 有機會成為預警 biomarker，也可能支持針對 EBV reservoir 或特定 B-cell state 的精準介入。",
-        "limitations":"這仍是 observational study。即使 EBV-related signals 在時間上先於 relapse，也不能證明 EBV reactivation 就是起始原因；第三個感染、壓力或免疫事件可能同時促使 EBV 活化和 MS 復發。周邊血液的變化如何一步步轉成 CNS lesion 也仍未建立。",
-        "whatNext":"需要更高頻率、前瞻性的抽血追蹤，確認這套 signature 能否在不知道未來結果時預測 relapse；更強的因果測試則是介入 EBV reactivation 或特定 pre-relapse B-cell population，看復發率是否真正下降。",
-        "sources":[{"label":"Nature Medicine 原始研究","url":"https://www.nature.com/articles/s41591-026-04665-3"}],
-        "questions":["為什麼 EBV reactivation 訊號出現在 relapse 前，比只比較 MS 患者與健康人的 EBV 指標，更能幫助理解復發機制？","研究者為什麼要把 scRNA-seq、viral RT-qPCR、flow cytometry 與 MRI-confirmed relapse 放在一起，而不能只靠其中一種證據？","如果 EBV reactivation 和 MS relapse 都由第三個免疫事件觸發，你會怎麼區分『EBV 是原因』和『EBV 只是同時被喚醒的旁觀者』？"]
+        "category": "系統神經科學・視覺皮質・神經動力學",
+        "title": "兩個腦區意見不一致時怎麼辦？視覺皮質的雙向連線會讓『共識』留下、讓衝突快速消退",
+        "widgetTitle": "皮質區域會彼此協商出共識",
+        "widgetSummary": "研究同時記錄小鼠 V1 與高階視覺區 LM，發現雙向長程連線會延長兩區一致的活動模式，卻讓彼此矛盾的模式更快消退。大腦整合資訊可能不是由單一高階區下最後決定，而是靠反覆互相回饋。",
+        "dek": "大腦皮質高度分工：不同區域各自處理不同資訊。但最後我們看到的不是幾十個互相矛盾的版本，而是一個相對一致的知覺。新的 Nature Neuroscience 研究直接問：當兩個皮質區域的活動不一致時，神經迴路本身如何把衝突消掉？",
+        "background": "Primary visual cortex（V1）是視覺訊息進入大腦皮質的重要早期站點；lateromedial visual area（LM）則是小鼠較高階的視覺區域。兩者不是單向 V1→LM，而有大量 reciprocal connections，也就是 V1 傳給 LM、LM 又回傳 V1。研究中的 neural dynamics 指的是一群神經元活動隨時間如何移動與衰減；如果某種活動模式衰減很慢，它就能在網路中維持更久並影響後續判斷。",
+        "whatHappened": "研究發現 V1 與 LM 的 reciprocal excitatory connections 會產生一種近似 line attractor 的共同動力學。白話說，當兩區的 population activity 指向彼此一致的解讀時，這種活動衰減得特別慢，可以被長時間保留；當兩區呈現互相衝突的 pattern 時，網路則讓不一致成分更快消失。因此『共識』不是某個區域投票贏了，而是兩區反覆回饋後，神經動力學本身選擇性保留一致模式。研究也顯示 sustained sensory responses 很依賴跨區長程連線，而不只是各區內部的 recurrent circuit。",
+        "howTheyStudied": "團隊在小鼠同時記錄 V1 與 LM 的神經元活動，並以 focal optogenetic perturbation 暫時改變其中一區，觀察另一區如何回應。研究再用 data-driven nonlinear system identification 建立受生物限制的 latent circuit model，把外部輸入、區內 recurrent connectivity 與 V1↔LM 長程連線拆開。模型預測『一致活動應比衝突活動維持更久』，研究者再回到實際神經資料驗證這個不同 timescale。",
+        "whyItMatters": "這提供一個分散式大腦如何形成單一知覺的機制候選：不同區域可以保留專業分工，不需要把所有資訊送進一個中央裁判，而是利用雙向連線動態地放大彼此一致的成分、壓低衝突。這個原理也可能延伸到決策、跨感官整合與工作記憶，並對設計會整合多個模組的人工神經網路有啟發。",
+        "limitations": "實驗聚焦小鼠視覺系統的 V1 與 LM，不能直接假定整個新皮質、所有感官或人類高階認知都使用同一套機制。latent circuit model 雖然能解釋並預測資料，但模型中的有效連線不是逐一量到的真實突觸。『consensus』也是對 population dynamics 的功能描述，不表示腦區具有像人一樣的意見或意識。",
+        "whatNext": "接下來可以在更多皮質區與不同任務中測試同一原理，尤其是刻意製造兩區接收到互相衝突的 sensory evidence，再精準切斷單向 feedback 或 feedforward projections，看共識形成、知覺與行為是否按模型預測改變。",
+        "sources": [{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02437-3"},{"label":"Cold Spring Harbor Laboratory 研究介紹","url":"https://www.cshl.edu/when-the-eyes-play-tricks-the-brain-builds-consensus/"}],
+        "questions": ["為什麼『一致活動衰減比較慢、衝突活動衰減比較快』可以讓兩個腦區最後形成較一致的視覺表徵？","研究者為什麼需要同時做多區電生理、局部 optogenetic perturbation 和 dynamical model，而不能只看 V1、LM 的活動相關性？","如果另一個腦區或 thalamus 同時驅動 V1 與 LM，也可能讓兩區看起來一致；你會怎麼設計實驗，確認 reciprocal V1↔LM connections 本身是必要的？"]
       },
       {
-        "category":"阿茲海默症・蛋白質體學・小膠質細胞",
-        "title":"人類蛋白質地圖可能漏掉了一整層：阿茲海默症研究找到超過一千種未註解微蛋白",
-        "widgetTitle":"阿茲海默症的隱藏微蛋白地圖",
-        "widgetSummary":"研究整合 600 多份人類額葉死後腦組織的轉錄體與質譜資料，找到 1,067 種未收錄於 reviewed UniProtKB 的高可信度微蛋白，其中一種 63 個胺基酸的 MKKS 微蛋白會影響小膠質細胞粒線體呼吸。",
-        "dek":"基因組裡能被翻譯的序列，不一定都長得像教科書中的大型 protein-coding gene。Nature Aging 的新 atlas 專門尋找約 150 個胺基酸以下的 microproteins，結果在老化與阿茲海默症人腦中挖出一個過去標準 proteome 很容易漏掉的分子世界。",
-        "background":"傳統基因註解比較容易辨認長 open reading frame（ORF），但人類 RNA 裡還有許多 small ORFs，可以產生只有幾十到約 150 個胺基酸的 microproteins。因為它們短、訊號弱，而且很多沒有收進標準 reference proteome，傳統 mass spectrometry 分析常直接忽略。這不代表它們沒有功能，只代表過去的搜尋字典可能沒有把它們列進去。",
-        "whatHappened":"研究在超過 600 份有、無阿茲海默症的人類額葉死後樣本中，找到 1,067 種不在 reviewed UniProtKB entries 裡、但有高可信度光譜支持的 microproteins。一部分在 AD 中差異表現，而且可獨立於同一 locus 的 canonical protein。研究特別追蹤 MKKS locus：其中一個 small ORF 產生 63-amino-acid microprotein，在 AD 中下降；讓 microglia 缺少這個 microprotein 後，mitochondrial respiration 受損，顯示它可能真的參與小膠質細胞能量代謝。",
-        "howTheyStudied":"團隊使用 proteogenomics：利用 transcriptomic information 找可能的 small ORFs，再用 mass spectrometry 尋找對應 peptide spectra，並加入 deep-learning-predicted spectra 提高鑑定可信度。大樣本人類死後腦資料用來比較 AD pathology 與 microprotein abundance；接著挑候選 microprotein 做細胞功能實驗，測量失去它後 microglial mitochondrial respiration 是否改變。",
-        "whyItMatters":"如果 reference proteome 本身不完整，那麼過去做 Alzheimer’s proteomics、biomarker discovery 甚至 drug-target screening 時，可能系統性忽略了一批真正有功能的小蛋白。一個 genomic locus 也不一定只有教科書標註的 canonical protein 值得研究；small ORF 產物可能有自己的調控與疾病關聯。",
-        "limitations":"1,067 種 microproteins 並不代表全部都和 AD 有關，更不代表都是治療標的。死後腦差異表現可能是疾病結果而非原因，目前深入功能驗證只涵蓋少數候選。MKKS microprotein 影響 microglial respiration，也還沒有證明它會改變 amyloid、tau 或患者認知。",
-        "whatNext":"接下來要確認哪些 microproteins 在 neuron、astrocyte、microglia 或 oligodendrocyte 中表現，找出細胞內位置與結合夥伴，再以基因編輯分離 canonical protein 與 small-ORF product 的功能。對 MKKS microprotein，關鍵是測試恢復它是否能救回 microglial metabolism，以及是否真正改變 AD model 的病理。",
-        "sources":[{"label":"Nature Aging 原始研究","url":"https://www.nature.com/articles/s43587-026-01207-x"},{"label":"Nature Aging Research Briefing","url":"https://www.nature.com/articles/s43587-026-01215-x"}],
-        "questions":["為什麼標準 protein database 沒有收錄某個 small ORF 產物，不代表那個 microprotein 不存在或沒有功能？","研究者為什麼需要把 transcriptomics、mass spectrometry、預測光譜和細胞功能實驗串起來，才能讓 microprotein 的證據更可靠？","如果 MKKS microprotein 在 AD 腦中下降，而且 knockdown 會傷害 microglial respiration，你還需要哪一步證據才能判斷它是疾病原因、補償反應，還是疾病後果？"]
+        "category": "基因治療・罕見疾病・神經退化",
+        "title": "第一個 Sanfilippo A 基因治療獲 FDA 核准：一次輸注，目標是讓細胞重新學會清掉累積的 heparan sulfate",
+        "widgetTitle": "Sanfilippo A 首度有疾病修飾治療",
+        "widgetSummary": "FDA 9 月 17 日核准 Fayuvi，成為 Sanfilippo syndrome type A 第一個獲准治療。它用 AAV9 送入可工作的 SGSH gene，讓細胞重新製造缺失的 sulfamidase；但療效證據主要來自單臂試驗與自然史對照，長期安全仍需追蹤。",
+        "dek": "Sanfilippo syndrome type A 不是神經元本身少了一個『訊號分子』，而是細胞的垃圾處理系統缺了一把關鍵酵素。當 heparan sulfate 無法在 lysosome 中正常分解，它會逐步累積並傷害大腦。Fayuvi 的策略不是每天補藥，而是一次送進正常 SGSH gene，讓患者自己的細胞持續製造 sulfamidase。",
+        "background": "Mucopolysaccharidosis type IIIA（MPS IIIA，又稱 Sanfilippo syndrome type A）是罕見遺傳性 lysosomal storage disease。患者的 SGSH gene 有致病變異，使 sulfamidase 缺乏或功能不足；這個酵素原本負責協助分解 heparan sulfate。當底物長期堆積，尤其會造成進行性的神經退化，兒童先出現發展遲緩，之後可能逐漸失去語言、認知與動作能力。AAV9 是經工程改造、不能自行造成一般病毒感染的 adeno-associated virus vector，可作為把治療基因送入細胞的載體。",
+        "whatHappened": "美國 FDA 在 2026 年 9 月 17 日核准 Fayuvi（rebisufligene etisparvovec-hopf），用於仍保有 neurodevelopmental function 的兒童 MPS IIIA 神經學表現，這是該疾病第一個 FDA 核准治療。Fayuvi 以一次靜脈輸注 AAV9 vector 送入功能性 SGSH gene，使細胞重新製造 sulfamidase，進而降低 heparan sulfate 累積。核准依據包括 open-label、single-arm multicenter study：接受治療的兒童在認知發展上優於外部 natural-history untreated cohort，並看到 CSF heparan sulfate 等生物標記下降。這代表『酵素真的補回來並改變底物』和『兒童功能軌跡比較好』兩層證據方向一致，但不是證明已治癒疾病。",
+        "howTheyStudied": "由於疾病極罕見，關鍵臨床研究沒有傳統大型 randomized placebo arm，而是讓接受基因治療的兒童和外部自然史 cohort 比較。FDA 核准資料中特別評估 2–5 歲、仍有較完整神經發展功能的兒童認知軌跡；同時用 CSF heparan sulfate 等 biomarker 檢查治療是否真的碰到預期生化機制。這種設計在 ultra-rare disease 很實際，但比隨機對照更依賴兩組患者起始狀態是否真正可比。",
+        "whyItMatters": "這是很典型的 mechanism-to-therapy 因果鏈：SGSH 缺陷 → sulfamidase 不足 → lysosome 無法正常分解 heparan sulfate → 底物累積 → 神經系統逐步受損；基因治療則從最上游補回 SGSH。它也說明神經退化疾病的治療時機可能非常重要：如果神經元已經不可逆受損，再恢復酵素未必能把失去的神經網路長回來，因此 FDA indication 特別強調 preserved neurodevelopmental function。",
+        "limitations": "療效主要來自 single-arm study 與 external natural-history control，不像大型 randomized trial 能最直接控制所有 baseline differences。AAV gene therapy 也有重要安全議題：FDA 資料列出肝毒性、血小板下降、thrombotic microangiopathy、輸注／過敏反應，以及基因整合相關的潛在長期腫瘤風險，因此治療後需要長期監測。一次輸注也不代表效果一定終身不衰退。",
+        "whatNext": "最重要的是長期追蹤接受治療兒童的認知、語言、動作與日常功能，看早期與較晚接受治療者的差異，並持續監測肝臟、血液與腫瘤安全訊號。科學上也需要理解 AAV9 在不同 CNS cell types 的實際 transduction、SGSH expression 能維持多久，以及 CSF biomarker 改善到什麼程度才能預測真正的長期功能保留。",
+        "sources": [{"label":"FDA 核准公告（2026-09-17）","url":"https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-pediatric-patients-sanfilippo-syndrome-type"},{"label":"FDA FAYUVI 產品與核准文件","url":"https://www.fda.gov/vaccines-blood-biologics/fayuvi"}],
+        "questions": ["請把 SGSH gene 缺陷一路串到神經退化，再反向說明 Fayuvi 在因果鏈的哪一步介入。","為什麼在 ultra-rare disease 中使用 natural-history control 有實際優勢，但證據強度仍通常不如同時期 randomized control？","如果治療後 CSF heparan sulfate 很快下降，但孩子的長期認知仍持續惡化，至少有哪些不同解釋？你會加測什麼來區分它們？"]
       }
     ],
-    "radar":{
-      "title":"Barrow Neurological Institute 2027 Summer Undergraduate Internship：國際學生可留意的神經科學研究實習",
-      "summary":"Barrow Neurological Institute 已公布 2027 暑期大學生研究實習時程：2026 年 12 月 4 日開放、2027 年 2 月 12 日截止，6 月 3 日 orientation、6 月 7 日正式開始，8 月 13 日結束。計畫直接聚焦 neuroscience／neurological research，適合想測試自己是否喜歡長時間進神經科學實驗室的人。特別值得注意的是，官方明確寫 international applicants 若符合條件可獲得 visa application support；這比許多要求學生自己已有 CPT／OPT 的美國暑研更值得臺灣學生追蹤。不過仍需逐項確認研究室、經費與簽證資格，不能把『提供簽證協助』理解成保證取得簽證。",
-      "url":"https://www.barrowneuro.org/for-physicians-researchers/research/training-programs/summer-undergraduate-program/"
+    "radar": {
+      "title": "Max Planck Physics from Light to Life：2027 Bachelor Internship 11 月 15 日截止",
+      "summary": "Max Planck Institute for the Science of Light／IMPRS Physics from Light to Life 的 2027 internship 已公布申請資訊：對 Physics、Engineering、Biology、Medicine 的 Bachelor students 開放，實習開始前需至少完成四個學期；最長 90 天，官方列出的 IMPRS funding 為每月 992 歐元，申請截止日為 2026 年 11 月 15 日。材料包括 CV、短 motivation letter、希望的研究期間與主題、成績單、在學證明與護照。它特別值得注意的原因不是只有『Max Planck』名稱，而是研究環境位在 physics × biology × medicine 的交界：若想測試自己是否喜歡用 imaging、biophysics、optics 或 quantitative tools 回答生命科學問題，這比純傳統 wet-lab 暑研更能提供鮮明比較。現在最值得做的是先讀 participating research topics，再判斷是否有真正想投入的 biological question，而不是為了履歷硬投。",
+      "url": "https://mpl.mpg.de/study-work-or-visit/graduate-programs/how-to-apply/internships"
     }
   },
-  "importantMail":{"count":0,"status":"目前沒有新增郵件同時符合學校／課程／教授通知或重要工作、社團、合作事項，且包含明確截止、需要回覆／行動、取消／異常／時間變更；詳細郵件內容不存放在公開 Daily Board。"}
+  "importantMail": {"count": 1, "status": "目前有 1 封需要注意的學校／活動相關郵件，包含近期明確日期與事前報到準備事項；詳細內容不存放在公開 Daily Board。"}
 }
