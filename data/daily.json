@@ -1,62 +1,65 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-19",
-  "updatedAt": "2026-09-19T07:27:12+08:00",
+  "date": "2026-09-20",
+  "updatedAt": "2026-09-20T07:28:28+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三條主線都在重新畫我們以為已經很熟悉的生物學地圖：大腦胚胎發育可能從一開始就有兩套彼此受限的祖細胞路徑；不同視覺皮質區不是各算各的，而會透過雙向連線把彼此矛盾的活動快速消掉；而一項罕見兒童神經退化疾病的基因治療正式獲 FDA 核准，也讓我們看到『補回缺失酵素』如何一路連到認知結果與長期安全性。今天特別適合練習把發育、神經迴路與臨床轉譯三個尺度放在一起看。",
+    "intro": "今天三條主線都在挑戰『一個系統只有一種工作方式』的直覺：藍斑核的去甲腎上腺素不是向全腦均勻廣播，而是有空間與功能分區；人類腦類器官在缺少皮質的小鼠中取得前所未有的發育與連線空間；HIV 的長效廣效中和抗體則顯示，外加抗體與患者自身免疫可能一起把停藥後的病毒控制拉長。三篇都很適合練習從結構、功能到因果證據逐層判讀。",
     "stories": [
       {
-        "category": "發育神經科學・幹細胞・腦幹",
-        "title": "大腦可能不是從同一種祖細胞一路分岔：前腦／中腦與後腦從胚胎早期就走上兩條路",
-        "widgetTitle": "大腦發育其實有兩條起跑線",
-        "widgetSummary": "Nature Neuroscience 研究用小鼠胚胎 lineage tracing 與人類多能幹細胞指出，前腦／中腦和後腦可能源自兩群彼此受限的 neural ectoderm progenitors。這也讓研究者更有效率地製造過去難培養的人類後腦運動神經元。",
-        "dek": "教科書常把大腦發育畫成一棵樹：先有共同的 neural progenitor，再逐步分成前腦、中腦和後腦。新研究提出更根本的修正——在非常早的 gastrulation 階段，形成前腦／中腦與形成後腦的細胞可能已經是兩條平行、彼此受限的 lineage。",
-        "background": "胚胎發育時，ectoderm 的一部分會成為 neural ectoderm，之後建立中樞神經系統。所謂 progenitor cell，是還能增殖並產生後代細胞、但命運已受到一定限制的前驅細胞。傳統模型常假設整個腦先共享一個共同神經外胚層祖先，再靠位置訊號逐漸分化；但如果前端與後端從一開始就是不同 progenitors，那麼『怎麼把幹細胞變成特定腦區神經元』的實驗設計也必須改寫。",
-        "whatHappened": "研究者在小鼠胚胎看到兩群同時出現、命運幾乎不重疊的 neural ectoderm progenitors：anterior neural ectoderm 主要形成 forebrain 與 midbrain，posterior neural ectoderm 則形成 hindbrain。把人類 pluripotent stem cells 分別導向這兩種狀態後，它們也維持不同的 lineage commitment，並具有不同的 chromatin accessibility landscape；也就是還沒完全長成神經元以前，哪些 DNA 調控區域容易被使用就已經不同。研究者進一步利用這套發育邏輯，製造出 rhombomere 5/6 特異的 hindbrain motor neurons，這類細胞過去在體外一直相當難穩定生成。跨物種比較還顯示類似 anterior/posterior 分界可見於其他脊椎動物甚至更遠的動物類群，作者因此提出這種雙祖細胞架構可能具有深遠的演化來源。",
-        "howTheyStudied": "核心證據不是只看幾個 marker。研究先在小鼠胚胎做 lineage tracing，直接追蹤早期細胞後代最後去了哪裡；再把人類 pluripotent stem cells 誘導成 anterior 或 posterior neural ectoderm，利用 single-cell RNA-seq、bulk RNA-seq、Omni-ATAC-seq 與免疫染色比較基因表現和染色質狀態，並測試它們是否會跨越原本的腦區命運。最後再把 posterior lineage 往特定 hindbrain motor-neuron fate 推進，並做神經元功能驗證。",
-        "whyItMatters": "這不只是替胚胎學改一張圖。ALS、spinal muscular atrophy 等疾病會傷害參與吞嚥、呼吸與其他基本功能的後腦／腦幹運動神經元，但研究者長期較難在培養皿中做出真正符合後腦身份的細胞。如果細胞從非常早期就必須先走對 posterior neural ectoderm 路徑，過去直接從『共同 neural progenitor』往後腦推的流程可能從起點就不夠自然。新方法因此可能改善疾病模型與藥物測試的細胞身分準確度。",
-        "limitations": "『大腦是兩個器官』是作者用來描述發育與演化架構的概念模型，不應被理解成成人腦真的由兩個彼此獨立運作的器官拼起來。最強的 in vivo lineage tracing 來自小鼠；人類部分主要依賴 pluripotent-stem-cell differentiation，因此仍需更多人類胚胎與空間資料驗證。跨物種看到相似分界也支持演化保守性，但不能單靠現代物種比較完整重建五億多年前的演化事件。",
-        "whatNext": "下一步一方面要用更多人類發育樣本確認 anterior/posterior progenitors 在真實胚胎中的時間與空間關係；另一方面可比較用新方法生成的 hindbrain motor neurons，是否比舊方法更接近患者腦幹細胞的 transcriptome、electrophysiology 與疾病 phenotype，並實際用於 ALS、SMA 等疾病模型。",
-        "sources": [{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02433-7"},{"label":"Stanford Medicine 研究介紹","url":"https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html"}],
-        "questions": ["如果前腦／中腦與後腦從很早期就是不同 progenitor lineage，為什麼這會改變我們從 pluripotent stem cells 製造腦幹神經元的策略？","為什麼 lineage tracing 加上 RNA 與 chromatin accessibility，比只看到 OTX2 或 GBX2 等區域 marker 更能支持『兩條受限 lineage』？","跨物種都看到 anterior/posterior 分界，仍然不能直接證明兩套神經系統在演化史上曾是兩個獨立器官；還需要哪些比較或發育證據才能把這個演化推論做得更強？"]
+        "category": "系統神經科學・神經調節・學習",
+        "title": "藍斑核不是向全腦一起廣播：去甲腎上腺素系統其實像有地址的郵政網路",
+        "widgetTitle": "去甲腎上腺素不是全腦同時灑",
+        "widgetSummary": "Nature 研究重建小鼠藍斑核單一神經元的超長軸突，發現不同位置的細胞投射到不同腦區，連基因表現與學習時的活動也沿同一空間軸排列。這推翻了『一小群細胞向全腦同步廣播』的簡化模型。",
+        "dek": "藍斑核只有很小一群神經元，卻把去甲腎上腺素送到幾乎整個中樞神經系統，因此長期被想像成一個調節全腦警覺度的廣播站。最新研究指出，它更像一套分區配送系統：不同細胞有不同目的地，也在不同的行為時刻工作。",
+        "background": "Locus coeruleus（LC，藍斑核）位於腦幹，主要神經元製造 noradrenaline／norepinephrine（去甲腎上腺素，NE）。NE 是 neuromodulator：它不像典型突觸訊號只把一個明確訊息送給下一顆細胞，而會改變一整群神經元對輸入的敏感度，因此參與警覺、注意、壓力與學習。傳統模型常把 LC 想成單一廣播器，但如果不同 LC 細胞其實只服務特定區域，那麼『NE 上升』就不能再被當成全腦同一件事。",
+        "whatHappened": "研究發現，單一 LC-NE 神經元的軸突雖然極長，卻不是無差別灑遍全腦。較 dorsal 的 LC 細胞主要投射到前腦、皮質與海馬；較 ventral 的細胞則偏向腦幹與脊髓。這個 dorsal–ventral 空間梯度同時對應到基因表現與電生理特性。行為上，投射皮質的 dorsal LC 細胞在小鼠改變選擇、以及出現 reward prediction error 時較活躍；ventral LC 細胞則較與是否忽略潛在獎賞線索相關。研究甚至重建到總軸突長度 70.32 公分的單一神經元，是作者所知目前量到最長的小鼠神經元。",
+        "howTheyStudied": "團隊先把約 35,000 個腦幹 noradrenergic neurons 放進標準腦圖譜，再以透明化全腦與 light-sheet microscopy 重建單細胞形態；另用 MAPseq 的 RNA barcode 追蹤大量單一神經元的投射目的地，並以 MERFISH／RNA profiling 建立分子地圖。接著利用 retrograde tracing 確認不同投射來源的位置，以 patch clamp 比較細胞本身的電生理性質，最後在小鼠做機率獎賞決策任務並用 Neuropixels 等方法記錄 LC 活動，把『細胞在哪裡、送到哪裡、表現哪些基因、何時放電』放在同一張圖上。",
+        "whyItMatters": "這改變了我們解讀 neuromodulation 的方式。NE 不是只有『多或少』，還要問是哪一群 LC neurons、送到哪個 target、在什麼行為狀態釋放。這對 ADHD、焦慮、憂鬱症與阿茲海默症都有概念上的影響，因為這些疾病或治療都牽涉 noradrenergic system；未來如果能針對特定 projection-defined circuit，而不是整體提高或降低 NE，理論上可能更精準。",
+        "limitations": "研究核心證據來自小鼠，不能直接假定人類 LC 具有完全相同的空間分區。研究建立了投射、基因表現與行為活動之間高度一致的地圖，但仍未逐條證明每一條 LC→target pathway 對特定行為是必要或充分的。70.32 公分是單一神經元所有軸突分枝的總長度，不應誤解成一條筆直 70 公分的軸突。",
+        "whatNext": "下一步可用 projection-specific optogenetics 或 chemogenetics 分別操控 dorsal LC→cortex、ventral LC→brainstem 等路徑，測試它們對 learning、attention、arousal 的因果作用；也需要在人類影像、死後組織與疾病資料中確認相似的分子與連線分區。",
+        "sources": [{"label":"Nature 原始研究","url":"https://www.nature.com/articles/s41586-026-11026-0"},{"label":"Allen Institute 研究介紹","url":"https://medicalxpress.com/news/2026-09-scientists-brain-mysterious-blue-longest.html"}],
+        "questions": ["如果 LC 的不同神經元只投射到特定腦區，為什麼『全腦 NE 濃度上升』會是一個過度簡化的描述？","為什麼研究者要把單細胞形態、retrograde tracing、基因表現與行為電生理放在一起，而不能只靠其中一種方法宣布 LC 有功能分區？","若一種提高 NE 的藥同時改善注意力又增加焦慮，你會如何利用這張 projection map 設計實驗，判斷兩種效果是否來自不同 LC 路徑？"]
       },
       {
-        "category": "系統神經科學・視覺皮質・神經動力學",
-        "title": "兩個腦區意見不一致時怎麼辦？視覺皮質的雙向連線會讓『共識』留下、讓衝突快速消退",
-        "widgetTitle": "皮質區域會彼此協商出共識",
-        "widgetSummary": "研究同時記錄小鼠 V1 與高階視覺區 LM，發現雙向長程連線會延長兩區一致的活動模式，卻讓彼此矛盾的模式更快消退。大腦整合資訊可能不是由單一高階區下最後決定，而是靠反覆互相回饋。",
-        "dek": "大腦皮質高度分工：不同區域各自處理不同資訊。但最後我們看到的不是幾十個互相矛盾的版本，而是一個相對一致的知覺。新的 Nature Neuroscience 研究直接問：當兩個皮質區域的活動不一致時，神經迴路本身如何把衝突消掉？",
-        "background": "Primary visual cortex（V1）是視覺訊息進入大腦皮質的重要早期站點；lateromedial visual area（LM）則是小鼠較高階的視覺區域。兩者不是單向 V1→LM，而有大量 reciprocal connections，也就是 V1 傳給 LM、LM 又回傳 V1。研究中的 neural dynamics 指的是一群神經元活動隨時間如何移動與衰減；如果某種活動模式衰減很慢，它就能在網路中維持更久並影響後續判斷。",
-        "whatHappened": "研究發現 V1 與 LM 的 reciprocal excitatory connections 會產生一種近似 line attractor 的共同動力學。白話說，當兩區的 population activity 指向彼此一致的解讀時，這種活動衰減得特別慢，可以被長時間保留；當兩區呈現互相衝突的 pattern 時，網路則讓不一致成分更快消失。因此『共識』不是某個區域投票贏了，而是兩區反覆回饋後，神經動力學本身選擇性保留一致模式。研究也顯示 sustained sensory responses 很依賴跨區長程連線，而不只是各區內部的 recurrent circuit。",
-        "howTheyStudied": "團隊在小鼠同時記錄 V1 與 LM 的神經元活動，並以 focal optogenetic perturbation 暫時改變其中一區，觀察另一區如何回應。研究再用 data-driven nonlinear system identification 建立受生物限制的 latent circuit model，把外部輸入、區內 recurrent connectivity 與 V1↔LM 長程連線拆開。模型預測『一致活動應比衝突活動維持更久』，研究者再回到實際神經資料驗證這個不同 timescale。",
-        "whyItMatters": "這提供一個分散式大腦如何形成單一知覺的機制候選：不同區域可以保留專業分工，不需要把所有資訊送進一個中央裁判，而是利用雙向連線動態地放大彼此一致的成分、壓低衝突。這個原理也可能延伸到決策、跨感官整合與工作記憶，並對設計會整合多個模組的人工神經網路有啟發。",
-        "limitations": "實驗聚焦小鼠視覺系統的 V1 與 LM，不能直接假定整個新皮質、所有感官或人類高階認知都使用同一套機制。latent circuit model 雖然能解釋並預測資料，但模型中的有效連線不是逐一量到的真實突觸。『consensus』也是對 population dynamics 的功能描述，不表示腦區具有像人一樣的意見或意識。",
-        "whatNext": "接下來可以在更多皮質區與不同任務中測試同一原理，尤其是刻意製造兩區接收到互相衝突的 sensory evidence，再精準切斷單向 feedback 或 feedforward projections，看共識形成、知覺與行為是否按模型預測改變。",
-        "sources": [{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02437-3"},{"label":"Cold Spring Harbor Laboratory 研究介紹","url":"https://www.cshl.edu/when-the-eyes-play-tricks-the-brain-builds-consensus/"}],
-        "questions": ["為什麼『一致活動衰減比較慢、衝突活動衰減比較快』可以讓兩個腦區最後形成較一致的視覺表徵？","研究者為什麼需要同時做多區電生理、局部 optogenetic perturbation 和 dynamical model，而不能只看 V1、LM 的活動相關性？","如果另一個腦區或 thalamus 同時驅動 V1 與 LM，也可能讓兩區看起來一致；你會怎麼設計實驗，確認 reciprocal V1↔LM connections 本身是必要的？"]
+        "category": "發育神經科學・腦類器官・疾病模型",
+        "title": "把人類腦類器官放進『缺少皮質』的小鼠：人類神經組織第一次取得更大的發育空間",
+        "widgetTitle": "人類腦類器官在小鼠體內大規模整合",
+        "widgetSummary": "研究者把人類 cortical organoids 移植到天生缺少大部分大腦皮質的小鼠，讓人類組織取得過去移植模型沒有的生長空間，並與宿主神經系統形成廣泛連線。它可能補上培養皿類器官缺乏血流、感覺輸入與長距離迴路的限制。",
+        "dek": "腦類器官能讓研究者觀察人類神經細胞發育，卻一直有一個結構性問題：培養皿沒有真正的血液循環、身體感覺與完整神經迴路。新的 xenocortical mouse 模型不是把一小團人類細胞塞進完整小鼠皮質，而是先給它一個『空出來的皮質位置』。",
+        "background": "Brain organoid 是由人類 pluripotent stem cells 在體外自我組織形成的三維神經組織，可重現部分胎兒腦發育特徵。但它不是迷你版完整大腦：缺乏正常血管、長距離感覺與運動連線，而且尺寸增大後中心容易缺氧。過去也有人把 organoid 移植到小鼠腦內改善存活，但宿主自己的皮質已佔滿空間，使人類組織只能形成相對局部的 graft。",
+        "whatHappened": "研究者使用發育時缺少大部分 cerebral cortex 與 hippocampus 的基因工程小鼠，將人類 cortical organoids 移植進新生小鼠空出的腦區。人類組織之後大幅生長、血管化，並向小鼠腦與脊髓伸出長距離軸突，形成有組織的電活動與宿主迴路整合。研究者把這類動物稱為 xenocortical mice。當動物遭遇低氧時，人類神經組織呈現明顯損傷與相應的運動改變，顯示模型可以暴露標準小鼠腦未必能重現的人類細胞脆弱性。",
+        "howTheyStudied": "團隊先從人類幹細胞製作 cortical organoids，再移植到新生、皮質發育嚴重缺失的小鼠。之後以組織學、軸突 tracing、電生理與行為測試評估人類 graft 是否成熟並接上宿主；研究也利用 hypoxia 作為生理壓力測試，觀察人類細胞和整體動物功能是否出現可連結的反應。重點不是只證明細胞『活著』，而是測試它們是否得到血管供應、長距離輸出與功能性整合。",
+        "whyItMatters": "很多神經發育與精神疾病的關鍵問題出現在『人類細胞＋活體環境』交界：例如神經元如何接受感覺輸入、如何形成長距離連線，以及缺氧、藥物或突變如何影響正在發育的人類神經迴路。xenocortical model 可能把純體外 organoid 與直接研究人體之間的距離縮小，尤其適合研究 cerebral palsy、癲癇、自閉症與其他早期皮質疾病的細胞機制。",
+        "limitations": "這仍是人類細胞長在小鼠身體中的混合系統：血管、免疫環境、感覺輸入與很多 partner neurons 都是小鼠來源，因此不能把它當成正常人類大腦。小鼠缺少大部分原生皮質本身也會改變發育環境。研究同時帶來動物福利與人類神經組織整合的倫理問題；目前沒有證據顯示這些小鼠因此獲得人類式認知或意識，研究者也必須持續監測是否出現預期外行為。",
+        "whatNext": "未來可移植帶有特定患者突變的 organoids，比較同一宿主環境下健康與疾病細胞的 circuit development，並測試候選藥物能否修正 phenotype。同時需要建立更明確的倫理與福利監測標準，以及定義哪些程度的人類神經整合需要額外審查。",
+        "sources": [{"label":"Nature 原始研究","url":"https://www.nature.com/articles/s41586-026-11032-2"},{"label":"Nature News 研究解讀","url":"https://www.nature.com/articles/d41586-026-02912-8"},{"label":"Reuters 報導","url":"https://www.reuters.com/business/healthcare-pharmaceuticals/scientists-transplant-lab-grown-human-brain-tissue-into-mice-2026-09-16/"}],
+        "questions": ["為什麼把 organoid 移植到『缺少大部分皮質』的小鼠，可能比移植到正常小鼠更容易形成大範圍的人類神經組織？","研究者為什麼不能只用組織染色證明 graft 存活，而還需要長距離 tracing、電生理與行為／生理挑戰？","如果 xenocortical mouse 出現某個疾病 phenotype，你會如何區分它來自人類神經細胞本身，還是來自不自然的人鼠混合迴路？"]
       },
       {
-        "category": "基因治療・罕見疾病・神經退化",
-        "title": "第一個 Sanfilippo A 基因治療獲 FDA 核准：一次輸注，目標是讓細胞重新學會清掉累積的 heparan sulfate",
-        "widgetTitle": "Sanfilippo A 首度有疾病修飾治療",
-        "widgetSummary": "FDA 9 月 17 日核准 Fayuvi，成為 Sanfilippo syndrome type A 第一個獲准治療。它用 AAV9 送入可工作的 SGSH gene，讓細胞重新製造缺失的 sulfamidase；但療效證據主要來自單臂試驗與自然史對照，長期安全仍需追蹤。",
-        "dek": "Sanfilippo syndrome type A 不是神經元本身少了一個『訊號分子』，而是細胞的垃圾處理系統缺了一把關鍵酵素。當 heparan sulfate 無法在 lysosome 中正常分解，它會逐步累積並傷害大腦。Fayuvi 的策略不是每天補藥，而是一次送進正常 SGSH gene，讓患者自己的細胞持續製造 sulfamidase。",
-        "background": "Mucopolysaccharidosis type IIIA（MPS IIIA，又稱 Sanfilippo syndrome type A）是罕見遺傳性 lysosomal storage disease。患者的 SGSH gene 有致病變異，使 sulfamidase 缺乏或功能不足；這個酵素原本負責協助分解 heparan sulfate。當底物長期堆積，尤其會造成進行性的神經退化，兒童先出現發展遲緩，之後可能逐漸失去語言、認知與動作能力。AAV9 是經工程改造、不能自行造成一般病毒感染的 adeno-associated virus vector，可作為把治療基因送入細胞的載體。",
-        "whatHappened": "美國 FDA 在 2026 年 9 月 17 日核准 Fayuvi（rebisufligene etisparvovec-hopf），用於仍保有 neurodevelopmental function 的兒童 MPS IIIA 神經學表現，這是該疾病第一個 FDA 核准治療。Fayuvi 以一次靜脈輸注 AAV9 vector 送入功能性 SGSH gene，使細胞重新製造 sulfamidase，進而降低 heparan sulfate 累積。核准依據包括 open-label、single-arm multicenter study：接受治療的兒童在認知發展上優於外部 natural-history untreated cohort，並看到 CSF heparan sulfate 等生物標記下降。這代表『酵素真的補回來並改變底物』和『兒童功能軌跡比較好』兩層證據方向一致，但不是證明已治癒疾病。",
-        "howTheyStudied": "由於疾病極罕見，關鍵臨床研究沒有傳統大型 randomized placebo arm，而是讓接受基因治療的兒童和外部自然史 cohort 比較。FDA 核准資料中特別評估 2–5 歲、仍有較完整神經發展功能的兒童認知軌跡；同時用 CSF heparan sulfate 等 biomarker 檢查治療是否真的碰到預期生化機制。這種設計在 ultra-rare disease 很實際，但比隨機對照更依賴兩組患者起始狀態是否真正可比。",
-        "whyItMatters": "這是很典型的 mechanism-to-therapy 因果鏈：SGSH 缺陷 → sulfamidase 不足 → lysosome 無法正常分解 heparan sulfate → 底物累積 → 神經系統逐步受損；基因治療則從最上游補回 SGSH。它也說明神經退化疾病的治療時機可能非常重要：如果神經元已經不可逆受損，再恢復酵素未必能把失去的神經網路長回來，因此 FDA indication 特別強調 preserved neurodevelopmental function。",
-        "limitations": "療效主要來自 single-arm study 與 external natural-history control，不像大型 randomized trial 能最直接控制所有 baseline differences。AAV gene therapy 也有重要安全議題：FDA 資料列出肝毒性、血小板下降、thrombotic microangiopathy、輸注／過敏反應，以及基因整合相關的潛在長期腫瘤風險，因此治療後需要長期監測。一次輸注也不代表效果一定終身不衰退。",
-        "whatNext": "最重要的是長期追蹤接受治療兒童的認知、語言、動作與日常功能，看早期與較晚接受治療者的差異，並持續監測肝臟、血液與腫瘤安全訊號。科學上也需要理解 AAV9 在不同 CNS cell types 的實際 transduction、SGSH expression 能維持多久，以及 CSF biomarker 改善到什麼程度才能預測真正的長期功能保留。",
-        "sources": [{"label":"FDA 核准公告（2026-09-17）","url":"https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-pediatric-patients-sanfilippo-syndrome-type"},{"label":"FDA FAYUVI 產品與核准文件","url":"https://www.fda.gov/vaccines-blood-biologics/fayuvi"}],
-        "questions": ["請把 SGSH gene 缺陷一路串到神經退化，再反向說明 Fayuvi 在因果鏈的哪一步介入。","為什麼在 ultra-rare disease 中使用 natural-history control 有實際優勢，但證據強度仍通常不如同時期 randomized control？","如果治療後 CSF heparan sulfate 很快下降，但孩子的長期認知仍持續惡化，至少有哪些不同解釋？你會加測什麼來區分它們？"]
+        "category": "感染免疫・HIV・臨床試驗",
+        "title": "兩次抗體輸注後，有些 HIV 患者停藥仍控制病毒超過兩年：關鍵可能是治療抗體和自身免疫一起工作",
+        "widgetTitle": "HIV 抗體治療把停藥控制拉長到數月甚至數年",
+        "widgetSummary": "RIO 隨機試驗的後續分析顯示，兩種長效廣效中和抗體不只延後停 ART 後的病毒反彈；本來就具有較強自身中和抗體反應的人，停藥控制尤其持久。結果也提示病毒 reservoir 的衰減可能被加速。",
+        "dek": "HIV 的困難不只是血液裡有病毒，而是病毒 DNA 會躲進長壽命細胞形成 reservoir；因此 ART 一停，病毒通常會重新反彈。RIO trial 問的是：如果先給能辨認多種 HIV 變異株的長效抗體，能不能讓免疫系統在沒有每日 ART 的情況下繼續壓住病毒？",
+        "background": "Antiretroviral therapy（ART）可以非常有效地阻止 HIV 複製，但通常無法清除已整合進細胞 DNA 的 latent reservoir，所以多數人需要持續服藥。Broadly neutralizing antibodies（bNAbs，廣效中和抗體）能辨認 HIV 表面較保守的結構，理論上既能直接中和病毒，也可能透過 Fc-mediated immune functions 幫助免疫系統清除感染細胞。Analytical treatment interruption（ATI）則是在嚴格監測與預設重啟標準下暫停 ART，用來測試實驗療法是否真的能延後病毒反彈；它不是一般患者應自行停藥的做法。",
+        "whatHappened": "RIO 是 phase 2、雙盲、隨機、安慰劑對照試驗。68 名在 HIV 感染早期就開始 ART、病毒已被抑制的成年男性，在 ATI 前接受 3BNC117-LS＋10-1074-LS 或 saline。主要試驗先前已證明 bNAbs 能延後 viral rebound；最新 secondary／exploratory analysis 進一步顯示，治療效果和受試者自己原本的 autologous neutralizing antibodies 有明顯關係：具有較強自身中和活性的人，ART-free control 可維持更久。研究也觀察到 intact viral reservoir 的下降速度可能比長期 ART 下典型估計快得多，提示 bNAbs 可能不只是暫時擋住游離病毒。",
+        "howTheyStudied": "參與者以 1:1 隨機接受兩種長效 bNAbs 或 placebo，兩天後在密切監測下停止 ART；研究設定明確 viral-load、CD4 與臨床條件，一旦達標就重啟 ART。後續分析追蹤 rebound virus 對抗體的敏感性、病毒演化、intact reservoir dynamics，以及受試者自己血液中的 HIV-neutralizing antibody activity，藉此區分『外加抗體還在作用』和『宿主自身免疫可能接手』。",
+        "whyItMatters": "如果 bNAbs 能和患者自己的 antibody response 協同，HIV remission 的策略可能不必只追求一個永遠留在體內的藥，而可以先用治療性抗體壓制／重塑病毒族群，再用疫苗訓練宿主產生更好的中和反應。對 reservoir 的結果也很重要：真正接近長期 remission 的治療，最好不只延後 rebound，還能逐步縮小能重新啟動感染的病毒庫。",
+        "limitations": "樣本只有 68 人，而且全部是男性、85% 為白人，且都在感染早期開始 ART，因此不能直接外推到所有 HIV 患者。『自身中和抗體強的人控制更久』是重要關聯，但不代表已證明這些抗體本身造成長期控制；可能還有 T-cell immunity、病毒特性或 reservoir 大小等共同因素。ATI 具有病毒反彈與傳播風險，只能在臨床研究監測下進行。",
+        "whatNext": "下一步需要在更多性別、族群、較晚開始 ART 的患者中驗證，並以免疫操控或疫苗策略測試 autologous neutralizing response 是否真的是必要因果因素。研究者也可追蹤更長時間，確認 reservoir 衰減是否持續，以及哪些免疫特徵能在治療前預測誰最可能成為長期 ART-free controller。",
+        "sources": [{"label":"Nature Medicine：RIO trial secondary analysis","url":"https://www.nature.com/articles/s41591-026-04644-8"}],
+        "questions": ["為什麼 bNAb 能延後停 ART 後的 viral rebound，仍不等於已經把 HIV reservoir 清除？","隨機 placebo-controlled 的 ATI 設計，和後續量測 rebound virus、reservoir、autologous antibodies，各自回答了什麼不同層級的問題？","如果自身中和抗體強的人控制病毒更久，你會加入哪些實驗或分層分析，判斷抗體是原因，而不只是『免疫系統整體比較強』的指標？"]
       }
     ],
     "radar": {
-      "title": "Max Planck Physics from Light to Life：2027 Bachelor Internship 11 月 15 日截止",
-      "summary": "Max Planck Institute for the Science of Light／IMPRS Physics from Light to Life 的 2027 internship 已公布申請資訊：對 Physics、Engineering、Biology、Medicine 的 Bachelor students 開放，實習開始前需至少完成四個學期；最長 90 天，官方列出的 IMPRS funding 為每月 992 歐元，申請截止日為 2026 年 11 月 15 日。材料包括 CV、短 motivation letter、希望的研究期間與主題、成績單、在學證明與護照。它特別值得注意的原因不是只有『Max Planck』名稱，而是研究環境位在 physics × biology × medicine 的交界：若想測試自己是否喜歡用 imaging、biophysics、optics 或 quantitative tools 回答生命科學問題，這比純傳統 wet-lab 暑研更能提供鮮明比較。現在最值得做的是先讀 participating research topics，再判斷是否有真正想投入的 biological question，而不是為了履歷硬投。",
-      "url": "https://mpl.mpg.de/study-work-or-visit/graduate-programs/how-to-apply/internships"
+      "title": "ISTA year-round Scientific Internship：不用等 2027 夏季計畫，也能直接找實驗室",
+      "summary": "Institute of Science and Technology Austria 的集中式 ISTernship 在 2026 暫停，2027 是否恢復要到 2026 年底才公布；但官方的 year-round Scientific Internship 仍持續開放。Bachelor／Master 學生可直接聯絡有興趣的 faculty，協議 2–12 個月的研究實習，領域涵蓋 biology、neuroscience、chemistry、data science、physics 等。這類模式適合已經能先讀 lab website 與近期論文、再寫 targeted inquiry 的申請者；相較固定暑研，它的優勢是時間與題目更彈性，但也代表必須自己挑 lab、主動聯絡並確認經費與行政條件。對 2027 暑研而言，現在可以一邊等 ISTernship 年底公告，一邊把 year-round route 當成備用甚至更彈性的研究路徑。",
+      "url": "https://phd.pages.ista.ac.at/internships/"
     }
   },
-  "importantMail": {"count": 1, "status": "目前有 1 封需要注意的學校／活動相關郵件，包含近期明確日期與事前報到準備事項；詳細內容不存放在公開 Daily Board。"}
+  "importantMail": {
+    "count": 0,
+    "status": "目前沒有符合條件的需要注意郵件；詳細郵件內容不存放在公開 Daily Board。"
+  }
 }
