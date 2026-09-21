@@ -1,8 +1,86 @@
 {
-  "schemaVersion":"0.4","date":"2026-09-21","updatedAt":"2026-09-21T07:28:14+08:00",
-  "report":{"title":"每日生醫・神經科學摘要","intro":"今天三篇都很適合練習把表面現象拆成真正的機制鏈：孕期食物渴望可能牽涉血清素神經元的離子通道；tau 神經退化中的免疫攻擊，可能先在腦外被樹突細胞啟動；一種已上市罕病藥則意外被發現能把發炎蛋白 STING 送去降解。共同主題是：找到相關性之後，研究者如何用遺傳操控、神經迴路操控或蛋白質機制實驗一步步逼近因果。","stories":[
-{"category":"神經科學・孕期生理・食慾","title":"孕期突然特別想吃某些食物，可能不只是『荷爾蒙讓胃口變大』：血清素神經元的 SK3 通道改變了獎賞迴路","widgetTitle":"孕期食物渴望的一條腦迴路","widgetSummary":"Nature Neuroscience 小鼠研究發現，孕期背側縫線核的血清素神經元因 SK3 鉀離子通道活動增加而比較不容易放電；直接改變這個通道或其到 VTA 的投射，也能改變食物渴望樣行為。","dek":"孕期食物渴望常被籠統歸因於荷爾蒙，但荷爾蒙最後仍必須透過神經細胞與迴路改變行為。新研究把其中一條鏈一路追到離子通道：SK3 活性增加，讓背側縫線核血清素神經元被壓低，進而改變對高適口性食物的動機。","background":"Serotonin（5-HT，血清素）參與情緒、食慾與獎賞調節；腦幹 dorsal raphe nucleus（DRN，背側縫線核）含有大量 5-HT 神經元。SK3 是 small-conductance calcium-activated potassium channel，細胞內 Ca2+ 上升時讓 K+ 流出，使膜電位較難達到下一次 action potential 的門檻。因此 SK3 活性變強，就像提高神經元的煞車力道。","whatHappened":"懷孕小鼠增加對高適口性食物的渴望樣行為，同時 DRN 血清素神經元放電下降、SK3 通道活動增加。從這些 5-HT 神經元選擇性刪除 SK3，可阻止孕期 firing suppression 並減少渴望樣行為；反過來，在未懷孕雌鼠過度表現 SK3，能模擬部分孕期表現。啟動 DRN 血清素神經元投射到 ventral tegmental area（VTA）的路徑，也會抑制孕期食物渴望樣行為。","howTheyStudied":"團隊比較未孕與孕期小鼠的食物選擇及 DRN 5-HT 神經元，用電生理與 single-cell patch-seq 連結 firing 和細胞分子狀態；接著雙向操控 SK3，一方面 knockout、一方面 overexpression，最後再以 optogenetic／chemogenetic 方法操控 5-HT DRN→VTA 路徑。這種『自然變化→必要性→充分性→特定投射』的設計，比單純量到血清素改變更接近機制。","whyItMatters":"研究把『孕期 craving』從模糊的荷爾蒙敘事拆成可測試鏈：孕期生理狀態→SK3 功能增加→DRN 5-HT firing 降低→VTA 相關獎賞迴路改變→高適口性食物動機上升。若未來在人類得到支持，可能有助於理解部分孕期過度體重增加或食慾失調；目前價值仍是建立機制框架，而不是立刻把 SK3 當成人類治療標的。","limitations":"核心因果證據來自小鼠。food-craving-like behavior 是操作化的動物行為，不能等同人類主觀 craving；人類孕期還受文化、嗅味覺、噁心、營養與心理因素影響。此外，孕期究竟是哪個上游荷爾蒙或生理訊號把 SK3 推高，仍未完全拆解。","whatNext":"下一步可追蹤 estrogen、progesterone、placental 或代謝訊號如何改變 SK3，並在人類孕期驗證是否存在相同方向的 5-HT 變化；也要確認介入這條路徑是否影響胎兒、情緒或正常能量攝取。","sources":[{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02445-3"}],"questions":["SK3 活性增加為什麼會讓 DRN 血清素神經元比較難持續放電，而這又可能如何一路影響食物獎賞？","為什麼研究同時做 SK3 knockout 和 SK3 overexpression，比只看到孕期 SK3 上升更能支持因果關係？","即使小鼠 DRN→VTA 迴路能控制 craving-like behavior，還有哪些替代解釋使我們不能直接說人類孕期食物渴望就是同一機制？"]},
-{"category":"神經免疫・Tauopathy・阿茲海默症","title":"攻擊 tau 病變大腦的 CD8 T 細胞，可能先在腦外被『上課』：樹突細胞把腦來源抗原帶進免疫系統","widgetTitle":"Tau 神經退化的免疫啟動點可能在腦外","widgetSummary":"Tauopathy 小鼠若缺少 cDC1 樹突細胞或抗原交叉呈遞能力，腦內 CD8 T 細胞浸潤與神經退化都減輕。這提示免疫攻擊可能先在周邊淋巴組織被啟動，再回到大腦。","dek":"阿茲海默症與其他 tauopathy 腦中常看到 CD8 T 細胞增加，但它們在哪裡學會要攻擊什麼一直不清楚。新研究把起點追到中樞神經之外：一小群 cDC1 樹突細胞可能把腦來源抗原交叉呈遞給 CD8 T 細胞，讓它們先在周邊被 priming，再進腦放大神經退化。","background":"Tauopathy 是以異常 tau 累積為特徵的一群神經退化疾病。CD8+ T cells 通常負責辨認被病毒感染或異常的細胞，但 naive CD8 T cell 要成為 effector cell，需要 antigen-presenting cell 提供目標訊號。cDC1（conventional type 1 dendritic cell）特別擅長 cross-presentation：把從其他細胞取得的外源抗原放到 MHC-I 上，藉此啟動 CD8 T cells。","whatHappened":"在帶有人類 P301S tau 與 APOE4 的 tauopathy 小鼠中，移除 cDC1 後，腦內 CD8 T 細胞顯著減少，剩餘 T 細胞的 clonal expansion 受限；glial reactivity、海馬與皮質萎縮和神經元流失都減輕。破壞 cDC1 的 antigen cross-presentation 能力也產生保護效果。研究並找到腦來源抗原可在 secondary lymphoid tissues 被呈遞的證據，支持『腦內抗原出去→周邊 cDC1 priming CD8 T cells→T cells 再進腦』的模型。","howTheyStudied":"研究使用遺傳小鼠控制。Irf8 +32-kb enhancer knockout 可相對選擇性阻斷 cDC1 成熟，而沒有同步關掉 microglial Irf8；研究者比較有 tau／無 tau、cDC1 正常／缺失的動物，並測 T-cell clonal expansion、glial activation、腦區體積、dentate gyrus 神經元與 plasma neurofilament light。另一組實驗直接干擾 antigen cross-presentation，避免把結果只歸因於少了一種免疫細胞。","whyItMatters":"這把神經退化的免疫機制從『腦內發炎』延伸到 brain–periphery immune loop。若腦來源抗原必須先經 cDC1 cross-presentation 才能產生大量致病 CD8 T cells，治療理論上也可能在周邊阻斷特定 priming，而不只進入血腦屏障後壓制腦內免疫。","limitations":"主要因果證據來自特定 P301S tau/APOE4 小鼠模型，不能直接等同散發性人類阿茲海默症。阻斷 cDC1 或 cross-presentation 是很大的免疫介入，長期在人類可能削弱抗病毒與抗腫瘤免疫。究竟哪些腦抗原最關鍵、人類患者是否使用同一路徑，仍未確定。","whatNext":"需要在人類血液、腦脊髓液、腦膜與 brain-draining lymph nodes 尋找相符的 cDC1–CD8 clonotype／antigen signatures，並找出真正被辨認的腦抗原。治療上更理想的方向不是全面刪除 cDC1，而是只阻斷致病 antigen presentation 或特定 T-cell clone。","sources":[{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02427-5"}],"questions":["請把『腦來源抗原→cDC1→CD8 T cell→腦內神經退化』這條因果鏈串一次，cross-presentation 在哪一步？","為什麼除了移除 cDC1，研究者還要另外破壞 antigen cross-presentation，才能更精確知道 cDC1 的哪個功能重要？","如果未來在人類也看到相同 T-cell clones，還需要什麼證據才能證明它們是推動神經退化，而不是只來清理已經受損的神經組織？"]},
-{"category":"老化・先天免疫・藥物再利用","title":"一顆已上市罕病藥竟能把 STING『撬鬆』後送去銷毀：老化發炎研究出現非典型蛋白降解機制","widgetTitle":"已上市藥意外成為 STING 降解劑","widgetSummary":"Friedreich 共濟失調藥 omaveloxolone 不只活化 NRF2，還能像分子撬棍般讓 STING 結構變不穩，促使它被泛素化並由蛋白酶體降解；老年雄鼠的發炎表型也隨之減輕。","dek":"STING 是細胞偵測異常 DNA 後啟動先天免疫的重要節點，感染時很有用，但老化時若長期過度活化，也可能推動 chronic inflammation。新研究意外發現，一種本來不是為 STING 設計的上市藥，可以直接改變 STING 蛋白形狀，讓細胞把它當成不穩定蛋白清掉。","background":"STING（stimulator of interferon genes）位於先天免疫路徑。當 cGAS 偵測到不該出現在細胞質中的 DNA，就會產生 cGAMP 並啟動 STING，誘發 type I interferon 與 inflammatory signals。老化細胞較容易出現 mitochondrial／nuclear DNA leakage，因此持續 STING activity 被認為是 inflammaging 的來源之一。Omaveloxolone 是已獲 FDA 核准治療 Friedreich’s ataxia 的小分子，原本最知名的作用是活化 NRF2 抗氧化反應。","whatHappened":"高通量篩選找出 omaveloxolone 是強效 STING degrader：DC50 約 118 nM，最大降解幅度 Dmax 約 98.6%。它非共價結合 STING ligand-binding domain 底部，妨礙結構閉合、增加疏水區暴露並降低熱穩定性，像 molecular crowbar 把蛋白撬得不穩。這似乎讓 E3 ubiquitin ligase HUWE1 更容易辨認 STING，促成 K27-linked ubiquitination，最後由 proteasome 降解。在老年雄鼠中，藥物降低 STING 與下游發炎訊號並改善部分老化相關發炎表型。","howTheyStudied":"研究從高通量藥物篩選開始，再用 binding assay、蛋白熱穩定性與構形實驗確認藥物直接影響 STING。接著以 ubiquitination、E3 ligase 操控與特定位點分析，把 HUWE1、K27-linked ubiquitin 和 STING 的 K236/K347/K370 連到降解機制；proteasome 實驗確認最終清除路徑，最後才帶到 aged male mice 測量 STING、下游 inflammatory signaling 與表型。","whyItMatters":"第一是 drug repurposing：已有人體使用資料的藥可能藏有原先沒被發現的作用。第二是 targeted protein degradation 不一定要靠典型 PROTAC 的雙頭分子；單一小分子也可能藉由改變蛋白構形，讓細胞自己的品質管制系統清掉它。若能普遍化，可能擴大可被降解的蛋白標的範圍。","limitations":"不能把老年雄鼠的改善直接解讀成 omaveloxolone 已能治療人類 inflammaging。最重要的混雜是這顆藥本來就是 NRF2 activator，因此動物中的抗發炎效益可能同時來自 STING 降解與 NRF2 抗氧化作用。長期壓低 STING 還可能削弱抗感染或腫瘤監視。","whatNext":"需要用 STING degradation-deficient mutants、NRF2-independent systems 或更選擇性的 analogues，把 STING 與 NRF2 的貢獻真正拆開；也要測試雌性、不同老化模型與具體疾病，並尋找更專一、劑量更低的 STING degraders。","sources":[{"label":"Nature Communications 原始研究","url":"https://www.nature.com/articles/s41467-026-77760-1"}],"questions":["為什麼把 STING 蛋白直接降解，和只暫時阻斷 STING 活性，在細胞訊號持續時間上可能不同？","研究者如何從『藥物讓 STING 變少』一路證明到構形失穩、HUWE1 泛素化與 proteasome degradation，而不是只停在相關性？","因為 omaveloxolone 同時活化 NRF2，你會設計什麼實驗來判斷老年小鼠的抗發炎效果究竟有多少真正來自 STING 降解？"]}],"radar":{"title":"Max Planck Matter to Life URO 2027：10 月 1 日截止，現在已進入真正的申請窗口","summary":"Max Planck School Matter to Life 的 2027 Undergraduate Research Opportunities 現正開放申請，截止日是 2026 年 10 月 1 日。這是 10 週 funded internship，可在 2027 年 6–11 月間安排，申請者直接選一個 Matter to Life faculty lab；領域橫跨 biology、chemistry、physics、bioengineering、informatics 與 materials science。官方明確表示不要求 prior research experience、推薦信或正式英語檢定，每年約選 10 人。距截止只剩約 10 天，現在最有價值的動作是選 lab、讀近期研究並完成一頁 personal statement。","url":"https://mattertolife.maxplanckschools.org/uro-research-internship"}},
-  "importantMail":{"count":1,"status":"目前有 1 封需要注意的郵件，涉及本週即將進行的重要合作／會議安排；詳細內容不存放在公開 Daily Board。"}
+  "schemaVersion": "0.4",
+  "date": "2026-09-22",
+  "updatedAt": "2026-09-22T07:29:48+08:00",
+  "report": {
+    "title": "每日生醫・神經科學摘要",
+    "intro": "今天三篇都在處理『時間尺度與觀察尺度』：恐懼為什麼能比杏仁核最初的警報維持更久、全身器官如何在幾秒內彼此協調，以及帕金森氏症能否從補充多巴胺進一步走向補回真正的多巴胺神經元。值得注意的是，三篇證據層級很不同：前兩篇主要是動物機制與新技術，第三篇則已進入人體早期臨床，因此解讀時要分清楚『機制成立』『技術可行』和『治療有效』不是同一件事。",
+    "stories": [
+      {
+        "category": "神經科學・恐懼迴路・行為",
+        "title": "杏仁核的警報很短，恐懼卻能維持很久：被忽略的 ASt 可能負責把危險訊號『撐住』",
+        "widgetTitle": "恐懼為何能比第一聲警報更持久？",
+        "widgetSummary": "Neuron 小鼠研究找到杏仁核旁的 amygdalostriatal transition zone（ASt）：它對預測電擊的線索會持續活動，而且啟動 ASt 足以引發凍結與迴避，抑制其中 Drd2+ 神經元則削弱條件性恐懼。",
+        "dek": "我們常把杏仁核稱為『恐懼中心』，但杏仁核神經元對威脅線索的反應往往很短，實際的凍結與警戒卻能維持更久。新研究把這個時間差追到杏仁核與紋狀體交界的一小塊區域 ASt，提示大腦可能把『偵測到危險』與『讓防禦狀態持續』交給不同節點。",
+        "background": "條件性恐懼學習常用一個原本中性的聲音或線索（conditioned cue）和足部電擊配對。學習後，光是再次出現線索，小鼠就可能 freezing（凍結不動）或主動迴避。杏仁核對建立『這個線索代表危險』很重要，但許多杏仁核神經元在威脅剛出現時只短暫放電，因此留下問題：誰把防禦行為維持到危險真的過去？ASt（amygdalostriatal transition zone，杏仁核－紋狀體過渡區）位在杏仁核和紋狀體交界，過去因體積小、邊界難分而較少被單獨研究。",
+        "whatHappened": "研究先證明 ASt 不是單純把鄰近杏仁核或紋狀體混在一起的模糊區域，而具有可區分的分子身分。接著發現，當小鼠聽到曾預測電擊的線索時，ASt 神經元會出現強而持續的活動，時間型態比典型杏仁核瞬時反應更能對應持續的防禦狀態。光刺激 ASt 本身足以促使小鼠 freezing 與 avoidance；反過來抑制其中表現 dopamine D2 receptor 的 Drd2+ ASt 神經元，會削弱 cue-conditioned fear。這支持 ASt 不是只『看到恐懼時一起亮』，而實際參與防禦行為的產生。",
+        "howTheyStudied": "團隊先用 single-nucleus RNA sequencing 比較 ASt 與鄰近區域的基因表現，確認它具有獨特細胞組成；再以在體電生理與 calcium imaging 觀察小鼠接受恐懼制約後，ASt 對 shock-predicting cue 的活動時間。最後用 optogenetics 做雙向因果測試：刺激 ASt 看是否足以引發防禦行為，再抑制 Drd2+ ASt neurons 看條件性恐懼是否下降。這套設計把『區域身分→自然活動→充分性→必要性』串在一起。",
+        "whyItMatters": "這項工作修正了把恐懼全部塞進『杏仁核』的過度簡化模型。較合理的框架可能是：某些杏仁核迴路快速偵測／學習威脅，而 ASt 等下游或交界結構把危險表徵維持在足以驅動行為的時間尺度。對 panic disorder、phobia、PTSD 等疾病而言，未來真正值得問的可能不只是『警報為什麼被觸發』，也包括『警報為什麼關不掉』。",
+        "limitations": "核心證據來自小鼠的 conditioned fear，不能直接等同人類 panic attack 或 PTSD。Drd2+ 指的是細胞表現 dopamine D2 receptor，不應誤寫成『會釋放多巴胺的神經元』。此外，刺激整個 ASt 所造成的 freezing／avoidance 仍可能是人工同步活動的結果；ASt 在自然情境中接收哪些輸入、把訊號送到哪些輸出，以及持續活動本身如何形成，還沒有完全拆解。",
+        "whatNext": "下一步應把 ASt 的 input–output circuit 畫清楚，找出哪些上游把短暫威脅訊號轉成持續活動，以及哪些下游分別控制 freezing、avoidance 與 autonomic responses。若要連到人類焦慮疾病，還需要影像、電生理或臨床樣本證明人類存在可比較的 ASt circuit dysfunction，而不是直接從小鼠跳到治療。",
+        "sources": [
+          {"label": "Neuron／PubMed 原始研究紀錄", "url": "https://pubmed.ncbi.nlm.nih.gov/42735685/"},
+          {"label": "Salk Institute 研究說明", "url": "https://www.salk.edu/news-release/why-do-we-stay-afraid-for-so-long-when-the-brains-first-alarm-fires-so-fast/"}
+        ],
+        "questions": [
+          "如果杏仁核對危險線索只短暫反應，而 ASt 能持續反應，這兩種時間尺度可能如何合作，讓動物既快速偵測危險又維持防禦行為？",
+          "為什麼研究者需要同時做自然活動紀錄、ASt 光刺激和 Drd2+ ASt 抑制，才能比單純看到 ASt 在恐懼時變亮更接近因果證據？",
+          "假如抑制 ASt 讓 freezing 下降，還有哪些替代解釋會讓你不能立刻說『ASt 專門負責恐懼持續』？你會加什麼行為控制？"
+        ]
+      },
+      {
+        "category": "系統生理・成像技術・腦身體互動",
+        "title": "第一次把整隻脊椎動物當成一個動態細胞網路來看：WHOLISTIC 同時拍下腦、腎臟、肌肉與血流的秒級活動",
+        "widgetTitle": "把全身細胞活動一次拍下來",
+        "widgetSummary": "Nature 發表 WHOLISTIC：研究者在透明的幼年斑馬魚中，用全身 calcium sensor、體積顯微鏡與機器學習，以細胞解析度同步追蹤跨器官活動，看到腎元旅行波、肌肉－器官協調與腦幹控制的全身血流重分配。",
+        "dek": "傳統生理學常一次量一個器官，但真實生命事件往往是全身同時發生：看到危險時腦、肌肉、心血管與代謝系統必須一起改變。WHOLISTIC 的核心突破不是把單一器官拍得更漂亮，而是讓研究者第一次能在秒級時間尺度上，同時觀察脊椎動物全身大量細胞的活動，再從中找跨器官關係。",
+        "background": "研究神經元時常用 calcium imaging：當細胞活化造成細胞內 Ca2+ 改變，基因編碼的螢光感測器會跟著改變亮度。過去這類方法通常侷限在腦或單一組織，因為全身同時成像會遇到移動、不同器官深度、巨大資料量與細胞分割等問題。WHOLISTIC 是 WHole-Organism Live-Imaging System for recording Tissue and IntraCellular activity 的縮寫，目標是把『一個器官的動態』提升成『整個動物的動態』。",
+        "whatHappened": "研究者在幼年斑馬魚全身廣泛表現 calcium sensors，再用高速 volumetric fluorescence microscopy 和計算方法做 motion correction、細胞／組織 segmentation 與活動分群。結果看到一些原本很難從單器官研究發現的現象：軟骨細胞會對冷刺激反應、腦膜細胞會對 ketamine 出現反應；腎臟 nephron 出現有節律的 travelling calcium waves；不同肌群和器官之間存在同步活動；更大尺度上，還捕捉到由 brainstem 控制的全身血流重新分配。研究也在成體 Danionella cerebrum 做了 proof of concept。",
+        "howTheyStudied": "WHOLISTIC 把幾個技術疊在一起：pancellular transgenic calcium sensing 讓許多細胞都能回報活動，volumetric microscopy 快速掃描三維全身，machine-learning／computational workflow 校正動物移動並把訊號分成 functional tissue ensembles。研究者還發展 whole-body expansion microscopy，把活體動態事後對回更細的分子與超微結構。最重要的是加入 optogenetics：不是只看『腦幹活動和血流一起變』，而能光控特定神經活動，再觀察全身哪些部位跟著改變，開始做跨器官因果測試。",
+        "whyItMatters": "這種方法可能改變系統生物學的觀察單位。很多疾病不是單一器官故障，例如壓力、敗血症、代謝疾病、藥物副作用都涉及神經、免疫、循環與代謝的連鎖反應；如果只量一個器官，很可能錯過真正的先後順序。WHOLISTIC 提供的是『發現平台』：先找出意外同步或先後關係，再回頭做精準機制實驗。",
+        "limitations": "目前最完整的示範是在體型小、透明的 larval zebrafish；成人哺乳類組織不透明、體積大且呼吸心跳造成的移動更複雜，不能直接照搬。Calcium signal 也不是所有細胞功能的萬用代理值：某個細胞 Ca2+ 上升不一定代表它正在執行我們猜測的生理功能。大規模同步資料還有多重比較與『相關不等於因果』問題，因此漂亮的全身相關圖仍需要後續操控驗證。",
+        "whatNext": "下一步一方面是增加其他 biosensors，例如電壓、代謝物、第二訊使或免疫訊號，另一方面是把全身動態和細胞型別、解剖連線及因果操控整合。對疾病研究而言，更關鍵的是比較健康與疾病狀態下，哪個器官最早偏離正常協調，而不是只在疾病末期找哪裡最亮。",
+        "sources": [
+          {"label": "Nature 原始研究", "url": "https://www.nature.com/articles/s41586-026-10979-6"},
+          {"label": "PubMed 研究紀錄", "url": "https://pubmed.ncbi.nlm.nih.gov/42717095/"}
+        ],
+        "questions": [
+          "為什麼『同時』量全身多個器官，比把腦、腎臟、肌肉分三次實驗各自測量，更有機會發現真正的跨器官時間順序？",
+          "WHOLISTIC 為什麼還要加入 optogenetics，而不能只靠大量 calcium imaging 資料判斷哪個器官控制哪個器官？",
+          "如果兩個器官總是同步出現 calcium signal，你會如何區分 A 控制 B、B 控制 A、以及第三個系統同時控制 A 與 B 這三種解釋？"
+        ]
+      },
+      {
+        "category": "臨床研究・帕金森氏症・幹細胞治療",
+        "title": "帕金森氏症不只『補多巴胺』，而是嘗試補回會製造多巴胺的細胞：STEM-PD 首批人體試驗報告 12 個月安全性",
+        "widgetTitle": "把多巴胺神經前驅細胞移植進帕金森氏症大腦",
+        "widgetSummary": "Nature Medicine 的 STEM-PD phase 1/2 試驗將人類胚胎幹細胞衍生的多巴胺神經前驅細胞移植到 8 名中度帕金森氏症患者的 putamen。早期重點是可行性與安全性，而不是證明療效。",
+        "dek": "Levodopa 是把缺少的多巴胺訊號補回去；細胞替代治療則更進一步問：能不能把能長期製造並釋放多巴胺的神經細胞重新放回紋狀體？STEM-PD 的首批人體資料顯示這條路徑至少在小型早期試驗中可執行，但八個人的 open-label study 遠不足以宣告治療有效。",
+        "background": "帕金森氏症的核心病理之一，是 substantia nigra pars compacta 的 dopaminergic neurons 逐漸死亡，原本送往 striatum 的 dopamine input 因此下降，造成 bradykinesia（動作遲緩）、rigidity（僵硬）與部分患者的 tremor。Levodopa 可以補足 dopamine precursor，但隨疾病進展常出現藥效波動與 dyskinesia。細胞替代策略不是阻止原本神經元死亡，而是從 pluripotent stem cells 製造 dopaminergic progenitors，植入 putamen，希望它們成熟、存活並重新提供 dopamine。",
+        "whatHappened": "STEM-PD 是 phase 1/2、open-label、multicenter 的早期試驗。8 名中度帕金森氏症患者接受雙側 intraputaminal transplantation，分成兩個劑量 cohort，各 4 人，之後接受 12 個月 immunosuppression。7 人完成 12 個月追蹤；1 人在移植約 10 週後死於 fungal pulmonary infection。研究報告沒有 serious adverse event 被歸因於細胞產品本身，沒有觀察到 graft-induced dyskinesia，連續 MRI 也沒有發現腫瘤形成。作者因此把目前結論定位在『可行、早期安全性可接受』，而不是療效已被證實。",
+        "howTheyStudied": "這類 first-in-human cell therapy 首要問題是安全：移植細胞會不會不受控制增生、形成腫瘤，或造成新的 dyskinesia？研究因此以 dose escalation、小樣本、密集影像與臨床追蹤進行。參與者還需 immunosuppression，因為細胞並非患者自身來源。試驗也利用 PET 與臨床 motor outcomes 追蹤 graft function 和初步 efficacy signals，但沒有 placebo／sham surgery 對照，因此這些療效訊號只能視為探索性。",
+        "whyItMatters": "細胞替代和一般 symptomatic drug 的邏輯不同：它試圖重建失去的 dopamine-producing cellular machinery。如果細胞能多年存活並形成適當連線，理論上可能提供更穩定的 dopamine source。更重要的是，現在不同團隊已有 hESC 與 iPSC 衍生 dopaminergic cell trials 進入人體，研究問題開始從『能不能做』轉向『哪種細胞、劑量、免疫策略與患者最適合』。",
+        "limitations": "只有 8 名受試者、沒有隨機化也沒有 blinded control，因此不能從症狀變好推論細胞有效；腦部手術具有強 placebo effect，也可能伴隨復健與藥物調整。更重要的是 1 名受試者死於肺部真菌感染，雖然不是被歸因於細胞產品，但提醒我們 immunosuppression 本身是整套治療的實質風險。12 個月也不足以排除較晚出現的腫瘤、異常生長、移植物退化或長期功能問題。",
+        "whatNext": "試驗會持續追蹤到 36 個月，以觀察 graft durability、功能與晚期安全性。真正要判斷治療價值，之後需要更大的 controlled trial，把手術／安慰效應、藥物變化與自然波動分開；同時也要改善細胞純度、成熟度與免疫相容性，看看未來是否能減少長期 immunosuppression 的代價。",
+        "sources": [
+          {"label": "Nature Medicine 原始臨床研究", "url": "https://www.nature.com/articles/s41591-026-04525-0"},
+          {"label": "STEM-PD 官方研究網站", "url": "https://stem-pd.org/publications/"}
+        ],
+        "questions": [
+          "Levodopa 和 dopaminergic progenitor transplantation 都想恢復 dopamine function，但它們介入因果鏈的位置有什麼不同？",
+          "為什麼 phase 1/2 的 8 人 open-label trial 即使看到 PET 或動作改善，也不能像 randomized controlled trial 一樣證明療效？",
+          "如果未來移植細胞確實長期存活，但患者症狀沒有明顯改善，你會優先檢查哪些替代解釋：細胞位置、連線、dopamine release、疾病其他迴路，還是患者選擇？為什麼？"
+        ]
+      }
+    ],
+    "radar": {
+      "title": "OIST Research Internship：10 月 15 日截止，適合用 4–6 個月真正測試研究生活",
+      "summary": "Okinawa Institute of Science and Technology（OIST）目前官方招生頁列出的 Research Internship 截止日為 2026 年 10 月 15 日，對象是有意往 PhD 發展的 undergraduate／master's students，實習長度為 4–6 個月。OIST 沒有傳統系所牆，研究橫跨 neuroscience、molecular/cell biology、marine science、chemistry、physics、computational science 等，對還在比較濕實驗、神經科學與跨領域研究適配性的人特別有資訊價值。和 8–10 週暑研相比，4–6 個月更有機會真正經歷 training、獨立工作、失敗與 troubleshooting；現在距截止約三週，應優先查看 Faculty & Research Internship Project Availability，挑 2–3 個研究單位，再依各 lab 的近期問題寫具體動機，而不是只寫『想體驗國際研究』。",
+      "url": "https://www.oist.jp/admissions"
+    }
+  },
+  "importantMail": {
+    "count": 0,
+    "status": "目前沒有符合條件、需要特別注意的新郵件；詳細郵件內容不存放在公開 Daily Board。"
+  }
 }
