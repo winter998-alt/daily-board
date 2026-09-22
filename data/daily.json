@@ -1,86 +1,65 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-22",
-  "updatedAt": "2026-09-22T07:29:48+08:00",
+  "date": "2026-09-23",
+  "updatedAt": "2026-09-23T07:27:42+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在處理『時間尺度與觀察尺度』：恐懼為什麼能比杏仁核最初的警報維持更久、全身器官如何在幾秒內彼此協調，以及帕金森氏症能否從補充多巴胺進一步走向補回真正的多巴胺神經元。值得注意的是，三篇證據層級很不同：前兩篇主要是動物機制與新技術，第三篇則已進入人體早期臨床，因此解讀時要分清楚『機制成立』『技術可行』和『治療有效』不是同一件事。",
+    "intro": "今天三篇都在問一個很實際的問題：當我們找到一個疾病相關現象後，怎麼判斷它只是伴隨現象，還是真正能推動病程的機制？從 HIV 相關腦損傷中的小膠質細胞訊號、粒線體疾病中跨細胞『借用』健康粒線體，到 OCD／慢性抽動症的罕見大效應基因，三篇分別示範了細胞特異性基因操作、器官間細胞替換與人類遺傳學如何逐步逼近因果。也要注意：前兩篇的治療意義目前主要來自模型，第三篇則是風險基因發現，都還不能直接等同臨床治療。",
     "stories": [
       {
-        "category": "神經科學・恐懼迴路・行為",
-        "title": "杏仁核的警報很短，恐懼卻能維持很久：被忽略的 ASt 可能負責把危險訊號『撐住』",
-        "widgetTitle": "恐懼為何能比第一聲警報更持久？",
-        "widgetSummary": "Neuron 小鼠研究找到杏仁核旁的 amygdalostriatal transition zone（ASt）：它對預測電擊的線索會持續活動，而且啟動 ASt 足以引發凍結與迴避，抑制其中 Drd2+ 神經元則削弱條件性恐懼。",
-        "dek": "我們常把杏仁核稱為『恐懼中心』，但杏仁核神經元對威脅線索的反應往往很短，實際的凍結與警戒卻能維持更久。新研究把這個時間差追到杏仁核與紋狀體交界的一小塊區域 ASt，提示大腦可能把『偵測到危險』與『讓防禦狀態持續』交給不同節點。",
-        "background": "條件性恐懼學習常用一個原本中性的聲音或線索（conditioned cue）和足部電擊配對。學習後，光是再次出現線索，小鼠就可能 freezing（凍結不動）或主動迴避。杏仁核對建立『這個線索代表危險』很重要，但許多杏仁核神經元在威脅剛出現時只短暫放電，因此留下問題：誰把防禦行為維持到危險真的過去？ASt（amygdalostriatal transition zone，杏仁核－紋狀體過渡區）位在杏仁核和紋狀體交界，過去因體積小、邊界難分而較少被單獨研究。",
-        "whatHappened": "研究先證明 ASt 不是單純把鄰近杏仁核或紋狀體混在一起的模糊區域，而具有可區分的分子身分。接著發現，當小鼠聽到曾預測電擊的線索時，ASt 神經元會出現強而持續的活動，時間型態比典型杏仁核瞬時反應更能對應持續的防禦狀態。光刺激 ASt 本身足以促使小鼠 freezing 與 avoidance；反過來抑制其中表現 dopamine D2 receptor 的 Drd2+ ASt 神經元，會削弱 cue-conditioned fear。這支持 ASt 不是只『看到恐懼時一起亮』，而實際參與防禦行為的產生。",
-        "howTheyStudied": "團隊先用 single-nucleus RNA sequencing 比較 ASt 與鄰近區域的基因表現，確認它具有獨特細胞組成；再以在體電生理與 calcium imaging 觀察小鼠接受恐懼制約後，ASt 對 shock-predicting cue 的活動時間。最後用 optogenetics 做雙向因果測試：刺激 ASt 看是否足以引發防禦行為，再抑制 Drd2+ ASt neurons 看條件性恐懼是否下降。這套設計把『區域身分→自然活動→充分性→必要性』串在一起。",
-        "whyItMatters": "這項工作修正了把恐懼全部塞進『杏仁核』的過度簡化模型。較合理的框架可能是：某些杏仁核迴路快速偵測／學習威脅，而 ASt 等下游或交界結構把危險表徵維持在足以驅動行為的時間尺度。對 panic disorder、phobia、PTSD 等疾病而言，未來真正值得問的可能不只是『警報為什麼被觸發』，也包括『警報為什麼關不掉』。",
-        "limitations": "核心證據來自小鼠的 conditioned fear，不能直接等同人類 panic attack 或 PTSD。Drd2+ 指的是細胞表現 dopamine D2 receptor，不應誤寫成『會釋放多巴胺的神經元』。此外，刺激整個 ASt 所造成的 freezing／avoidance 仍可能是人工同步活動的結果；ASt 在自然情境中接收哪些輸入、把訊號送到哪些輸出，以及持續活動本身如何形成，還沒有完全拆解。",
-        "whatNext": "下一步應把 ASt 的 input–output circuit 畫清楚，找出哪些上游把短暫威脅訊號轉成持續活動，以及哪些下游分別控制 freezing、avoidance 與 autonomic responses。若要連到人類焦慮疾病，還需要影像、電生理或臨床樣本證明人類存在可比較的 ASt circuit dysfunction，而不是直接從小鼠跳到治療。",
-        "sources": [
-          {"label": "Neuron／PubMed 原始研究紀錄", "url": "https://pubmed.ncbi.nlm.nih.gov/42735685/"},
-          {"label": "Salk Institute 研究說明", "url": "https://www.salk.edu/news-release/why-do-we-stay-afraid-for-so-long-when-the-brains-first-alarm-fires-so-fast/"}
-        ],
-        "questions": [
-          "如果杏仁核對危險線索只短暫反應，而 ASt 能持續反應，這兩種時間尺度可能如何合作，讓動物既快速偵測危險又維持防禦行為？",
-          "為什麼研究者需要同時做自然活動紀錄、ASt 光刺激和 Drd2+ ASt 抑制，才能比單純看到 ASt 在恐懼時變亮更接近因果證據？",
-          "假如抑制 ASt 讓 freezing 下降，還有哪些替代解釋會讓你不能立刻說『ASt 專門負責恐懼持續』？你會加什麼行為控制？"
-        ]
+        "category": "神經免疫・HIV・小膠質細胞",
+        "title": "病毒被藥物壓住後，大腦為什麼還可能受傷？neuroHIV 研究把關鍵縮小到小膠質細胞的 p38α",
+        "widgetTitle": "HIV 壓住了，腦發炎為何還在？",
+        "widgetSummary": "新研究顯示，HIV 表面蛋白 gp120 即使不靠完整病毒感染，也能透過小膠質細胞的 p38α MAPK 推動神經損傷；在小鼠中特異性移除這個訊號，突觸與行為缺陷明顯受到保護。",
+        "dek": "現代抗反轉錄病毒治療能把 HIV 複製壓到很低，但部分感染者仍有認知與神經系統問題。這表示『血中病毒量下降』和『腦內發炎完全停止』不是同一件事。新研究把其中一條路徑追到腦內常駐免疫細胞 microglia，以及它們裡面的 p38α MAP kinase。",
+        "background": "Microglia（小膠質細胞）是中樞神經系統的常駐免疫細胞，平時清除碎屑、監視感染並調節突觸。MAPK14 基因製造的 p38α 是一種 kinase，也就是會替其他蛋白加上磷酸基、進而改變訊號傳遞的酵素。HIV 外膜上的 gp120 能和細胞表面受體互動；重要的是，研究者想知道即使不要求完整 HIV 在神經細胞中大量複製，gp120 是否仍足以把 microglia 推向傷害神經的發炎狀態。",
+        "whatHappened": "在會於腦中表現 HIV-1 gp120 的小鼠模型裡，研究者看到皮質與海馬的樹突、突觸受損及行為缺陷。當 p38α 被特異性從 microglia 移除後，這些神經損傷與行為問題受到保護。RNA 分析還顯示，缺少 p38α 的 microglia 發炎基因程式降低，但並非把所有抗病毒反應一起關掉。這支持 p38α 不只是『發炎時一起升高的 marker』，而是 gp120 造成神經毒性的重要中介節點。",
+        "howTheyStudied": "團隊使用 HIVgp120 transgenic mice，讓腦組織長期暴露於 HIV envelope protein；再利用 Cx3cr1 驅動的遺傳系統，在 microglia／相關髓系細胞中刪除 floxed p38α。研究比較神經突起、突觸、行為表現與 microglial transcriptome，並在以 CRISPR/Cas9 knockout p38α 的人類 microglial cells 中用 qRT-PCR 驗證部分基因表現方向。這種設計的重點是『細胞類型特異性干預』：不是全身抑制 p38α，再猜是哪個器官造成效果。",
+        "whyItMatters": "它提供一個解釋：ART 控制的是病毒複製，但殘留病毒蛋白或慢性免疫刺激仍可能維持 microglial inflammatory signaling。若人類也成立，未來治療目標可能不只是更強地壓病毒，而是選擇性阻斷造成神經毒性的免疫支路，同時保留必要的抗感染能力。",
+        "limitations": "這不是 HIV 感染者的臨床治療試驗。HIVgp120tg mouse 只重現疾病的一部分，不能完整模擬人體中的病毒 reservoir、ART、周邊免疫與多年病程。Cx3cr1 系統也不等於絕對只作用於 microglia。最重要的是，p38α 在許多細胞與生理功能中都有角色，因此『小鼠 microglia knockout 有效』不代表全身使用 p38 inhibitor 就會安全有效。",
+        "whatNext": "下一步要在人類 HIV 感染者的腦組織與細胞資料確認 microglial p38α 是否真的和神經認知損傷對應，再測試能否以腦內或 microglia-selective 的方式調節這條路徑。若要走向治療，還必須證明抑制神經毒性發炎的同時不會削弱必要的抗病毒免疫。",
+        "sources": [{"label":"Brain, Behavior, and Immunity／PubMed 原始研究","url":"https://pubmed.ncbi.nlm.nih.gov/42710690/"},{"label":"UC Riverside 研究說明","url":"https://news.ucr.edu/articles/2026/09/22/target-identified-treatment-neurohiv"}],
+        "questions": ["為什麼 ART 把 HIV 複製壓低後，gp120→microglia→p38α 這條路徑仍可能讓腦內傷害持續？","為什麼『只在 microglia／相關髓系細胞刪除 p38α』比全身給一顆 p38 inhibitor 更能回答 p38α 是否參與 neuroHIV 的因果機制？","如果未來在人類腦組織看到 p38α 活性和認知障礙程度高度相關，還需要什麼證據才能判斷它是病因而不是受傷後的反應？"]
       },
       {
-        "category": "系統生理・成像技術・腦身體互動",
-        "title": "第一次把整隻脊椎動物當成一個動態細胞網路來看：WHOLISTIC 同時拍下腦、腎臟、肌肉與血流的秒級活動",
-        "widgetTitle": "把全身細胞活動一次拍下來",
-        "widgetSummary": "Nature 發表 WHOLISTIC：研究者在透明的幼年斑馬魚中，用全身 calcium sensor、體積顯微鏡與機器學習，以細胞解析度同步追蹤跨器官活動，看到腎元旅行波、肌肉－器官協調與腦幹控制的全身血流重分配。",
-        "dek": "傳統生理學常一次量一個器官，但真實生命事件往往是全身同時發生：看到危險時腦、肌肉、心血管與代謝系統必須一起改變。WHOLISTIC 的核心突破不是把單一器官拍得更漂亮，而是讓研究者第一次能在秒級時間尺度上，同時觀察脊椎動物全身大量細胞的活動，再從中找跨器官關係。",
-        "background": "研究神經元時常用 calcium imaging：當細胞活化造成細胞內 Ca2+ 改變，基因編碼的螢光感測器會跟著改變亮度。過去這類方法通常侷限在腦或單一組織，因為全身同時成像會遇到移動、不同器官深度、巨大資料量與細胞分割等問題。WHOLISTIC 是 WHole-Organism Live-Imaging System for recording Tissue and IntraCellular activity 的縮寫，目標是把『一個器官的動態』提升成『整個動物的動態』。",
-        "whatHappened": "研究者在幼年斑馬魚全身廣泛表現 calcium sensors，再用高速 volumetric fluorescence microscopy 和計算方法做 motion correction、細胞／組織 segmentation 與活動分群。結果看到一些原本很難從單器官研究發現的現象：軟骨細胞會對冷刺激反應、腦膜細胞會對 ketamine 出現反應；腎臟 nephron 出現有節律的 travelling calcium waves；不同肌群和器官之間存在同步活動；更大尺度上，還捕捉到由 brainstem 控制的全身血流重新分配。研究也在成體 Danionella cerebrum 做了 proof of concept。",
-        "howTheyStudied": "WHOLISTIC 把幾個技術疊在一起：pancellular transgenic calcium sensing 讓許多細胞都能回報活動，volumetric microscopy 快速掃描三維全身，machine-learning／computational workflow 校正動物移動並把訊號分成 functional tissue ensembles。研究者還發展 whole-body expansion microscopy，把活體動態事後對回更細的分子與超微結構。最重要的是加入 optogenetics：不是只看『腦幹活動和血流一起變』，而能光控特定神經活動，再觀察全身哪些部位跟著改變，開始做跨器官因果測試。",
-        "whyItMatters": "這種方法可能改變系統生物學的觀察單位。很多疾病不是單一器官故障，例如壓力、敗血症、代謝疾病、藥物副作用都涉及神經、免疫、循環與代謝的連鎖反應；如果只量一個器官，很可能錯過真正的先後順序。WHOLISTIC 提供的是『發現平台』：先找出意外同步或先後關係，再回頭做精準機制實驗。",
-        "limitations": "目前最完整的示範是在體型小、透明的 larval zebrafish；成人哺乳類組織不透明、體積大且呼吸心跳造成的移動更複雜，不能直接照搬。Calcium signal 也不是所有細胞功能的萬用代理值：某個細胞 Ca2+ 上升不一定代表它正在執行我們猜測的生理功能。大規模同步資料還有多重比較與『相關不等於因果』問題，因此漂亮的全身相關圖仍需要後續操控驗證。",
-        "whatNext": "下一步一方面是增加其他 biosensors，例如電壓、代謝物、第二訊使或免疫訊號，另一方面是把全身動態和細胞型別、解剖連線及因果操控整合。對疾病研究而言，更關鍵的是比較健康與疾病狀態下，哪個器官最早偏離正常協調，而不是只在疾病末期找哪裡最亮。",
-        "sources": [
-          {"label": "Nature 原始研究", "url": "https://www.nature.com/articles/s41586-026-10979-6"},
-          {"label": "PubMed 研究紀錄", "url": "https://pubmed.ncbi.nlm.nih.gov/42717095/"}
-        ],
-        "questions": [
-          "為什麼『同時』量全身多個器官，比把腦、腎臟、肌肉分三次實驗各自測量，更有機會發現真正的跨器官時間順序？",
-          "WHOLISTIC 為什麼還要加入 optogenetics，而不能只靠大量 calcium imaging 資料判斷哪個器官控制哪個器官？",
-          "如果兩個器官總是同步出現 calcium signal，你會如何區分 A 控制 B、B 控制 A、以及第三個系統同時控制 A 與 B 這三種解釋？"
-        ]
+        "category": "粒線體・再生醫學・神經退化",
+        "title": "骨髓細胞不只補血：Friedreich 共濟失調小鼠會從新免疫細胞『接收』健康粒線體",
+        "widgetTitle": "免疫細胞竟能把粒線體送給生病的腦與心臟",
+        "widgetSummary": "Friedreich 共濟失調小鼠接受髓系細胞替換後，供者來源的 microglia／macrophages 會把粒線體轉移給神經與心肌等細胞，伴隨能量代謝、運動與存活改善。",
+        "dek": "粒線體疾病最棘手的地方之一，是問題同時存在於許多器官；就算修好一個組織，也未必能救全身。Nature Communications 的研究利用血液系統本來就會巡遊與定居各組織的特性，提出一個反直覺策略：不必把治療直接送進每一顆神經元，而是先換入健康髓系細胞，讓它們成為會移動的粒線體供應者。",
+        "background": "Friedreich's ataxia（FA）多由 FXN 基因異常造成 frataxin 不足，影響粒線體鐵硫簇與能量代謝，逐漸傷害神經系統與心臟。粒線體負責 oxidative phosphorylation，把食物中的能量轉成 ATP。過去我們常把粒線體視為只能由母細胞傳給子細胞的胞器，但現在知道某些細胞可以把完整粒線體交給鄰近細胞。",
+        "whatHappened": "研究者在 FA 小鼠進行 myeloid cell replacement 後，看到供者骨髓衍生細胞進入組織並取代部分 microglia／macrophages。用不同螢光標記分開追蹤供者細胞與供者粒線體後，他們發現供者粒線體出現在多種宿主中樞神經細胞與 cardiomyocytes 裡。接受粒線體的細胞出現較強的 oxidative-phosphorylation、ATP synthesis 相關程式；整體上，小鼠存活與生長改善，部分運動、力量、協調與心臟功能指標也改善。",
+        "howTheyStudied": "關鍵是把『細胞移入』和『粒線體移入』分開標記，否則只看到供者免疫細胞進入腦並不能證明粒線體真的跨細胞。團隊也在培養系統測試 frataxin-deficient recipient cells，發現粒線體轉移需要直接 cell-cell contact，而且受病細胞似乎更容易取得或保留供者粒線體；轉移後呼吸能力得到部分恢復。多層證據把現象從組織定位一路接到代謝功能。",
+        "whyItMatters": "這提供一種『利用會自己走到全身的細胞當物流系統』的治療想法。對同時傷害腦、心臟與肌肉的粒線體疾病，髓系細胞可能比單一局部注射更有機會把健康胞器帶到深部組織。未來甚至可能把患者自己的造血幹細胞先做基因修正，再讓其後代免疫細胞攜帶較健康的粒線體回到各器官。",
+        "limitations": "核心證據仍是 FA mouse model，而且改善並不完全；部分功能改善還有性別差異。移植前需要強力 conditioning 才能清掉原有髓系細胞，這本身具有感染、毒性與其他風險。研究也尚未證明轉入的粒線體能維持多久、每種細胞需要多少才足以產生臨床效益，更不能據此宣稱一般骨髓移植已可治療 FA。",
+        "whatNext": "最重要的是找出哪些細胞真正需要粒線體、轉移通道是什麼，以及能否降低 conditioning 強度。若能使用 autologous hematopoietic stem cells，先修正 FXN 再回輸，理論上可降低異體移植問題；但必須在更接近人類的模型證明長期安全性與功能性。",
+        "sources": [{"label":"Nature Communications 原始研究","url":"https://www.nature.com/articles/s41467-026-76775-y"},{"label":"Stanford Medicine 研究說明","url":"https://med.stanford.edu/news/all-news/2026/09/stem-cell-mitochondrial-disease.html"}],
+        "questions": ["為什麼健康 microglia／macrophages 把粒線體交給 frataxin-deficient cells，理論上可以改善 ATP 產生，而不需要先把每一顆受損細胞的基因都修好？","研究者為什麼必須分開標記『供者細胞』和『供者粒線體』，並再做細胞培養的直接接觸實驗？","如果骨髓移植後小鼠變健康，但粒線體轉移只是伴隨現象，你會設計什麼實驗證明『轉移本身』是療效所必需？"]
       },
       {
-        "category": "臨床研究・帕金森氏症・幹細胞治療",
-        "title": "帕金森氏症不只『補多巴胺』，而是嘗試補回會製造多巴胺的細胞：STEM-PD 首批人體試驗報告 12 個月安全性",
-        "widgetTitle": "把多巴胺神經前驅細胞移植進帕金森氏症大腦",
-        "widgetSummary": "Nature Medicine 的 STEM-PD phase 1/2 試驗將人類胚胎幹細胞衍生的多巴胺神經前驅細胞移植到 8 名中度帕金森氏症患者的 putamen。早期重點是可行性與安全性，而不是證明療效。",
-        "dek": "Levodopa 是把缺少的多巴胺訊號補回去；細胞替代治療則更進一步問：能不能把能長期製造並釋放多巴胺的神經細胞重新放回紋狀體？STEM-PD 的首批人體資料顯示這條路徑至少在小型早期試驗中可執行，但八個人的 open-label study 遠不足以宣告治療有效。",
-        "background": "帕金森氏症的核心病理之一，是 substantia nigra pars compacta 的 dopaminergic neurons 逐漸死亡，原本送往 striatum 的 dopamine input 因此下降，造成 bradykinesia（動作遲緩）、rigidity（僵硬）與部分患者的 tremor。Levodopa 可以補足 dopamine precursor，但隨疾病進展常出現藥效波動與 dyskinesia。細胞替代策略不是阻止原本神經元死亡，而是從 pluripotent stem cells 製造 dopaminergic progenitors，植入 putamen，希望它們成熟、存活並重新提供 dopamine。",
-        "whatHappened": "STEM-PD 是 phase 1/2、open-label、multicenter 的早期試驗。8 名中度帕金森氏症患者接受雙側 intraputaminal transplantation，分成兩個劑量 cohort，各 4 人，之後接受 12 個月 immunosuppression。7 人完成 12 個月追蹤；1 人在移植約 10 週後死於 fungal pulmonary infection。研究報告沒有 serious adverse event 被歸因於細胞產品本身，沒有觀察到 graft-induced dyskinesia，連續 MRI 也沒有發現腫瘤形成。作者因此把目前結論定位在『可行、早期安全性可接受』，而不是療效已被證實。",
-        "howTheyStudied": "這類 first-in-human cell therapy 首要問題是安全：移植細胞會不會不受控制增生、形成腫瘤，或造成新的 dyskinesia？研究因此以 dose escalation、小樣本、密集影像與臨床追蹤進行。參與者還需 immunosuppression，因為細胞並非患者自身來源。試驗也利用 PET 與臨床 motor outcomes 追蹤 graft function 和初步 efficacy signals，但沒有 placebo／sham surgery 對照，因此這些療效訊號只能視為探索性。",
-        "whyItMatters": "細胞替代和一般 symptomatic drug 的邏輯不同：它試圖重建失去的 dopamine-producing cellular machinery。如果細胞能多年存活並形成適當連線，理論上可能提供更穩定的 dopamine source。更重要的是，現在不同團隊已有 hESC 與 iPSC 衍生 dopaminergic cell trials 進入人體，研究問題開始從『能不能做』轉向『哪種細胞、劑量、免疫策略與患者最適合』。",
-        "limitations": "只有 8 名受試者、沒有隨機化也沒有 blinded control，因此不能從症狀變好推論細胞有效；腦部手術具有強 placebo effect，也可能伴隨復健與藥物調整。更重要的是 1 名受試者死於肺部真菌感染，雖然不是被歸因於細胞產品，但提醒我們 immunosuppression 本身是整套治療的實質風險。12 個月也不足以排除較晚出現的腫瘤、異常生長、移植物退化或長期功能問題。",
-        "whatNext": "試驗會持續追蹤到 36 個月，以觀察 graft durability、功能與晚期安全性。真正要判斷治療價值，之後需要更大的 controlled trial，把手術／安慰效應、藥物變化與自然波動分開；同時也要改善細胞純度、成熟度與免疫相容性，看看未來是否能減少長期 immunosuppression 的代價。",
-        "sources": [
-          {"label": "Nature Medicine 原始臨床研究", "url": "https://www.nature.com/articles/s41591-026-04525-0"},
-          {"label": "STEM-PD 官方研究網站", "url": "https://stem-pd.org/publications/"}
-        ],
-        "questions": [
-          "Levodopa 和 dopaminergic progenitor transplantation 都想恢復 dopamine function，但它們介入因果鏈的位置有什麼不同？",
-          "為什麼 phase 1/2 的 8 人 open-label trial 即使看到 PET 或動作改善，也不能像 randomized controlled trial 一樣證明療效？",
-          "如果未來移植細胞確實長期存活，但患者症狀沒有明顯改善，你會優先檢查哪些替代解釋：細胞位置、連線、dopamine release、疾病其他迴路，還是患者選擇？為什麼？"
-        ]
+        "category": "精神醫學・人類遺傳學・OCD／抽動症",
+        "title": "OCD 與慢性抽動症不是只有『很多小風險』：外顯子定序找到 36 個罕見大效應風險基因",
+        "widgetTitle": "OCD／抽動症找到 36 個大效應風險基因",
+        "widgetSummary": "近四千名患者的 whole-exome sequencing 顯示，OCD 與慢性抽動症除了常見小效應變異，也有一部分風險來自罕見、會破壞蛋白質的大效應變異；36 個高可信度基因指向皮質、紋狀體與發育中的神經迴路。",
+        "dek": "複雜精神疾病常被描述成『很多基因各貢獻一點點風險』，這通常沒錯，但不是完整故事。Nature Neuroscience 的大型外顯子定序研究顯示，少數 OCD 或慢性抽動症患者帶有非常罕見、單一變異影響較大的 coding mutations。這些基因不是診斷工具，卻提供了一條從人類遺傳差異往細胞機制追的入口。",
+        "background": "Whole-exome sequencing（WES）主要讀取基因組中會編碼蛋白質的 exons。研究特別關注 de novo variants，也就是孩子身上出現、父母沒有的變異，以及極罕見的 protein-damaging variants。這和 GWAS 找常見變異不同：GWAS 常找到每個只增加一點風險的 allele；罕見破壞性變異雖然只存在少數人身上，單一變異的 effect 可能大得多。",
+        "whatHappened": "研究分析 3,964 名有 OCD、慢性抽動症或兩者兼具的個案，其中 2,418 組有父母與孩子三人資料，另有 1,546 名 singleton。研究發現患者攜帶 de novo 與罕見 protein-damaging variants 的比例高於預期，最後辨認出 36 個 high-confidence risk genes。模型估計約 7–8% 個案帶有至少一個會貢獻風險的 de novo damaging variant；部分基因的估計 effect 很大，但這些數字描述的是特定罕見變異群體的相對風險，不代表帶有某基因變異就一定會發病。",
+        "howTheyStudied": "Trio design 讓研究者直接判斷變異是不是 de novo；singleton 與大型 population reference 則補充極罕見變異的病例—對照訊號。研究把 likely gene-disrupting variants 和預測最具破壞性的 missense variants 放入 TADA Bayesian framework，並用 false discovery rate 控制大量基因同時檢定造成的假陽性。之後再把風險基因和腦發育 transcriptome、細胞類型與蛋白／功能網路交叉分析。",
+        "whyItMatters": "風險基因的表現集中在 prenatal／postnatal cortex、striatum，以及 postnatal cerebellum 等時空位置，也和其他 neurodevelopmental disorders 有部分重疊。這讓『皮質—紋狀體—丘腦迴路』不只是一個影像或行為模型，而得到另一層人類遺傳支持。更重要的是，大效應基因比較容易做成細胞或動物模型，讓研究者能從 association 往 mechanism 推進。",
+        "limitations": "36 個是統計上的高可信度 risk genes，不是『36 個 OCD 基因』；OCD／CTD 仍是高度多基因、異質的疾病。研究聚焦 coding SNVs 和 small indels，沒有完整涵蓋 CNV、noncoding variants 或 mitochondrial DNA。部分基因只由少量罕見事件支撐，仍需要獨立樣本與功能實驗。高 odds ratio 也不能直接拿來預測一般人的個人發病機率。",
+        "whatNext": "下一步要擴大不同祖源族群的定序，驗證哪些基因能穩定重現；再用 iPSC-derived neurons、organoids 或動物模型測試變異如何改變神經發育、突觸、纖毛／微管與 corticostriatal circuit。真正有價值的終點不是累積更多基因名字，而是找出不同風險基因最後是否匯聚到少數可干預的生物機制。",
+        "sources": [{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02419-5"}],
+        "questions": ["為什麼罕見大效應變異和 GWAS 找到的常見小效應變異可以同時對 OCD／慢性抽動症的遺傳風險成立，而不是互相矛盾？","為什麼 parent–child trio 對研究 de novo mutation 特別有力？如果只有患者本人的序列，會少掉哪一層證據？","即使某個基因在患者中出現高風險罕見變異，你還需要哪些功能實驗，才能從『統計風險基因』走到『可治療的疾病機制』？"]
       }
     ],
     "radar": {
-      "title": "OIST Research Internship：10 月 15 日截止，適合用 4–6 個月真正測試研究生活",
-      "summary": "Okinawa Institute of Science and Technology（OIST）目前官方招生頁列出的 Research Internship 截止日為 2026 年 10 月 15 日，對象是有意往 PhD 發展的 undergraduate／master's students，實習長度為 4–6 個月。OIST 沒有傳統系所牆，研究橫跨 neuroscience、molecular/cell biology、marine science、chemistry、physics、computational science 等，對還在比較濕實驗、神經科學與跨領域研究適配性的人特別有資訊價值。和 8–10 週暑研相比，4–6 個月更有機會真正經歷 training、獨立工作、失敗與 troubleshooting；現在距截止約三週，應優先查看 Faculty & Research Internship Project Availability，挑 2–3 個研究單位，再依各 lab 的近期問題寫具體動機，而不是只寫『想體驗國際研究』。",
-      "url": "https://www.oist.jp/admissions"
+      "title": "EMBL International PhD Programme 2027 Winter Recruitment 已開放：現在先用它反推大學階段要補哪些能力",
+      "summary": "EMBL 的 2027 Winter Recruitment 已於 2026 年 9 月 1 日開放，申請截止為 10 月 12 日 23:59 CET，2027 年 1 月底至 2 月初進行現場面試。這不是現在大二就要申請的機會，而是一個很好的『研究所規格尺』：EMBL 的研究橫跨分子生物、細胞生物、基因體、影像、計算與跨尺度生物學，申請流程要求申請者能說清楚研究興趣、過去研究經驗與未來問題。現在追蹤它的價值，是用真正國際博士班的要求反推未來兩三年：累積一段能說出問題—方法—結果—限制的研究經驗、建立可驗證的量化／程式能力，並練習閱讀不同實驗室近期論文，而不是到大四才第一次準備。",
+      "url": "https://www.embl.org/about/info/embl-international-phd-programme/application/"
     }
   },
   "importantMail": {
     "count": 0,
-    "status": "目前沒有符合條件、需要特別注意的新郵件；詳細郵件內容不存放在公開 Daily Board。"
+    "status": "目前沒有新增郵件同時符合指定的『重要領域』與『明確截止／需要回覆或行動／取消異常／時間變更』條件；詳細郵件內容不存放在公開 Daily Board。"
   }
 }
