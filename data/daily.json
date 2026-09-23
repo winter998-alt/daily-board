@@ -1,65 +1,58 @@
 {
   "schemaVersion": "0.4",
-  "date": "2026-09-23",
-  "updatedAt": "2026-09-23T07:27:42+08:00",
+  "date": "2026-09-24",
+  "updatedAt": "2026-09-24T07:36:00+08:00",
   "report": {
     "title": "每日生醫・神經科學摘要",
-    "intro": "今天三篇都在問一個很實際的問題：當我們找到一個疾病相關現象後，怎麼判斷它只是伴隨現象，還是真正能推動病程的機制？從 HIV 相關腦損傷中的小膠質細胞訊號、粒線體疾病中跨細胞『借用』健康粒線體，到 OCD／慢性抽動症的罕見大效應基因，三篇分別示範了細胞特異性基因操作、器官間細胞替換與人類遺傳學如何逐步逼近因果。也要注意：前兩篇的治療意義目前主要來自模型，第三篇則是風險基因發現，都還不能直接等同臨床治療。",
+    "intro": "今天三篇都在提醒我們：大腦不能只用『神經元接線圖』來理解。第一篇把近 1,500 名人類捐贈者、超過 630 萬個細胞核放進同一張疾病地圖，讓阿茲海默症、帕金森氏症與精神疾病第一次能在相同細胞尺度上比較；第二篇則把焦點從基因與細胞轉向脂質，顯示不同腦區其實有非常精細的膜脂化學地理；第三篇從透明小魚的群體逃生，拆出大腦如何只看同伴的動作，就推論出自己沒有直接看到的危險。三篇分別代表 transcriptomics、lipidomics 與 circuit neuroscience 三種完全不同的觀察尺度。",
     "stories": [
       {
-        "category": "神經免疫・HIV・小膠質細胞",
-        "title": "病毒被藥物壓住後，大腦為什麼還可能受傷？neuroHIV 研究把關鍵縮小到小膠質細胞的 p38α",
-        "widgetTitle": "HIV 壓住了，腦發炎為何還在？",
-        "widgetSummary": "新研究顯示，HIV 表面蛋白 gp120 即使不靠完整病毒感染，也能透過小膠質細胞的 p38α MAPK 推動神經損傷；在小鼠中特異性移除這個訊號，突觸與行為缺陷明顯受到保護。",
-        "dek": "現代抗反轉錄病毒治療能把 HIV 複製壓到很低，但部分感染者仍有認知與神經系統問題。這表示『血中病毒量下降』和『腦內發炎完全停止』不是同一件事。新研究把其中一條路徑追到腦內常駐免疫細胞 microglia，以及它們裡面的 p38α MAP kinase。",
-        "background": "Microglia（小膠質細胞）是中樞神經系統的常駐免疫細胞，平時清除碎屑、監視感染並調節突觸。MAPK14 基因製造的 p38α 是一種 kinase，也就是會替其他蛋白加上磷酸基、進而改變訊號傳遞的酵素。HIV 外膜上的 gp120 能和細胞表面受體互動；重要的是，研究者想知道即使不要求完整 HIV 在神經細胞中大量複製，gp120 是否仍足以把 microglia 推向傷害神經的發炎狀態。",
-        "whatHappened": "在會於腦中表現 HIV-1 gp120 的小鼠模型裡，研究者看到皮質與海馬的樹突、突觸受損及行為缺陷。當 p38α 被特異性從 microglia 移除後，這些神經損傷與行為問題受到保護。RNA 分析還顯示，缺少 p38α 的 microglia 發炎基因程式降低，但並非把所有抗病毒反應一起關掉。這支持 p38α 不只是『發炎時一起升高的 marker』，而是 gp120 造成神經毒性的重要中介節點。",
-        "howTheyStudied": "團隊使用 HIVgp120 transgenic mice，讓腦組織長期暴露於 HIV envelope protein；再利用 Cx3cr1 驅動的遺傳系統，在 microglia／相關髓系細胞中刪除 floxed p38α。研究比較神經突起、突觸、行為表現與 microglial transcriptome，並在以 CRISPR/Cas9 knockout p38α 的人類 microglial cells 中用 qRT-PCR 驗證部分基因表現方向。這種設計的重點是『細胞類型特異性干預』：不是全身抑制 p38α，再猜是哪個器官造成效果。",
-        "whyItMatters": "它提供一個解釋：ART 控制的是病毒複製，但殘留病毒蛋白或慢性免疫刺激仍可能維持 microglial inflammatory signaling。若人類也成立，未來治療目標可能不只是更強地壓病毒，而是選擇性阻斷造成神經毒性的免疫支路，同時保留必要的抗感染能力。",
-        "limitations": "這不是 HIV 感染者的臨床治療試驗。HIVgp120tg mouse 只重現疾病的一部分，不能完整模擬人體中的病毒 reservoir、ART、周邊免疫與多年病程。Cx3cr1 系統也不等於絕對只作用於 microglia。最重要的是，p38α 在許多細胞與生理功能中都有角色，因此『小鼠 microglia knockout 有效』不代表全身使用 p38 inhibitor 就會安全有效。",
-        "whatNext": "下一步要在人類 HIV 感染者的腦組織與細胞資料確認 microglial p38α 是否真的和神經認知損傷對應，再測試能否以腦內或 microglia-selective 的方式調節這條路徑。若要走向治療，還必須證明抑制神經毒性發炎的同時不會削弱必要的抗病毒免疫。",
-        "sources": [{"label":"Brain, Behavior, and Immunity／PubMed 原始研究","url":"https://pubmed.ncbi.nlm.nih.gov/42710690/"},{"label":"UC Riverside 研究說明","url":"https://news.ucr.edu/articles/2026/09/22/target-identified-treatment-neurohiv"}],
-        "questions": ["為什麼 ART 把 HIV 複製壓低後，gp120→microglia→p38α 這條路徑仍可能讓腦內傷害持續？","為什麼『只在 microglia／相關髓系細胞刪除 p38α』比全身給一顆 p38 inhibitor 更能回答 p38α 是否參與 neuroHIV 的因果機制？","如果未來在人類腦組織看到 p38α 活性和認知障礙程度高度相關，還需要什麼證據才能判斷它是病因而不是受傷後的反應？"]
+        "category": "人類腦圖譜・單細胞轉錄體・神經退化",
+        "title": "把八種腦疾病放進同一張單細胞地圖：近 1,500 人的大腦資料開始分出『共同受傷反應』與『疾病特有變化』",
+        "widgetTitle": "近 1,500 人的大腦，做成單細胞疾病地圖",
+        "widgetSummary": "新的大型人腦圖譜分析超過 630 萬個細胞核，直接比較阿茲海默症、帕金森氏症、路易體疾病、精神分裂症等八種疾病。重點不是找到一個『疾病基因』，而是看同一個疾病在不同細胞類型裡究竟改變了哪些基因程式。",
+        "dek": "很多腦疾病最後都會出現神經元受損、發炎或認知下降，但相似的症狀不代表分子原因相同。過去研究又常分別使用不同樣本、不同實驗流程，很難公平比較。9 月 23 日 Nature 與 NIH 公布的 PsychAD 系列研究，建立目前規模最大的跨疾病人類單細胞腦圖譜之一，讓研究者能在相同框架裡問：哪些變化是許多疾病共同的壓力反應？哪些才真正偏向某一疾病？",
+        "background": "細胞裡哪些基因正在被使用，可以從 RNA 看出來，這組資訊稱為 transcriptome（轉錄體）。但一塊腦組織混有神經元、astrocytes、microglia、oligodendrocytes 等很多細胞；若把整塊組織一起測，少數細胞的重要變化可能被平均掉。Single-nucleus RNA sequencing 會把冷凍腦組織中的細胞核分開，再讀取每個核的 RNA，因此能問『是哪一類細胞改變了哪套基因程式』。DLPFC（dorsolateral prefrontal cortex，背外側前額葉皮質）則是參與工作記憶、規劃與認知控制的重要皮質區域，也是這次主要取樣區。",
+        "whatHappened": "核心 Nature 研究整合 1,494 名捐贈者、超過 630 萬個細胞核，包含沒有相關神經疾病的對照，以及 Alzheimer’s disease、diffuse Lewy body disease、vascular dementia、Parkinson’s disease、tauopathy、frontotemporal dementia、schizophrenia、bipolar disorder 八類疾病。研究發現，個體與個體之間本來就有相當大的基因表現差異；跨疾病比較後，某些共同改變集中在 mRNA processing、protein localization 等基本細胞功能，但不同疾病也具有細胞類型特異的變化。另一篇同日 Nature Genetics 研究更把 1,384 名不同祖源捐贈者的 560 萬個細胞核與遺傳變異連起來，找出只有在特定細胞類型中才看得見的基因調控效應。",
+        "howTheyStudied": "研究者不是從一名患者找『異常基因』，而是先把數百萬個細胞核依 RNA pattern 分成細胞類型與亞型，再建立每名捐贈者的細胞組成與 gene-expression profile，控制年齡、性別、個體差異等因素後比較疾病群。接著可把 GWAS 找到的疾病風險變異和 cell-type-specific expression regulation 疊在一起，判斷一個位於非編碼 DNA 的風險變異可能究竟在 microglia、某類 excitatory neuron 或其他細胞中影響哪個 gene。這比『某變異靠近某基因，所以大概影響它』更接近可測試的機制假說。",
+        "whyItMatters": "精神疾病與神經退化疾病的遺傳風險大多不是單一基因決定，而且許多 risk variants 位於不直接製造蛋白質的 regulatory DNA。這套 atlas 的價值，是把『variant 在哪裡』往下接成『它可能在哪種細胞、什麼生命階段、改變哪個 gene program』。未來若某些不同疾病最後匯聚到相同細胞路徑，可能形成跨診斷治療標靶；相反地，如果同樣被診斷為 Alzheimer’s 的患者其細胞分子型態不同，也可能幫助建立更精細的病人分群。",
+        "limitations": "這些資料主要來自 postmortem brain，因此看到的是死亡時留下的分子狀態，無法單靠一次取樣重建疾病多年來的時間順序。『某細胞類型的某基因在患者中改變』也不等於它造成疾病，因為它可能只是對神經退化、藥物或死亡前狀態的反應。主要取樣集中在 DLPFC，也不能代表整顆腦；即使樣本量已非常大，不同祖源、疾病階段與臨床亞型的代表性仍需持續擴充。",
+        "whatNext": "下一步是把這張相關性地圖變成因果實驗：挑出最可信的 cell-type-specific genes，在 iPSC-derived neurons、microglia、organoids 或動物模型中操控，確認它們是否真的改變病理。另一條重要路線是把 transcriptome 與 chromatin、protein、spatial transcriptomics 和臨床病程疊合，避免只靠 RNA 推論細胞功能。",
+        "sources": [{"label":"Nature：Single-cell atlas of transcriptomic vulnerability across brain disorders","url":"https://www.nature.com/articles/s41586-025-09573-z"},{"label":"Nature Genetics：Single-nucleus atlas of cell-type specific genetic regulation in the human brain","url":"https://www.nature.com/articles/s41588-026-02733-5"},{"label":"NIH：高解析度 Alzheimer’s 與相關腦疾病分子圖譜說明","url":"https://www.nih.gov/news-events/news-releases/scientists-develop-high-resolution-molecular-maps-alzheimers-related-brain-disorders"}],
+        "questions": ["為什麼把整塊前額葉一起做 RNA sequencing，可能會漏掉只發生在少數 microglia 或特定神經元亞型中的疾病變化？","研究者為什麼要把 GWAS 的風險變異和 cell-type-specific gene regulation 疊在一起，而不是只看哪個基因離風險變異最近？","如果某個基因在 Alzheimer’s 患者的 microglia 中明顯升高，你會如何區分它是推動疾病的原因、保護性反應，還是神經元已經受傷後才出現的結果？"]
       },
       {
-        "category": "粒線體・再生醫學・神經退化",
-        "title": "骨髓細胞不只補血：Friedreich 共濟失調小鼠會從新免疫細胞『接收』健康粒線體",
-        "widgetTitle": "免疫細胞竟能把粒線體送給生病的腦與心臟",
-        "widgetSummary": "Friedreich 共濟失調小鼠接受髓系細胞替換後，供者來源的 microglia／macrophages 會把粒線體轉移給神經與心肌等細胞，伴隨能量代謝、運動與存活改善。",
-        "dek": "粒線體疾病最棘手的地方之一，是問題同時存在於許多器官；就算修好一個組織，也未必能救全身。Nature Communications 的研究利用血液系統本來就會巡遊與定居各組織的特性，提出一個反直覺策略：不必把治療直接送進每一顆神經元，而是先換入健康髓系細胞，讓它們成為會移動的粒線體供應者。",
-        "background": "Friedreich's ataxia（FA）多由 FXN 基因異常造成 frataxin 不足，影響粒線體鐵硫簇與能量代謝，逐漸傷害神經系統與心臟。粒線體負責 oxidative phosphorylation，把食物中的能量轉成 ATP。過去我們常把粒線體視為只能由母細胞傳給子細胞的胞器，但現在知道某些細胞可以把完整粒線體交給鄰近細胞。",
-        "whatHappened": "研究者在 FA 小鼠進行 myeloid cell replacement 後，看到供者骨髓衍生細胞進入組織並取代部分 microglia／macrophages。用不同螢光標記分開追蹤供者細胞與供者粒線體後，他們發現供者粒線體出現在多種宿主中樞神經細胞與 cardiomyocytes 裡。接受粒線體的細胞出現較強的 oxidative-phosphorylation、ATP synthesis 相關程式；整體上，小鼠存活與生長改善，部分運動、力量、協調與心臟功能指標也改善。",
-        "howTheyStudied": "關鍵是把『細胞移入』和『粒線體移入』分開標記，否則只看到供者免疫細胞進入腦並不能證明粒線體真的跨細胞。團隊也在培養系統測試 frataxin-deficient recipient cells，發現粒線體轉移需要直接 cell-cell contact，而且受病細胞似乎更容易取得或保留供者粒線體；轉移後呼吸能力得到部分恢復。多層證據把現象從組織定位一路接到代謝功能。",
-        "whyItMatters": "這提供一種『利用會自己走到全身的細胞當物流系統』的治療想法。對同時傷害腦、心臟與肌肉的粒線體疾病，髓系細胞可能比單一局部注射更有機會把健康胞器帶到深部組織。未來甚至可能把患者自己的造血幹細胞先做基因修正，再讓其後代免疫細胞攜帶較健康的粒線體回到各器官。",
-        "limitations": "核心證據仍是 FA mouse model，而且改善並不完全；部分功能改善還有性別差異。移植前需要強力 conditioning 才能清掉原有髓系細胞，這本身具有感染、毒性與其他風險。研究也尚未證明轉入的粒線體能維持多久、每種細胞需要多少才足以產生臨床效益，更不能據此宣稱一般骨髓移植已可治療 FA。",
-        "whatNext": "最重要的是找出哪些細胞真正需要粒線體、轉移通道是什麼，以及能否降低 conditioning 強度。若能使用 autologous hematopoietic stem cells，先修正 FXN 再回輸，理論上可降低異體移植問題；但必須在更接近人類的模型證明長期安全性與功能性。",
-        "sources": [{"label":"Nature Communications 原始研究","url":"https://www.nature.com/articles/s41467-026-76775-y"},{"label":"Stanford Medicine 研究說明","url":"https://med.stanford.edu/news/all-news/2026/09/stem-cell-mitochondrial-disease.html"}],
-        "questions": ["為什麼健康 microglia／macrophages 把粒線體交給 frataxin-deficient cells，理論上可以改善 ATP 產生，而不需要先把每一顆受損細胞的基因都修好？","研究者為什麼必須分開標記『供者細胞』和『供者粒線體』，並再做細胞培養的直接接觸實驗？","如果骨髓移植後小鼠變健康，但粒線體轉移只是伴隨現象，你會設計什麼實驗證明『轉移本身』是療效所必需？"]
+        "category": "神經化學・脂質體學・腦區差異",
+        "title": "大腦不只有細胞地圖，還有『脂質地圖』：新 3D atlas 顯示腦區、性別與懷孕都會改變膜的化學組成",
+        "widgetTitle": "第一次把大腦的脂質化學做成 3D 地圖",
+        "widgetSummary": "研究者以微米尺度描出成年小鼠腦的 membrane lipid architecture，發現不同腦區有穩定而精細的脂質組合，部分差異還會隨性別與懷孕改變。這提醒我們：神經元如何運作，不只取決於基因與蛋白質，也取決於它們所在的膜。",
+        "dek": "我們談大腦時常談神經元、突觸、受體和基因，卻容易忽略一個物理事實：每一顆細胞、每一個突觸小泡、每一段髓鞘都大量由 lipid（脂質）構成。Nature 9 月 23 日的新研究把脂質從『細胞膜的背景材料』拉到主角位置，建立成年小鼠腦的三維膜脂地圖。",
+        "background": "Lipids 不只是儲存能量的油脂。Phospholipids、sphingolipids、cholesterol 等分子會組成 cell membrane；它們的脂肪酸鏈長度、飽和程度與頭部基團會改變膜的厚度、流動性、彎曲能力，以及膜蛋白所在的微環境。神經系統尤其依賴膜：action potential 需要離子通道嵌在膜上，synaptic vesicle 必須和 presynaptic membrane 融合，myelin 則是一層高度富含脂質的絕緣結構。因此兩個神經元即使表現相似蛋白，膜脂組成不同也可能改變訊號傳遞。Lipidomics 就是系統性測量大量脂質分子的技術。",
+        "whatHappened": "研究團隊建立成年小鼠腦的 micrometre-scale membrane-lipid atlas，發現脂質組成不是均勻鋪滿整顆腦，而是具有明顯的 anatomical organization：不同腦區、白質與灰質，以及細胞環境呈現不同 lipid signatures。研究也比較雄性、雌性與懷孕狀態，顯示部分脂質架構會隨生理狀態改變。這表示傳統腦圖譜若只有 gene expression、cell type 和 connectivity，仍少了一層會直接影響膜物理性質與訊號傳遞的化學資訊。",
+        "howTheyStudied": "團隊利用能在組織切片上保留空間位置的 mass-spectrometry-based lipid imaging，辨認大量 membrane lipid species，再把連續切片的化學訊號對齊腦解剖結構，重建三維 atlas。這和把整顆腦磨碎後做 lipidomics 很不同：磨碎可以精確知道『總共有多少某種脂質』，卻會失去它原本位於 hippocampus、cortex、white matter 還是其他區域的資訊。空間質譜的價值就在於把化學身分和位置綁在一起。",
+        "whyItMatters": "許多神經疾病，包括 demyelinating disease、代謝疾病與神經退化，都伴隨 lipid metabolism 改變。若不知道健康腦原本的區域脂質基線，就很難判斷患者看到的改變究竟是疾病特異機制，還是該腦區本來就不同。這張 atlas 也提供一個新的整合方向：未來可以把同一位置的 lipidome、transcriptome、cell type 與 neural activity 疊在一起，問『基因改變如何真的轉成膜與胞器化學的改變』。",
+        "limitations": "目前是 mouse brain，不是人類腦，而且脂質影像告訴我們『哪裡有什麼』，不等於直接告訴我們某脂質在該處的功能。懷孕或性別相關差異也可能受到荷爾蒙、代謝、飲食與細胞組成改變共同影響，不能只看到 lipid abundance 改變就宣稱某一荷爾蒙直接控制它。空間解析度雖高，也仍需要和細胞標記或單細胞方法整合，才能精確指認是哪一類細胞產生差異。",
+        "whatNext": "下一步可在疾病模型或人類 postmortem tissue 上建立相同尺度的 lipid maps，並對特定 lipid-synthesis enzymes 做遺傳或藥理操控，測試某個區域脂質變化究竟會不會改變 synaptic transmission、myelination 或行為。若能再和 spatial transcriptomics 疊合，就能從『哪個 lipid 改變』追到『哪種細胞的哪條代謝路徑造成它』。",
+        "sources": [{"label":"Nature：The lipidomic architecture of the mouse brain","url":"https://www.nature.com/articles/s41586-026-11050-0"}],
+        "questions": ["為什麼神經元膜中的脂質比例改變，即使沒有改變任何 receptor gene，也可能改變突觸傳遞或 action potential？","為什麼建立空間 lipid atlas 不能只把整顆腦磨碎後做 mass spectrometry？研究者因此多取得了哪一種證據？","如果懷孕小鼠某個腦區出現特定 lipid 上升，你會設計什麼實驗區分它是荷爾蒙直接改變 lipid metabolism，還是該區細胞組成改變造成的表面現象？"]
       },
       {
-        "category": "精神醫學・人類遺傳學・OCD／抽動症",
-        "title": "OCD 與慢性抽動症不是只有『很多小風險』：外顯子定序找到 36 個罕見大效應風險基因",
-        "widgetTitle": "OCD／抽動症找到 36 個大效應風險基因",
-        "widgetSummary": "近四千名患者的 whole-exome sequencing 顯示，OCD 與慢性抽動症除了常見小效應變異，也有一部分風險來自罕見、會破壞蛋白質的大效應變異；36 個高可信度基因指向皮質、紋狀體與發育中的神經迴路。",
-        "dek": "複雜精神疾病常被描述成『很多基因各貢獻一點點風險』，這通常沒錯，但不是完整故事。Nature Neuroscience 的大型外顯子定序研究顯示，少數 OCD 或慢性抽動症患者帶有非常罕見、單一變異影響較大的 coding mutations。這些基因不是診斷工具，卻提供了一條從人類遺傳差異往細胞機制追的入口。",
-        "background": "Whole-exome sequencing（WES）主要讀取基因組中會編碼蛋白質的 exons。研究特別關注 de novo variants，也就是孩子身上出現、父母沒有的變異，以及極罕見的 protein-damaging variants。這和 GWAS 找常見變異不同：GWAS 常找到每個只增加一點風險的 allele；罕見破壞性變異雖然只存在少數人身上，單一變異的 effect 可能大得多。",
-        "whatHappened": "研究分析 3,964 名有 OCD、慢性抽動症或兩者兼具的個案，其中 2,418 組有父母與孩子三人資料，另有 1,546 名 singleton。研究發現患者攜帶 de novo 與罕見 protein-damaging variants 的比例高於預期，最後辨認出 36 個 high-confidence risk genes。模型估計約 7–8% 個案帶有至少一個會貢獻風險的 de novo damaging variant；部分基因的估計 effect 很大，但這些數字描述的是特定罕見變異群體的相對風險，不代表帶有某基因變異就一定會發病。",
-        "howTheyStudied": "Trio design 讓研究者直接判斷變異是不是 de novo；singleton 與大型 population reference 則補充極罕見變異的病例—對照訊號。研究把 likely gene-disrupting variants 和預測最具破壞性的 missense variants 放入 TADA Bayesian framework，並用 false discovery rate 控制大量基因同時檢定造成的假陽性。之後再把風險基因和腦發育 transcriptome、細胞類型與蛋白／功能網路交叉分析。",
-        "whyItMatters": "風險基因的表現集中在 prenatal／postnatal cortex、striatum，以及 postnatal cerebellum 等時空位置，也和其他 neurodevelopmental disorders 有部分重疊。這讓『皮質—紋狀體—丘腦迴路』不只是一個影像或行為模型，而得到另一層人類遺傳支持。更重要的是，大效應基因比較容易做成細胞或動物模型，讓研究者能從 association 往 mechanism 推進。",
-        "limitations": "36 個是統計上的高可信度 risk genes，不是『36 個 OCD 基因』；OCD／CTD 仍是高度多基因、異質的疾病。研究聚焦 coding SNVs 和 small indels，沒有完整涵蓋 CNV、noncoding variants 或 mitochondrial DNA。部分基因只由少量罕見事件支撐，仍需要獨立樣本與功能實驗。高 odds ratio 也不能直接拿來預測一般人的個人發病機率。",
-        "whatNext": "下一步要擴大不同祖源族群的定序，驗證哪些基因能穩定重現；再用 iPSC-derived neurons、organoids 或動物模型測試變異如何改變神經發育、突觸、纖毛／微管與 corticostriatal circuit。真正有價值的終點不是累積更多基因名字，而是找出不同風險基因最後是否匯聚到少數可干預的生物機制。",
-        "sources": [{"label":"Nature Neuroscience 原始研究","url":"https://www.nature.com/articles/s41593-026-02419-5"}],
-        "questions": ["為什麼罕見大效應變異和 GWAS 找到的常見小效應變異可以同時對 OCD／慢性抽動症的遺傳風險成立，而不是互相矛盾？","為什麼 parent–child trio 對研究 de novo mutation 特別有力？如果只有患者本人的序列，會少掉哪一層證據？","即使某個基因在患者中出現高風險罕見變異，你還需要哪些功能實驗，才能從『統計風險基因』走到『可治療的疾病機制』？"]
+        "category": "社會神經科學・視覺迴路・群體行為",
+        "title": "自己沒看到掠食者，也能跟著逃：透明小魚揭示大腦如何把『同伴突然逃跑』翻譯成危險訊號",
+        "widgetTitle": "魚群為什麼能一隻逃、整群跟著跑？",
+        "widgetSummary": "Nature 新研究發現，群游玻璃魚的中腦與丘腦神經元會辨認同伴突然逃跑或以生物方式消失的視覺訊號。這讓動物即使沒直接看到威脅，也能從別人的動作推論危險。",
+        "dek": "群體動物常出現連鎖逃生：最靠近掠食者的個體先轉身，幾乎瞬間整群一起跑。這看起來像單純模仿，但真正困難的是，後面的動物可能根本沒有看到掠食者。9 月 23 日 Nature 的研究利用成年透明玻璃魚 Danionella cerebrum 與虛擬魚群，把『看到同伴的動作』和『看到真正威脅』拆開，找出負責讀取社會性危險線索的神經元。",
+        "background": "Optic tectum（視頂蓋）是脊椎動物中腦的重要視覺處理區，在哺乳類相對應的結構常稱 superior colliculus；它擅長快速偵測視野中的位置、移動與突發事件。Thalamus（丘腦）則連結感覺訊息與多個腦區。所謂 social cue 在這裡不是語言，而是『另一隻動物的動作本身提供環境資訊』：如果同伴突然做出典型逃生動作，即使自己沒看到掠食者，這個動作也可能是危險的代理訊號。",
+        "whatHappened": "研究先證明四隻一組的 Danionella 面對模擬逼近掠食者的 looming stimulus 時會產生集體逃生，而且同伴的反應能影響其他魚。接著研究者讓魚觀看 virtual conspecifics，發現 optic tectum 與 thalamus 中有神經元會對虛擬同伴的逃生動作強烈反應。特別有趣的是，這些神經元也會對虛擬魚突然『消失』反應，但如果螢幕上的物體只是以不符合生物運動的直線方式離開，反應就不同。也就是說，大腦不是單純偵測『畫面少了一個東西』，而是對具有生物意義的動作模式敏感。",
+        "howTheyStudied": "Danionella cerebrum 成年後仍具有高度透明的頭部，因此研究者可以在活體觀看大範圍 neural activity。團隊先用實體魚群與 looming visual threat 量化誰先逃、其他個體多久跟上，再以螢幕呈現可精確控制的 virtual fish，把速度、方向、消失方式等視覺特徵逐一拆開。神經影像則讓研究者把特定 stimulus feature 對應到 optic tectum、thalamus 等區域的細胞反應。這種『虛擬同伴』設計的優點，是能把真實魚每次都不一樣的動作變成可重複的實驗刺激。",
+        "whyItMatters": "這提供一個很基礎的 social neuroscience 概念：社會訊息不一定需要高階心智推理，古老的視覺中腦迴路就可能直接把『別人的急遽動作』轉成自己的行動偏向。從演化角度看，這非常合理——在低能見度或掠食者只被部分成員看到的環境，快速相信鄰居的逃跑比等自己確認危險更可能活下來。這也讓研究者可以用明確的感覺刺激研究『觀察別人後改變自己行為』的神經計算。",
+        "limitations": "Danionella 的群體逃生不能直接等同人類的恐慌、從眾或社會推理。研究辨認到對社會逃生線索敏感的神經元，也不表示每個細胞都只負責『理解同伴害怕』；它們可能在編碼特定視覺運動特徵。虛擬魚雖能提高控制力，仍比真實群體少了水流、氣味、身體接觸與雙向互動。",
+        "whatNext": "下一步可選擇性抑制這些 tectal／thalamic neurons，測試魚是否仍能看見同伴卻不再跟著逃，以建立必要性證據；也可以同時記錄多隻魚的腦與行為，研究一個 neural signal 如何沿著群體傳播。另一個重要問題是經驗是否會調整這套系統：如果同伴經常誤報危險，大腦會不會逐漸降低對其逃生動作的權重？",
+        "sources": [{"label":"Nature：Neuronal detection of social actions directs collective escape behaviour","url":"https://www.nature.com/articles/s41586-026-11041-1"}],
+        "questions": ["如果一隻魚沒有直接看到掠食者，為什麼『同伴突然逃跑』仍能成為對自己有用的危險資訊？","為什麼研究者要用 virtual conspecifics，而不能只觀察真實魚群？這讓哪些變因可以被單獨控制？","看到 optic tectum 神經元對同伴逃跑特別活躍，仍不能證明它們在『理解同伴害怕』。你會用什麼刺激或神經操控來排除它們只是偵測高速／突然運動的替代解釋？"]
       }
     ],
-    "radar": {
-      "title": "EMBL International PhD Programme 2027 Winter Recruitment 已開放：現在先用它反推大學階段要補哪些能力",
-      "summary": "EMBL 的 2027 Winter Recruitment 已於 2026 年 9 月 1 日開放，申請截止為 10 月 12 日 23:59 CET，2027 年 1 月底至 2 月初進行現場面試。這不是現在大二就要申請的機會，而是一個很好的『研究所規格尺』：EMBL 的研究橫跨分子生物、細胞生物、基因體、影像、計算與跨尺度生物學，申請流程要求申請者能說清楚研究興趣、過去研究經驗與未來問題。現在追蹤它的價值，是用真正國際博士班的要求反推未來兩三年：累積一段能說出問題—方法—結果—限制的研究經驗、建立可驗證的量化／程式能力，並練習閱讀不同實驗室近期論文，而不是到大四才第一次準備。",
-      "url": "https://www.embl.org/about/info/embl-international-phd-programme/application/"
-    }
+    "radar": {"title":"","summary":"今天沒有新增一個比近期已追蹤的 Max Planck Matter to Life、OIST 等機會更值得立即加入申請清單、且已確認適合國際本科生的項目，因此不為了填欄位而塞入低相關機會。近期最需要注意的仍是 2026 年 10 月 1 日截止的 Max Planck Matter to Life URO，以及 10 月 15 日截止的 OIST Research Internship。","url":""}
   },
-  "importantMail": {
-    "count": 0,
-    "status": "目前沒有新增郵件同時符合指定的『重要領域』與『明確截止／需要回覆或行動／取消異常／時間變更』條件；詳細郵件內容不存放在公開 Daily Board。"
-  }
+  "importantMail": {"count":1,"status":"目前有 1 封需要注意的郵件，涉及今天即將進行的實驗室／研究活動與事前閱讀材料；詳細寄件者、主旨與內容不存放在公開 Daily Board。"}
 }
